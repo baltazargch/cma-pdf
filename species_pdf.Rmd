@@ -86,3 +86,7 @@ knitr::include_graphics('images/cma-logo.png')
 **Justificación de la categorización**
 
 `r db.sp$sp_cat_nac_conserv_2019_justific`
+```{r image, fig.pos='H', echo=FALSE, include=TRUE, fig.align='left', out.width='50%'}
+knitr::include_graphics(paste0('photos/', db.sp$title, '.png'))
+```
+>>>>>>> f74fbe8fb913d95a6d2a5cda6da6db9d240046bc
