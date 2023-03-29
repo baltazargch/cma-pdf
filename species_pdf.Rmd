@@ -17,6 +17,7 @@ header-includes:
   \usepackage{fancyhdr}
   \usepackage{ragged2e}
   \usepackage{caption}
+  \usepackage{colortbl}
   \captionsetup[figure]{labelformat=empty}
   \pagestyle{fancy}
   \fancyhead[L,C]{}
@@ -106,7 +107,9 @@ for(i in seq_along(subPob)){
 tbsPob[i] <- tribble(
  ~'Subpoblación', ~'Categoría', ~'Criterios y subcriterios',
   subPob[i], catPob[i], criPob[i]
-) %>% kbl(booktabs = T, format = 'latex') %>% row_spec(0,bold=TRUE) %>% 
+) %>% 
+  kbl(booktabs = T, format = 'latex') %>% 
+  row_spec(0,bold=TRUE, extra_latex_after = "\\arrayrulecolor{white}") %>% 
   kable_styling(latex_options = c('striped', "HOLD_position"),
                 position = "center", full_width = T)
 }
