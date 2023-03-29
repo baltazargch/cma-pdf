@@ -1,0 +1,68 @@
+---
+date: "Fecha de creación: `r format(Sys.time(), '%d %B, %Y')`"
+always_allow_html: true
+output:
+  pdf_document: 
+    toc: false
+    toc_depth: 1
+  html_document:
+    df_print: paged
+  word_document: default
+header-includes:
+  \usepackage{titling}
+  \pretitle{\begin{center}
+  \vspace{-2cm}\includegraphics[width=\linewidth,height=0.7in]{images/Base_info/logo.png}\LARGE\\}
+  \posttitle{\end{center}}
+  \usepackage{float}
+  \usepackage{fancyhdr}
+  \usepackage{ragged2e}
+  \pagestyle{fancy}
+  \fancyhead[L,C]{}
+  \fancypagestyle{plain}{\pagestyle{fancy}}
+params:
+  species: 'Blastocerus dichotomus'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, include = FALSE)
+library(rvest)
+library(tidyverse)
+library(kableExtra)
+source('R/funcs.R', local = knitr::knit_global())
+```
+
+```{r dataload}
+db <- read_csv('data/especies_nativas.csv')
+
+db.sp <- db %>% filter(title == params$species)
+cat.logo <- db.sp$sp_cat_nac_conserv_2019 %>% 
+  str_split(' ', simplify = TRUE) %>% .[1] %>% tolower()
+cat.logo <- paste0('mapas_cma/images/scale-', cat.logo, '.png')
+
+
+doi <- 'doi:https://d.1025CMAoideprueba'
+```
+
+---
+title: "*`r db.sp$title`*"
+subtitle: "**`r db.sp$sp_nombre_comun`**"   
+---
+
+\fancyhead[R]{\textbf{`r doi`}}
+
+\center
+## **Autores: `r db.sp$sp_autores_de_ficha`**
+
+```{r catlogo, fig.pos='H', echo=FALSE, include=TRUE, fig.align='center', out.width='70%'}
+knitr::include_graphics(cat.logo)
+knitr::include_graphics('mapas_cma/images/cma-logo.png')
+# knitr::include_graphics(paste0('photos/', params$species, '.png'))
+```
+
+***
+\justifying
+**Citar como:**
+`r db.sp$sp_autores_de_ficha`. (2019). *`r db.sp$title`*. En: SAyDS–SAREM (eds.) Categorización 2019 de los mamíferos de Argentina según su riesgo de extinción. Lista Roja de los mamíferos de Argentina. Versión digital: http://cma.sarem.org.ar.
+
+***
+

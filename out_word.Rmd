@@ -1,0 +1,421 @@
+---
+date: "**Fecha de creación:** `r format(Sys.time(), '%d %B, %Y')`"
+always_allow_html: true
+output:
+  pdf_document: 
+    toc: true
+    toc_depth: 1
+  html_document:
+    df_print: paged
+  word_document: default
+header-includes:
+  \usepackage{titling}
+  \pretitle{\begin{center}
+  \includegraphics[width=5in,height=2in]{images/logo.png}\LARGE\\}
+  \posttitle{\end{center}}
+  \usepackage{float}
+  \usepackage{fancyhdr}
+  \pagestyle{fancy}
+  \fancyhead[L,C]{}
+  \fancypagestyle{plain}{\pagestyle{fancy}}
+params:
+  species: 'Sapajus cay'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, include = FALSE)
+library(rvest)
+library(tidyverse)
+library(kableExtra)
+source('R/funcs.R', local = knitr::knit_global())
+# source('R/get_info.R', local = knitr::knit_global())
+```
+
+```{r ini}
+
+# species <-'Panthera onca'
+# sp_page <- get_species(species)                      
+sp_page <-get_species(params$species) #get_species(params$species)
+overview <- get_overview(sp_page)                       
+
+cita <- get_citation(sp_page)
+
+authors <- get_authors(sp_page)
+
+autoridad <- cma_parse_authors(authors$Autores)
+doi <- 'doideprueba'
+```
+
+\fancyhead[R]{\textbf{`r doi`}}
+
+---
+title: "Ficha de la especie *`r overview$binomial`*"
+author: "**Autores: ** `r autoridad`"
+---
+
+^[Fecha de creación:]
+***
+
+**Cita sugerida:**
+`r cita`
+
+***
+
+\newpage
+
+# 1. Datos generales
+
+\setlength{\leftskip}{0.6cm}
+
+**Nº de ID:** `r overview$id`
+
+**Nombre científico:** *`r overview$binomial`*
+
+**Nombre común:** `r overview$nombre_comun`
+
+```{r fig.pos='h', echo=FALSE, include=TRUE, fig.align='center', message=FALSE, warning=FALSE, out.width='25%'}
+source('/mnt/2TB/Proyects/Consultancy/CMA-SAREM_mamiferos/Directorio_general_cma/R/get_cma_spatial.R', local = knitr::knit_global())
+
+sp.map <- get_cma_spatial(params$species)[[1]]
+
+plot(sp.map['geometry'], col='forest green', border='forest green')
+
+# ```
+
+# ```{r fig.pos='H', echo=FALSE, include=TRUE, fig.align='right', out.width='25%'} 
+cat_logo <- overview$categoría_nacional_de_conservación_2019 %>% 
+  str_split(., ' ')
+
+cat_logo <- paste0('images/',
+                   cat_logo[[1]][1] %>% str_to_lower(), 
+                   '.png')
+
+knitr::include_graphics(cat_logo)
+```
+
+**Categoría Nacional de Conservación (2019):** `r overview$categoría_nacional_de_conservación_2019`
+
+**Criterios y Subcriterios:**  `r overview$criterios_y_subcriterios`
+
+**Justificación de la Categorización:**
+
+`r overview$justificación_de_la_categorización`
+
+\setlength{\leftskip}{0cm}
+
+***
+
+```{r}
+cons <- get_content(sp_page)
+vec <- grep('países vecinos', cons$subtitles)
+if(is_empty(vec)){
+  eval_chunk <-  FALSE
+  vec <- which(cons$content == 'SUBTITULO')[2]
+} else {
+  eval_chunk <- TRUE
+}
+```
+
+# 2. Categorías de conservación
+
+\setlength{\leftskip}{0.6cm}
+
+**`r cons$subtitles[1]`:** `r cons$content[1]`
+
+**`r cons$subtitles[2]`:** `r cons$content[2]`
+
+**`r cons$subtitles[4]`**: `r cons$content[4]`
+
+**`r cons$subtitles[5]`**: `r cons$content[5]`
+
+\setlength{\leftskip}{0cm}
+
+## `r cons$subtitles[6]`:
+
+```{r vecino, echo=FALSE, include=TRUE, eval=eval_chunk}
+
+dt <- cons[ 7:(vec - 1), 2:3]
+colnames(dt) <- c('Año', 'Categoría')
+row.names(dt) <- NULL
+dt <- dt %>% 
+  kbl(booktabs = T) %>%
+  kable_styling(latex_options = c('striped', "HOLD_position"),
+                position = "center") %>% 
+  row_spec(0, bold=TRUE)
+dt
+```
+
+## `r cons$subtitles[vec]`:
+
+\setlength{\leftskip}{0.6cm}
+
+```{r echo=FALSE, include=TRUE, results='asis'}
+veci <- character()
+
+eva <- grep('Evaluación global UICN', cons$subtitles)
+dt <- cons[ (vec + 1):(eva - 1), ]
+for(i in 1:NROW(dt)){
+  veci <- paste0(veci, '**', dt$subtitles[i], ':** ', dt$content[i], '\n\n')
+}
+past <- grep('Evaluaciones globales previas de UICN', cons$subtitles)
+
+cat(veci)
+```
+
+\setlength{\leftskip}{0cm}
+
+## `r cons$subtitles[eva]`:
+
+\setlength{\leftskip}{0.6cm}
+
+**`r cons$subtitles[eva+1]`:** `r cons$content[eva+1]`
+
+**`r cons$subtitles[eva+2]`:** `r cons$content[eva+2]`
+
+\setlength{\leftskip}{0cm}
+
+## `r cons$subtitles[past]`:
+
+\setlength{\leftskip}{0.6cm}
+
+```{r, echo=FALSE, include=TRUE, results='asis'}
+iucn <- character()
+
+past <- grep('Evaluaciones globales previas de UICN', cons$subtitles)
+dt <- cons[ (past + 1):NROW(cons), ]
+for(i in 1:NROW(dt)){
+  iucn <- paste0(iucn, '**', dt$subtitles[i], ':** ', dt$content[i], '\n\n')
+}
+
+cat(iucn)
+
+titles <- get_titles(sp_page)
+```
+
+\setlength{\leftskip}{0cm}
+
+***
+
+# 3. `r names(titles)[2]`
+
+\setlength{\leftskip}{0.6cm}
+
+```{r echo=FALSE, include=TRUE, results='asis'}
+taxo <- get_info(sp_page, 'taxon')
+
+p_taxo <- vector()
+for(i in seq_along(taxo)){
+  unca <- paste0(taxo[[i]], collapse = '\n\n')
+  p_taxo[i] <- paste0(
+    '**', names(taxo[i]), ':**\n\n', unca, collapse = '\n\n'
+  )
+}
+
+p_taxo <- paste0(p_taxo, collapse = '\n\n')
+
+cat(p_taxo)
+
+```
+
+\setlength{\leftskip}{0cm}
+
+***
+
+# 4. `r names(titles)[3]`
+
+\setlength{\leftskip}{0.6cm}
+
+```{r echo=FALSE, include=TRUE, results='asis'}
+evalu <- get_info(sp_page, 'evalu') 
+
+p_str <- vector()
+for(i in seq_along(evalu)){
+  unca <- paste0(evalu[[i]], collapse = '\n\n')
+  p_str[i] <- paste0(
+    '**', names(evalu[i]), ':**\n\n', unca, collapse = '\n\n'
+  )
+}
+
+p_str <- paste0(p_str, collapse = '\n\n')
+
+cat(p_str)
+
+```
+
+\setlength{\leftskip}{0cm}
+
+***
+
+# 5. `r names(titles)[4]`
+
+\setlength{\leftskip}{0.6cm}
+
+```{r echo=FALSE, include=TRUE, results='asis'}
+geogr <- get_info(sp_page, 'geogr') 
+
+p_str <- vector()
+for(i in seq_along(geogr)){
+  unca <- paste0(geogr[[i]], collapse = '\n\n')
+  p_str[i] <- paste0(
+    '**', names(geogr[i]), ':**\n\n', unca, collapse = '\n\n'
+  )
+}
+
+p_str <- paste0(p_str, collapse = '\n\n')
+
+cat(p_str)
+
+```
+
+\setlength{\leftskip}{0cm}
+
+***
+
+# 6. `r names(titles)[5]`
+
+\setlength{\leftskip}{0.6cm}
+
+```{r echo=FALSE, include=TRUE, results='asis'}
+morfo <- get_info(sp_page, 'morfo')
+
+p_str <- vector()
+for(i in seq_along(morfo)){
+  unca <- paste0(morfo[[i]], collapse = '\n\n')
+  p_str[i] <- paste0(
+    '**', names(morfo[i]), ':**\n\n', unca, collapse = '\n\n'
+  )
+}
+
+p_str <- paste0(p_str, collapse = '\n\n')
+
+cat(p_str)
+
+```
+
+\setlength{\leftskip}{0cm}
+
+***
+
+# 7. `r names(titles)[6]`
+
+\setlength{\leftskip}{0.6cm}
+
+```{r echo=FALSE, include=TRUE, results='asis'}
+etoec <- get_info(sp_page, 'etoec') 
+
+p_str <- vector()
+for(i in seq_along(etoec)){
+  unca <- paste0(etoec[[i]], collapse = '\n\n')
+  p_str[i] <- paste0(
+    '**', names(etoec[i]), ':**\n\n', unca, collapse = '\n\n'
+  )
+}
+
+p_str <- paste0(p_str, collapse = '\n\n')
+
+cat(p_str)
+
+```
+
+\setlength{\leftskip}{0cm}
+
+***
+
+# 8. `r names(titles)[7]`
+
+\setlength{\leftskip}{0.6cm}
+
+**Amenazas por grado: de 1 (menor) a 5 (mayor)**
+
+```{r echo=FALSE, include=TRUE, results='asis'}
+inves <- get_info(sp_page, 'inves') 
+
+p_str <- vector()
+for(i in seq_along(inves)){
+  unca <- paste0(inves[[i]], collapse = '\n\n')
+  p_str[i] <- paste0(
+    '**', names(inves[i]), ':**\n\n', unca, collapse = '\n\n'
+  )
+}
+
+p_str <- paste0(p_str, collapse = '\n\n')
+
+cat(p_str)
+
+```
+
+\setlength{\leftskip}{0cm}
+
+***
+
+```{r include=FALSE, echo=FALSE}
+biblio <- get_info(sp_page, 'bibli')
+
+citada <- paste0(biblio$`Bibliografía citada`, collapse = '\n\n')
+
+comp <- paste0(biblio$`Bibliografía complementaria`, collapse = '\n\n')
+
+```
+
+
+# 9. `r names(titles)[8]`
+
+\setlength{\leftskip}{0.6cm}
+
+## `r names(biblio[1])`
+
+```{r echo=FALSE, include=TRUE, results='asis'}
+cat(citada)
+```
+
+## `r names(biblio[2])`
+
+```{r echo=FALSE, include=TRUE, results='asis'}
+cat(comp)
+```
+
+\setlength{\leftskip}{0cm}
+
+***
+
+# 10. Autores y Colaboradores
+
+## Autores
+\setlength{\leftskip}{0.6cm}
+
+```{r, echo=FALSE, include=TRUE, results='asis'}
+auth <- sapply(authors$Autores, function(x){
+  x[1] <- paste0('**', x[1], '**')
+  x <- x[-c(2,3)]
+})
+
+auth <- paste0(
+  sapply(auth, function(x){
+    do.call(paste0, list(x, collapse = '\n\n '))
+    }), '\n\n'
+  )
+
+cat(auth)
+```
+
+\setlength{\leftskip}{0pt}
+
+## Colaboradores
+
+\setlength{\leftskip}{0.6cm}
+```{r, echo=FALSE, include=TRUE, results='asis'}
+auth <- sapply(authors$Colaboradores, function(x){
+  x[1] <- paste0('**', x[1], '**')
+  x <- x[-c(2,3)]
+})
+
+auth <- paste0(
+  sapply(auth, function(x){
+    do.call(paste0, list(x, collapse = '\n\n '))
+    }), '\n\n'
+  )
+
+cat(auth)
+```
+
+\setlength{\leftskip}{0pt}
