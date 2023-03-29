@@ -86,17 +86,3 @@ knitr::include_graphics('images/cma-logo.png')
 **Justificación de la categorización**
 
 `r db.sp$sp_cat_nac_conserv_2019_justific`
-<<<<<<< HEAD
-=======
-=======
-```{r image, fig.pos='H', echo=FALSE, include=TRUE, fig.align='left', out.width='50%'}
-knitr::include_graphics(paste0('photos/', db.sp$title, '.png'))
-```
-
-
->>>>>>> 9d1fb898c98637471d6d6250564f9d97f7ebd372
->>>>>>> 2a8894257c7126838a53a2a487adb0ce41444fc3
-```{r image, fig.pos='H', echo=FALSE, include=TRUE, fig.align='left', out.width='50%'}
-knitr::include_graphics(paste0('photos/', db.sp$title, '.png'))
-```
->>>>>>> f74fbe8fb913d95a6d2a5cda6da6db9d240046bc
