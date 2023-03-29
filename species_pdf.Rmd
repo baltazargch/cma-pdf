@@ -70,6 +70,7 @@ knitr::include_graphics('images/cma-logo.png')
 
 \newpage
 
+<<<<<<< HEAD
 ```{r image, fig.pos='H', echo=FALSE, include=TRUE, fig.align='center', out.width='50%', fig.cap= paste0("Fotos por ", "Salvador Dali")}
  knitr::include_graphics(paste0('photos/', db.sp$title, '.png'))
  # knitr::opts_chunk$set(fig.cap = "Fotos por Dali")
@@ -88,3 +89,10 @@ knitr::include_graphics('images/cma-logo.png')
 **Justificación de la categorización**
 
 `r db.sp$sp_cat_nac_conserv_2019_justific`
+=======
+```{r image, fig.pos='H', echo=FALSE, include=TRUE, fig.align='left', out.width='50%'}
+knitr::include_graphics(paste0('photos/', db.sp$title, '.png'))
+```
+
+
+>>>>>>> 9d1fb898c98637471d6d6250564f9d97f7ebd372
