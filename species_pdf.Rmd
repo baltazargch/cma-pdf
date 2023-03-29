@@ -19,6 +19,7 @@ header-includes:
   \usepackage{caption}
   \usepackage{colortbl}
   \captionsetup[figure]{labelformat=empty}
+  \arrayrulecolor{white}
   \pagestyle{fancy}
   \fancyhead[L,C]{}
   \fancypagestyle{plain}{\pagestyle{fancy}}
