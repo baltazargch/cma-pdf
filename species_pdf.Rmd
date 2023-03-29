@@ -53,6 +53,7 @@ subtitle: "**`r db.sp$sp_nombre_comun`**"
 \fancyhead[R]{\textbf{`r doi`}}
 
 \center
+
 ## **Autores: `r db.sp$sp_autores_de_ficha`**
 
 ```{r catlogo, fig.pos='H', echo=FALSE, include=TRUE, fig.align='center', out.width='70%'}
@@ -62,22 +63,23 @@ knitr::include_graphics('images/cma-logo.png')
 ```
 
 ***
+
 \justifying
-**Citar como:**
-`r db.sp$sp_autores_de_ficha`. (2019). *`r db.sp$title`*. En: SAyDS–SAREM (eds.) Categorización 2019 de los mamíferos de Argentina según su riesgo de extinción. Lista Roja de los mamíferos de Argentina. Versión digital: http://cma.sarem.org.ar.
+
+**Citar como:** `r db.sp$sp_autores_de_ficha`. (2019). *`r db.sp$title`*. En: SAyDS--SAREM (eds.) Categorización 2019 de los mamíferos de Argentina según su riesgo de extinción. Lista Roja de los mamíferos de Argentina. Versión digital: <http://cma.sarem.org.ar>.
 
 ***
 
 \newpage
 
-```{r image, fig.pos='H', echo=FALSE, include=TRUE, fig.align='center', out.width='50%', fig.cap=paste0("Fotos por ", "Salvador Dali")}
+```{r image, fig.pos='H', echo=FALSE, include=TRUE, fig.align='center', out.width='50%', fig.cap= paste0("Fotos por ", "Salvador Dali")}
  knitr::include_graphics(paste0('photos/', db.sp$title, '.png'))
  # knitr::opts_chunk$set(fig.cap = "Fotos por Dali")
 ```
 
 **Categoría Nacional de Conservación 2019**
 
-`r db.sp$sp_cat_nac_conserv_2019` 
+`r db.sp$sp_cat_nac_conserv_2019`
 
 **Criterios y subcriterios**
 
