@@ -56,7 +56,7 @@ subtitle: "**`r db.sp$sp_nombre_comun`**"
 
 \center
 
-## **Autores: `r db.sp$sp_autores_de_ficha`**
+**Autores: `r db.sp$sp_autores_de_ficha`**
 
 ```{r catlogo, fig.pos='H', echo=FALSE, include=TRUE, fig.align='center', out.width='70%'}
 knitr::include_graphics(cat.logo)
