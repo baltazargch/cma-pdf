@@ -43,7 +43,11 @@ cat.logo <- db.sp$sp_cat_nac_conserv_2019 %>%
   str_split(' ', simplify = TRUE) %>% .[1] %>% tolower()
 cat.logo <- paste0('images/scale-', cat.logo, '.png')
 
-
+commonCols <- c("sp_id", "sp_taxonomia_familia", "sp_taxonomia_orden", "title", 
+"sp_nombre_cientifico", "sp_nombre_comun", "sp_cat_nac_conserv_2019", 
+"sp_cat_nac_conserv_2019_justific", "sp_cat_sayds_conserv_2004", 
+"sp_distribucion_historica_coment", "sp_habitos", "sp_autores_de_ficha"
+)
 doi <- 'doi:https://d.1025CMAoideprueba'
 ```
 
@@ -91,7 +95,7 @@ knitr::include_graphics('images/cma-logo.png')
 
 `r db.sp$sp_cat_nac_conserv_2019_justific`
 
-```{r tabla-subpoblaciones,echo=FALSE, include=TRUE, results='asis'}
+```{r tabla-subpoblaciones, echo=FALSE, include=TRUE, results='asis'}
 if(!is.na(db.sp$group_sp_eval_subpob)) {
   cat("## **Evaluación de subpoblaciones locales**\n\n")
 
@@ -100,9 +104,20 @@ tbsPob <- CMA_subpop_cons(db.sp)
 for(x in seq_along(tbsPob)){
   cat(paste0(tbsPob[[x]][[1]], collapse = '\\vspace{0.3cm}'))
   cat(paste0(tbsPob[[x]][[2]], collapse = '\\vspace{0.3cm}'))
-  cat('\\vspace{0.5cm}')
+  if(x != length(tbsPob)) cat('\\vspace{0.5cm}')
   }
 }
 ```
 
+***
+
+**Categoría Res. SAyDS 1030/04**
+
+`r db.sp$sp_cat_sayds_conserv_2004`
+
+**Categorías nacionales de conservación previas (SAREM)**
+
+```{r cats_con_prevs, echo=FALSE, include=TRUE, results='asis'}
+# db.sp$
+```
 
