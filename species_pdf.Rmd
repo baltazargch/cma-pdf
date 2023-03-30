@@ -24,7 +24,7 @@ header-includes:
   \fancyhead[L,C]{}
   \fancypagestyle{plain}{\pagestyle{fancy}}
 params:
-  species: 'Blastocerus dichotomus'
+  species: 'Necromys lilloi'
 ---
 
 ```{r setup, include=FALSE}
@@ -75,7 +75,7 @@ knitr::include_graphics('images/cma-logo.png')
 \newpage
 
 ```{r image, fig.pos='H', echo=FALSE, include=TRUE, fig.align='center', out.width='50%', fig.cap= paste0("Fotos por ", "Salvador Dali")}
- knitr::include_graphics(paste0('photos/', db.sp$title, '.png'))
+ knitr::include_graphics(paste0('photos/Blastocerus dichotomus.png')) #, db.sp$title, '.png'))
  # knitr::opts_chunk$set(fig.cap = "Fotos por Dali")
 ```
 
@@ -91,9 +91,11 @@ knitr::include_graphics('images/cma-logo.png')
 
 `r db.sp$sp_cat_nac_conserv_2019_justific`
 
-**Evaluación de subpoblaciones locales**
+
 
 ```{r tabla-subpoblaciones,echo=FALSE, include=TRUE, results='asis'}
+if(!is.na(db.sp$group_sp_eval_subpob)) 
+  cat("**Evaluación de subpoblaciones locales**\n\n")
 
 tbsPob <- CMA_subpop_cons(db.sp)
 

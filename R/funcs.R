@@ -45,8 +45,13 @@ CMA_parse_authors <- function(data, authors_csv ='data/lista_de_autores.csv'){
 CMA_subpop_cons <- function(data){
   require(tidyverse)
   require(kableExtra)
-  spListPop <- data$group_sp_eval_subpob %>% str_split('\n') %>% unlist() %>% str_trim()
+  # data <- db.sp
+  stopifnot(nrow(data) == 1, ncol(data) > 1)
   
+  if(is.na(data$group_sp_eval_subpob)){
+    return(NULL)
+  } else {
+  spListPop <- data$group_sp_eval_subpob %>% str_split('\n') %>% unlist() %>% str_trim()
   
   spListPop <- spListPop[ spListPop != ""]
   
@@ -66,4 +71,5 @@ CMA_subpop_cons <- function(data){
                     position = "center", full_width = T)
   }
   return(tbsPob)
+  }
 }
