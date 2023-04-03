@@ -1,12 +1,12 @@
 #### Parse authors ----
 CMA_parse_authors <- function(data, authors_csv ='data/lista_de_autores.csv'){
-  # data <- sp_db
+  # data <- db.sp
   list_auth <- read.csv(authors_csv)
   stopifnot(nrow(data) > 0, nrow(list_auth) > 0)
   require(tidyverse)
   
-  has_collabs <- !is.na(data[,122])
-  authors <- data[,121] %>% 
+  has_collabs <- !is.na(data$sp_colaboradores_de_ficha)
+  authors <- data$sp_autores_de_ficha %>% 
     str_split(";") %>% 
     unlist() %>% 
     str_trim(side = 'both')
@@ -21,7 +21,7 @@ CMA_parse_authors <- function(data, authors_csv ='data/lista_de_autores.csv'){
   }
   
   if(has_collabs){
-    collabs <- data[,122] %>% 
+    collabs <- data$sp_colaboradores_de_ficha %>% 
       str_split(";") %>%
       unlist() %>% 
       str_trim(side = 'both')
@@ -31,13 +31,44 @@ CMA_parse_authors <- function(data, authors_csv ='data/lista_de_autores.csv'){
     
     if(nrow(collabs_data) == 0){
       stop('Colaborador no encontrado')
+      break
     }
     return(list(autores = authors_data, colaboradores = collabs_data))
-    break
   }
   
   return(list(autores = authors_data))
 }
+
+CMA_print_authors <- function(authors){
+  # authors <- CMA_parse_authors(db.sp)
+  has_collabs <- length(authors) > 1
+  
+  cat('**Autores**')
+  authors[[1]] %>% 
+    mutate(aff = str_c(institucion, provincia, pais, sep = ', '), 
+           bl = '') %>% 
+    select(name, bl, aff) %>% 
+    kbl(booktabs = T, format = 'latex', col.names = NULL) %>% 
+    kable_styling(latex_options = c('striped', "HOLD_position"),
+                  position = "center", full_width = T) %>%
+    column_spec(1, bold=TRUE) %>% 
+    column_spec(2, width = '2cm') %>% cat()
+  
+  if(has_collabs){
+    cat('**Colaboradores**')
+    authors[[2]] %>% 
+      mutate(aff = str_c(institucion, provincia, pais, sep = ', '), 
+             bl = '') %>% 
+      select(name, bl, aff) %>% 
+      kbl(booktabs = T, format = 'latex', col.names = NULL) %>% 
+      kable_styling(latex_options = c('striped', "HOLD_position"),
+                    position = "center", full_width = T) %>% 
+      column_spec(1, bold=TRUE) %>% 
+      column_spec(2, width = '2cm') %>% cat()
+    
+  }
+  
+  }
 
 #### Parse conservation ----
 
@@ -93,12 +124,15 @@ CMA_subpop_cons <- function(data){
   }
 }
 
+#### Parse titles ----
 CMA_print_titles <- function(text){
+  
+ paste0("\\invisiblesection{", text, "}\n", 
   tibble(
     paste0( "\\rule{0pt}{14pt}", text)
   ) %>% 
     kbl(booktabs = T, col.names = NULL,escape = F) %>% 
     kable_styling(full_width = F, latex_options = c("HOLD_position")) %>% 
     row_spec(1, bold=TRUE, color = 'white', background = "ceil") %>% 
-    column_spec(1:2, width = '16cm', latex_valign='m')
+    column_spec(1:2, width = '16cm', latex_valign='m'))
 }
