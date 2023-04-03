@@ -43,11 +43,8 @@ CMA_print_authors <- function(authors){
   # authors <- CMA_parse_authors(db.sp)
   has_collabs <- length(authors) > 1
   
-<<<<<<< HEAD
   cat('**AUTORES**')
-=======
-  cat('**Autores**')
->>>>>>> e88e2e6dc178d3b716c81e431bc0d17dd25cb694
+
   authors[[1]] %>% 
     mutate(aff = str_c(institucion, provincia, pais, sep = ', '), 
            bl = '') %>% 
@@ -59,11 +56,7 @@ CMA_print_authors <- function(authors){
     column_spec(2, width = '2cm') %>% cat()
   
   if(has_collabs){
-<<<<<<< HEAD
     cat('**COLABORADORES**')
-=======
-    cat('**Colaboradores**')
->>>>>>> e88e2e6dc178d3b716c81e431bc0d17dd25cb694
     authors[[2]] %>% 
       mutate(aff = str_c(institucion, provincia, pais, sep = ', '), 
              bl = '') %>% 
