@@ -92,3 +92,13 @@ CMA_subpop_cons <- function(data){
   return(tbsPob)
   }
 }
+
+CMA_print_titles <- function(text){
+  tibble(
+    paste0( "\\rule{0pt}{14pt}", text)
+  ) %>% 
+    kbl(booktabs = T, col.names = NULL,escape = F) %>% 
+    kable_styling(full_width = F, latex_options = c("HOLD_position")) %>% 
+    row_spec(1, bold=TRUE, color = 'white', background = "ceil") %>% 
+    column_spec(1:2, width = '16cm', latex_valign='m')
+}

@@ -5,13 +5,12 @@ output:
   pdf_document: 
     toc: false
     toc_depth: 1
-  html_document:
-    df_print: paged
-  word_document: default
+    keep_tex: true
+classoption: x11names
 header-includes:
   \usepackage{titling}
   \pretitle{\begin{center}
-  \vspace{-2cm}\includegraphics[width=\linewidth,height=0.7in]{images/Base_info/logo.png}\LARGE\\}
+  \vspace{-3cm}\includegraphics[width=\linewidth]{images/Base_info/logo.png}\LARGE\\}
   \posttitle{\end{center}}
   \usepackage{float}
   \usepackage{fancyhdr}
@@ -23,6 +22,8 @@ header-includes:
   \pagestyle{fancy}
   \fancyhead[L,C]{}
   \fancypagestyle{plain}{\pagestyle{fancy}}
+  \PassOptionsToPackage{dvipsnames,svgnames*,x11names*}{xcolor}
+  \definecolor{ceil}{rgb}{0.57, 0.63, 0.81}
 params:
   species: 'Blastocerus dichotomus'
 ---
@@ -37,8 +38,12 @@ source('R/funcs.R', local = knitr::knit_global())
 
 ```{r dataload}
 db <- read_csv('data/especies_nativas.csv')
+dois <- read_csv('data/species_doi.csv')
 
 db.sp <- db %>% filter(title == params$species)
+
+spDoi <- dois$DOI[ match(db.sp$title, dois$Especie) ] %>% str_trim()
+
 cat.logo <- db.sp$sp_cat_nac_conserv_2019 %>% 
   str_split(' ', simplify = TRUE) %>% .[1] %>% tolower()
 cat.logo <- paste0('images/scale-', cat.logo, '.png')
@@ -56,16 +61,20 @@ title: "*`r db.sp$title`*"
 subtitle: "**`r db.sp$sp_nombre_comun`**"   
 ---
 
-\fancyhead[R]{\textbf{`r doi`}}
+\fancyhead[R]{\textbf{`r spDoi`}}
 
 \center
 
 **Autores: `r db.sp$sp_autores_de_ficha`**
 
+```{r image, fig.pos='H', echo=FALSE, include=TRUE, fig.align='center', out.width='35%',fig.cap= paste0("Fotos por ", "Salvador Dali")}
+
+ knitr::include_graphics(paste0('photos/', db.sp$title, '.png'))
+```
+
 ```{r catlogo, fig.pos='H', echo=FALSE, include=TRUE, fig.align='center', out.width='70%'}
 knitr::include_graphics(cat.logo)
-knitr::include_graphics('images/cma-logo.png')
-# knitr::include_graphics(paste0('photos/', params$species, '.png'))
+
 ```
 
 ***
@@ -78,12 +87,14 @@ knitr::include_graphics('images/cma-logo.png')
 
 \newpage
 
-```{r image, fig.pos='H', echo=FALSE, include=TRUE, fig.align='center', out.width='50%', fig.cap= paste0("Fotos por ", "Salvador Dali")}
- knitr::include_graphics(paste0('photos/', db.sp$title, '.png'))
- # knitr::opts_chunk$set(fig.cap = "Fotos por Dali")
+```{r title.cons, echo=FALSE, include=TRUE, results='asis'}
+CMA_print_titles("CATEGORÍAS DE CONSERVACIÓN")%>% cat()
+
 ```
 
-# **Categoría Nacional de Conservación 2019**
+\vspace{-0.4cm}
+
+**Categoría Nacional de Conservación 2019**
 
 `r db.sp$sp_cat_nac_conserv_2019`
 
@@ -109,15 +120,45 @@ for(x in seq_along(tbsPob)){
 }
 ```
 
-***
-
 **Categoría Res. SAyDS 1030/04**
 
 `r db.sp$sp_cat_sayds_conserv_2004`
 
 **Categorías nacionales de conservación previas (SAREM)**
 
-```{r cats_con_prevs, echo=FALSE, include=TRUE, results='asis'}
-# db.sp$
+
+
+\arrayrulecolor{white}
+
+```{r title.taxo, echo=FALSE, include=TRUE,results='asis'}
+CMA_print_titles("TAXONOMÍA Y NOMENCLATURA") %>% cat()
 ```
 
+```{r title.eval, echo=FALSE, include=TRUE,results='asis'}
+CMA_print_titles("INFORMACIÓN RELEVANTE PARA LA EVALUACIÓN") %>% cat()
+
+```
+
+```{r title.rango, echo=FALSE, include=TRUE,results='asis'}
+CMA_print_titles("RANGO GEOGRÁFICO, OCURRENCIA Y ABUNDANCIA Y NOMENCLATURA") %>% cat()
+```
+
+```{r title.morfo, echo=FALSE, include=TRUE,results='asis'}
+CMA_print_titles("DATOS MORFOMÉTRICOS") %>% cat()
+```
+
+```{r title.eto, echo=FALSE, include=TRUE,results='asis'}
+CMA_print_titles("RASGOS ETO-ECOLÓGICOS") %>% cat()
+```
+
+```{r title.inves, echo=FALSE, include=TRUE,results='asis'}
+CMA_print_titles("CONSERVACIÓN E INVESTIGACIÓN") %>% cat()
+```
+
+```{r title.biblio, echo=FALSE, include=TRUE,results='asis'}
+CMA_print_titles("BIBLIOGRAFÍA") %>% cat()
+```
+
+```{r title.autores, echo=FALSE, include=TRUE,results='asis'}
+CMA_print_titles("AUTORES") %>% cat()
+```
