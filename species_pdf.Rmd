@@ -61,18 +61,24 @@ doi <- 'doi:https://d.1025CMAoideprueba'
 \setsansfont{Calibri}
 \setmonofont{Calibri}
 
+\newcommand\invisiblesection[1]{%
+  \refstepcounter{section}%
+  \addcontentsline{toc}{section}{\protect\numberline{\thesection}#1}%
+  \sectionmark{#1}}
 ---
 title: "*`r db.sp$title`*"
 subtitle: "**`r db.sp$sp_nombre_comun`**"   
 ---
 \fancyhead[R]{\textbf{`r spDoi`}}
 
+\invisiblesection{GENERALIDADES}
+\vspace{-0.4cm}
+
 \center
 
 **Autores: `r db.sp$sp_autores_de_ficha`**
 
 ```{r image, fig.pos='H', echo=FALSE, include=TRUE, fig.align='center', out.width='35%',fig.cap= paste0("Fotos por ", "Salvador Dali")}
-
  knitr::include_graphics(paste0('photos/', db.sp$title, '.png'))
 ```
 
@@ -90,6 +96,7 @@ knitr::include_graphics(cat.logo)
 ***
 
 \newpage
+
 
 ```{r title.cons, echo=FALSE, include=TRUE, results='asis'}
 CMA_print_titles("CATEGORÍAS DE CONSERVACIÓN")%>% cat()
@@ -112,7 +119,7 @@ CMA_print_titles("CATEGORÍAS DE CONSERVACIÓN")%>% cat()
 
 ```{r tabla-subpoblaciones, echo=FALSE, include=TRUE, results='asis'}
 if(!is.na(db.sp$group_sp_eval_subpob)) {
-  cat("## **Evaluación de subpoblaciones locales**\n\n")
+  cat("**Evaluación de subpoblaciones locales**\n\n")
 
 tbsPob <- CMA_subpop_cons(db.sp)
 
@@ -163,6 +170,14 @@ CMA_print_titles("CONSERVACIÓN E INVESTIGACIÓN") %>% cat()
 CMA_print_titles("BIBLIOGRAFÍA") %>% cat()
 ```
 
+\newpage
+
 ```{r title.autores, echo=FALSE, include=TRUE,results='asis'}
 CMA_print_titles("AUTORES") %>% cat()
 ```
+
+```{r cont.autores, echo=FALSE,include=TRUE, results='asis'}
+CMA_parse_authors(db.sp) %>% 
+  CMA_print_authors()
+```
+

@@ -10,15 +10,17 @@ library(tictoc)
 
 species <- c(
   'Blastocerus dichotomus', 
-  'Necromys lilloi'
+  'Necromys lilloi', 
+  'Puma concolor', 
+  'Rhyncholetes raphanurus'
 )
 
 dir.create('pdfs', recursive = T, showWarnings = F)
 
 my_render <- function(x){
-  if(file.exists(paste0('pdfs/', x, '.pdf'))){
-    NULL
-  } else {
+  # if(file.exists(paste0('pdfs/', x, '.pdf'))){
+  #   NULL
+  # } else {
     xfun::Rscript_call(
       render, 
       list(
@@ -30,7 +32,7 @@ my_render <- function(x){
         clean = TRUE
       )
     )
-  }
+  # }
 }
 
 tic()
