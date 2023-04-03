@@ -3,11 +3,11 @@ date: "Fecha de creación: `r format(Sys.time(), '%d %B, %Y')`"
 always_allow_html: true
 output:
   pdf_document: 
-    toc: false
-    toc_depth: 1
+    latex_engine: xelatex
     keep_tex: true
 classoption: x11names
 header-includes:
+  \usepackage{fontspec}
   \usepackage{titling}
   \pretitle{\begin{center}
   \vspace{-3cm}\includegraphics[width=\linewidth]{images/Base_info/logo.png}\LARGE\\}
@@ -33,6 +33,8 @@ knitr::opts_chunk$set(echo = TRUE, include = FALSE)
 library(rvest)
 library(tidyverse)
 library(kableExtra)
+library(huxtable)
+options(huxtable.latex_use_fontspec = TRUE)
 source('R/funcs.R', local = knitr::knit_global())
 ```
 
@@ -55,12 +57,14 @@ commonCols <- c("sp_id", "sp_taxonomia_familia", "sp_taxonomia_orden", "title",
 )
 doi <- 'doi:https://d.1025CMAoideprueba'
 ```
+\setmainfont{Calibri}
+\setsansfont{Calibri}
+\setmonofont{Calibri}
 
 ---
 title: "*`r db.sp$title`*"
 subtitle: "**`r db.sp$sp_nombre_comun`**"   
 ---
-
 \fancyhead[R]{\textbf{`r spDoi`}}
 
 \center
