@@ -72,7 +72,10 @@ subtitle: "**`r db.sp$sp_nombre_comun`**"
 \fancyhead[R]{\textbf{`r spDoi`}}
 
 \invisiblesection{GENERALIDADES}
+<<<<<<< HEAD
 \vspace{-0.4cm}
+=======
+>>>>>>> e88e2e6dc178d3b716c81e431bc0d17dd25cb694
 
 \center
 
