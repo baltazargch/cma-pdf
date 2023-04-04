@@ -46,25 +46,25 @@ CMA_print_authors <- function(authors){
   cat('**AUTORES**')
 
   authors[[1]] %>% 
-    mutate(aff = str_c(institucion, provincia, pais, sep = ', '), 
+    mutate(aff = str_c(institucion, provincia, str_remove(pais, ',$'), sep = ', '), 
            bl = '') %>% 
     select(name, bl, aff) %>% 
     kbl(booktabs = T, format = 'latex', col.names = NULL) %>% 
     kable_styling(latex_options = c('striped', "HOLD_position"),
                   position = "center", full_width = T) %>%
-    column_spec(1, bold=TRUE) %>% 
+    column_spec(1, width = '4cm', bold=TRUE) %>% 
     column_spec(2, width = '2cm') %>% cat()
   
   if(has_collabs){
     cat('**COLABORADORES**')
     authors[[2]] %>% 
-      mutate(aff = str_c(institucion, provincia, pais, sep = ', '), 
+      mutate(aff = str_c(institucion, provincia, str_remove(pais, ',$'), sep = ', '), 
              bl = '') %>% 
       select(name, bl, aff) %>% 
       kbl(booktabs = T, format = 'latex', col.names = NULL) %>% 
       kable_styling(latex_options = c('striped', "HOLD_position"),
                     position = "center", full_width = T) %>% 
-      column_spec(1, bold=TRUE) %>% 
+      column_spec(1, width = '4cm', bold=TRUE) %>% 
       column_spec(2, width = '2cm') %>% cat()
     
   }

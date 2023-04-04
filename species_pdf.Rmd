@@ -169,8 +169,6 @@ for(x in seq_along(tbsPob)){
 
 **Categorías nacionales de conservación previas (SAREM)**
 
-
-
 \arrayrulecolor{white}
 
 ```{r title.taxo, echo=FALSE, include=TRUE,results='asis'}
@@ -183,7 +181,7 @@ CMA_print_titles("INFORMACIÓN RELEVANTE PARA LA EVALUACIÓN") %>% cat()
 ```
 
 ```{r title.rango, echo=FALSE, include=TRUE,results='asis'}
-CMA_print_titles("RANGO GEOGRÁFICO, OCURRENCIA Y ABUNDANCIA Y NOMENCLATURA") %>% cat()
+CMA_print_titles("RANGO GEOGRÁFICO, OCURRENCIA Y ABUNDANCIA") %>% cat()
 ```
 
 ```{r title.morfo, echo=FALSE, include=TRUE,results='asis'}
@@ -201,6 +199,26 @@ CMA_print_titles("CONSERVACIÓN E INVESTIGACIÓN") %>% cat()
 ```{r title.biblio, echo=FALSE, include=TRUE,results='asis'}
 CMA_print_titles("BIBLIOGRAFÍA") %>% cat()
 ```
+
+```{r biblio.cont, echo=FALSE, include=TRUE, results='asis'}
+
+cat('\\setlength{\\parindent}{30pt}')
+
+cat('\\noindent\\textbf{LITERATURA CITADA}\n\n')
+
+cit.bib <- db.sp$sp_bibliografia_citada %>% str_split('\n') %>% unlist()
+
+cat(paste(cit.bib, collapse = '\n\n'))
+cat('\n\n')
+
+cat('\\noindent\\textbf{LITERATURA DE REFERENCIA}\n\n')
+
+ref.bib <- db.sp$sp_bibliografia_de_referencia %>% str_split('\n') %>% unlist()
+cat(paste(ref.bib, collapse = '\n\n'))
+cat('\n\n')
+```
+
+\setlength{\parindent}{0pt}
 
 \newpage
 
