@@ -24,6 +24,10 @@ header-includes:
   \fancypagestyle{plain}{\pagestyle{fancy}}
   \PassOptionsToPackage{dvipsnames,svgnames*,x11names*}{xcolor}
   \definecolor{ceil}{rgb}{0.57, 0.63, 0.81}
+  \usepackage[export]{adjustbox}
+  \usepackage{wrapfig}
+  \usepackage{graphicx}
+  \usepackage{caption}
 params:
   species: 'Blastocerus dichotomus'
 ---
@@ -48,7 +52,7 @@ spDoi <- dois$DOI[ match(db.sp$title, dois$Especie) ] %>% str_trim()
 
 cat.logo <- db.sp$sp_cat_nac_conserv_2019 %>% 
   str_split(' ', simplify = TRUE) %>% .[1] %>% tolower()
-cat.logo <- paste0('images/scale-', cat.logo, '.png')
+cat.logo <- paste0('images/', cat.logo, '.png')
 
 commonCols <- c("sp_id", "sp_taxonomia_familia", "sp_taxonomia_orden", "title", 
 "sp_nombre_cientifico", "sp_nombre_comun", "sp_cat_nac_conserv_2019", 
@@ -57,43 +61,56 @@ commonCols <- c("sp_id", "sp_taxonomia_familia", "sp_taxonomia_orden", "title",
 )
 doi <- 'doi:https://d.1025CMAoideprueba'
 ```
-\setmainfont{Calibri}
-\setsansfont{Calibri}
-\setmonofont{Calibri}
+\setmainfont{Arial}
+\setsansfont{Arial}
+\setmonofont{Arial}
 
 \newcommand\invisiblesection[1]{%
   \refstepcounter{section}%
   \addcontentsline{toc}{section}{\protect\numberline{\thesection}#1}%
   \sectionmark{#1}}
   
----
-title: "*`r db.sp$title`*"
-subtitle: "**`r db.sp$sp_nombre_comun`**"   
----
+<!-- --- -->
+<!-- title: "*`r db.sp$title`*" -->
+<!-- subtitle: "**`r db.sp$sp_nombre_comun`**"    -->
+<!-- --- -->
 
 \fancyhead[R]{\textbf{`r spDoi`}}
 
 \invisiblesection{GENERALIDADES}
 \vspace{-0.4cm}
 
-\center
+```{r logo.img, echo=FALSE, include=TRUE, out.width='100%'}
+knitr::include_graphics('images/Base_info/logo.png')
+```
 
-**Autores: `r db.sp$sp_autores_de_ficha`**
+\vspace{1cm}
+
+\begin{minipage}{0.7\textwidth}
+\vspace{0.3cm}
+\fontsize{20}{24}\selectfont\textit{`r db.sp$sp_nombre_comun`}
+
+\vspace{0.3cm}
+\fontsize{30}{36}\selectfont `r db.sp$sp_nombre_comun`
+\end{minipage}
+\hspace{0.05\textwidth}
+\begin{minipage}{0.25\textwidth}
+\includegraphics[width=\textwidth]{images/vu.png}
+\end{minipage}
+
+\normalsize
+
+
 
 ```{r image, fig.pos='H', echo=FALSE, include=TRUE, fig.align='center', out.width='35%',fig.cap= paste0("Fotos por ", "Salvador Dali")}
  knitr::include_graphics(paste0('photos/', db.sp$title, '.png'))
-```
-
-```{r catlogo, fig.pos='H', echo=FALSE, include=TRUE, fig.align='center', out.width='70%'}
-knitr::include_graphics(cat.logo)
-
 ```
 
 ***
 
 \justifying
 
-**Citar como:** `r db.sp$sp_autores_de_ficha`. (2019). *`r db.sp$title`*. En: SAyDS--SAREM (eds.) Categorización 2019 de los mamíferos de Argentina según su riesgo de extinción. Lista Roja de los mamíferos de Argentina. Versión digital: <http://cma.sarem.org.ar>.
+**Citar como:** `r db.sp$sp_autores_de_ficha`. (2019). *`r db.sp$title`*. En: SAyDS--SAREM (eds.) Categorización 2019 de los mamíferos de Argentina según su riesgo de extinción. Lista Roja de los mamíferos de Argentina. `r spDoi`
 
 ***
 

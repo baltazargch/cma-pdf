@@ -51,7 +51,7 @@
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \setcounter{secnumdepth}{-\maxdimen} % remove section numbering
-\usepackage{fontspec} \usepackage{titling} \pretitle{\begin{center} \vspace{-3cm}\includegraphics[width=\linewidth]{images/Base_info/logo.png}\LARGE\\} \posttitle{\end{center}} \usepackage{float} \usepackage{fancyhdr} \usepackage{ragged2e} \usepackage{caption} \usepackage{colortbl} \captionsetup[figure]{labelformat=empty} \arrayrulecolor{white} \pagestyle{fancy} \fancyhead[L,C]{} \fancypagestyle{plain}{\pagestyle{fancy}} \PassOptionsToPackage{dvipsnames,svgnames*,x11names*}{xcolor} \definecolor{ceil}{rgb}{0.57, 0.63, 0.81}
+\usepackage{fontspec} \usepackage{titling} \pretitle{\begin{center} \vspace{-3cm}\includegraphics[width=\linewidth]{images/Base_info/logo.png}\LARGE\\} \posttitle{\end{center}} \usepackage{float} \usepackage{fancyhdr} \usepackage{ragged2e} \usepackage{caption} \usepackage{colortbl} \captionsetup[figure]{labelformat=empty} \arrayrulecolor{white} \pagestyle{fancy} \fancyhead[L,C]{} \fancypagestyle{plain}{\pagestyle{fancy}} \PassOptionsToPackage{dvipsnames,svgnames*,x11names*}{xcolor} \definecolor{ceil}{rgb}{0.57, 0.63, 0.81} \usepackage[export]{adjustbox} \usepackage{wrapfig} \usepackage{graphicx} \usepackage{caption}
 \usepackage{booktabs}
 \usepackage{longtable}
 \usepackage{array}
@@ -73,27 +73,17 @@
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same} % disable monospaced font for URLs
 \hypersetup{
-  pdftitle={Blastocerus dichotomus},
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 
-\title{\emph{Blastocerus dichotomus}}
-\usepackage{etoolbox}
-\makeatletter
-\providecommand{\subtitle}[1]{% add subtitle to \maketitle
-  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
-}
-\makeatother
-\subtitle{\textbf{Ciervo de los pantanos}}
 \author{}
 \date{\vspace{-2.5em}Fecha de creación: 03 April, 2023}
 
 \begin{document}
-\maketitle
 
-\setmainfont{Calibri}
-\setsansfont{Calibri}
-\setmonofont{Calibri}
+\setmainfont{Arial}
+\setsansfont{Arial}
+\setmonofont{Arial}
 
 \newcommand\invisiblesection[1]{%
   \refstepcounter{section}%
@@ -108,11 +98,23 @@
   \sectionmark{GENERALIDADES}
 \vspace{-0.4cm}
 
-\center
+\includegraphics[width=1\linewidth]{images/Base_info/logo}
 
-\textbf{Autores: Pereira, Javier A.; Varela, Diego; Aprile, Gustavo;
-Cirignoli, Sebastián; Orozco, María Marcela; Lartigau, Bernardo; De
-Angelo, Carlos; Giraudo, Alejandro R.}
+\vspace{1cm}
+
+\begin{minipage}{0.7\textwidth}
+\vspace{0.3cm}
+\fontsize{20}{24}\selectfont\textit{Ciervo de los pantanos}
+
+\vspace{0.3cm}
+\fontsize{30}{36}\selectfont Ciervo de los pantanos
+\end{minipage}
+\hspace{0.05\textwidth}
+\begin{minipage}{0.25\textwidth}
+\includegraphics[width=\textwidth]{images/vu.png}
+\end{minipage}
+
+\normalsize
 
 \begin{figure}[H]
 
@@ -123,8 +125,6 @@ Angelo, Carlos; Giraudo, Alejandro R.}
 \caption{Fotos por Salvador Dali}\label{fig:image}
 \end{figure}
 
-\begin{center}\includegraphics[width=0.7\linewidth]{images/scale-vu} \end{center}
-
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
 \justifying
@@ -134,7 +134,7 @@ Cirignoli, Sebastián; Orozco, María Marcela; Lartigau, Bernardo; De
 Angelo, Carlos; Giraudo, Alejandro R.. (2019). \emph{Blastocerus
 dichotomus}. En: SAyDS--SAREM (eds.) Categorización 2019 de los
 mamíferos de Argentina según su riesgo de extinción. Lista Roja de los
-mamíferos de Argentina. Versión digital: \url{http://cma.sarem.org.ar}.
+mamíferos de Argentina. \url{http://doi.org/10.31687/SaremLR.19.207}
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
