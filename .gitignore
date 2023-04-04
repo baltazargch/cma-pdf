@@ -2,5 +2,4 @@
 .Rhistory
 .RData
 .Ruserdata
-!pdf/
-!pdfs/*.pdf
+*.tex
