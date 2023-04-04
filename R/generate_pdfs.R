@@ -2,18 +2,16 @@ library(knitr)
 library(sessioninfo)
 library(rmarkdown)
 library(purrr)
-
+library(tidyverse)
 library(furrr)
+
 future::plan(multisession)
 
 library(tictoc)
 
-species <- c(
-  'Blastocerus dichotomus', 
-  'Necromys lilloi', 
-  'Puma concolor', 
-  'Rhyncholetes raphanurus'
-)
+db <- read_csv('data/especies_nativas.csv')
+species <- db %>% filter(sp_taxonomia_orden == 'Cetartiodactyla') %>% 
+  select(title) %>% unlist() %>% unname()
 
 dir.create('pdfs', recursive = T, showWarnings = F)
 

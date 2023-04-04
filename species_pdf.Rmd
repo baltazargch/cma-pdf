@@ -52,6 +52,7 @@ spDoi <- dois$DOI[ match(db.sp$title, dois$Especie) ] %>% str_trim()
 
 cat.logo <- db.sp$sp_cat_nac_conserv_2019 %>% 
   str_split(' ', simplify = TRUE) %>% .[1] %>% tolower()
+
 cat.logo <- paste0('images/', cat.logo, '.png')
 
 commonCols <- c("sp_id", "sp_taxonomia_familia", "sp_taxonomia_orden", "title", 
@@ -88,14 +89,14 @@ knitr::include_graphics('images/Base_info/logo.png')
 
 \begin{minipage}{0.7\textwidth}
 \vspace{0.3cm}
-\fontsize{20}{24}\selectfont\textit{`r db.sp$sp_nombre_comun`}
+\fontsize{20}{24}\selectfont\textit{`r db.sp$title`}
 
 \vspace{0.3cm}
 \fontsize{30}{36}\selectfont `r db.sp$sp_nombre_comun`
 \end{minipage}
 \hspace{0.05\textwidth}
 \begin{minipage}{0.25\textwidth}
-\includegraphics[width=\textwidth]{images/vu.png}
+\includegraphics[width=\textwidth]{`r cat.logo`}
 \end{minipage}
 
 \normalsize
@@ -103,7 +104,9 @@ knitr::include_graphics('images/Base_info/logo.png')
 
 
 ```{r image, fig.pos='H', echo=FALSE, include=TRUE, fig.align='center', out.width='35%',fig.cap= paste0("Fotos por ", "Salvador Dali")}
- knitr::include_graphics(paste0('photos/', db.sp$title, '.png'))
+ knitr::include_graphics('photos/Blastocerus dichotomus.png'
+   # paste0('photos/', db.sp$title, '.png')
+   )
 ```
 
 ***
@@ -116,6 +119,16 @@ knitr::include_graphics('images/Base_info/logo.png')
 
 \newpage
 
+```{r map.sp, echo=FALSE, include=TRUE, results='asis'}
+CMA_print_titles("ÁREA DE DISTRIBUCIÓN ACTUAL")%>% cat()
+```
+
+```{r map, fig.pos="H", echo=FALSE, include=TRUE, out.width="100%"}
+knitr::include_graphics(
+  paste0('maps/', db.sp$sp_taxonomia_orden, '/', 
+         gsub(' ', '_', db.sp$title), '.png')
+  )
+```
 
 ```{r title.cons, echo=FALSE, include=TRUE, results='asis'}
 CMA_print_titles("CATEGORÍAS DE CONSERVACIÓN")%>% cat()
