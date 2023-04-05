@@ -43,36 +43,48 @@ CMA_print_authors <- function(authors){
   # authors <- CMA_parse_authors(db.sp)
   has_collabs <- length(authors) > 1
   
-  cat('**AUTORES**')
+  cat('**AUTORES**\n\n')
 
   authors[[1]] %>% 
-    mutate(aff = str_c(institucion, provincia, str_remove(pais, ',$'), sep = ', '), 
+    mutate(
+      name = str_c("\\begin{justify}", name, '\\end{justify}' , sep=''),
+      aff = str_c("\\begin{justify}",
+                       str_c(institucion, provincia, 
+                             str_remove(pais, ',$'), sep = ', ')
+                       ,'\\end{justify}' , sep=' '), 
            bl = '') %>% 
-    select(name, bl, aff) %>% 
-    kbl(booktabs = T, format = 'latex', col.names = NULL) %>% 
+    select(name, bl, aff) %>%
+    kbl(booktabs = T, format = 'latex', escape = F, col.names = NULL) %>% 
     kable_styling(latex_options = c('striped', "HOLD_position"),
                   position = "center", full_width = T) %>%
     column_spec(1, width = '4cm', bold=TRUE) %>% 
-    column_spec(2, width = '2cm') %>% cat()
+    column_spec(2, width = '2cm') %>% 
+    column_spec(3, width = '9cm') %>%  cat()
   
   if(has_collabs){
-    cat('**COLABORADORES**')
+    cat('**COLABORADORES**\n\n')
     authors[[2]] %>% 
-      mutate(aff = str_c(institucion, provincia, str_remove(pais, ',$'), sep = ', '), 
+      mutate(
+        name = str_c("\\begin{justify}", name, '\\end{justify}' , sep=''),
+        aff = str_c("\\begin{justify}",
+                         str_c(institucion, provincia, 
+                               str_remove(pais, ',$'), sep = ', ')
+                         ,'\\end{justify}' , sep=''),
              bl = '') %>% 
-      select(name, bl, aff) %>% 
-      kbl(booktabs = T, format = 'latex', col.names = NULL) %>% 
+      select(name, bl, aff) %>%
+      kbl(booktabs = T, format = 'latex',escape = F, col.names = NULL) %>% 
       kable_styling(latex_options = c('striped', "HOLD_position"),
                     position = "center", full_width = T) %>% 
       column_spec(1, width = '4cm', bold=TRUE) %>% 
-      column_spec(2, width = '2cm') %>% cat()
+      column_spec(2, width = '2cm') %>% 
+      column_spec(3, width = '9cm') %>%  cat()
     
   }
   
   }
 
-#### Parse conservation ----
 
+#### Parse conservation ----
 ##### Parse subpopulation ----
 CMA_subpop_cons <- function(data){
   require(tidyverse)
@@ -125,6 +137,7 @@ CMA_subpop_cons <- function(data){
   }
 }
 
+
 #### Parse titles ----
 CMA_print_titles <- function(text){
   
@@ -136,4 +149,64 @@ CMA_print_titles <- function(text){
     kable_styling(full_width = F, latex_options = c("HOLD_position")) %>% 
     row_spec(1, bold=TRUE, color = 'white', background = "ceil") %>% 
     column_spec(1:2, width = '16cm', latex_valign='m'))
+}
+
+#### Parse taxonomy ----
+
+CMA_parse_taxonomy <- function(data){
+  # data <- db.sp
+  
+  nombCienti <- paste0('\\textit{', data$title,'}', ' ', 
+                       str_remove(data$sp_nombre_cientifico, data$title) %>% str_trim())
+  
+  dbList <- vector('list', 7)
+  dbList[[1]] <- tibble("Orden", '', data$sp_taxonomia_orden)
+  dbList[[2]] <- tibble("Familia", '', data$sp_taxonomia_familia) 
+  dbList[[3]] <- tibble("Nombre científico", "", nombCienti)
+  dbList[[4]] <- tibble("Nombre común", '', data$sp_nombre_comun) 
+
+  n <- data$sp_nombres_comunes_locales %>% str_split(',') %>% unlist()
+  dbList[[5]] <- tibble(c("Nombres comunes locales", 
+                          rep("", length(n)-1)), '', n) 
+  
+  n <- data$sp_nombres_comunes_ingles %>% str_split(',') %>% unlist()
+  dbList[[6]] <- tibble(c("Nombres comunes en inglés", 
+                          rep("", length(n)-1)), '', n)  
+  
+  n <- data$sp_nombres_comunes_portugues %>% str_split(',') %>% unlist()
+  dbList[[7]] <- tibble(c("Nombres comunes en portugués", 
+                          rep("", length(n)-1)), '', n)
+  
+  dbList <-  dbList %>% lapply(CMA_kable_output)
+  return(dbList)
+}
+
+#### General functionalities ----
+##### Make tables ----
+CMA_kable_output <- function(table, cat='taxo'){
+  if(cat == 'taxo'){
+    table %>%
+      kbl(booktabs = T, format = 'latex', escape = F, col.names = NULL) %>% 
+      kable_styling(latex_options = c('striped', "HOLD_position"),
+                    position = "center", full_width = T) %>%
+      column_spec(1, width = '6cm', bold=TRUE) %>% 
+      column_spec(2, width = '1cm')
+  }
+}
+
+##### Replace to italized species or genus text ----
+CMA_italize_binomial <- function(text, species){
+  # text <- db.sp$sp_taxonomia_comentarios
+  # species <- db.sp$title
+  
+  genus <- str_split(species, ' ', simplify = T)[1]
+  epite <- str_split(species, ' ', simplify = T)[2]
+  
+  if(str_detect(text, genus)){
+    text <- str_replace(text, genus, paste0('\\\\textit{', genus, '}'))
+  } 
+  if(str_detect(text, epite)){
+    text <- str_replace(text, epite, paste0('\\\\textit{', epite, '}'))
+  }
+  text
 }

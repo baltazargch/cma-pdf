@@ -175,6 +175,23 @@ for(x in seq_along(tbsPob)){
 CMA_print_titles("TAXONOMÍA Y NOMENCLATURA") %>% cat()
 ```
 
+```{r taxo.cont, echo=FALSE, include=TRUE, results='asis'}
+conTaxo <- CMA_parse_taxonomy(db.sp)
+for(i in conTaxo){
+  cat(i, collapse = '\\vspace{0.3cm}')
+}
+```
+
+```{r taxo.comment, echo=FALSE, include=TRUE, results='asis'}
+if(!is.na(db.sp$sp_taxonomia_comentarios)){
+  cat('**Comentarios taxonómicos**\n\n')
+  
+  cat(CMA_italize_binomial(db.sp$sp_taxonomia_comentarios, db.sp$title))
+}
+```
+
+\arrayrulecolor{white}
+
 ```{r title.eval, echo=FALSE, include=TRUE,results='asis'}
 CMA_print_titles("INFORMACIÓN RELEVANTE PARA LA EVALUACIÓN") %>% cat()
 
@@ -206,14 +223,16 @@ cat('\\setlength{\\parindent}{30pt}')
 
 cat('\\noindent\\textbf{LITERATURA CITADA}\n\n')
 
-cit.bib <- db.sp$sp_bibliografia_citada %>% str_split('\n') %>% unlist()
+cit.bib <- db.sp$sp_bibliografia_citada %>% str_split('\n') %>% unlist() %>% 
+  map_chr(., ~CMA_italize_binomial(.x, db.sp$title))
 
 cat(paste(cit.bib, collapse = '\n\n'))
 cat('\n\n')
 
 cat('\\noindent\\textbf{LITERATURA DE REFERENCIA}\n\n')
 
-ref.bib <- db.sp$sp_bibliografia_de_referencia %>% str_split('\n') %>% unlist()
+ref.bib <- db.sp$sp_bibliografia_de_referencia %>% str_split('\n') %>% unlist()%>% 
+  map_chr(., ~CMA_italize_binomial(.x, db.sp$title))
 cat(paste(ref.bib, collapse = '\n\n'))
 cat('\n\n')
 ```
