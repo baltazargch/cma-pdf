@@ -54,7 +54,7 @@ CMA_print_authors <- function(authors){
                        ,'\\end{justify}' , sep=' '), 
            bl = '') %>% 
     select(name, bl, aff) %>%
-    kbl(booktabs = T, format = 'latex', escape = F, col.names = NULL) %>% 
+    kbl(booktabs = T, format = 'latex', escape = F, longtable = T, col.names = NULL) %>% 
     kable_styling(latex_options = c('striped', "HOLD_position"),
                   position = "center", full_width = T) %>%
     column_spec(1, width = '4cm', bold=TRUE) %>% 
@@ -72,7 +72,7 @@ CMA_print_authors <- function(authors){
                          ,'\\end{justify}' , sep=''),
              bl = '') %>% 
       select(name, bl, aff) %>%
-      kbl(booktabs = T, format = 'latex',escape = F, col.names = NULL) %>% 
+      kbl(booktabs = T, format = 'latex',escape = F, longtable = T, col.names = NULL) %>% 
       kable_styling(latex_options = c('striped', "HOLD_position"),
                     position = "center", full_width = T) %>% 
       column_spec(1, width = '4cm', bold=TRUE) %>% 
@@ -137,6 +137,30 @@ CMA_subpop_cons <- function(data){
   }
 }
 
+##### Parse neighbors countries ----
+
+CMA_neighbor_countries <- function(db){
+  db <- db %>% select(group_sp_eval_paises_vecinos) %>% unlist()
+  db <- db %>% 
+    str_split('\n;', simplify = T) %>% 
+    str_remove('\n') %>% 
+    map(~str_split(.x, ',', simplify = T) %>%  str_trim()) %>% 
+    do.call(rbind, .) %>% as.data.frame() %>% 
+    select(País=1, Categoría=2, Cita=3) %>% 
+    mutate(Año = as.numeric(str_remove_all(Cita, '[^0-9]'))) %>% 
+    select(País, Categoría, Año, Cita) %>% 
+    arrange(-Año) %>% 
+    mutate(Año = as.character(Año)) %>% 
+    split(., .$País) 
+  
+  db %>% map(~.x %>% remove_rownames %>% 
+               kbl(booktabs = T, format = 'latex') %>% 
+               row_spec(0,bold=TRUE, 
+                        extra_latex_after = "\\arrayrulecolor{white}") %>% 
+               kable_styling(latex_options = c('striped', "HOLD_position"),
+                             position = "center", full_width = T))
+   
+}
 
 #### Parse titles ----
 CMA_print_titles <- function(text){
@@ -191,6 +215,13 @@ CMA_kable_output <- function(table, cat='taxo'){
                     position = "center", full_width = T) %>%
       column_spec(1, width = '6cm', bold=TRUE) %>% 
       column_spec(2, width = '1cm')
+  } else if(cat=='other'){
+    table %>%
+      kbl(booktabs = T, format = 'latex',linesep = "", escape = F, col.names = NULL) %>% 
+      kable_styling(latex_options = c('striped', "HOLD_position"),
+                    position = "center", full_width = T) %>%
+      column_spec(1, width = '8cm', bold=TRUE) %>% 
+      column_spec(2, width = '0.5cm')
   }
 }
 

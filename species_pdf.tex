@@ -51,7 +51,7 @@
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \setcounter{secnumdepth}{-\maxdimen} % remove section numbering
-\usepackage{fontspec} \usepackage{titling} \pretitle{\begin{center} \vspace{-3cm}\includegraphics[width=\linewidth]{images/Base_info/logo.png}\LARGE\\} \posttitle{\end{center}} \usepackage{float} \usepackage{fancyhdr} \usepackage{ragged2e} \usepackage{caption} \usepackage{colortbl} \captionsetup[figure]{labelformat=empty} \arrayrulecolor{white} \pagestyle{fancy} \fancyhead[L,C]{} \fancypagestyle{plain}{\pagestyle{fancy}} \PassOptionsToPackage{dvipsnames,svgnames*,x11names*}{xcolor} \definecolor{ceil}{rgb}{0.57, 0.63, 0.81} \usepackage[export]{adjustbox} \usepackage{wrapfig} \usepackage{graphicx} \usepackage{caption}
+\usepackage{fontspec} \usepackage{titling} \usepackage{framed} \pretitle{\begin{center} \vspace{-3cm}\includegraphics[width=\linewidth]{images/Base_info/logo.png}\LARGE\\} \posttitle{\end{center}} \usepackage{float} \usepackage{fancyhdr} \usepackage{ragged2e} \usepackage{caption} \usepackage{colortbl} \captionsetup[figure]{labelformat=empty} \arrayrulecolor{white} \pagestyle{fancy} \fancyhead[L,C]{} \fancypagestyle{plain}{\pagestyle{fancy}} \PassOptionsToPackage{dvipsnames,svgnames*,x11names*}{xcolor} \definecolor{ceil}{rgb}{0.57, 0.63, 0.81} \usepackage[export]{adjustbox} \usepackage{wrapfig} \usepackage{graphicx} \usepackage{caption}
 \usepackage{booktabs}
 \usepackage{longtable}
 \usepackage{array}
@@ -77,9 +77,13 @@
   pdfcreator={LaTeX via pandoc}}
 
 \author{}
-\date{\vspace{-2.5em}Fecha de creación: 04 April, 2023}
+\date{\vspace{-2.5em}Fecha de creación: 06 April, 2023}
 
 \begin{document}
+
+\renewenvironment{framed}[1][\hsize]
+  {\MakeFramed{\hsize#1\advance\hsize-\width \FrameRestore}}%
+  {\endMakeFramed}
 
 \setmainfont{Arial}
 \setsansfont{Arial}
@@ -351,6 +355,76 @@ EP (En Peligro de Extinción)
 
 \textbf{Categorías nacionales de conservación previas (SAREM)}
 
+\begin{tabu} to \linewidth {>{}l>{\raggedright}X>{\raggedright}X}
+\toprule
+\textbf{\cellcolor{gray!6}{2012}} & \cellcolor{gray!6}{VU (Vulnerable)} & \cellcolor{gray!6}{A2}\\
+\bottomrule
+\end{tabu}
+
+\begin{tabu} to \linewidth {>{}l>{\raggedright}X>{\raggedright}X}
+\toprule
+\textbf{\cellcolor{gray!6}{2000}} & \cellcolor{gray!6}{EN (En Peligro)} & \cellcolor{gray!6}{A1cd+2cde; B1+2; C1}\\
+\bottomrule
+\end{tabu}
+
+\begin{tabu} to \linewidth {>{}l>{\raggedright}X>{\raggedright}X}
+\toprule
+\textbf{\cellcolor{gray!6}{1997}} & \cellcolor{gray!6}{EN (En Peligro)} & \cellcolor{gray!6}{A1cd+2cde; B1+2; C1}\\
+\bottomrule
+\end{tabu}
+
+\begin{tabu} to \linewidth {>{}l>{\raggedright}X}
+\toprule
+\textbf{\cellcolor{gray!6}{Homologación categoría 1997}} & \cellcolor{gray!6}{EN (En Peligro)}\\
+\bottomrule
+\end{tabu}
+
+\textbf{Categorías de conservación actuales en países vecinos}
+
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X}
+\toprule
+\textbf{País} & \textbf{Categoría} & \textbf{Año} & \textbf{Cita}\\
+\arrayrulecolor{white}
+\midrule
+\cellcolor{gray!6}{Bolivia} & \cellcolor{gray!6}{VU (Vulnerable)} & \cellcolor{gray!6}{2009} & \cellcolor{gray!6}{Aguirre et al. (2009)}\\
+\bottomrule
+\end{tabu}
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X}
+\toprule
+\textbf{País} & \textbf{Categoría} & \textbf{Año} & \textbf{Cita}\\
+\arrayrulecolor{white}
+\midrule
+\cellcolor{gray!6}{Brasil} & \cellcolor{gray!6}{VU (Vulnerable)} & \cellcolor{gray!6}{2018} & \cellcolor{gray!6}{ICMBio/MMA (2018)}\\
+\bottomrule
+\end{tabu}
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X}
+\toprule
+\textbf{País} & \textbf{Categoría} & \textbf{Año} & \textbf{Cita}\\
+\arrayrulecolor{white}
+\midrule
+\cellcolor{gray!6}{Paraguay} & \cellcolor{gray!6}{VU (Vulnerable)} & \cellcolor{gray!6}{2017} & \cellcolor{gray!6}{Cartes et al. (2017)}\\
+\bottomrule
+\end{tabu}
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X}
+\toprule
+\textbf{País} & \textbf{Categoría} & \textbf{Año} & \textbf{Cita}\\
+\arrayrulecolor{white}
+\midrule
+\cellcolor{gray!6}{Uruguay} & \cellcolor{gray!6}{Extinta} & \cellcolor{gray!6}{2013} & \cellcolor{gray!6}{González et al. (2013)}\\
+\bottomrule
+\end{tabu}
+
+\textbf{Evaluación global UICN}
+
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedright}X>{\raggedright}X}
+\toprule
+\textbf{Año de evaluación} & \textbf{Categoría} & \textbf{Criterios y subcriterios}\\
+\arrayrulecolor{white}
+\midrule
+\cellcolor{gray!6}{2016} & \cellcolor{gray!6}{VU (Vulnerable)} & \cellcolor{gray!6}{A4 cde}\\
+\bottomrule
+\end{tabu}
+
 \arrayrulecolor{white}
 
 %
@@ -441,6 +515,66 @@ subespecies.
 \end{tabular}
 \end{table}
 
+\textbf{Presencia en el territorio nacional:} residente
+
+\textbf{Comentarios sobre la distribución actual e histórica}
+
+Antiguamente extendida por buena parte del área subtropical y templada
+húmeda del país, hoy se encuentra reducida a poblaciones aisladas (la
+mayoría de ellas pequeñas) en las zonas de esteros y lagunas asociadas a
+las cuencas de los ríos Paraná y Paraguay: este de Formosa, centro,
+norte, noreste y oeste de Corrientes, extremo noreste de Santa Fe,
+sudeste de Chaco, y el bajo delta bonaerense y entrerriano (incluyendo
+el extremo sur del río Uruguay). Existen registros históricos para la
+provincia de Salta, en inmediaciones del río Pilcomayo y áreas inundadas
+en la frontera con Bolivia y Paraguay, y en el área de influencia del
+río Bermejo (Díaz et al.~2000). También existen registros históricos
+para la provincia de Misiones, en los departamentos de Apóstoles, San
+Ignacio y Capital (Massoia et al.~2006). Es probable que la especie
+estuviera extendida en todo el Chaco oriental, existiendo registros en
+sitios arqueológicos de la región (Santini \& Plischuk 2006; Santini
+2009).
+
+\begin{tabu} to \linewidth {>{\raggedright\arraybackslash}p{8cm}>{\raggedright\arraybackslash}p{0.5cm}>{\raggedright}X}
+\toprule
+\textbf{\cellcolor{gray!6}{Presencia confirmada por provincia:}} & \cellcolor{gray!6}{} & \cellcolor{gray!6}{Buenos Aires}\\
+\textbf{} &  & Chaco\\
+\textbf{\cellcolor{gray!6}{}} & \cellcolor{gray!6}{} & \cellcolor{gray!6}{Corrientes}\\
+\textbf{} &  & Entre Ríos\\
+\textbf{\cellcolor{gray!6}{}} & \cellcolor{gray!6}{} & \cellcolor{gray!6}{Formosa}\\
+\textbf{} &  & Santa Fe\\
+\bottomrule
+\end{tabu}
+
+\begin{tabu} to \linewidth {>{\raggedright\arraybackslash}p{8cm}>{\raggedright\arraybackslash}p{0.5cm}>{\raggedright}X}
+\toprule
+\textbf{\cellcolor{gray!6}{Presencia en ecorregiones de Argentina:}} & \cellcolor{gray!6}{} & \cellcolor{gray!6}{Chaco Húmedo}\\
+\textbf{} &  & Esteros del Iberá\\
+\textbf{\cellcolor{gray!6}{}} & \cellcolor{gray!6}{} & \cellcolor{gray!6}{Delta e Islas del Paraná}\\
+\textbf{} &  & Espinal\\
+\textbf{\cellcolor{gray!6}{}} & \cellcolor{gray!6}{} & \cellcolor{gray!6}{Campos y Malezales}\\
+\bottomrule
+\end{tabu}
+
+\begin{tabu} to \linewidth {>{\raggedright\arraybackslash}p{8cm}>{\raggedright\arraybackslash}p{0.5cm}>{\raggedright}X}
+\toprule
+\textbf{\cellcolor{gray!6}{Presencia en ecorregiones globales terrestres:}} & \cellcolor{gray!6}{} & \cellcolor{gray!6}{ID571 – Chaco Húmedo}\\
+\textbf{} &  & ID575 – Espinal\\
+\textbf{\cellcolor{gray!6}{}} & \cellcolor{gray!6}{} & \cellcolor{gray!6}{ID585 – Sabana Inundada del Paraná}\\
+\textbf{} &  & ID586 – Sabanas Mesopotámicas del Cono Sur\\
+\bottomrule
+\end{tabu}
+
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedright}X>{\raggedright}X}
+\toprule
+\textbf{Patrón de distribución} & \textbf{Cantidad de localidades} & \textbf{Rango altitudinal}\\
+\midrule
+\cellcolor{gray!6}{discontinuo/fragmentado} & \cellcolor{gray!6}{12} & \cellcolor{gray!6}{0-100 msnm}\\
+\bottomrule
+\end{tabu}
+
+\arrayrulecolor{white}
+
 %
   \refstepcounter{section}%
   \addcontentsline{toc}{section}{\protect\numberline{\thesection}DATOS MORFOMÉTRICOS}%
@@ -453,6 +587,15 @@ subespecies.
 \bottomrule
 \end{tabular}
 \end{table}
+
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedright}X>{\raggedright}X}
+\toprule
+\textbf{Peso} & \textbf{Peso de la hembra} & \textbf{Peso del macho}\\
+\midrule
+\cellcolor{gray!6}{80-140 kg} & \cellcolor{gray!6}{80-100 kg} & \cellcolor{gray!6}{90-140 kg}\\
+\bottomrule
+\end{tabu}
+\arrayrulecolor{white}
 
 %
   \refstepcounter{section}%
@@ -480,6 +623,115 @@ subespecies.
 \end{tabular}
 \end{table}
 
+\textbf{La especie ¿está presente en áreas naturales protegidas?:} sí
+
+\textbf{Presencia de la especie en áreas naturales protegidas}
+
+Parque Nacional Mburucuyá (Corrientes), Parque Nacional (en formación)
+Iberá (Corrientes), Parque Nacional Ciervo de los Pantanos (ex Reserva
+Natural Otamendi; Buenos Aires), Parque y Reserva Natural Provincial
+Iberá (Corrientes), Reserva de Biosfera Delta del Paraná (Buenos Aires),
+Sitio RAMSAR Humedales Chaco (Chaco), Sitio RAMSAR Jaaukanigás (Santa
+Fe), Reserva Natural Rincón de Santa María (Corrientes), Reserva Privada
+El Bagual (Formosa) y Reserva Privada Estancia Guaycolec (Formosa).
+
+Extinta en los parques nacionales Pre Delta (Entre Ríos), Chaco (Chaco)
+y Río Pilcomayo (Formosa) (Heinonen Fortabat \& Chebez 1997; SIB 2018).
+
+\textbf{Marco legal de la especie}
+
+Especie declarada ``Monumento Natural Provincial'' en las provincias de
+Corrientes (Decreto 1.555/1992), Chaco (Ley 4.306/1996), Buenos Aires
+(Ley 12.209/1998) y Entre Ríos (Res. DGRN 852/2015). Declarada ``En
+peligro de extinción'' mediante Res. 1.030/04 de la Secretaría de
+Ambiente de la Nación e incluida en el Apéndice I de la Convención
+CITES.
+
+\textbf{Planes de acción y/o proyectos de conservación o manejo
+actuales}
+
+En 1995 se puso en marcha el ``Proyecto Ciervo de los Pantanos'' de la
+Asociación para la Conservación y el Estudio de la Naturaleza
+(PCP/ACEN), focalizado en estudiar la distribución, abundancia relativa
+y amenazas del ciervo en el Delta del Paraná (Varela 2003; D'Alessio et
+al.~2006; D'Alessio 2016; D'Alessio et al., in litt). Desde ese proyecto
+se impulsaron esfuerzos interinstitucionales para su conservación in
+situ que finalizaron con la creación de la Reserva de Biosfera ``Delta
+del Paraná''. El PCP/ACEN trabajó en el área hasta 2012, pero varias de
+sus líneas de trabajo fueron luego continuadas por el ``Proyecto
+Pantano'', una iniciativa multisectorial (i.e., CONICET, INTA, ACEN,
+productores forestales) lanzada en 2015 (Pereira et al.~2018b). Este
+proyecto apunta a conocer la ecología espacial, ecología nutricional,
+genética poblacional y evolución de la distribución y abundancia del
+ciervo de los pantanos en el Delta, complementados con actividades de
+educación ambiental, comunicación y gestión para la conservación. Entre
+estas últimas, cabe destacar el impulso que se dio a la creación, en
+2018, del Parque Nacional Ciervo de los Pantanos (Buenos Aires).
+
+En el año 2007 empezaron a investigarse eventos de mortalidad de la
+especie en Corrientes (Orozco et al.~2013, 2018b). Para 2016 se logró
+consolidar un proyecto en el que contribuyen investigadores del CONICET,
+INTA, UBA y SENASA, abocado al estudio sanitario de la especie con foco
+en los eventos de mortalidad. Como parte de la iniciativa se desarrolló
+una red de alerta temprana de casos (Orozco et al.~2018a, 2018b), con
+participación del personal de áreas protegidas nacionales y
+provinciales.
+
+\textbf{Experiencias de reintroducción o erradicación:} sí
+
+Existió un proyecto por parte de la APN (1997) para reintroducir la
+especie en el Parque Nacional Pilcomayo (Formosa) a partir de individuos
+obtenidos durante la operación de rescate de fauna en Porto Primavera,
+Brasil. Sin embargo, el mismo fue desestimado luego de constatarse que
+los individuos candidatos a translocar mostraban altos índices de
+positividad serológica para agentes infecto-contagiosos (D'Alessio et
+al., in litt). En la actualidad, dos iniciativas buscan reintroducir al
+ciervo de los pantanos en áreas protegidas nacionales: Parque Nacional
+Pre Delta (Alonso J., com. pers. 2017) y Parque Nacional El Impenetrable
+(Di Martino S., com. pers., 2018).
+
+Por otro lado, la provincia de Buenos Aires creó en 2008 el Comité
+Científico-Técnico Ciervo de los Pantanos, liderado desde el OPDS e
+integrado por diversas instituciones (CONICET, INTA, ACEN, Fundación
+Temaiken, Administración de Parques Nacionales, Fundación Azara, Arauco
+S.A., Municipio de San Fernando, entre otras) cuyo objetivo es el
+abordaje de las problemáticas de conservación que enfrenta la especie en
+la región, y cuyas acciones están relacionadas con el~ rescate,
+rehabilitación y reinserción al delta de individuos hallados heridos,
+enfermos o víctimas de tenencia ilegal (Vázquez et al.~2018).
+
+\textbf{Rol ecológico / servicios ecosistémicos}
+
+La especie puede considerarse como un buen indicador del estado de
+conservación de los humedales a escala de paisaje, ya que es sensible a
+la caza furtiva y dependiente de ecosistemas particulares, como los
+embalsados.
+
+Si bien en otras áreas de su distribución en Sudamérica, la especie
+puede ser considerada presa de grandes depredadores como el yaguareté,
+en las áreas de distribución actual, su principal depredador natural ha
+desaparecido.
+
+\textbf{Necesidades de investigación y conocimiento}
+
+Es necesario contar con un plan nacional de manejo de la especie,
+iniciativa que aún no pudo ser concretada pese a los esfuerzos iniciados
+durante el ``Primer Taller Nacional para el Diagnóstico del Estado de
+Situación del Ciervo de los Pantanos'', realizado en agosto de 2009 en
+Santa Fe. El documento final resultante de ese taller contiene un
+análisis detallado de las necesidades de investigación y acciones de
+manejo para cada subpoblación. Como proyectos prioritarios requeridos en
+la actualidad, pueden destacarse la necesidad de obtener líneas de base
+(p.e., abundancia poblacional, estructura demográfica, sanidad) para
+diseñar programas de monitoreo para todas las subpoblaciones; el
+modelado de los efectos del incremento en la frecuencia de inundaciones
+extraordinarias como insumo para proponer estrategias de adaptación al
+cambio global; el monitoreo de la salud de las poblaciones a la luz del
+avance de la ganadería y la degradación de los humedales; y la obtención
+de información demográfica para modelar la dinámica de las poblaciones
+(fundamentalmente Iberá y Delta del Paraná) en función de los eventos
+recurrentes de mortalidad masiva y el cambio global.
+
 %
   \refstepcounter{section}%
   \addcontentsline{toc}{section}{\protect\numberline{\thesection}BIBLIOGRAFÍA}%
@@ -493,7 +745,7 @@ subespecies.
 \end{tabular}
 \end{table}
 
-\setlength{\parindent}{30pt}\noindent\textbf{LITERATURA CITADA}
+\setlength{\parindent}{20pt}\noindent\textbf{LITERATURA CITADA}
 
 AGUIRRE, L. F., R. AGUAYO, J. BALDERRAMA, C. CORTEZ, \& T. TARIFA.
 (EDS). 2009. Libro rojo de la fauna silvestre de vertebrados de Bolivia.
@@ -828,8 +1080,6 @@ Universidade Federal do Mato Grosso, Mato Grosso, Brasil.
 
 \setlength{\parindent}{0pt}
 
-\newpage
-
 %
   \refstepcounter{section}%
   \addcontentsline{toc}{section}{\protect\numberline{\thesection}AUTORES}%
@@ -845,7 +1095,7 @@ Universidade Federal do Mato Grosso, Mato Grosso, Brasil.
 
 \textbf{AUTORES}
 
-\begin{tabu} to \linewidth {>{\raggedright\arraybackslash}p{4cm}>{\raggedright\arraybackslash}p{2cm}>{\raggedright\arraybackslash}p{9cm}}
+\begin{longtabu} to \linewidth {>{\raggedright\arraybackslash}p{4cm}>{\raggedright\arraybackslash}p{2cm}>{\raggedright\arraybackslash}p{9cm}}
 \toprule
 \textbf{\cellcolor{gray!6}{\begin{justify}Aprile, Gustavo\end{justify}}} & \cellcolor{gray!6}{} & \cellcolor{gray!6}{\begin{justify} Asociación para la Conservación y Estudio de la Naturaleza (ACEN), Buenos Aires, Argentina \end{justify}}\\
 \textbf{\begin{justify}Cirignoli, Sebastián\end{justify}} &  & \begin{justify} Centro de Investigaciones del Bosque Atlántico (CeIBA), Puerto Iguazú, Misiones, Argentina \end{justify}\\
@@ -857,14 +1107,27 @@ Universidade Federal do Mato Grosso, Mato Grosso, Brasil.
 \textbf{\cellcolor{gray!6}{\begin{justify}Pereira, Javier A.\end{justify}}} & \cellcolor{gray!6}{} & \cellcolor{gray!6}{\begin{justify} División Mastozoología, Museo Argentino de Ciencias Naturales Bernardino Rivadavia (MACN-CONICET), CABA, Argentina \end{justify}}\\
 \textbf{\begin{justify}Varela, Diego\end{justify}} &  & \begin{justify} Instituto de Biología Subtropical (IBS), CONICET-Universidad Nacional de Misiones y Centro de Investigaciones del Bosque Atlántico (CeIBA), Puerto Iguazú, Misiones, Argentina \end{justify}\\
 \bottomrule
-\end{tabu}
+\end{longtabu}
 
 \textbf{COLABORADORES}
 
-\begin{tabu} to \linewidth {>{\raggedright\arraybackslash}p{4cm}>{\raggedright\arraybackslash}p{2cm}>{\raggedright\arraybackslash}p{9cm}}
+\begin{longtabu} to \linewidth {>{\raggedright\arraybackslash}p{4cm}>{\raggedright\arraybackslash}p{2cm}>{\raggedright\arraybackslash}p{9cm}}
 \toprule
 \textbf{\cellcolor{gray!6}{\begin{justify}Muzzachiodi, Norberto\end{justify}}} & \cellcolor{gray!6}{} & \cellcolor{gray!6}{\begin{justify}Dirección de Vinculación y Transferencia Tecnológica, Universidad Autónoma de Entre Ríos, Paraná, Entre Ríos, Argentina\end{justify}}\\
 \bottomrule
-\end{tabu}
+\end{longtabu}
+
+\begin{Center}
+\bgroup \MakeFramed{\hsize 0.7\textwidth\advance\hsize-\width \FrameRestore}
+  \begin{minipage}{\linewidth}
+    \Centering
+    \small
+  Este documento fue generado automáticamente\\
+  Fecha de compilación: 2023-04-06 16:14:31\\
+  La reproducción sin cambios de este documento está permitida\\
+  Si encuentra errores por favor escibra a comisioncma@sarem.com\\
+  \end{minipage}
+\endMakeFramed\egroup 
+\end{Center}
 
 \end{document}
