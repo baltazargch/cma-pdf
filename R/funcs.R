@@ -44,15 +44,15 @@ CMA_print_authors <- function(authors){
   has_collabs <- length(authors) > 1
   
   cat('**AUTORES**\n\n')
-
+  
   authors[[1]] %>% 
     mutate(
       name = str_c("\\begin{justify}", name, '\\end{justify}' , sep=''),
       aff = str_c("\\begin{justify}",
-                       str_c(institucion, provincia, 
-                             str_remove(pais, ',$'), sep = ', ')
-                       ,'\\end{justify}' , sep=' '), 
-           bl = '') %>% 
+                  str_c(institucion, provincia, 
+                        str_remove(pais, ',$'), sep = ', ')
+                  ,'\\end{justify}' , sep=' '), 
+      bl = '') %>% 
     select(name, bl, aff) %>%
     kbl(booktabs = T, format = 'latex', escape = F, longtable = T, col.names = NULL) %>% 
     kable_styling(latex_options = c('striped', "HOLD_position"),
@@ -67,10 +67,10 @@ CMA_print_authors <- function(authors){
       mutate(
         name = str_c("\\begin{justify}", name, '\\end{justify}' , sep=''),
         aff = str_c("\\begin{justify}",
-                         str_c(institucion, provincia, 
-                               str_remove(pais, ',$'), sep = ', ')
-                         ,'\\end{justify}' , sep=''),
-             bl = '') %>% 
+                    str_c(institucion, provincia, 
+                          str_remove(pais, ',$'), sep = ', ')
+                    ,'\\end{justify}' , sep=''),
+        bl = '') %>% 
       select(name, bl, aff) %>%
       kbl(booktabs = T, format = 'latex',escape = F, longtable = T, col.names = NULL) %>% 
       kable_styling(latex_options = c('striped', "HOLD_position"),
@@ -81,7 +81,7 @@ CMA_print_authors <- function(authors){
     
   }
   
-  }
+}
 
 
 #### Parse conservation ----
@@ -97,43 +97,43 @@ CMA_subpop_cons <- function(data){
   if(is.na(data$group_sp_eval_subpob)){
     return(NULL)
   } else {
-  spListPop <- data$group_sp_eval_subpob %>% 
-    str_split('\n') %>% 
-    unlist() %>% 
-    str_trim()
-  
-  spListPop <- spListPop[ !spListPop %in%  c("", ",")]
-  
-  nSubPob <- sum(str_detect(spListPop, 'Subpoblación'))
-  
-  ies <- data.frame(
-    from = which(str_detect(spListPop, 'Subpoblación')),
-    to = c( (which(str_detect(spListPop, 'Subpoblación'))[-1]) -1,
-            length(spListPop))
-  )
-  
-  stopifnot(nrow(ies) == nSubPob)
-  
-  dfNames <- c('Subpoblación', 'Categoría', 'Criterios y subcriterios')
-  tbsPob <- vector('list', nSubPob)
-  for(i in 1:nSubPob){
-    # i=1
-    items <- c(ies$from[i]+c(1,3,5))
+    spListPop <- data$group_sp_eval_subpob %>% 
+      str_split('\n') %>% 
+      unlist() %>% 
+      str_trim()
     
-    tbsPob[[i]][[1]] <-  data.frame( t(spListPop[ items ]))
-    colnames(tbsPob[[i]][[1]]) <- dfNames
+    spListPop <- spListPop[ !spListPop %in%  c("", ",")]
     
-    tbsPob[[i]][[1]] <-  tbsPob[[i]][[1]] %>% 
-      kbl(booktabs = T, format = 'latex') %>% 
-      row_spec(0,bold=TRUE, extra_latex_after = "\\arrayrulecolor{white}") %>% 
-      kable_styling(latex_options = c('striped', "HOLD_position"),
-                    position = "center", full_width = T)
-    tbsPob[[i]][[2]] <- paste("**Justificación**\n\n",
-                              paste(
-                                spListPop[ (max(items)+2):ies$to[i] ],
-                                collapse = '\n\n'))
-  }
-  return(tbsPob)
+    nSubPob <- sum(str_detect(spListPop, 'Subpoblación'))
+    
+    ies <- data.frame(
+      from = which(str_detect(spListPop, 'Subpoblación')),
+      to = c( (which(str_detect(spListPop, 'Subpoblación'))[-1]) -1,
+              length(spListPop))
+    )
+    
+    stopifnot(nrow(ies) == nSubPob)
+    
+    dfNames <- c('Subpoblación', 'Categoría', 'Criterios y subcriterios')
+    tbsPob <- vector('list', nSubPob)
+    for(i in 1:nSubPob){
+      # i=1
+      items <- c(ies$from[i]+c(1,3,5))
+      
+      tbsPob[[i]][[1]] <-  data.frame( t(spListPop[ items ]))
+      colnames(tbsPob[[i]][[1]]) <- dfNames
+      
+      tbsPob[[i]][[1]] <-  tbsPob[[i]][[1]] %>% 
+        kbl(booktabs = T, format = 'latex') %>% 
+        row_spec(0,bold=TRUE, extra_latex_after = "\\arrayrulecolor{white}") %>% 
+        kable_styling(latex_options = c('striped', "HOLD_position"),
+                      position = "center", full_width = T)
+      tbsPob[[i]][[2]] <- paste("**Justificación**\n\n",
+                                paste(
+                                  spListPop[ (max(items)+2):ies$to[i] ],
+                                  collapse = '\n\n'))
+    }
+    return(tbsPob)
   }
 }
 
@@ -159,20 +159,20 @@ CMA_neighbor_countries <- function(db){
                         extra_latex_after = "\\arrayrulecolor{white}") %>% 
                kable_styling(latex_options = c('striped', "HOLD_position"),
                              position = "center", full_width = T))
-   
+  
 }
 
 #### Parse titles ----
 CMA_print_titles <- function(text){
   
- paste0("\\invisiblesection{", text, "}\n", 
-  tibble(
-    paste0( "\\rule{0pt}{14pt}", text)
-  ) %>% 
-    kbl(booktabs = T, col.names = NULL,escape = F) %>% 
-    kable_styling(full_width = F, latex_options = c("HOLD_position")) %>% 
-    row_spec(1, bold=TRUE, color = 'white', background = "ceil") %>% 
-    column_spec(1:2, width = '16cm', latex_valign='m'))
+  paste0("\\invisiblesection{", text, "}\n", 
+         tibble(
+           paste0( "\\rule{0pt}{14pt}", text)
+         ) %>% 
+           kbl(booktabs = T, col.names = NULL,escape = F) %>% 
+           kable_styling(full_width = F, latex_options = c("HOLD_position")) %>% 
+           row_spec(1, bold=TRUE, color = 'white', background = "ceil") %>% 
+           column_spec(1:2, width = '16cm', latex_valign='m'))
 }
 
 #### Parse taxonomy ----
@@ -188,7 +188,7 @@ CMA_parse_taxonomy <- function(data){
   dbList[[2]] <- tibble("Familia", '', data$sp_taxonomia_familia) 
   dbList[[3]] <- tibble("Nombre científico", "", nombCienti)
   dbList[[4]] <- tibble("Nombre común", '', data$sp_nombre_comun) 
-
+  
   n <- data$sp_nombres_comunes_locales %>% str_split(',') %>% unlist()
   dbList[[5]] <- tibble(c("Nombres comunes locales", 
                           rep("", length(n)-1)), '', n) 
@@ -205,6 +205,57 @@ CMA_parse_taxonomy <- function(data){
   return(dbList)
 }
 
+#### Parse amenazadas ----
+
+CMA_parse_threats <- function(data){
+  # data <- db.sp
+  cols <- c("Pérdida de hábitat", 
+            "Degradación de hábitat", 
+            "Fragmentación de poblaciones", 
+            "Contaminación", 
+            "Impacto de especies exóticas", 
+            "Depredación por perros", 
+            "Urbanizaciones / infraestructura energética", 
+            "Impactos asociados al turismo", 
+            "Caza directa ilegal", 
+            "Caza directa legal",
+            "Captura de ejemplares", 
+            "Reducción de presas",
+            "Atropellamiento en rutas", 
+            "Otros impactos asociados al transporte",
+            "Incendios", 
+            "Inundaciones", 
+            "Enfermedades",
+            "Otros impactos indirectos asociados a la especie humana"
+  )
+  
+  data <- data %>% select(contains("amenaza")) %>% select(!sp_amenazas_comentarios) %>% 
+    mutate(across(everything(.), ~as.character(.x))) %>% 
+    pivot_longer(
+      cols = everything(.)
+    ) %>% 
+    mutate(namesNew = cols) %>% 
+    filter(!is.na(value)) %>% 
+    mutate(value=as.numeric(value), bl='') %>% arrange(value) %>% 
+    select(namesNew, bl, value)
+  
+  if((nrow(data) %% 1) == 0){
+    l <- (nrow(data)/2) + 0.5
+    x = data$namesNew[ 1:l]
+    y = data$value[ 1:l] 
+    x1 <- c(data$namesNew[ (l+1):nrow(data)], '')
+    y1 = c(data$value[ (l+1):nrow(data)], '')
+  } else {
+    l <- (nrow(data)/2)
+    x = data$namesNew[ 1:l]
+    y = data$value[ 1:l]
+    x1 <- data$namesNew[ (l+1):nrow(data)]
+    y1 = data$value[ (l+1):nrow(data)]
+  }
+  tibble(x, y, x1, y1) %>% 
+    mutate(across(x:y1, ~as.character(.x))) %>% 
+  CMA_kable_output(cat = 'threats')
+}
 #### General functionalities ----
 ##### Make tables ----
 CMA_kable_output <- function(table, cat='taxo'){
@@ -222,6 +273,13 @@ CMA_kable_output <- function(table, cat='taxo'){
                     position = "center", full_width = T) %>%
       column_spec(1, width = '8cm', bold=TRUE) %>% 
       column_spec(2, width = '0.5cm')
+  } else if(cat=='threats'){
+    table %>%
+      kbl(booktabs = T, format = 'latex',linesep = "", escape = F, col.names = NULL) %>% 
+      kable_styling(latex_options = c('striped', "HOLD_position"),
+                    position = "center", full_width = T) %>%
+      column_spec(1,  bold=TRUE) %>% 
+      column_spec(3,  bold=TRUE)
   }
 }
 

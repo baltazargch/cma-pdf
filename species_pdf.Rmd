@@ -130,7 +130,8 @@ CMA_print_titles("ÁREA DE DISTRIBUCIÓN ACTUAL")%>% cat()
 
 ```{r map, fig.pos="H", echo=FALSE, include=TRUE, out.width="100%"}
 knitr::include_graphics(
-  paste0('maps/', db.sp$sp_taxonomia_orden, '/', 
+  # 'maps/Cetartiodactyla/Balaenoptera_acutorostrata.png')
+  paste0('maps/', db.sp$sp_taxonomia_orden, '/',
          gsub(' ', '_', db.sp$title), '.png')
   )
 ```
@@ -327,6 +328,15 @@ CMA_print_titles("RASGOS ETO-ECOLÓGICOS") %>% cat()
 CMA_print_titles("CONSERVACIÓN E INVESTIGACIÓN") %>% cat()
 ```
 
+
+```{r cont.inves,echo=FALSE, include=TRUE,results='asis'}
+cat('**Amenazas por grado: de 1 (menor) a 5 (mayor)**\n\n')
+
+CMA_parse_threats(db.sp) %>% cat
+
+```
+
+
 **La especie ¿está presente en áreas naturales protegidas?:** `r db.sp$sp_en_area_nat_protegida`
 
 
@@ -357,9 +367,20 @@ db.sp$sp_planes_de_conservacion %>%
 **Experiencias de reintroducción o erradicación:** `r db.sp$sp_reintroducciones`
 
 ```{r, echo=FALSE, include=TRUE,results='asis'}
+if(db.sp$sp_reintroducciones != 'no'){
 db.sp$sp_reintroducciones_comentarios %>%   
   str_replace('\n', '\n\n') %>% 
   CMA_italize_binomial(., db.sp$title) %>% cat
+
+n <- db.sp$sp_valorizacion_socioeconomica %>% str_split(',', simplify = T) %>% str_trim()
+tibble(
+  c("Valorización socioeconómica de la especie:", 
+    rep("", length(n)-1)), '', n) %>% CMA_kable_output(cat = 'other') %>% cat
+cat('\n\n')
+cat(db.sp$sp_usos_y_valores %>% 
+  CMA_italize_binomial(., db.sp$title))
+}
+
 ```
 
 **Rol ecológico / servicios ecosistémicos**
@@ -377,6 +398,8 @@ db.sp$sp_necesidades_de_investigacion %>%
   str_replace('\n', '\n\n') %>% 
   CMA_italize_binomial(., db.sp$title) %>% cat
 ```
+
+\arrayrulecolor{white}
 
 ```{r title.biblio, echo=FALSE, include=TRUE,results='asis'}
 CMA_print_titles("BIBLIOGRAFÍA") %>% cat()
