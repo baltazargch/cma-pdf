@@ -30,7 +30,7 @@ header-includes:
   \usepackage{graphicx}
   \usepackage{caption}
 params:
-  species: 'Blastocerus dichotomus'
+  species: 'Puma concolor'
 ---
 
 \renewenvironment{framed}[1][\hsize]
@@ -130,10 +130,10 @@ CMA_print_titles("ÁREA DE DISTRIBUCIÓN ACTUAL")%>% cat()
 
 ```{r map, fig.pos="H", echo=FALSE, include=TRUE, out.width="100%"}
 knitr::include_graphics(
-  # 'maps/Cetartiodactyla/Balaenoptera_acutorostrata.png')
-  paste0('maps/', db.sp$sp_taxonomia_orden, '/',
-         gsub(' ', '_', db.sp$title), '.png')
-  )
+  'maps/Cetartiodactyla/Balaenoptera_acutorostrata.png')
+  # paste0('maps/', db.sp$sp_taxonomia_orden, '/',
+  #        gsub(' ', '_', db.sp$title), '.png')
+  # )
 ```
 
 ```{r title.cons, echo=FALSE, include=TRUE, results='asis'}
@@ -293,6 +293,35 @@ tibble(
       kable_styling(latex_options = c('striped', "HOLD_position"),
                     position = "center", full_width = T) %>%
   row_spec(0, bold=T) %>% cat
+
+cat('\n\n')
+tibble(
+  x= c('Endemismo'), 
+  y = c(db.sp$sp_distribucion_endemismo)
+) %>% 
+  kbl(booktabs = T, format = 'latex',col.names = NULL, escape = F) %>% 
+  kable_styling(latex_options = c('striped', "HOLD_position"),
+                    position = "center", full_width = T) %>%
+  column_spec(1, bold=T) %>% cat
+
+cat('\n\n')
+tibble(
+  x= c('Abundancia relativa estimada en su área de ocupación'), 
+  y = c(db.sp$sp_abundancia)
+) %>% 
+  kbl(booktabs = T, format = 'latex',col.names = NULL, escape = F) %>% 
+  kable_styling(latex_options = c('striped', "HOLD_position"),
+                    position = "center", full_width = T) %>%
+  column_spec(1, bold=T) %>% cat
+
+cat('\n\n**Comentarios sobre la abundancia, densidad o probabilidad de ocupación de la especie**\n\n')
+
+cat(db.sp$sp_abundancia_comentarios %>% str_replace('\n', '\n\n'))
+
+cat(paste0('\n\n**¿Existen actualmente programas de monitoreo?:** ',
+           db.sp$sp_programas_de_monitoreo,
+           '\n\n'))
+cat(db.sp$sp_programas_de_monitoreo_coment%>% str_replace('\n', '\n\n'))
 
 ```
 
