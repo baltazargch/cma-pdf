@@ -30,7 +30,7 @@ header-includes:
   \usepackage{graphicx}
   \usepackage{caption}
 params:
-  species: 'Puma concolor'
+  species: 'Blastocerus dichotomus'
 ---
 
 \renewenvironment{framed}[1][\hsize]

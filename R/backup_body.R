@@ -1,0 +1,479 @@
+---
+  date: "Fecha de creación: `r format(Sys.time(), '%d %B, %Y')`"
+always_allow_html: true
+output:
+  pdf_document: 
+  latex_engine: xelatex
+keep_tex: true
+classoption: x11names
+header-includes:
+  \usepackage{fontspec}
+\usepackage{titling}
+\usepackage{framed}
+\pretitle{\begin{center}
+  \vspace{-3cm}\includegraphics[width=\linewidth]{images/Base_info/logo.png}\LARGE\\}
+\posttitle{\end{center}}
+\usepackage{float}
+\usepackage{fancyhdr}
+\usepackage{ragged2e}
+\usepackage{caption}
+\usepackage{colortbl}
+\captionsetup[figure]{labelformat=empty}
+\arrayrulecolor{white}
+\pagestyle{fancy}
+\fancyhead[L,C]{}
+\fancypagestyle{plain}{\pagestyle{fancy}}
+\PassOptionsToPackage{dvipsnames,svgnames*,x11names*}{xcolor}
+\definecolor{ceil}{rgb}{0.57, 0.63, 0.81}
+\usepackage[export]{adjustbox}
+\usepackage{wrapfig}
+\usepackage{graphicx}
+\usepackage{caption}
+params:
+  species: 'Puma concolor'
+---
+  
+  \renewenvironment{framed}[1][\hsize]
+{\MakeFramed{\hsize#1\advance\hsize-\width \FrameRestore}}%
+  {\endMakeFramed}
+  
+  ```{r setup, include=FALSE}
+  knitr::opts_chunk$set(echo = TRUE, include = FALSE)
+  library(rvest)
+  library(tidyverse)
+  library(kableExtra)
+  library(huxtable)
+  options(huxtable.latex_use_fontspec = TRUE)
+  source('R/funcs.R', local = knitr::knit_global())
+  ```
+  
+  ```{r dataload}
+  db <- read_csv('data/especies_nativas.csv')
+  dois <- read_csv('data/species_doi.csv')
+  
+  db.sp <- db %>% filter(title == params$species)
+  
+  spDoi <- dois$DOI[ match(db.sp$title, dois$Especie) ] %>% str_trim()
+  
+  cat.logo <- db.sp$sp_cat_nac_conserv_2019 %>% 
+    str_split(' ', simplify = TRUE) %>% .[1] %>% tolower()
+  
+  cat.logo <- paste0('images/', cat.logo, '.png')
+  
+  commonCols <- c("sp_id", "sp_taxonomia_familia", "sp_taxonomia_orden", "title", 
+                  "sp_nombre_cientifico", "sp_nombre_comun", "sp_cat_nac_conserv_2019", 
+                  "sp_cat_nac_conserv_2019_justific", "sp_cat_sayds_conserv_2004", 
+                  "sp_distribucion_historica_coment", "sp_habitos", "sp_autores_de_ficha"
+  )
+  doi <- 'doi:https://d.1025CMAoideprueba'
+  ```
+  \setmainfont{Arial}
+  \setsansfont{Arial}
+  \setmonofont{Arial}
+  
+  \newcommand\invisiblesection[1]{%
+    \refstepcounter{section}%
+    \addcontentsline{toc}{section}{\protect\numberline{\thesection}#1}%
+      \sectionmark{#1}}
+        
+        <!-- --- -->
+          <!-- title: "*`r db.sp$title`*" -->
+          <!-- subtitle: "**`r db.sp$sp_nombre_comun`**"    -->
+          <!-- --- -->
+          
+          \fancyhead[R]{\textbf{`r spDoi`}}
+        
+        \invisiblesection{GENERALIDADES}
+        \vspace{-0.4cm}
+        
+        ```{r logo.img, echo=FALSE, include=TRUE, out.width='100%'}
+        knitr::include_graphics('images/Base_info/logo.png')
+        ```
+        
+        \vspace{1cm}
+        
+        \begin{minipage}{0.7\textwidth}
+        \vspace{0.3cm}
+        \fontsize{20}{24}\selectfont\textit{`r db.sp$title`}
+        
+        \vspace{0.3cm}
+        \fontsize{30}{36}\selectfont `r db.sp$sp_nombre_comun`
+        \end{minipage}
+        \hspace{0.05\textwidth}
+        \begin{minipage}{0.25\textwidth}
+        \includegraphics[width=\textwidth]{`r cat.logo`}
+        \end{minipage}
+        
+        \normalsize
+        
+        
+        
+        ```{r image, fig.pos='H', echo=FALSE, include=TRUE, fig.align='center', out.width='35%',fig.cap= paste0("Fotos por ", "Salvador Dali")}
+        knitr::include_graphics('photos/Blastocerus dichotomus.png'
+                                # paste0('photos/', db.sp$title, '.png')
+        )
+        ```
+        
+        ***
+          
+          \justifying
+        
+        **Citar como:** `r db.sp$sp_autores_de_ficha`. (2019). *`r db.sp$title`*. En: SAyDS--SAREM (eds.) Categorización 2019 de los mamíferos de Argentina según su riesgo de extinción. Lista Roja de los mamíferos de Argentina. `r spDoi`
+        
+        ***
+          
+          \newpage
+        
+        ```{r map.sp, echo=FALSE, include=TRUE, results='asis'}
+        CMA_print_titles("ÁREA DE DISTRIBUCIÓN ACTUAL")%>% cat()
+        ```
+        
+        ```{r map, fig.pos="H", echo=FALSE, include=TRUE, out.width="100%"}
+        knitr::include_graphics(
+          'maps/Cetartiodactyla/Balaenoptera_acutorostrata.png')
+        # paste0('maps/', db.sp$sp_taxonomia_orden, '/',
+        #        gsub(' ', '_', db.sp$title), '.png')
+        # )
+        ```
+        
+        ```{r title.cons, echo=FALSE, include=TRUE, results='asis'}
+        CMA_print_titles("CATEGORÍAS DE CONSERVACIÓN")%>% cat()
+        
+        ```
+        
+        \vspace{-0.4cm}
+        
+        **Categoría Nacional de Conservación 2019**
+          
+          `r db.sp$sp_cat_nac_conserv_2019`
+        
+        **Criterios y subcriterios**
+          
+          `r db.sp$sp_cat_nac_conserv_2019_criterio`
+        
+        **Justificación de la categorización**
+          
+          `r db.sp$sp_cat_nac_conserv_2019_justific`
+        
+        ```{r tabla-subpoblaciones, echo=FALSE, include=TRUE, results='asis'}
+        if(!is.na(db.sp$group_sp_eval_subpob)) {
+          cat("**Evaluación de subpoblaciones locales**\n\n")
+          
+          tbsPob <- CMA_subpop_cons(db.sp)
+          
+          for(x in seq_along(tbsPob)){
+            cat(paste0(tbsPob[[x]][[1]], collapse = '\\vspace{0.3cm}'))
+            cat(paste0(tbsPob[[x]][[2]], collapse = '\\vspace{0.3cm}'))
+            if(x != length(tbsPob)) cat('\\vspace{0.5cm}')
+          }
+        }
+        ```
+        
+        **Categoría Res. SAyDS 1030/04**
+          
+          `r db.sp$sp_cat_sayds_conserv_2004`
+        
+        **Categorías nacionales de conservación previas (SAREM)**
+          
+          ```{r cat.nac.prev, echo=FALSE, include=T, results='asis'}
+        ph <- c("sp_cat_nac_conserv_XXX", "sp_cat_nac_conserv_XXX_criterio")
+        for(c in c("2012", "2000", "1997")){
+          if(!is.na(db.sp[[paste0('sp_cat_nac_conserv_', c)]][1])){
+            db.sp %>% 
+              mutate(a = c) %>% 
+              select(a, str_replace(ph, 'XXX', c)) %>%  
+              kbl(booktabs = T, format = 'latex', escape = F, col.names = NULL) %>% 
+              kable_styling(latex_options = c('striped', "HOLD_position"),
+                            position = "center", full_width = T) %>%
+              column_spec(1, bold=T) %>% cat()
+            cat('\n\n')
+          }
+        }
+        
+        data.frame('Homologación categoría 1997', 
+                   db.sp$sp_cat_nac_conserv_1997_hom) %>% 
+          kbl(booktabs = T, format = 'latex', escape = F, col.names = NULL) %>% 
+          kable_styling(latex_options = c('striped', "HOLD_position"),
+                        position = "center", full_width = T) %>%
+          column_spec(1, bold=T) %>% cat()
+        ```
+        
+        ```{r cat.cons.pais.vec, echo=FALSE, include=TRUE, results='asis'}
+        if(!is.na(db.sp$group_sp_eval_paises_vecinos)){
+          cat('**Categorías de conservación actuales en países vecinos**\n\n')
+          out <- CMA_neighbor_countries(db.sp)
+          for(i in out){cat(i)}
+        }
+        ```
+        
+        ```{r cat.iucn, echo=FALSE, include=TRUE, results='asis'}
+        if(!is.na(db.sp$sp_eval_global_iucn_anio)){
+          cat('**Evaluación global UICN**')
+          tibble(
+            "Año de evaluación" = as.character(db.sp$sp_eval_global_iucn_anio), 
+            "Categoría" = db.sp$sp_eval_global_iucn_categoria, 
+            "Criterios y subcriterios" = db.sp$sp_eval_global_iucn_criterios) %>% 
+            kbl(booktabs = T, format = 'latex') %>% 
+            row_spec(0,bold=TRUE, 
+                     extra_latex_after = "\\arrayrulecolor{white}") %>% 
+            kable_styling(latex_options = c('striped', "HOLD_position"),
+                          position = "center", full_width = T) %>% cat()
+        }
+        ```
+        
+        \arrayrulecolor{white}
+        
+        ```{r title.taxo, echo=FALSE, include=TRUE,results='asis'}
+        CMA_print_titles("TAXONOMÍA Y NOMENCLATURA") %>% cat()
+        ```
+        
+        ```{r taxo.cont, echo=FALSE, include=TRUE, results='asis'}
+        conTaxo <- CMA_parse_taxonomy(db.sp)
+        for(i in conTaxo){
+          cat(i, collapse = '\\vspace{0.3cm}')
+        }
+        ```
+        
+        ```{r taxo.comment, echo=FALSE, include=TRUE, results='asis'}
+        if(!is.na(db.sp$sp_taxonomia_comentarios)){
+          cat('**Comentarios taxonómicos**\n\n')
+          
+          cat(CMA_italize_binomial(db.sp$sp_taxonomia_comentarios, db.sp$title))
+        }
+        ```
+        
+        \arrayrulecolor{white}
+        
+        ```{r title.eval, echo=FALSE, include=TRUE,results='asis'}
+        CMA_print_titles("INFORMACIÓN RELEVANTE PARA LA EVALUACIÓN") %>% cat()
+        
+        ```
+        
+        ```{r cont.eval, echo=FALSE, include=TRUE, results='asis'}
+        noData <- which(is.na(
+          db.sp %>% select(sp_tendencia_poblacional:sp_fluct_extrem_en_indiv_maduros
+          )
+        ))
+        ```
+        
+        ```{r title.rango, echo=FALSE, include=TRUE,results='asis'}
+        CMA_print_titles("RANGO GEOGRÁFICO, OCURRENCIA Y ABUNDANCIA") %>% cat()
+        ```
+        
+        ```{r cont.rango, echo=F, include=TRUE, results='asis'}
+        cat(paste0('**Presencia en el territorio nacional:** ', 
+                   db.sp$sp_residente_migrante_o_errante, '\n\n'))
+        
+        cat('**Comentarios sobre la distribución actual e histórica**\n\n')
+        cat(db.sp$sp_distribucion_historica_coment)
+        cat('\n\n')
+        n <- db.sp$sp_presencia_confirmada_por_pcia %>% str_split(',', simplify = T) %>% str_trim()
+        tibble(
+          c("Presencia confirmada por provincia:", 
+            rep("", length(n)-1)), '', n) %>% CMA_kable_output(cat = 'other') %>% cat
+        
+        cat('\n\n')
+        n <- db.sp$sp_confirmada_por_ecorreg_de_arg %>% str_split(',', simplify = T) %>% str_trim()
+        tibble(
+          c("Presencia en ecorregiones de Argentina:", 
+            rep("", length(n)-1)), '', n) %>% CMA_kable_output(cat = 'other') %>% cat
+        
+        cat('\n\n')
+        n <- db.sp$sp_confirmada_por_ecorreg_terres %>% str_split(',', simplify = T) %>% str_trim()
+        tibble(
+          c("Presencia en ecorregiones globales terrestres:", 
+            rep("", length(n)-1)), '', n) %>% CMA_kable_output(cat = 'other') %>% cat
+        
+        cat('\n\n')
+        tibble(
+          "Patrón de distribución"= db.sp$sp_patron_de_distribucion,
+          "Cantidad de localidades" = db.sp$sp_numero_de_localidades, 
+          "Rango altitudinal"= db.sp$sp_rango_altitudinal) %>% 
+          kbl(booktabs = T, format = 'latex',linesep = "", escape = F) %>% 
+          kable_styling(latex_options = c('striped', "HOLD_position"),
+                        position = "center", full_width = T) %>%
+          row_spec(0, bold=T) %>% cat
+        
+        cat('\n\n')
+        tibble(
+          x= c('Endemismo'), 
+          y = c(db.sp$sp_distribucion_endemismo)
+        ) %>% 
+          kbl(booktabs = T, format = 'latex',col.names = NULL, escape = F) %>% 
+          kable_styling(latex_options = c('striped', "HOLD_position"),
+                        position = "center", full_width = T) %>%
+          column_spec(1, bold=T) %>% cat
+        
+        cat('\n\n')
+        tibble(
+          x= c('Abundancia relativa estimada en su área de ocupación'), 
+          y = c(db.sp$sp_abundancia)
+        ) %>% 
+          kbl(booktabs = T, format = 'latex',col.names = NULL, escape = F) %>% 
+          kable_styling(latex_options = c('striped', "HOLD_position"),
+                        position = "center", full_width = T) %>%
+          column_spec(1, bold=T) %>% cat
+        
+        cat('\n\n**Comentarios sobre la abundancia, densidad o probabilidad de ocupación de la especie**\n\n')
+        
+        cat(db.sp$sp_abundancia_comentarios %>% str_replace('\n', '\n\n'))
+        
+        cat(paste0('\n\n**¿Existen actualmente programas de monitoreo?:** ',
+                   db.sp$sp_programas_de_monitoreo,
+                   '\n\n'))
+        cat(db.sp$sp_programas_de_monitoreo_coment%>% str_replace('\n', '\n\n'))
+        
+        ```
+        
+        \arrayrulecolor{white}
+        
+        ```{r title.morfo, echo=FALSE, include=TRUE,results='asis'}
+        CMA_print_titles("DATOS MORFOMÉTRICOS") %>% cat()
+        ```
+        
+        ```{r cont.morfo, echo=FALSE, include=TRUE, results='asis'}
+        out <- tibble(
+          Peso = db.sp$sp_peso, 
+          "Peso de la hembra" = db.sp$sp_peso_de_la_hembra, 
+          "Peso del macho" = db.sp$sp_peso_del_macho, 
+          "Comentarios" = db.sp$sp_peso_comentarios
+        )
+        
+        out <- out[ , which(!is.na(out[1,])) ]
+        
+        out %>%  
+          kbl(booktabs = T, format = 'latex',linesep = "", escape = F) %>% 
+          kable_styling(latex_options = c('striped', "HOLD_position"),
+                        position = "center", full_width = T) %>%
+          row_spec(0, bold=T) %>% cat
+        ```
+        \arrayrulecolor{white}
+        
+        ```{r title.eto, echo=FALSE, include=TRUE,results='asis'}
+        CMA_print_titles("RASGOS ETO-ECOLÓGICOS") %>% cat()
+        ```
+        
+        ```{r title.inves, echo=FALSE, include=TRUE,results='asis'}
+        CMA_print_titles("CONSERVACIÓN E INVESTIGACIÓN") %>% cat()
+        ```
+        
+        
+        ```{r cont.inves,echo=FALSE, include=TRUE,results='asis'}
+        cat('**Amenazas por grado: de 1 (menor) a 5 (mayor)**\n\n')
+        
+        CMA_parse_threats(db.sp) %>% cat
+        
+        ```
+        
+        
+        **La especie ¿está presente en áreas naturales protegidas?:** `r db.sp$sp_en_area_nat_protegida`
+        
+        
+        **Presencia de la especie en áreas naturales protegidas**
+          
+          ```{r, echo=FALSE, include=TRUE,results='asis'}
+        db.sp$sp_en_area_nat_protegida_coment %>% 
+          str_replace('\n', '\n\n') %>% 
+          CMA_italize_binomial(., db.sp$title) %>% cat
+        ```
+        
+        **Marco legal de la especie**
+          
+          ```{r, echo=FALSE, include=TRUE,results='asis'}
+        db.sp$sp_marco_legal %>%    
+          str_replace('\n', '\n\n') %>% 
+          CMA_italize_binomial(., db.sp$title) %>% cat
+        ```
+        
+        **Planes de acción y/o proyectos de conservación o manejo actuales**
+          
+          ```{r, echo=FALSE, include=TRUE,results='asis'}
+        db.sp$sp_planes_de_conservacion %>%    
+          str_replace('\n', '\n\n') %>% 
+          CMA_italize_binomial(., db.sp$title) %>% cat
+        ```
+        
+        **Experiencias de reintroducción o erradicación:** `r db.sp$sp_reintroducciones`
+        
+        ```{r, echo=FALSE, include=TRUE,results='asis'}
+        if(db.sp$sp_reintroducciones != 'no'){
+          db.sp$sp_reintroducciones_comentarios %>%   
+            str_replace('\n', '\n\n') %>% 
+            CMA_italize_binomial(., db.sp$title) %>% cat
+          
+          n <- db.sp$sp_valorizacion_socioeconomica %>% str_split(',', simplify = T) %>% str_trim()
+          tibble(
+            c("Valorización socioeconómica de la especie:", 
+              rep("", length(n)-1)), '', n) %>% CMA_kable_output(cat = 'other') %>% cat
+          cat('\n\n')
+          cat(db.sp$sp_usos_y_valores %>% 
+                CMA_italize_binomial(., db.sp$title))
+        }
+        
+        ```
+        
+        **Rol ecológico / servicios ecosistémicos**
+          
+          ```{r, echo=FALSE, include=TRUE,results='asis'}
+        db.sp$sp_rol_ecologico_y_ecoservicios %>%   
+          str_replace('\n', '\n\n') %>% 
+          CMA_italize_binomial(., db.sp$title) %>% cat
+        ```
+        
+        **Necesidades de investigación y conocimiento**
+          
+          ```{r, echo=FALSE, include=TRUE,results='asis'}
+        db.sp$sp_necesidades_de_investigacion %>% 
+          str_replace('\n', '\n\n') %>% 
+          CMA_italize_binomial(., db.sp$title) %>% cat
+        ```
+        
+        \arrayrulecolor{white}
+        
+        ```{r title.biblio, echo=FALSE, include=TRUE,results='asis'}
+        CMA_print_titles("BIBLIOGRAFÍA") %>% cat()
+        ```
+        
+        ```{r biblio.cont, echo=FALSE, include=TRUE, results='asis'}
+        
+        cat('\\setlength{\\parindent}{20pt}')
+        
+        cat('\\noindent\\textbf{LITERATURA CITADA}\n\n')
+        
+        cit.bib <- db.sp$sp_bibliografia_citada %>% str_split('\n') %>% unlist() %>% 
+          map_chr(., ~CMA_italize_binomial(.x, db.sp$title))
+        
+        cat(paste(cit.bib, collapse = '\n\n'))
+        cat('\n\n')
+        
+        cat('\\noindent\\textbf{LITERATURA DE REFERENCIA}\n\n')
+        
+        ref.bib <- db.sp$sp_bibliografia_de_referencia %>% str_split('\n') %>% unlist()%>% 
+          map_chr(., ~CMA_italize_binomial(.x, db.sp$title))
+        cat(paste(ref.bib, collapse = '\n\n'))
+        cat('\n\n')
+        ```
+        
+        \setlength{\parindent}{0pt}
+        
+        ```{r title.autores, echo=FALSE, include=TRUE,results='asis'}
+        CMA_print_titles("AUTORES") %>% cat()
+        ```
+        
+        ```{r cont.autores, echo=FALSE,include=TRUE, results='asis'}
+        CMA_parse_authors(db.sp) %>% 
+          CMA_print_authors()
+        ```
+        
+        \begin{Center}
+        \begin{framed}[0.7\textwidth]
+        \begin{minipage}{\linewidth}
+        \Centering
+        \small
+        Este documento fue generado automáticamente\\
+        Fecha de compilación: `r Sys.time()`\\
+        La reproducción sin cambios de este documento está permitida\\
+        Si encuentra errores por favor escibra a comisioncma@sarem.com\\
+        \end{minipage}
+        \end{framed}
+        \end{Center}
