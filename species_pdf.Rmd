@@ -92,10 +92,10 @@ knitr::include_graphics('images/Base_info/logo.png')
 
 \begin{minipage}{0.7\textwidth}
 \vspace{0.15cm}
-\fontsize{20}{24}\selectfont\textit{`r db.sp$title`}
+{\fontsize{18}{22}\selectfont\textit{`r db.sp$title`}}
 
 \vspace{0.3cm}
-\fontsize{30}{36}\selectfont `r db.sp$sp_nombre_comun`
+{\fontsize{30}{36}\selectfont `r db.sp$sp_nombre_comun`}
 \end{minipage}
 \hspace{0.05\textwidth}
 \begin{minipage}{0.20\textwidth}
@@ -104,12 +104,13 @@ knitr::include_graphics('images/Base_info/logo.png')
 
 \normalsize
 
-```{r image, fig.pos='H', echo=FALSE, include=TRUE, fig.align='center', out.width='35%',fig.cap= paste0("Fotos por ", "Salvador Dali")}
- knitr::include_graphics('photos/Blastocerus dichotomus.png'
+```{r image, fig.pos='H', echo=FALSE, include=TRUE, fig.align='center', out.width='90%',fig.cap= paste0("Fotos por Roberto Cinti, Proyecto Pantano")}
+ knitr::include_graphics('photos/Cetaartiodactyla/207_Blastocerus-dichotomus_15_Roberto-Cinti-Proyecto-Pantano_0.jpg'
    # paste0('photos/', db.sp$title, '.png')
    )
 ```
 
+\vspace{-1cm}
 ***
 
 \justifying
@@ -126,10 +127,10 @@ CMA_print_titles("ÁREA DE DISTRIBUCIÓN ACTUAL")%>% cat()
 
 ```{r map, fig.pos="H", echo=FALSE, include=TRUE, out.width="100%"}
 knitr::include_graphics(
-  'maps/Cetartiodactyla/Balaenoptera_acutorostrata.png')
-  # paste0('maps/', db.sp$sp_taxonomia_orden, '/',
-  #        gsub(' ', '_', db.sp$title), '.png')
-  # )
+  # 'maps/Cetartiodactyla/Balaenoptera_acutorostrata.png')
+  paste0('maps/', db.sp$sp_taxonomia_orden, '/',
+         gsub(' ', '_', db.sp$title), '.png')
+  )
 ```
 
 ```{r title.cons, echo=FALSE, include=TRUE, results='asis'}
@@ -359,6 +360,9 @@ cat('**Amenazas por grado: de 1 (menor) a 5 (mayor)**\n\n')
 
 CMA_parse_threats(db.sp) %>% cat
 
+db.sp$sp_amenazas_comentarios %>% 
+  CMA_italize_binomial(., db.sp$title) %>% 
+  str_replace('\n', '\n\n') %>% cat
 ```
 
 
@@ -469,7 +473,7 @@ CMA_parse_authors(db.sp) %>%
   Este documento fue generado automáticamente\\
   Fecha de compilación: `r Sys.time()`\\
   La reproducción sin cambios de este documento está permitida\\
-  Si encuentra errores por favor escibra a comisioncma@sarem.com\\
+  Si encuentra errores por favor escribir a comisioncma@sarem.com\\
   \end{minipage}
 \end{framed}
 \end{Center}
