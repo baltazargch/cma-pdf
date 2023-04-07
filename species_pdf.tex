@@ -51,7 +51,7 @@
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \setcounter{secnumdepth}{-\maxdimen} % remove section numbering
-\usepackage{fontspec} \usepackage{titling} \usepackage{framed} \pretitle{\begin{center} \vspace{-3cm}\includegraphics[width=\linewidth]{images/Base_info/logo.png}\LARGE\\} \posttitle{\end{center}} \usepackage{float} \usepackage{fancyhdr} \usepackage{ragged2e} \usepackage{caption} \usepackage{colortbl} \captionsetup[figure]{labelformat=empty} \arrayrulecolor{white} \pagestyle{fancy} \fancyhead[L,C]{} \fancypagestyle{plain}{\pagestyle{fancy}} \PassOptionsToPackage{dvipsnames,svgnames*,x11names*}{xcolor} \definecolor{ceil}{rgb}{0.57, 0.63, 0.81} \usepackage[export]{adjustbox} \usepackage{wrapfig} \usepackage{graphicx} \usepackage{caption}
+\usepackage{fontspec} \usepackage{titling} \pretitle{\begin{center} \LARGE \vspace{-3.3cm} \includegraphics[width=\linewidth]{images/Base_info/logo.png}\\} \posttitle{\end{center}} \usepackage{framed} \usepackage{float} \usepackage{fancyhdr} \usepackage{ragged2e} \usepackage{caption} \usepackage{colortbl} \usepackage[export]{adjustbox} \usepackage{wrapfig} \captionsetup[figure]{labelformat=empty} \arrayrulecolor{white} \pagestyle{fancy} \fancyhead[L,C]{} \fancypagestyle{plain}{\pagestyle{fancy}} \PassOptionsToPackage{dvipsnames,svgnames*,x11names*}{xcolor} \definecolor{ceil}{rgb}{0.57, 0.63, 0.81}
 \usepackage{booktabs}
 \usepackage{longtable}
 \usepackage{array}
@@ -73,13 +73,16 @@
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same} % disable monospaced font for URLs
 \hypersetup{
+  pdftitle={~},
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 
+\title{~}
 \author{}
-\date{\vspace{-2.5em}Fecha de creación: 06 April, 2023}
+\date{\vspace{-2.5em}}
 
 \begin{document}
+\maketitle
 
 \renewenvironment{framed}[1][\hsize]
   {\MakeFramed{\hsize#1\advance\hsize-\width \FrameRestore}}%
@@ -100,23 +103,22 @@
   \refstepcounter{section}%
   \addcontentsline{toc}{section}{\protect\numberline{\thesection}GENERALIDADES}%
   \sectionmark{GENERALIDADES}
-\vspace{-0.4cm}
 
-\includegraphics[width=1\linewidth]{images/Base_info/logo}
+\vspace{-3cm}
 
-\vspace{1cm}
-
+\bgroup \MakeFramed{\hsize\hsize\advance\hsize-\width \FrameRestore}
 \begin{minipage}{0.7\textwidth}
-\vspace{0.3cm}
+\vspace{0.15cm}
 \fontsize{20}{24}\selectfont\textit{Blastocerus dichotomus}
 
 \vspace{0.3cm}
 \fontsize{30}{36}\selectfont Ciervo de los pantanos
 \end{minipage}
 \hspace{0.05\textwidth}
-\begin{minipage}{0.25\textwidth}
-\includegraphics[width=\textwidth]{images/vu.png}
+\begin{minipage}{0.20\textwidth}
+\includegraphics[width=\textwidth]{images/vu.png}\\
 \end{minipage}
+\endMakeFramed\egroup
 
 \normalsize
 
@@ -1206,7 +1208,7 @@ Universidade Federal do Mato Grosso, Mato Grosso, Brasil.
     \Centering
     \small
   Este documento fue generado automáticamente\\
-  Fecha de compilación: 2023-04-06 21:45:17\\
+  Fecha de compilación: 2023-04-06 22:33:24\\
   La reproducción sin cambios de este documento está permitida\\
   Si encuentra errores por favor escibra a comisioncma@sarem.com\\
   \end{minipage}

@@ -1,5 +1,5 @@
 ---
-date: "Fecha de creación: `r format(Sys.time(), '%d %B, %Y')`"
+title: "&nbsp;"
 always_allow_html: true
 output:
   pdf_document: 
@@ -9,15 +9,19 @@ classoption: x11names
 header-includes:
   \usepackage{fontspec}
   \usepackage{titling}
-  \usepackage{framed}
   \pretitle{\begin{center}
-  \vspace{-3cm}\includegraphics[width=\linewidth]{images/Base_info/logo.png}\LARGE\\}
+  \LARGE
+  \vspace{-3.3cm}
+  \includegraphics[width=\linewidth]{images/Base_info/logo.png}\\}
   \posttitle{\end{center}}
+  \usepackage{framed}
   \usepackage{float}
   \usepackage{fancyhdr}
   \usepackage{ragged2e}
   \usepackage{caption}
   \usepackage{colortbl}
+  \usepackage[export]{adjustbox}
+  \usepackage{wrapfig}
   \captionsetup[figure]{labelformat=empty}
   \arrayrulecolor{white}
   \pagestyle{fancy}
@@ -25,12 +29,10 @@ header-includes:
   \fancypagestyle{plain}{\pagestyle{fancy}}
   \PassOptionsToPackage{dvipsnames,svgnames*,x11names*}{xcolor}
   \definecolor{ceil}{rgb}{0.57, 0.63, 0.81}
-  \usepackage[export]{adjustbox}
-  \usepackage{wrapfig}
-  \usepackage{graphicx}
-  \usepackage{caption}
 params:
   species: 'Blastocerus dichotomus'
+editor_options: 
+  chunk_output_type: console
 ---
 
 \renewenvironment{framed}[1][\hsize]
@@ -67,6 +69,7 @@ commonCols <- c("sp_id", "sp_taxonomia_familia", "sp_taxonomia_orden", "title",
 )
 doi <- 'doi:https://d.1025CMAoideprueba'
 ```
+
 \setmainfont{Arial}
 \setsansfont{Arial}
 \setmonofont{Arial}
@@ -76,37 +79,30 @@ doi <- 'doi:https://d.1025CMAoideprueba'
   \addcontentsline{toc}{section}{\protect\numberline{\thesection}#1}%
   \sectionmark{#1}}
   
-<!-- --- -->
-<!-- title: "*`r db.sp$title`*" -->
-<!-- subtitle: "**`r db.sp$sp_nombre_comun`**"    -->
-<!-- --- -->
-
 \fancyhead[R]{\textbf{`r spDoi`}}
 
-\invisiblesection{GENERALIDADES}
-\vspace{-0.4cm}
-
-```{r logo.img, echo=FALSE, include=TRUE, out.width='100%'}
+```{r logo.img, echo=FALSE, include=TRUE, out.width='100%', fig.pos='H', eval=FALSE}
 knitr::include_graphics('images/Base_info/logo.png')
 ```
 
-\vspace{1cm}
+\invisiblesection{GENERALIDADES}
+
+\vspace{-3cm}
+
 
 \begin{minipage}{0.7\textwidth}
-\vspace{0.3cm}
+\vspace{0.15cm}
 \fontsize{20}{24}\selectfont\textit{`r db.sp$title`}
 
 \vspace{0.3cm}
 \fontsize{30}{36}\selectfont `r db.sp$sp_nombre_comun`
 \end{minipage}
 \hspace{0.05\textwidth}
-\begin{minipage}{0.25\textwidth}
-\includegraphics[width=\textwidth]{`r cat.logo`}
+\begin{minipage}{0.20\textwidth}
+\includegraphics[width=\textwidth]{`r cat.logo`}\\
 \end{minipage}
 
 \normalsize
-
-
 
 ```{r image, fig.pos='H', echo=FALSE, include=TRUE, fig.align='center', out.width='35%',fig.cap= paste0("Fotos por ", "Salvador Dali")}
  knitr::include_graphics('photos/Blastocerus dichotomus.png'
