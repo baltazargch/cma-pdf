@@ -11,7 +11,8 @@ library(tictoc)
 
 db <- read_csv('data/especies_nativas.csv')
 species <- db %>% filter(sp_taxonomia_orden == 'Cetartiodactyla') %>% 
-  select(title) %>% unlist() %>% unname()
+  select(title) %>%
+  sample_n(10) %>% unlist() %>% unname() 
 
 dir.create('pdfs', recursive = T, showWarnings = F)
 

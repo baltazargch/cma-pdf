@@ -30,7 +30,7 @@ header-includes:
   \PassOptionsToPackage{dvipsnames,svgnames*,x11names*}{xcolor}
   \definecolor{ceil}{rgb}{0.57, 0.63, 0.81}
 params:
-  species: 'Blastocerus dichotomus'
+  species:  "Mazama nana"
 editor_options: 
   chunk_output_type: console
 ---
@@ -105,9 +105,11 @@ knitr::include_graphics('images/Base_info/logo.png')
 \normalsize
 
 ```{r image, fig.pos='H', echo=FALSE, include=TRUE, fig.align='center', out.width='90%',fig.cap= paste0("Fotos por Roberto Cinti, Proyecto Pantano")}
- knitr::include_graphics('photos/Cetaartiodactyla/207_Blastocerus-dichotomus_15_Roberto-Cinti-Proyecto-Pantano_0.jpg'
-   # paste0('photos/', db.sp$title, '.png')
-   )
+photo <- list.files('photos/', '.jpg$', full.names = T, recursive = T)
+
+filePhoto <- list.files('photos/', '.jpg$', full.names = F, recursive = T) %>% str_to_lower() %>% str_detect(gsub(' ', '-', str_to_lower(db.sp$title))) %>% which()
+
+ knitr::include_graphics(photo[filePhoto[1]])
 ```
 
 \vspace{-1cm}
@@ -416,25 +418,29 @@ db.sp$sp_amenazas_comentarios %>%
 **Presencia de la especie en áreas naturales protegidas**
 
 ```{r, echo=FALSE, include=TRUE,results='asis'}
-db.sp$sp_en_area_nat_protegida_coment %>% 
-  str_replace('\n', '\n\n') %>% 
-  CMA_italize_binomial(., db.sp$title) %>% cat
+if(!is.na(db.sp$sp_en_area_nat_protegida_coment)){
+  db.sp$sp_en_area_nat_protegida_coment %>% 
+    str_replace('\n', '\n\n') %>% 
+    CMA_italize_binomial(., db.sp$title) %>% cat
+}
 ```
 
 **Marco legal de la especie**
 
 ```{r, echo=FALSE, include=TRUE,results='asis'}
+if(!is.na(db.sp$sp_marco_legal)){
 db.sp$sp_marco_legal %>%    
   str_replace('\n', '\n\n') %>% 
-  CMA_italize_binomial(., db.sp$title) %>% cat
+  CMA_italize_binomial(., db.sp$title) %>% cat}
 ```
 
 **Planes de acción y/o proyectos de conservación o manejo actuales**
 
 ```{r, echo=FALSE, include=TRUE,results='asis'}
+if(!is.na(db.sp$sp_marco_legal)){
 db.sp$sp_planes_de_conservacion %>%    
   str_replace('\n', '\n\n') %>% 
-  CMA_italize_binomial(., db.sp$title) %>% cat
+  CMA_italize_binomial(., db.sp$title) %>% cat}
 ```
 
 **Experiencias de reintroducción o erradicación:** `r db.sp$sp_reintroducciones`

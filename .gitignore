@@ -3,3 +3,6 @@
 .RData
 .Ruserdata
 *.tex
+*.log
+pdfs/
+!*.pdf
