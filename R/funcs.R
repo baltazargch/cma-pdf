@@ -57,8 +57,8 @@ CMA_print_authors <- function(authors){
     kbl(booktabs = T, format = 'latex', escape = F, longtable = T, col.names = NULL) %>% 
     kable_styling(latex_options = c('striped', "HOLD_position"),
                   position = "center", full_width = T) %>%
-    column_spec(1, width = '4cm', bold=TRUE) %>% 
-    column_spec(2, width = '2cm') %>% 
+    column_spec(1, width = '5cm', bold=TRUE) %>% 
+    column_spec(2, width = '1cm') %>% 
     column_spec(3, width = '9cm') %>%  cat()
   
   if(has_collabs){
@@ -75,8 +75,8 @@ CMA_print_authors <- function(authors){
       kbl(booktabs = T, format = 'latex',escape = F, longtable = T, col.names = NULL) %>% 
       kable_styling(latex_options = c('striped', "HOLD_position"),
                     position = "center", full_width = T) %>% 
-      column_spec(1, width = '4cm', bold=TRUE) %>% 
-      column_spec(2, width = '2cm') %>% 
+      column_spec(1, width = '5cm', bold=TRUE) %>% 
+      column_spec(2, width = '1cm') %>% 
       column_spec(3, width = '9cm') %>%  cat()
     
   }
@@ -165,14 +165,16 @@ CMA_neighbor_countries <- function(db){
 #### Parse titles ----
 CMA_print_titles <- function(text){
   
-  paste0("\\invisiblesection{", text, "}\n", 
+  paste0("\\invisiblesection{", text, "}\n",
          tibble(
            paste0( "\\rule{0pt}{14pt}", text)
          ) %>% 
            kbl(booktabs = T, col.names = NULL,escape = F) %>% 
-           kable_styling(full_width = F, latex_options = c("HOLD_position")) %>% 
+           kable_styling(full_width = F, 
+                         latex_options = c("HOLD_position")) %>% 
            row_spec(1, bold=TRUE, color = 'white', background = "ceil") %>% 
-           column_spec(1:2, width = '16cm', latex_valign='m'))
+           column_spec(1:2, width = '16cm', latex_valign='m')
+         )
 }
 
 #### Parse taxonomy ----
