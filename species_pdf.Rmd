@@ -58,6 +58,10 @@ cat.logo <- db.sp$sp_cat_nac_conserv_2019 %>%
   str_split(' ', simplify = TRUE) %>% .[1] %>% tolower()
 
 cat.logo <- paste0('images/', cat.logo, '.png')
+
+photo <- list.files('photos/', '.jpg$', full.names = T, recursive = T)
+filePhoto <- CMA_get_photo_index(db.sp$title)
+credistPhoto <- CMA_get_photo_credits(photo[filePhoto])
 ```
 
 \setmainfont{Arial}
@@ -85,7 +89,7 @@ knitr::include_graphics('images/Base_info/logo.png')
 {\fontsize{18}{22}\selectfont\textit{`r db.sp$title`}}
 
 \vspace{0.3cm}
-{\fontsize{30}{36}\selectfont `r db.sp$sp_nombre_comun`}
+{\fontsize{30}{36}\selectfont\textbf{`r db.sp$sp_nombre_comun`}}
 \end{minipage}
 \hspace{0.05\textwidth}
 \begin{minipage}{0.20\textwidth}
@@ -94,11 +98,7 @@ knitr::include_graphics('images/Base_info/logo.png')
 
 \normalsize
 
-```{r image, fig.pos='H',  fig.align='center', out.width='90%',fig.cap= paste0("Fotos por Roberto Cinti, Proyecto Pantano")}
-photo <- list.files('photos/', '.jpg$', full.names = T, recursive = T)
-
-filePhoto <- list.files('photos/', '.jpg$', full.names = F, recursive = T) %>% str_to_lower() %>% str_detect(gsub(' ', '-', str_to_lower(db.sp$title))) %>% which()
-
+```{r photo, fig.pos='H',  fig.align='center', out.width='90%',fig.cap= paste0("Foto: ", credistPhoto[1])}
  knitr::include_graphics(photo[filePhoto[1]])
 ```
 
@@ -107,11 +107,31 @@ filePhoto <- list.files('photos/', '.jpg$', full.names = F, recursive = T) %>% s
 
 \justifying
 
-**Citar como:** `r db.sp$sp_autores_de_ficha`. (2019). *`r db.sp$title`*. En: SAyDS--SAREM (eds.) Categorización 2019 de los mamíferos de Argentina según su riesgo de extinción. Lista Roja de los mamíferos de Argentina. `r spDoi`
+**Cita sugerida:** `r db.sp$sp_autores_de_ficha`. (2019). *`r db.sp$title`*. En: SAyDS--SAREM (eds.) Categorización 2019 de los mamíferos de Argentina según su riesgo de extinción. Lista Roja de los mamíferos de Argentina. `r spDoi`
 
 ***
 
 \newpage
+
+\vspace{-0.4cm}
+
+```{r title.addition.photos, results='asis'}
+if(length(filePhoto)>1) {
+  CMA_print_titles("OTRAS FOTOGRAFÍAS") %>% cat
+  
+  cat('\\vspace{-0.5cm}\n\n')
+  
+  for(i in 2:length(filePhoto)) {
+    CMA_print_photo(x = photo[ filePhoto[i] ], credits = credistPhoto[i]) %>% cat
+    cat('\n\n')
+  }
+}
+```
+
+
+\newpage
+
+\vspace{-0.4cm}
 
 ```{r map.sp,  results='asis'}
 CMA_print_titles("ÁREA DE DISTRIBUCIÓN ACTUAL")%>% cat()
@@ -134,13 +154,23 @@ CMA_print_titles("CATEGORÍAS DE CONSERVACIÓN")%>% cat()
 
 \vspace{-0.4cm}
 
-**Categoría Nacional de Conservación 2019**
+```{r cont.cons.b, results='asis'}
 
-`r db.sp$sp_cat_nac_conserv_2019`
+out <- tibble(
+  "Categoría Nacional de Conservación 2019" = db.sp$sp_cat_nac_conserv_2019) 
 
-**Criterios y subcriterios**
+if(!is.na(db.sp$sp_cat_nac_conserv_2019_criterio)) {
+  out <- out %>% add_column("Criterios y subcriterios" = db.sp$sp_cat_nac_conserv_2019_criterio)  
+} else {
+  out <- out %>% add_column(" " = "")
+}
+out %>% 
+  kbl(booktabs = T, format = 'latex', escape = F) %>% 
+  kable_styling(latex_options = c('striped', "HOLD_position"),
+                    position = "center", full_width = T) %>%
+  row_spec(0, bold=T) %>% cat
 
-`r db.sp$sp_cat_nac_conserv_2019_criterio`
+```
 
 **Justificación de la categorización**
 
@@ -499,7 +529,7 @@ cat('\n\n')
 \setlength{\parindent}{0pt}
 
 ```{r title.autores, results='asis'}
-CMA_print_titles("AUTORES") %>% cat()
+CMA_print_titles("AUTORES Y COLABOLADORES") %>% cat()
 ```
 
 \vspace{-0.4cm}

@@ -3,16 +3,18 @@ CMA_parse_authors <- function(data, authors_csv ='data/lista_de_autores.csv'){
   # data <- db.sp
   list_auth <- read.csv(authors_csv)
   stopifnot(nrow(data) > 0, nrow(list_auth) > 0)
+  
   require(tidyverse)
   
   has_collabs <- !is.na(data$sp_colaboradores_de_ficha)
   authors <- data$sp_autores_de_ficha %>% 
-    str_split(";") %>% 
-    unlist() %>% 
+    str_split(";", simplify = T) %>% 
+    as.vector() %>% 
     str_trim(side = 'both')
   
   authors_data <- list_auth %>% 
-    filter(name  %in% authors)
+    filter(name %in% authors)
+  authors_data <- authors_data[ match(authors, authors_data$name),]
   
   if(nrow(authors_data) == 0){
     stop('Autores no encontrados')
@@ -22,12 +24,13 @@ CMA_parse_authors <- function(data, authors_csv ='data/lista_de_autores.csv'){
   
   if(has_collabs){
     collabs <- data$sp_colaboradores_de_ficha %>% 
-      str_split(";") %>%
-      unlist() %>% 
+      str_split(";", simplify = T) %>% 
+      as.vector() %>% 
       str_trim(side = 'both')
     
     collabs_data <- list_auth %>% 
       filter(name  %in% collabs)
+    collabs_data <- collabs_data[ match(collabs, collabs_data$name),]
     
     if(nrow(collabs_data) == 0){
       stop('Colaborador no encontrado')
@@ -46,6 +49,7 @@ CMA_print_authors <- function(authors){
   cat('**AUTORES**\n\n')
   
   authors[[1]] %>% 
+    remove_rownames() %>% 
     mutate(
       name = str_c("\\begin{justify}", name, '\\end{justify}' , sep=''),
       aff = str_c("\\begin{justify}",
@@ -54,7 +58,8 @@ CMA_print_authors <- function(authors){
                   ,'\\end{justify}' , sep=' '), 
       bl = '') %>% 
     select(name, bl, aff) %>%
-    kbl(booktabs = T, format = 'latex', escape = F, longtable = T, col.names = NULL) %>% 
+    kbl(booktabs = T, format = 'latex', escape = F, linesep = '', 
+        longtable = T, col.names = NULL) %>% 
     kable_styling(latex_options = c('striped', "HOLD_position"),
                   position = "center", full_width = T) %>%
     column_spec(1, width = '5cm', bold=TRUE) %>% 
@@ -62,7 +67,7 @@ CMA_print_authors <- function(authors){
     column_spec(3, width = '9cm') %>%  cat()
   
   if(has_collabs){
-    cat('**COLABORADORES**\n\n')
+    cat('\n\n**COLABORADORES**\n\n')
     authors[[2]] %>% 
       mutate(
         name = str_c("\\begin{justify}", name, '\\end{justify}' , sep=''),
@@ -72,7 +77,8 @@ CMA_print_authors <- function(authors){
                     ,'\\end{justify}' , sep=''),
         bl = '') %>% 
       select(name, bl, aff) %>%
-      kbl(booktabs = T, format = 'latex',escape = F, longtable = T, col.names = NULL) %>% 
+      kbl(booktabs = T, format = 'latex',escape = F, linesep = '', 
+          longtable = T, col.names = NULL) %>% 
       kable_styling(latex_options = c('striped', "HOLD_position"),
                     position = "center", full_width = T) %>% 
       column_spec(1, width = '5cm', bold=TRUE) %>% 
@@ -300,4 +306,29 @@ CMA_italize_binomial <- function(text, species){
     text <- str_replace(text, epite, paste0('\\\\textit{', epite, '}'))
   }
   text
+}
+
+CMA_get_photo_credits <- function(x){
+  x %>% 
+    str_remove('photos//.*./') %>% 
+    str_remove(str_replace(db.sp$title, " ", "-")) %>% 
+    str_remove('.jpg$') %>% 
+    str_remove_all('[0-9]') %>% 
+    str_replace_all('_', '') %>% 
+    str_replace_all('-', ' ')
+}
+
+CMA_get_photo_index <- function(x){
+  list.files('photos/', '.jpg$', full.names = F, recursive = T) %>% 
+    str_to_lower() %>% str_detect(gsub(' ', '-', str_to_lower(x))) %>% 
+    which()
+}
+
+CMA_print_photo <- function(x, credits){
+  # x <- photo[filePhoto[1]]; credits=credistPhoto[1]
+  paste0("\\begin{figure}[H]", 
+          "\\centering", 
+         paste0("\\includegraphics[width=0.90\\textwidth]{", x, "}"), 
+         paste0( "\\caption{Foto: ", credits, "}"), 
+           "\\end{figure}", sep='\n')
 }
