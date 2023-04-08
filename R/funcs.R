@@ -69,6 +69,7 @@ CMA_print_authors <- function(authors){
   if(has_collabs){
     cat('\n\n**COLABORADORES**\n\n')
     authors[[2]] %>% 
+      remove_rownames() %>% 
       mutate(
         name = str_c("\\begin{justify}", name, '\\end{justify}' , sep=''),
         aff = str_c("\\begin{justify}",
@@ -209,7 +210,10 @@ CMA_parse_taxonomy <- function(data){
   dbList[[7]] <- tibble(c("Nombres comunes en portugués", 
                           rep("", length(n)-1)), '', n)
   
-  dbList <-  dbList %>% lapply(CMA_kable_output)
+  dbList <- dbList %>%  
+    lapply(\(x) if(is.na(x[[3]][1]))NULL else x) %>% 
+    plyr::compact() %>% 
+    lapply(CMA_kable_output)
   return(dbList)
 }
 
@@ -291,19 +295,21 @@ CMA_kable_output <- function(table, cat='taxo'){
   }
 }
 
-##### Replace to italized species or genus text ----
+##### Italized species or genus text ----
 CMA_italize_binomial <- function(text, species){
   # text <- db.sp$sp_taxonomia_comentarios
   # species <- db.sp$title
   
   genus <- str_split(species, ' ', simplify = T)[1]
-  epite <- str_split(species, ' ', simplify = T)[2]
+  
+  epite <- paste0(str_remove_all(genus, '[a-z]'), '. ',
+                  str_split(species, ' ', simplify = T)[2])
   
   if(str_detect(text, genus)){
-    text <- str_replace(text, genus, paste0('\\\\textit{', genus, '}'))
+    text <- str_replace_all(text, genus, paste0('\\\\textit{', genus, '}'))
   } 
   if(str_detect(text, epite)){
-    text <- str_replace(text, epite, paste0('\\\\textit{', epite, '}'))
+    text <- str_replace_all(text, epite, paste0('\\\\textit{', epite, '}'))
   }
   text
 }
@@ -328,7 +334,7 @@ CMA_print_photo <- function(x, credits){
   # x <- photo[filePhoto[1]]; credits=credistPhoto[1]
   paste0("\\begin{figure}[H]", 
           "\\centering", 
-         paste0("\\includegraphics[width=0.90\\textwidth]{", x, "}"), 
+         paste0("\\includegraphics[width=0.850\\textwidth]{", x, "}"), 
          paste0( "\\caption{Foto: ", credits, "}"), 
            "\\end{figure}", sep='\n')
 }

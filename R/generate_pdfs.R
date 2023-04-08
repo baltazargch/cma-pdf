@@ -11,15 +11,14 @@ library(tictoc)
 
 db <- read_csv('data/especies_nativas.csv')
 species <- db %>% filter(sp_taxonomia_orden == 'Cetartiodactyla') %>% 
-  select(title) %>%
-  sample_n(10) %>% unlist() %>% unname() 
+  select(title) %>% unlist() %>% unname() 
 
 dir.create('pdfs', recursive = T, showWarnings = F)
 
 my_render <- function(x){
-  # if(file.exists(paste0('pdfs/', x, '.pdf'))){
-  #   NULL
-  # } else {
+  if(file.exists(paste0('pdfs/', x, '.pdf'))){
+    NULL
+  } else {
     xfun::Rscript_call(
       render, 
       list(
@@ -31,7 +30,7 @@ my_render <- function(x){
         clean = TRUE
       )
     )
-  # }
+  }
 }
 
 tic()
@@ -39,3 +38,5 @@ tic()
 future_map(species, ~ try({my_render(.x)}))
 
 toc()
+
+list.files('pdfs', '.tex$', full.names = T) %>% unlink()

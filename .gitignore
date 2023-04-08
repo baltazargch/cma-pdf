@@ -5,4 +5,3 @@
 *.tex
 *.log
 pdfs/
-!*.pdf

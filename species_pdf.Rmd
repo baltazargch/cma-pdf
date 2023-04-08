@@ -30,7 +30,7 @@ header-includes:
   \PassOptionsToPackage{dvipsnames,svgnames*,x11names*}{xcolor}
   \definecolor{ceil}{rgb}{0.57, 0.63, 0.81}
 params:
-  species:  "Blastocerus dichotomus"
+  species:  "Parachoerus wagneri"
 editor_options: 
   chunk_output_type: console
 ---
@@ -84,7 +84,7 @@ knitr::include_graphics('images/Base_info/logo.png')
 \vspace{-3cm}
 
 
-\begin{minipage}{0.7\textwidth}
+\begin{minipage}{0.75\textwidth}
 \vspace{0.15cm}
 {\fontsize{18}{22}\selectfont\textit{`r db.sp$title`}}
 
@@ -92,13 +92,13 @@ knitr::include_graphics('images/Base_info/logo.png')
 {\fontsize{30}{36}\selectfont\textbf{`r db.sp$sp_nombre_comun`}}
 \end{minipage}
 \hspace{0.05\textwidth}
-\begin{minipage}{0.20\textwidth}
+\begin{minipage}{0.2\textwidth}
 \includegraphics[width=\textwidth]{`r cat.logo`}\\
 \end{minipage}
 
 \normalsize
 
-```{r photo, fig.pos='H',  fig.align='center', out.width='90%',fig.cap= paste0("Foto: ", credistPhoto[1])}
+```{r photo, fig.pos='H',  fig.align='center', out.width='95%',fig.cap= paste0("Foto: ", credistPhoto[1])}
  knitr::include_graphics(photo[filePhoto[1]])
 ```
 
@@ -122,8 +122,9 @@ if(length(filePhoto)>1) {
   cat('\\vspace{-0.5cm}\n\n')
   
   for(i in 2:length(filePhoto)) {
-    CMA_print_photo(x = photo[ filePhoto[i] ], credits = credistPhoto[i]) %>% cat
-    cat('\n\n')
+    CMA_print_photo(x = photo[ filePhoto[i] ],
+                    credits = credistPhoto[i]) %>% cat
+    cat('\n\n\\vspace{-0.3cm}')
   }
 }
 ```
@@ -343,12 +344,12 @@ tibble(
 
 cat('\n\n**Comentarios sobre la abundancia, densidad o probabilidad de ocupación de la especie**\n\n')
 
-cat(db.sp$sp_abundancia_comentarios %>% str_replace('\n', '\n\n'))
+cat(db.sp$sp_abundancia_comentarios %>% str_replace_all('\n', '\n\n'))
 
 cat(paste0('\n\n**¿Existen actualmente programas de monitoreo?:** ',
            db.sp$sp_programas_de_monitoreo,
            '\n\n'))
-cat(db.sp$sp_programas_de_monitoreo_coment%>% str_replace('\n', '\n\n'))
+cat(db.sp$sp_programas_de_monitoreo_coment%>% str_replace_all('\n', '\n\n'))
 
 ```
 
@@ -428,7 +429,7 @@ CMA_parse_threats(db.sp) %>% cat
 
 db.sp$sp_amenazas_comentarios %>% 
   CMA_italize_binomial(., db.sp$title) %>% 
-  str_replace('\n', '\n\n') %>% cat
+  str_replace_all('\n', '\n\n') %>% cat
 ```
 
 
@@ -440,27 +441,27 @@ db.sp$sp_amenazas_comentarios %>%
 ```{r, results='asis'}
 if(!is.na(db.sp$sp_en_area_nat_protegida_coment)){
   db.sp$sp_en_area_nat_protegida_coment %>% 
-    str_replace('\n', '\n\n') %>% 
+    str_replace_all('\n', '\n\n') %>% 
     CMA_italize_binomial(., db.sp$title) %>% cat
 }
 ```
 
-**Marco legal de la especie**
-
 ```{r, results='asis'}
 if(!is.na(db.sp$sp_marco_legal)){
+cat('**Marco legal de la especie**\n\n')
 db.sp$sp_marco_legal %>%    
-  str_replace('\n', '\n\n') %>% 
+  str_replace_all('\n', '\n\n') %>% 
   CMA_italize_binomial(., db.sp$title) %>% cat}
 ```
 
-**Planes de acción y/o proyectos de conservación o manejo actuales**
 
 ```{r, results='asis'}
-if(!is.na(db.sp$sp_marco_legal)){
-db.sp$sp_planes_de_conservacion %>%    
-  str_replace('\n', '\n\n') %>% 
-  CMA_italize_binomial(., db.sp$title) %>% cat}
+if(!is.na(db.sp$sp_planes_de_conservacion)){
+  cat('**Planes de acción y/o proyectos de conservación o manejo actuales**\n\n')
+  db.sp$sp_planes_de_conservacion %>%    
+  str_replace_all('\n', '\n\n') %>% 
+  CMA_italize_binomial(., db.sp$title) %>% cat
+  }
 ```
 
 **Experiencias de reintroducción o erradicación:** `r db.sp$sp_reintroducciones`
@@ -468,7 +469,7 @@ db.sp$sp_planes_de_conservacion %>%
 ```{r, results='asis'}
 if(db.sp$sp_reintroducciones != 'no'){
 db.sp$sp_reintroducciones_comentarios %>%   
-  str_replace('\n', '\n\n') %>% 
+  str_replace_all('\n', '\n\n') %>% 
   CMA_italize_binomial(., db.sp$title) %>% cat
 
 n <- db.sp$sp_valorizacion_socioeconomica %>% str_split(',', simplify = T) %>% str_trim()
@@ -482,19 +483,20 @@ cat(db.sp$sp_usos_y_valores %>%
 
 ```
 
-**Rol ecológico / servicios ecosistémicos**
-
 ```{r, results='asis'}
-db.sp$sp_rol_ecologico_y_ecoservicios %>%   
-  str_replace('\n', '\n\n') %>% 
-  CMA_italize_binomial(., db.sp$title) %>% cat
+if(!is.na(db.sp$sp_rol_ecologico_y_ecoservicios)){
+  cat('**Rol ecológico / servicios ecosistémicos**\n\n')
+  db.sp$sp_rol_ecologico_y_ecoservicios %>%   
+    str_replace_all('\n', '\n\n') %>% 
+    CMA_italize_binomial(., db.sp$title) %>% cat
+}
 ```
 
 **Necesidades de investigación y conocimiento**
 
 ```{r, results='asis'}
 db.sp$sp_necesidades_de_investigacion %>% 
-  str_replace('\n', '\n\n') %>% 
+  str_replace_all('\n', '\n\n') %>% 
   CMA_italize_binomial(., db.sp$title) %>% cat
 ```
 
@@ -518,12 +520,14 @@ cit.bib <- db.sp$sp_bibliografia_citada %>% str_split('\n') %>% unlist() %>%
 cat(paste(cit.bib, collapse = '\n\n'))
 cat('\n\n')
 
+if(!is.na(db.sp$sp_bibliografia_de_referencia)){
 cat('\\noindent\\textbf{LITERATURA DE REFERENCIA}\n\n')
 
 ref.bib <- db.sp$sp_bibliografia_de_referencia %>% str_split('\n') %>% unlist()%>% 
   map_chr(., ~CMA_italize_binomial(.x, db.sp$title))
 cat(paste(ref.bib, collapse = '\n\n'))
 cat('\n\n')
+}
 ```
 
 \setlength{\parindent}{0pt}
