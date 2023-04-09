@@ -6,3 +6,6 @@
 *.log
 pdfs/
 photos/
+species_pdf.out
+species_pdf.aux
+species_pdf.tex
