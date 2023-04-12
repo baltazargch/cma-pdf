@@ -181,7 +181,7 @@ CMA_print_titles <- function(text){
                          latex_options = c("HOLD_position")) %>% 
            row_spec(1, bold=TRUE, color = 'white', background = "ceil") %>% 
            column_spec(1:2, width = '16cm', latex_valign='m')
-         )
+  )
 }
 
 #### Parse taxonomy ----
@@ -217,7 +217,7 @@ CMA_parse_taxonomy <- function(data){
   return(dbList)
 }
 
-#### Parse amenazadas ----
+#### Parse threats ----
 
 CMA_parse_threats <- function(data){
   # data <- db.sp
@@ -265,9 +265,123 @@ CMA_parse_threats <- function(data){
     y1 = data$value[ (l+1):nrow(data)]
   }
   tibble(x, y, x1, y1) %>% 
-    mutate(across(x:y1, ~as.character(.x))) %>% 
-  CMA_kable_output(cat = 'threats')
+    mutate(across(x:y1, ~as.character(.x))) %>%
+    CMA_kable_output(cat = 'threats')
 }
+
+#### Parse eval info ----
+CMA_parse_eval <- function(data){
+  # data <- db.sp
+  require(tidyverse)
+  db.eval <- data %>% 
+    select(sp_tendencia_poblacional:sp_fluct_extrem_en_indiv_maduros) %>% 
+    rbind(., c('Tendencia poblacional actual', 
+               '', '', '', '',
+               'Estudios de viabilidad poblacional', 
+               'Tiempo generacional', '', 'Tiempo generacional, justificación', #9 
+               'Reducción del tamaño poblacional en los últimos 10 años o 3 generaciones', 
+               'Aumento del tamaño poblacional en los últimos 10 años o 3 generaciones', 
+               'Variabilidad genética', #col 12 
+               'Tamaño poblacional efectivo', '', '', 
+               'Extensión de presencia (EOO)', '',
+               'Extensión de presencia: comentarios', 
+               'Área de ocupación (AOO)', '', 
+               'Número de localidades',#21 
+               'Área poblacional severamente fragmentada', '', 
+               'Extensión de presencia (EOO)', 
+               'Área de ocupación (AOO)', 
+               'Calidad de hábitat', 
+               'Número de localidades o subpoblaciones', 
+               'Número de individuos maduros', 
+               'Extensión de presencia (EOO)', 
+               'Área de ocupación (AOO)', 
+               'Número de localidades o subpoblaciones', 
+               'Número de individuos maduros')) 
+  
+  db.eval1 <- db.eval %>% select(1:23) %>% 
+    select(where(~!all(is.na(.x[1]))))
+  c <- 1  
+  while(c <= ncol(db.eval1)){
+    if(db.eval1[[c]][2] != '') cat(paste0('**', db.eval1[[c]][2], ': **'))
+    
+    if(db.eval1[[c]][2] != '' && 
+       any(str_detect(colnames(db.eval1)[c], 'coment'), 
+           db.eval1[[c]][2] == 'Estudios de viabilidad poblacional')) 
+      cat(paste0('\n\n', db.eval1[[c]][1] %>% CMA_italize_binomial(., data$title), '\n\n'))
+    else 
+      cat(paste0(db.eval1[[c]][1], '\n\n'))
+    
+    c <- c+1
+  }
+  
+  db.eval1 <- db.eval %>% select(!1:23) %>% 
+    select(where(~!all(is.na(.x[1]))))
+  if(ncol(db.eval1) > 0){
+    db.dismi <- db.eval1 %>% 
+      select(contains('dismin'))
+    
+    if(ncol(db.dismi) > 0){
+      db.dismi <- db.dismi %>% as.list()
+      cat('**Disminución continua observada, estimada, inferida o proyectada de:**\n\n')
+      
+      for(x in db.dismi) cat(paste0('- **', x[2], ':** ', x[1], '\n\n'))
+    }
+    
+    db.dismi <- db.eval1 %>% 
+      select(!contains('dismin'))
+    if(ncol(db.dismi) > 0){
+      db.dismi <- db.dismi %>% as.list()
+      cat('**Fluctuaciones extremas en:**\n\n')
+      
+      for(x in db.dismi) cat(paste0('- **', x[2], ':** ', x[1], '\n\n'))
+    }
+  }
+}
+
+#### Parse eto-eco ----
+CMA_parse_eto_eco <- function(data){
+  # data <- db.sp
+  
+  dbeto <- data %>% 
+    select(sp_habitat_selvas_o_bosques:sp_habitat_canales_artificiales) %>%
+    rbind(., c("Selvas / Bosques", 
+               "Arbustales", 
+               "Pastizales", 
+               "Hábitat rupestres", 
+               "Estepas", 
+               "Lagos o lagunas", 
+               "Rios o arroyos", 
+               "Hábitat palustre", 
+               "Hábitat costeros", 
+               "Oceánicos", 
+               "Cultivos agrícolas", 
+               "Forestaciones", 
+               "Pasturas ganaderas", 
+               "Embalses o diques", 
+               "Urbano o periurbano",
+               "Canales artificiales"))
+  grp <- list(Terrestres = c(1:5), 
+              "De agua dulce"= c(6:8),  
+              "Marinos" = c(9:10),  
+              "Antrópicos" = c(11:16))
+  
+  
+  for(i in seq_along(grp)){
+    trr <- dbeto %>% 
+      select(grp[[i]]) %>%  
+      select(where(~!all(is.na(.x[1]))))
+    
+    if(ncol(trr) > 0){
+      if(i == 1) cat('**Tipos de hábitat en donde la especie está presente**\n\n')
+      trr <- trr %>% as.list()
+      cat(paste0('**', names(grp)[i], '**\n\n'))
+      
+      for(x in trr) cat(paste0('- **', x[2], ':** ', x[1], '\n\n'))
+    }
+  }
+}
+
+
 #### General functionalities ----
 ##### Make tables ----
 CMA_kable_output <- function(table, cat='taxo'){
@@ -333,8 +447,8 @@ CMA_get_photo_index <- function(x){
 CMA_print_photo <- function(x, credits){
   # x <- photo[filePhoto[1]]; credits=credistPhoto[1]
   paste0("\\begin{figure}[H]", 
-          "\\centering", 
+         "\\centering", 
          paste0("\\includegraphics[width=0.850\\textwidth]{", x, "}"), 
          paste0( "\\caption{Foto: ", credits, "}"), 
-           "\\end{figure}", sep='\n')
+         "\\end{figure}", sep='\n')
 }

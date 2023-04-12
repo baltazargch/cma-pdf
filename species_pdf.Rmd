@@ -30,7 +30,7 @@ header-includes:
   \PassOptionsToPackage{dvipsnames,svgnames*,x11names*}{xcolor}
   \definecolor{ceil}{rgb}{0.57, 0.63, 0.81}
 params:
-  species:  "Parachoerus wagneri"
+  species:  "Blastocerus dichotomus"
 editor_options: 
   chunk_output_type: console
 ---
@@ -40,7 +40,7 @@ editor_options:
   {\endMakeFramed}
   
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE, include = TRUE)
+knitr::opts_chunk$set(echo = FALSE, include = TRUE, eval=TRUE)
 library(rvest)
 library(tidyverse)
 library(kableExtra)
@@ -75,10 +75,6 @@ credistPhoto <- CMA_get_photo_credits(photo[filePhoto])
   
 \fancyhead[R]{\textbf{`r spDoi`}}
 
-```{r logo.img,  out.width='100%', fig.pos='H', eval=FALSE}
-knitr::include_graphics('images/Base_info/logo.png')
-```
-
 \invisiblesection{GENERALIDADES}
 
 \vspace{-3cm}
@@ -98,7 +94,7 @@ knitr::include_graphics('images/Base_info/logo.png')
 
 \normalsize
 
-```{r photo, fig.pos='H',  fig.align='center', out.width='95%',fig.cap= paste0("Foto: ", credistPhoto[1])}
+```{r photo, fig.pos='H',  fig.align='center', out.width='95%',fig.cap= paste0("Foto: ", credistPhoto[1]), eval=TRUE}
  knitr::include_graphics(photo[filePhoto[1]])
 ```
 
@@ -115,7 +111,7 @@ knitr::include_graphics('images/Base_info/logo.png')
 
 \vspace{-0.4cm}
 
-```{r title.addition.photos, results='asis'}
+```{r title.addition.photos, results='asis', eval=TRUE}
 if(length(filePhoto)>1) {
   CMA_print_titles("OTRAS FOTOGRAFÍAS") %>% cat
   
@@ -134,13 +130,13 @@ if(length(filePhoto)>1) {
 
 \vspace{-0.4cm}
 
-```{r map.sp,  results='asis'}
+```{r map.sp,  results='asis', eval=TRUE}
 CMA_print_titles("ÁREA DE DISTRIBUCIÓN ACTUAL")%>% cat()
 ```
 
 \vspace{-0.4cm}
 
-```{r map, fig.pos="H",  out.width="100%"}
+```{r map, fig.pos="H",  out.width="100%", eval=TRUE}
 knitr::include_graphics(
   # 'maps/Cetartiodactyla/Balaenoptera_acutorostrata.png')
   paste0('maps/', db.sp$sp_taxonomia_orden, '/',
@@ -268,18 +264,15 @@ if(!is.na(db.sp$sp_taxonomia_comentarios)){
 
 \arrayrulecolor{white}
 
-```{r title.eval, results='asis'}
+```{r title.eval, results='asis', eval=TRUE}
 CMA_print_titles("INFORMACIÓN RELEVANTE PARA LA EVALUACIÓN") %>% cat()
 
 ```
 
 \vspace{-0.4cm}
 
-```{r cont.eval,  results='asis'}
-noData <- which(is.na(
-  db.sp %>% select(sp_tendencia_poblacional:sp_fluct_extrem_en_indiv_maduros
-  )
-))
+```{r cont.eval,  results='asis', eval=TRUE}
+CMA_parse_eval(db.sp)
 ```
 
 ```{r title.rango, results='asis'}
@@ -386,10 +379,6 @@ CMA_print_titles("RASGOS ETO-ECOLÓGICOS") %>% cat()
 
 \vspace{-0.4cm}
 
-```{r cont.eto}
-
-```
-
 **Hábitos:** `r db.sp$sp_habitos`
 
 **Hábitos especializados:** `r db.sp$sp_habitos_especializados`
@@ -397,6 +386,14 @@ CMA_print_titles("RASGOS ETO-ECOLÓGICOS") %>% cat()
 **Otro hábito especializado: comentarios**
   
 `r db.sp$sp_habitos_especializados_otro`
+
+```{r cont.eto, results='asis'}
+CMA_parse_eto_eco(db.sp)
+
+if(!is.na(db.sp$sp_tolerancia_a_hab_antropizados)){
+  cat('**Tolerancia a hábitats antropizados:** '); cat(db.sp$sp_tolerancia_a_hab_antropizados)
+}
+```
 
 **Dieta:** `r db.sp$sp_dieta`
 
@@ -432,9 +429,7 @@ db.sp$sp_amenazas_comentarios %>%
   str_replace_all('\n', '\n\n') %>% cat
 ```
 
-
 **La especie ¿está presente en áreas naturales protegidas?:** `r db.sp$sp_en_area_nat_protegida`
-
 
 **Presencia de la especie en áreas naturales protegidas**
 
@@ -453,7 +448,6 @@ db.sp$sp_marco_legal %>%
   str_replace_all('\n', '\n\n') %>% 
   CMA_italize_binomial(., db.sp$title) %>% cat}
 ```
-
 
 ```{r, results='asis'}
 if(!is.na(db.sp$sp_planes_de_conservacion)){
