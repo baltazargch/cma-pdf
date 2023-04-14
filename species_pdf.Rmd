@@ -30,7 +30,7 @@ header-includes:
   \PassOptionsToPackage{dvipsnames,svgnames*,x11names*}{xcolor}
   \definecolor{ceil}{rgb}{0.57, 0.63, 0.81}
 params:
-  species:  "Blastocerus dichotomus"
+  species:  "Panthera onca"
 editor_options: 
   chunk_output_type: console
 ---
@@ -51,7 +51,15 @@ source('R/funcs.R', local = knitr::knit_global())
 db <- read_csv('data/especies_nativas.csv')
 dois <- read_csv('data/species_doi.csv')
 
-db.sp <- db %>% filter(title == params$species)
+db.sp <- db %>% filter(title == params$species) %>% 
+  mutate(sp_distribuida_en_numero_de_loc = ifelse(is.na(sp_distribuida_en_numero_de_loc) & 
+                                                    !is.na(sp_numero_de_localidades),
+                                                  sp_numero_de_localidades,
+                                                  sp_distribuida_en_numero_de_loc)) %>% 
+  mutate(sp_numero_de_localidades = ifelse(is.na(sp_numero_de_localidades) & 
+                                                    !is.na(sp_distribuida_en_numero_de_loc),
+                                           sp_distribuida_en_numero_de_loc,
+                                           sp_numero_de_localidades))
 
 spDoi <- dois$DOI[ match(db.sp$title, dois$Especie) ] %>% str_trim()
 cat.logo <- db.sp$sp_cat_nac_conserv_2019 %>% 
@@ -95,7 +103,11 @@ credistPhoto <- CMA_get_photo_credits(photo[filePhoto])
 \normalsize
 
 ```{r photo, fig.pos='H',  fig.align='center', out.width='95%',fig.cap= paste0("Foto: ", credistPhoto[1]), eval=TRUE}
- knitr::include_graphics(photo[filePhoto[1]])
+if(length(filePhoto) > 0){
+  knitr::include_graphics(photo[filePhoto[1]]) 
+} else { 
+  knitr::include_graphics('photos/Insert-Image-Here.png') 
+}
 ```
 
 \vspace{-1cm}
@@ -124,7 +136,6 @@ if(length(filePhoto)>1) {
   }
 }
 ```
-
 
 \newpage
 
@@ -185,22 +196,22 @@ for(x in seq_along(tbsPob)){
   if(x != length(tbsPob)) cat('\\vspace{0.5cm}')
   }
 }
+cat('\n\n')
+CMA_print_in_line(db.sp$sp_cat_sayds_conserv_2004, 'Categoría Res. SAyDS 1030/04', '\n\n')
 ```
 
-**Categoría Res. SAyDS 1030/04**
-
-`r db.sp$sp_cat_sayds_conserv_2004`
-
-**Categorías nacionales de conservación previas (SAREM)**
-
 ```{r cat.nac.prev, echo=FALSE, include=T, results='asis'}
+cat('**Categorías nacionales de conservación previas (SAREM)**\n\n')
+
 ph <- c("sp_cat_nac_conserv_XXX", "sp_cat_nac_conserv_XXX_criterio")
 for(c in c("2012", "2000", "1997")){
   if(!is.na(db.sp[[paste0('sp_cat_nac_conserv_', c)]][1])){
     db.sp %>% 
       mutate(a = c) %>% 
       select(a, str_replace(ph, 'XXX', c)) %>%  
-      kbl(booktabs = T, format = 'latex', escape = F, col.names = NULL) %>% 
+      drop_col_na() %>% 
+      kbl(booktabs = T, format = 'latex', escape = F, 
+          col.names = NULL) %>% 
       kable_styling(latex_options = c('striped', "HOLD_position"),
                     position = "center", full_width = T) %>%
       column_spec(1, bold=T) %>% cat()
@@ -219,7 +230,7 @@ for(c in c("2012", "2000", "1997")){
 ```{r cat.cons.pais.vec,  results='asis'}
 if(!is.na(db.sp$group_sp_eval_paises_vecinos)){
   cat('**Categorías de conservación actuales en países vecinos**\n\n')
-  out <- CMA_neighbor_countries(db.sp)
+  out <- CMA_neighbor_countries(db.sp) 
   for(i in out){cat(i)}
 }
 ```
@@ -230,7 +241,7 @@ if(!is.na(db.sp$sp_eval_global_iucn_anio)){
 tibble(
   "Año de evaluación" = as.character(db.sp$sp_eval_global_iucn_anio), 
   "Categoría" = db.sp$sp_eval_global_iucn_categoria, 
-  "Criterios y subcriterios" = db.sp$sp_eval_global_iucn_criterios) %>% 
+  "Criterios y subcriterios" = db.sp$sp_eval_global_iucn_criterios) %>% drop_col_na() %>% 
    kbl(booktabs = T, format = 'latex') %>% 
                row_spec(0,bold=TRUE, 
                         extra_latex_after = "\\arrayrulecolor{white}") %>% 
@@ -289,27 +300,34 @@ cat('**Comentarios sobre la distribución actual e histórica**\n\n')
 cat(db.sp$sp_distribucion_historica_coment)
 cat('\n\n')
 n <- db.sp$sp_presencia_confirmada_por_pcia %>% str_split(',', simplify = T) %>% str_trim()
+if(!all(is.na(n))){
 tibble(
   c("Presencia confirmada por provincia:", 
     rep("", length(n)-1)), '', n) %>% CMA_kable_output(cat = 'other') %>% cat
-
 cat('\n\n')
+}
+
 n <- db.sp$sp_confirmada_por_ecorreg_de_arg %>% str_split(',', simplify = T) %>% str_trim()
+if(!all(is.na(n))){
 tibble(
   c("Presencia en ecorregiones de Argentina:", 
     rep("", length(n)-1)), '', n) %>% CMA_kable_output(cat = 'other') %>% cat
-
 cat('\n\n')
+}
+
 n <- db.sp$sp_confirmada_por_ecorreg_terres %>% str_split(',', simplify = T) %>% str_trim()
+if(!all(is.na(n))){
 tibble(
   c("Presencia en ecorregiones globales terrestres:", 
     rep("", length(n)-1)), '', n) %>% CMA_kable_output(cat = 'other') %>% cat
-
 cat('\n\n')
+}
+
 tibble(
   "Patrón de distribución"= db.sp$sp_patron_de_distribucion,
   "Cantidad de localidades" = db.sp$sp_numero_de_localidades, 
-  "Rango altitudinal"= db.sp$sp_rango_altitudinal) %>% 
+  "Rango altitudinal"= db.sp$sp_rango_altitudinal) %>%
+  drop_col_na() %>% 
   kbl(booktabs = T, format = 'latex',linesep = "", escape = F) %>% 
       kable_styling(latex_options = c('striped', "HOLD_position"),
                     position = "center", full_width = T) %>%
@@ -379,39 +397,44 @@ CMA_print_titles("RASGOS ETO-ECOLÓGICOS") %>% cat()
 
 \vspace{-0.4cm}
 
-**Hábitos:** `r db.sp$sp_habitos`
+```{r habs.espe, results='asis'}
 
-**Hábitos especializados:** `r db.sp$sp_habitos_especializados`
+CMA_print_in_line(db.sp$sp_habitos, 
+                  'Hábitos:')
 
-**Otro hábito especializado: comentarios**
-  
-`r db.sp$sp_habitos_especializados_otro`
+CMA_print_in_line(db.sp$sp_habitos_especializados, 
+                  'Hábitos especializados:')
+
+CMA_print_in_line(db.sp$sp_habitos_especializados_otro, 
+                  "Otro hábito especializado: comentarios", 
+                  '\n\n')
+
+```
 
 ```{r cont.eto, results='asis'}
 CMA_parse_eto_eco(db.sp)
 
-if(!is.na(db.sp$sp_tolerancia_a_hab_antropizados)){
-  cat('**Tolerancia a hábitats antropizados:** '); cat(db.sp$sp_tolerancia_a_hab_antropizados)
-}
+CMA_print_in_line(db.sp$sp_tolerancia_a_hab_antropizados, 
+                  'Tolerancia a hábitats antropizados:')
+
+
+CMA_print_in_line(db.sp$sp_dieta, 'Dieta:')
+
+CMA_print_in_line(db.sp$sp_dieta_especializada, 'Dieta especializada:')
+
+CMA_print_in_line(db.sp$sp_aspectos_reproductivos, 
+                  'Aspectos reproductivos', 
+                  '\n\n')
+
+CMA_print_in_line(db.sp$sp_patron_de_actividad, 'Patrón de actividad:')
+
+CMA_print_in_line(db.sp$sp_gregariedad, 'Gregariedad:')
+
+CMA_print_in_line(db.sp$sp_tamanio_de_grupo_coment, 
+                  '')
+
+CMA_print_in_line(db.sp$sp_area_de_accion,'Área de acción', '\n\n')
 ```
-
-**Dieta:** `r db.sp$sp_dieta`
-
-**Dieta especializada:** `r db.sp$sp_dieta_especializada`
-
-**Aspectos reproductivos**
-  
-`r db.sp$sp_aspectos_reproductivos`
-
-**Patrón de actividad:** `r db.sp$sp_patron_de_actividad`
-
-**Gregariedad:** `r db.sp$sp_gregariedad`
-
-`r db.sp$sp_tamanio_de_grupo_coment`
-
-**Área de acción**
-  
-`r db.sp$sp_area_de_accion`
 
 ```{r title.inves, results='asis'}
 CMA_print_titles("CONSERVACIÓN E INVESTIGACIÓN") %>% cat()
@@ -427,14 +450,19 @@ CMA_parse_threats(db.sp) %>% cat
 db.sp$sp_amenazas_comentarios %>% 
   CMA_italize_binomial(., db.sp$title) %>% 
   str_replace_all('\n', '\n\n') %>% cat
+
+cat('\n\n')
+
+CMA_print_in_line(db.sp$sp_en_area_nat_protegida, 
+                  'La especie ¿está presente en áreas naturales protegidas?:')
 ```
 
-**La especie ¿está presente en áreas naturales protegidas?:** `r db.sp$sp_en_area_nat_protegida`
-
-**Presencia de la especie en áreas naturales protegidas**
-
 ```{r, results='asis'}
+
+
 if(!is.na(db.sp$sp_en_area_nat_protegida_coment)){
+  cat('**Presencia de la especie en áreas naturales protegidas** \n\n')
+  
   db.sp$sp_en_area_nat_protegida_coment %>% 
     str_replace_all('\n', '\n\n') %>% 
     CMA_italize_binomial(., db.sp$title) %>% cat
@@ -455,10 +483,13 @@ if(!is.na(db.sp$sp_planes_de_conservacion)){
   db.sp$sp_planes_de_conservacion %>%    
   str_replace_all('\n', '\n\n') %>% 
   CMA_italize_binomial(., db.sp$title) %>% cat
-  }
-```
+}
 
-**Experiencias de reintroducción o erradicación:** `r db.sp$sp_reintroducciones`
+cat('\n\n')
+
+CMA_print_in_line(db.sp$sp_reintroducciones, 
+                  'Experiencias de reintroducción o erradicación:')
+```
 
 ```{r, results='asis'}
 if(db.sp$sp_reintroducciones != 'no'){
@@ -486,9 +517,9 @@ if(!is.na(db.sp$sp_rol_ecologico_y_ecoservicios)){
 }
 ```
 
-**Necesidades de investigación y conocimiento**
-
 ```{r, results='asis'}
+cat('**Necesidades de investigación y conocimiento**\n\n')
+
 db.sp$sp_necesidades_de_investigacion %>% 
   str_replace_all('\n', '\n\n') %>% 
   CMA_italize_binomial(., db.sp$title) %>% cat
@@ -537,15 +568,15 @@ CMA_parse_authors(db.sp) %>%
   CMA_print_authors()
 ```
 
-\begin{Center}
-\begin{framed}[0.7\textwidth]
-  \begin{minipage}{\linewidth}
-    \Centering
-    \small
-  Este documento fue generado automáticamente\\
-  Fecha de compilación: `r Sys.time()`\\
-  La reproducción sin cambios de este documento está permitida\\
-  Si encuentra errores por favor escribir a comisioncma@sarem.com\\
-  \end{minipage}
-\end{framed}
-\end{Center}
+<!-- \begin{Center} -->
+<!-- \begin{framed}[0.7\textwidth] -->
+<!--   \begin{minipage}{\linewidth} -->
+<!--     \Centering -->
+<!--     \small -->
+<!--   Este documento fue generado automáticamente\\ -->
+<!--   Fecha de compilación: `r Sys.time()`\\ -->
+<!--   La reproducción sin cambios de este documento está permitida\\ -->
+<!--   Si encuentra errores por favor escribir a comisioncma@sarem.com\\ -->
+<!--   \end{minipage} -->
+<!-- \end{framed} -->
+<!-- \end{Center} -->

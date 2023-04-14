@@ -147,20 +147,27 @@ CMA_subpop_cons <- function(data){
 ##### Parse neighbors countries ----
 
 CMA_neighbor_countries <- function(db){
+  colsNmaes <- c('Pais', 'Categoría', 'Año', 'Cita')
+  
+  # db <- db.sp
   db <- db %>% select(group_sp_eval_paises_vecinos) %>% unlist()
   db <- db %>% 
     str_split('\n;', simplify = T) %>% 
     str_remove('\n') %>% 
     map(~str_split(.x, ',', simplify = T) %>%  str_trim()) %>% 
-    do.call(rbind, .) %>% as.data.frame() %>% 
-    select(País=1, Categoría=2, Cita=3) %>% 
-    mutate(Año = as.numeric(str_remove_all(Cita, '[^0-9]'))) %>% 
-    select(País, Categoría, Año, Cita) %>% 
-    arrange(-Año) %>% 
-    mutate(Año = as.character(Año)) %>% 
-    split(., .$País) 
+    map(~ cbind(t(.x)) %>% 
+          as.data.frame() %>% 
+          `colnames<-`(colsNmaes[1:length(.x)]))
+  
+  db <- db %>% map(~if(ncol(.x)<3){return(.x)} else {.x %>% 
+      select(País=1, Categoría=2, Cita=3) %>% 
+      mutate(Año = as.numeric(str_remove_all(Cita, '[^0-9]'))) %>%
+      select(País, Categoría, Año, Cita) %>% 
+      mutate(Cita =  str_replace(Cita, '&amp;', '&')) %>% 
+      arrange(-Año) %>% mutate(Año = as.character(Año))})
   
   db %>% map(~.x %>% remove_rownames %>% 
+               drop_col_na %>% 
                kbl(booktabs = T, format = 'latex') %>% 
                row_spec(0,bold=TRUE, 
                         extra_latex_after = "\\arrayrulecolor{white}") %>% 
@@ -306,7 +313,8 @@ CMA_parse_eval <- function(data){
     
     if(db.eval1[[c]][2] != '' && 
        any(str_detect(colnames(db.eval1)[c], 'coment'), 
-           db.eval1[[c]][2] == 'Estudios de viabilidad poblacional')) 
+           db.eval1[[c]][2]  %in% c('Estudios de viabilidad poblacional',
+                                    'Variabilidad genética'))) 
       cat(paste0('\n\n', db.eval1[[c]][1] %>% CMA_italize_binomial(., data$title), '\n\n'))
     else 
       cat(paste0(db.eval1[[c]][1], '\n\n'))
@@ -365,6 +373,7 @@ CMA_parse_eto_eco <- function(data){
               "Marinos" = c(9:10),  
               "Antrópicos" = c(11:16))
   
+  cat('**Tipos de hábitat en donde la especie está presente**\n\n')
   
   for(i in seq_along(grp)){
     trr <- dbeto %>% 
@@ -372,7 +381,6 @@ CMA_parse_eto_eco <- function(data){
       select(where(~!all(is.na(.x[1]))))
     
     if(ncol(trr) > 0){
-      if(i == 1) cat('**Tipos de hábitat en donde la especie está presente**\n\n')
       trr <- trr %>% as.list()
       cat(paste0('**', names(grp)[i], '**\n\n'))
       
@@ -410,22 +418,35 @@ CMA_kable_output <- function(table, cat='taxo'){
 }
 
 ##### Italized species or genus text ----
-CMA_italize_binomial <- function(text, species){
+CMA_italize_binomial <- function(text, species=NULL){
   # text <- db.sp$sp_taxonomia_comentarios
   # species <- db.sp$title
-  
-  genus <- str_split(species, ' ', simplify = T)[1]
-  
-  epite <- paste0(str_remove_all(genus, '[a-z]'), '. ',
-                  str_split(species, ' ', simplify = T)[2])
-  
-  if(str_detect(text, genus)){
-    text <- str_replace_all(text, genus, paste0('\\\\textit{', genus, '}'))
-  } 
-  if(str_detect(text, epite)){
-    text <- str_replace_all(text, epite, paste0('\\\\textit{', epite, '}'))
+  if(is.null(species)){
+    species = read_csv('data/especies_nativas.csv')$title
+  }
+  # text <- c('P. concolor Blastocerus Parachoerus Catagonus')
+  for(sp in species){
+    
+    genus <- str_split(sp, ' ', simplify = T)[1]
+    
+    epite <- paste0(str_remove_all(genus, '[a-z]'), '. ',
+                    str_split(sp, ' ', simplify = T)[2])
+    
+    subspIni <- paste0(str_remove_all(genus, '[a-z]'), '. ',
+                       str_split(sp, ' ', simplify = T)[2])
+    
+    if(str_detect(text, genus)){
+      text <- str_replace_all(text, genus, paste0('\\\\textit{', genus, '}'))
+    } 
+    if(str_detect(text, epite)){
+      text <- str_replace_all(text, epite, paste0('\\\\textit{', epite, '}'))
+    }
   }
   text
+}
+
+CMA_ampersand <- function(text){
+  str_replace_all(text, '&amp;', '&')
 }
 
 CMA_get_photo_credits <- function(x){
@@ -451,4 +472,16 @@ CMA_print_photo <- function(x, credits){
          paste0("\\includegraphics[width=0.850\\textwidth]{", x, "}"), 
          paste0( "\\caption{Foto: ", credits, "}"), 
          "\\end{figure}", sep='\n')
+}
+
+drop_col_na <- function(x){
+  x %>% select(where(~!all(is.na(.x[1]))))
+}
+
+CMA_print_in_line <- function(x, title, 
+                              skip.line=''){
+  if(!is.na(x)) {
+    cat(paste0('**', title, '** ', skip.line, x))
+    cat('\n\n')
+  }
 }

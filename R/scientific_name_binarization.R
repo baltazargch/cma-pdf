@@ -1,15 +1,15 @@
 CMA_italize_binomial <- function(data, exclude.col='title'){
   require(tidyverse)
   require(taxadb)
-  require(pbl)
-  data <- read_csv('data/especies_nativas.csv')
-  spList <- c(filter_rank(name='Chordata', 
-                          rank='Phylum', 
+
+  data <- read_csv('data/especies_nativas.csv')[1,]
+  spList <- c(filter_rank(name='Mammalia', 
+                          rank='Class', 
                           'col')$scientificName, 
-              filter_rank(name='Chordata', 
-                          rank='Phylum', 
+              filter_rank(name='Mammalia', 
+                          rank='Class', 
                           'itis')$scientificName, 
-              data$title) %>% unique()
+              read_csv('data/especies_nativas.csv')$title) %>% unique()
   data.mod <- data %>% 
     # filter(title == 'Blastocerus dichotomus') %>%
     select(-sp_imagenes_de_la_especie , -title) %>% as.list()
