@@ -30,7 +30,7 @@ header-includes:
   \PassOptionsToPackage{dvipsnames,svgnames*,x11names*}{xcolor}
   \definecolor{ceil}{rgb}{0.57, 0.63, 0.81}
 params:
-  species:  "Panthera onca"
+  species:  "Orcinus orca"
 editor_options: 
   chunk_output_type: console
 ---
@@ -102,7 +102,7 @@ credistPhoto <- CMA_get_photo_credits(photo[filePhoto])
 
 \normalsize
 
-```{r photo, fig.pos='H',  fig.align='center', out.width='95%',fig.cap= paste0("Foto: ", credistPhoto[1]), eval=TRUE}
+```{r photo, fig.pos='H',  fig.align='center', out.width='162 mm',fig.cap= paste0("Foto: ", credistPhoto[1]), eval=TRUE}
 if(length(filePhoto) > 0){
   knitr::include_graphics(photo[filePhoto[1]]) 
 } else { 
@@ -123,17 +123,18 @@ if(length(filePhoto) > 0){
 
 \vspace{-0.4cm}
 
-```{r title.addition.photos, results='asis', eval=TRUE}
+```{r title.addition.photos, results='asis', eval=TRUE, out.width='162 mm'}
 if(length(filePhoto)>1) {
   CMA_print_titles("OTRAS FOTOGRAFÍAS") %>% cat
   
   cat('\\vspace{-0.5cm}\n\n')
   
-  for(i in 2:length(filePhoto)) {
-    CMA_print_photo(x = photo[ filePhoto[i] ],
-                    credits = credistPhoto[i]) %>% cat
-    cat('\n\n\\vspace{-0.3cm}')
-  }
+  CMA_print_photo(photo[ filePhoto[-1] ], credits = credistPhoto[-1]) %>% cat
+  # for(i in 2:length(filePhoto)) {
+  #   CMA_print_photo(x = photo[ filePhoto[i] ],
+  #                   credits = credistPhoto[i]) %>% cat
+  #   # cat('\n\n\\vspace{-0.3cm}')
+  # }
 }
 ```
 
@@ -180,9 +181,11 @@ out %>%
 
 ```
 
-**Justificación de la categorización**
-
-`r db.sp$sp_cat_nac_conserv_2019_justific`
+```{r, results='asis'}
+CMA_print_in_line(db.sp$sp_cat_nac_conserv_2019_justific %>% 
+                    str_replace_all('\n', '\n\n'), 
+                  'Justificación de la categorización', '\n\n')
+```
 
 ```{r tabla-subpoblaciones,  results='asis'}
 if(!is.na(db.sp$group_sp_eval_subpob)) {
@@ -269,7 +272,8 @@ for(i in conTaxo){
 if(!is.na(db.sp$sp_taxonomia_comentarios)){
   cat('**Comentarios taxonómicos**\n\n')
   
-  cat(CMA_italize_binomial(db.sp$sp_taxonomia_comentarios, db.sp$title))
+  cat(CMA_italize_binomial(db.sp$sp_taxonomia_comentarios, db.sp$title) %>% 
+        str_replace_all('\n', '\n\n'))
 }
 ```
 
@@ -326,12 +330,14 @@ cat('\n\n')
 tibble(
   "Patrón de distribución"= db.sp$sp_patron_de_distribucion,
   "Cantidad de localidades" = db.sp$sp_numero_de_localidades, 
-  "Rango altitudinal"= db.sp$sp_rango_altitudinal) %>%
+  "Rango altitudinal"= db.sp$sp_rango_altitudinal, 
+  'Rango de profundidad'= db.sp$sp_rango_de_profundidad) %>%
   drop_col_na() %>% 
   kbl(booktabs = T, format = 'latex',linesep = "", escape = F) %>% 
       kable_styling(latex_options = c('striped', "HOLD_position"),
                     position = "center", full_width = T) %>%
   row_spec(0, bold=T) %>% cat
+
 
 cat('\n\n')
 tibble(
@@ -360,7 +366,7 @@ cat(db.sp$sp_abundancia_comentarios %>% str_replace_all('\n', '\n\n'))
 cat(paste0('\n\n**¿Existen actualmente programas de monitoreo?:** ',
            db.sp$sp_programas_de_monitoreo,
            '\n\n'))
-cat(db.sp$sp_programas_de_monitoreo_coment%>% str_replace_all('\n', '\n\n'))
+if(!is.na(db.sp$sp_programas_de_monitoreo_coment)) db.sp$sp_programas_de_monitoreo_coment%>% str_replace_all('\n', '\n\n') %>% cat
 
 ```
 
@@ -430,6 +436,8 @@ CMA_print_in_line(db.sp$sp_patron_de_actividad, 'Patrón de actividad:')
 
 CMA_print_in_line(db.sp$sp_gregariedad, 'Gregariedad:')
 
+CMA_print_in_line(db.sp$sp_tamanio_de_grupo, 'Tamaño de grupo:')
+
 CMA_print_in_line(db.sp$sp_tamanio_de_grupo_coment, 
                   '')
 
@@ -458,7 +466,6 @@ CMA_print_in_line(db.sp$sp_en_area_nat_protegida,
 ```
 
 ```{r, results='asis'}
-
 
 if(!is.na(db.sp$sp_en_area_nat_protegida_coment)){
   cat('**Presencia de la especie en áreas naturales protegidas** \n\n')
@@ -496,14 +503,23 @@ if(db.sp$sp_reintroducciones != 'no'){
 db.sp$sp_reintroducciones_comentarios %>%   
   str_replace_all('\n', '\n\n') %>% 
   CMA_italize_binomial(., db.sp$title) %>% cat
+}
 
 n <- db.sp$sp_valorizacion_socioeconomica %>% str_split(',', simplify = T) %>% str_trim()
+if(!all(is.na(n))){
 tibble(
   c("Valorización socioeconómica de la especie:", 
     rep("", length(n)-1)), '', n) %>% CMA_kable_output(cat = 'other') %>% cat
+  }
 cat('\n\n')
-cat(db.sp$sp_usos_y_valores %>% 
-  CMA_italize_binomial(., db.sp$title))
+
+if(all(is.na(n))){
+CMA_print_in_line(db.sp$sp_usos_y_valores %>% CMA_italize_binomial(db.sp$title) %>% 
+                    str_replace_all('\n', '\n\n'), 
+                  'Valorización socioeconómica de la especie', '\n\n')
+} else {
+  db.sp$sp_usos_y_valores %>% CMA_italize_binomial(db.sp$title) %>% 
+                    str_replace_all('\n', '\n\n') %>% cat
 }
 
 ```

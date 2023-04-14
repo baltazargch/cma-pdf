@@ -315,7 +315,9 @@ CMA_parse_eval <- function(data){
        any(str_detect(colnames(db.eval1)[c], 'coment'), 
            db.eval1[[c]][2]  %in% c('Estudios de viabilidad poblacional',
                                     'Variabilidad genética'))) 
-      cat(paste0('\n\n', db.eval1[[c]][1] %>% CMA_italize_binomial(., data$title), '\n\n'))
+      cat(paste0('\n\n', db.eval1[[c]][1] %>% 
+                   CMA_italize_binomial(., data$title) %>% 
+                   str_replace_all('\n', '\n\n'), '\n\n'))
     else 
       cat(paste0(db.eval1[[c]][1], '\n\n'))
     
@@ -466,12 +468,23 @@ CMA_get_photo_index <- function(x){
 }
 
 CMA_print_photo <- function(x, credits){
-  # x <- photo[filePhoto[1]]; credits=credistPhoto[1]
+  # x <- photo[filePhoto[-1]]; credits=credistPhoto[-1]
+  stopifnot(length(x) == length(credits))
+  if(length(x) == 1){
+    
   paste0("\\begin{figure}[H]", 
          "\\centering", 
-         paste0("\\includegraphics[width=0.850\\textwidth]{", x, "}"), 
+         paste0("\\includegraphics[width=162mm]{", x, "}"), 
          paste0( "\\caption{Foto: ", credits, "}"), 
-         "\\end{figure}", sep='\n')
+         "\\end{figure}\n\n", sep='\n')
+  } else {
+    paste0("\\begin{figure}[H]", 
+           "\\centering", 
+           paste0("\\includegraphics[width=0.8\\linewidth]{", x[2], "}\n"), 
+           paste0("\\includegraphics[width=0.8\\linewidth]{", x[1], "}"),
+           paste0( "\\caption{Foto: ", credits[1],' (arriba); ', credits[2], ' (abajo)', "}"),
+           "\\end{figure}", sep='\n')
+  }
 }
 
 drop_col_na <- function(x){

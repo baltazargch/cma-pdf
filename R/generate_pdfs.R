@@ -37,7 +37,6 @@ my_render <- function(x){
     toc()
 }
 
-
 map(species, ~ try({my_render(.x)}))
 
 list.files('pdfs', '.tex$', full.names = T) %>% unlink()
