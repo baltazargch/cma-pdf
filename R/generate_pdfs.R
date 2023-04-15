@@ -5,12 +5,23 @@ library(purrr)
 library(tidyverse)
 library(furrr)
 
-future::plan(multisession, workers=4)
+
+future::plan(multisession)
 
 library(tictoc)
 # db$sp_cat_nac_conserv_2019 %>% unique()
 db <- read_csv('data/especies_nativas.csv')
-species <- db %>% filter(sp_taxonomia_orden %in% c('Cetartiodactyla', 'Carnivora', 'Didelphimorphia')) %>%
+
+photo <- list.files('photos/', '.jpg$', full.names = T, recursive = T)
+
+spIn <- map(db$title, 
+            ~ photo %>% 
+              str_to_lower() %>% str_detect(gsub(' ', '-', str_to_lower(.x))) %>% 
+              any()) %>% unlist()
+
+ords <- db$sp_taxonomia_orden[spIn] %>% unique()
+species <- db %>% 
+  filter(sp_taxonomia_orden %in% ords) %>%
   filter(!sp_cat_nac_conserv_2019  %in% c('NA (No Aplicable)', 
                                           'NE (No Evaluada')) %>% 
   select(title) %>% unlist() %>% unname() %>% sort()
@@ -40,3 +51,15 @@ my_render <- function(x){
 map(species, ~ try({my_render(.x)}))
 
 list.files('pdfs', '.tex$', full.names = T) %>% unlink()
+
+dt_to_copy <- tibble(
+  basename = list.files('pdfs/', '*.pdf$'), 
+  local = paste0(getwd(), '/',  list.files('pdfs/', '*.pdf$', full.names = T)), 
+  local_exists = file.exists(local), 
+  drive = paste0('G:/My Drive/CMA pdfs/', basename), 
+  drive_exists = file.exists(drive)
+)
+
+file.copy( 
+  dt_to_copy$local[dt_to_copy$local_exists], 
+  dt_to_copy$drive[dt_to_copy$local_exists])

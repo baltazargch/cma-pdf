@@ -411,11 +411,15 @@ CMA_kable_output <- function(table, cat='taxo'){
       column_spec(2, width = '0.5cm')
   } else if(cat=='threats'){
     table %>%
-      kbl(booktabs = T, format = 'latex',linesep = "", escape = F, col.names = NULL) %>% 
+      kbl(booktabs = T, 
+          format = 'latex',
+          linesep = "", 
+          escape = F, 
+          col.names = NULL) %>% 
       kable_styling(latex_options = c('striped', "HOLD_position"),
                     position = "center", full_width = T) %>%
-      column_spec(1,  bold=TRUE) %>% 
-      column_spec(3,  bold=TRUE)
+      column_spec(1, width = '7cm', bold=TRUE) %>% 
+      column_spec(3,  width = '7cm', bold=TRUE)
   }
 }
 
@@ -434,15 +438,16 @@ CMA_italize_binomial <- function(text, species=NULL){
     epite <- paste0(str_remove_all(genus, '[a-z]'), '. ',
                     str_split(sp, ' ', simplify = T)[2])
     
-    subspIni <- paste0(str_remove_all(genus, '[a-z]'), '. ',
-                       str_split(sp, ' ', simplify = T)[2])
+    binom <- str_split(sp, ' ', simplify = T)[2]
     
-    if(str_detect(text, genus)){
-      text <- str_replace_all(text, genus, paste0('\\\\textit{', genus, '}'))
-    } 
+    # cases <- c(genus, epite, )
     if(str_detect(text, epite)){
       text <- str_replace_all(text, epite, paste0('\\\\textit{', epite, '}'))
     }
+    if(str_detect(text, genus)){
+      text <- str_replace_all(text, genus, paste0('\\\\textit{', genus, '}'))
+    }
+    
   }
   text
 }
@@ -480,8 +485,8 @@ CMA_print_photo <- function(x, credits){
   } else {
     paste0("\\begin{figure}[H]", 
            "\\centering", 
-           paste0("\\includegraphics[width=0.8\\linewidth]{", x[2], "}\n"), 
-           paste0("\\includegraphics[width=0.8\\linewidth]{", x[1], "}"),
+           paste0("\\includegraphics[width=0.9\\linewidth]{", x[2], "}\n"), 
+           paste0("\\includegraphics[width=0.9\\linewidth]{", x[1], "}"),
            paste0( "\\caption{Foto: ", credits[1],' (arriba); ', credits[2], ' (abajo)', "}"),
            "\\end{figure}", sep='\n')
   }

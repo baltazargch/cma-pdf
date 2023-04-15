@@ -30,7 +30,7 @@ header-includes:
   \PassOptionsToPackage{dvipsnames,svgnames*,x11names*}{xcolor}
   \definecolor{ceil}{rgb}{0.57, 0.63, 0.81}
 params:
-  species:  "Orcinus orca"
+  species:  "Myrmecophaga tridactyla"
 editor_options: 
   chunk_output_type: console
 ---
@@ -93,7 +93,9 @@ credistPhoto <- CMA_get_photo_credits(photo[filePhoto])
 {\fontsize{18}{22}\selectfont\textit{`r db.sp$title`}}
 
 \vspace{0.3cm}
+\begin{flushleft}
 {\fontsize{30}{36}\selectfont\textbf{`r db.sp$sp_nombre_comun`}}
+\end{flushleft}
 \end{minipage}
 \hspace{0.05\textwidth}
 \begin{minipage}{0.2\textwidth}
@@ -127,7 +129,7 @@ if(length(filePhoto) > 0){
 if(length(filePhoto)>1) {
   CMA_print_titles("OTRAS FOTOGRAFÍAS") %>% cat
   
-  cat('\\vspace{-0.5cm}\n\n')
+  cat('\\vspace{-0.7cm}\n\n')
   
   CMA_print_photo(photo[ filePhoto[-1] ], credits = credistPhoto[-1]) %>% cat
   # for(i in 2:length(filePhoto)) {
@@ -158,13 +160,11 @@ knitr::include_graphics(
 
 ```{r title.cons,  results='asis'}
 CMA_print_titles("CATEGORÍAS DE CONSERVACIÓN")%>% cat()
-
 ```
 
 \vspace{-0.4cm}
 
 ```{r cont.cons.b, results='asis'}
-
 out <- tibble(
   "Categoría Nacional de Conservación 2019" = db.sp$sp_cat_nac_conserv_2019) 
 
@@ -361,7 +361,9 @@ tibble(
 
 cat('\n\n**Comentarios sobre la abundancia, densidad o probabilidad de ocupación de la especie**\n\n')
 
-cat(db.sp$sp_abundancia_comentarios %>% str_replace_all('\n', '\n\n'))
+cat(db.sp$sp_abundancia_comentarios %>% 
+      str_replace_all('\n', '\n\n') %>% 
+      CMA_italize_binomial(., db.sp$title))
 
 cat(paste0('\n\n**¿Existen actualmente programas de monitoreo?:** ',
            db.sp$sp_programas_de_monitoreo,
@@ -372,11 +374,6 @@ if(!is.na(db.sp$sp_programas_de_monitoreo_coment)) db.sp$sp_programas_de_monitor
 
 \arrayrulecolor{white}
 
-```{r title.morfo, results='asis'}
-CMA_print_titles("DATOS MORFOMÉTRICOS") %>% cat()
-```
-
-\vspace{-0.4cm}
 
 ```{r cont.morfo,  results='asis'}
 out <- tibble(
@@ -385,7 +382,12 @@ out <- tibble(
   "Peso del macho" = db.sp$sp_peso_del_macho, 
   "Comentarios" = db.sp$sp_peso_comentarios
 )
-
+allNA <- all(is.na(out[1,]))
+if(!allNA){
+  CMA_print_titles("DATOS MORFOMÉTRICOS") %>% cat()
+  
+  cat('\\vspace{-0.4cm}')
+  
 out <- out[ , which(!is.na(out[1,])) ]
 
 out %>%  
@@ -393,6 +395,7 @@ out %>%
   kable_styling(latex_options = c('striped', "HOLD_position"),
                     position = "center", full_width = T) %>%
   row_spec(0, bold=T) %>% cat
+}
 ```
 
 \arrayrulecolor{white}
