@@ -30,7 +30,7 @@ header-includes:
   \PassOptionsToPackage{dvipsnames,svgnames*,x11names*}{xcolor}
   \definecolor{ceil}{rgb}{0.57, 0.63, 0.81}
 params:
-  species:  "Myrmecophaga tridactyla"
+  species:  "Pudu puda"
 editor_options: 
   chunk_output_type: console
 ---
@@ -195,10 +195,15 @@ tbsPob <- CMA_subpop_cons(db.sp)
 
 for(x in seq_along(tbsPob)){
   cat(paste0(tbsPob[[x]][[1]], collapse = '\\vspace{0.3cm}'))
-  cat(paste0(tbsPob[[x]][[2]], collapse = '\\vspace{0.3cm}'))
+  if(!is.na(tbsPob[[x]][[2]])) {
+    cat(paste0(tbsPob[[x]][[2]], collapse = '\\vspace{0.3cm}'))
+  } else{ 
+    cat('\\vspace{0.3cm}')
+    }
   if(x != length(tbsPob)) cat('\\vspace{0.5cm}')
   }
 }
+
 cat('\n\n')
 CMA_print_in_line(db.sp$sp_cat_sayds_conserv_2004, 'Categoría Res. SAyDS 1030/04', '\n\n')
 ```
@@ -469,13 +474,13 @@ CMA_print_in_line(db.sp$sp_en_area_nat_protegida,
 ```
 
 ```{r, results='asis'}
-
 if(!is.na(db.sp$sp_en_area_nat_protegida_coment)){
   cat('**Presencia de la especie en áreas naturales protegidas** \n\n')
   
   db.sp$sp_en_area_nat_protegida_coment %>% 
     str_replace_all('\n', '\n\n') %>% 
-    CMA_italize_binomial(., db.sp$title) %>% cat
+    CMA_italize_binomial(., db.sp$title) %>% 
+    str_trim(side = 'right') %>% cat
 }
 ```
 
@@ -518,11 +523,13 @@ cat('\n\n')
 
 if(all(is.na(n))){
 CMA_print_in_line(db.sp$sp_usos_y_valores %>% CMA_italize_binomial(db.sp$title) %>% 
-                    str_replace_all('\n', '\n\n'), 
+                    str_replace_all('\n', '\n\n') %>% 
+    str_trim(side = 'right'), 
                   'Valorización socioeconómica de la especie', '\n\n')
 } else {
-  db.sp$sp_usos_y_valores %>% CMA_italize_binomial(db.sp$title) %>% 
-                    str_replace_all('\n', '\n\n') %>% cat
+    db.sp$sp_usos_y_valores %>% CMA_italize_binomial(db.sp$title) %>% 
+                      str_replace_all('\n', '\n\n') %>% 
+    str_trim(side = 'right') %>% cat
 }
 
 ```

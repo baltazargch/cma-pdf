@@ -90,14 +90,13 @@ CMA_print_authors <- function(authors){
   
 }
 
-
 #### Parse conservation ----
 ##### Parse subpopulation ----
 CMA_subpop_cons <- function(data){
   require(tidyverse)
   require(kableExtra)
   # db <- read_csv('data/especies_nativas.csv')
-  # data <- db %>% filter(title == 'Blastocerus dichotomus')
+  # data <- db.sp # %>% filter(title == 'Blastocerus dichotomus')
   
   stopifnot(nrow(data) == 1, ncol(data) > 1)
   
@@ -124,25 +123,42 @@ CMA_subpop_cons <- function(data){
     dfNames <- c('Subpoblación', 'Categoría', 'Criterios y subcriterios')
     tbsPob <- vector('list', nSubPob)
     for(i in 1:nSubPob){
-      # i=1
+      # i=3
       items <- c(ies$from[i]+c(1,3,5))
       
-      tbsPob[[i]][[1]] <-  data.frame( t(spListPop[ items ]))
-      colnames(tbsPob[[i]][[1]]) <- dfNames
+      hasjust <- any(spListPop[ ies$from[i]:ies$to[i] ] == 'Justificación')
+      complCase <- all(dfNames  %in% spListPop[ ies$from[i]:ies$to[i] ])
+      
+      if(complCase){
+        tbsPob[[i]][[1]] <- data.frame( t(spListPop[ items ]))
+        colnames(tbsPob[[i]][[1]]) <- dfNames
+      } else { 
+        whichIn <- which(dfNames  %in% spListPop[ ies$from[i]:ies$to[i] ])
+        tbsPob[[i]][[1]] <- data.frame( t(spListPop[ items[whichIn] ]))
+        colnames(tbsPob[[i]][[1]]) <- dfNames[whichIn]
+      }
       
       tbsPob[[i]][[1]] <-  tbsPob[[i]][[1]] %>% 
+        drop_col_na() %>% 
         kbl(booktabs = T, format = 'latex') %>% 
         row_spec(0,bold=TRUE, extra_latex_after = "\\arrayrulecolor{white}") %>% 
         kable_styling(latex_options = c('striped', "HOLD_position"),
                       position = "center", full_width = T)
-      tbsPob[[i]][[2]] <- paste("**Justificación**\n\n",
-                                paste(
-                                  spListPop[ (max(items)+2):ies$to[i] ],
-                                  collapse = '\n\n'))
-    }
+      
+      tbsPob[[i]][[2]] <- ifelse(all(hasjust, complCase),
+                                     paste("**Justificación**\n\n",
+                                           paste(
+                                             spListPop[ (max(items)+2):ies$to[i] ],
+                                             collapse = '\n\n')), 
+                                 ifelse(any(hasjust, complCase), 
+                                        paste("**Justificación**\n\n",
+                                              paste(
+                                                spListPop[ max(items):max((ies$from[i+1]-1), (ies$to[i]), na.rm = T) ],
+                                                collapse = '\n\n')), NA))
+                                     }
     return(tbsPob)
-  }
-}
+    }
+    }
 
 ##### Parse neighbors countries ----
 
@@ -248,17 +264,18 @@ CMA_parse_threats <- function(data){
             "Otros impactos indirectos asociados a la especie humana"
   )
   
-  data <- data %>% select(contains("amenaza")) %>% select(!sp_amenazas_comentarios) %>% 
+  data <- data %>% select(contains("amenaza")) %>% 
+    select(!sp_amenazas_comentarios) %>% 
     mutate(across(everything(.), ~as.character(.x))) %>% 
     pivot_longer(
       cols = everything(.)
     ) %>% 
     mutate(namesNew = cols) %>% 
-    filter(!is.na(value)) %>% 
+    filter(!is.na(value), value != 'no hay datos') %>% 
     mutate(value=as.numeric(value), bl='') %>% arrange(value) %>% 
     select(namesNew, bl, value)
   
-  if((nrow(data) %% 1) == 0){
+  if((nrow(data) %% 1) == 1){
     l <- (nrow(data)/2) + 0.5
     x = data$namesNew[ 1:l]
     y = data$value[ 1:l] 
@@ -283,7 +300,8 @@ CMA_parse_eval <- function(data){
   db.eval <- data %>% 
     select(sp_tendencia_poblacional:sp_fluct_extrem_en_indiv_maduros) %>% 
     rbind(., c('Tendencia poblacional actual', 
-               '', '', '', '',
+               '', 
+               'Número de individuos maduros', 'Número de individuos maduros', '',
                'Estudios de viabilidad poblacional', 
                'Tiempo generacional', '', 'Tiempo generacional, justificación', #9 
                'Reducción del tamaño poblacional en los últimos 10 años o 3 generaciones', 
@@ -401,7 +419,7 @@ CMA_kable_output <- function(table, cat='taxo'){
       kable_styling(latex_options = c('striped', "HOLD_position"),
                     position = "center", full_width = T) %>%
       column_spec(1, width = '6cm', bold=TRUE) %>% 
-      column_spec(2, width = '1cm')
+      column_spec(2, width = '1cm') 
   } else if(cat=='other'){
     table %>%
       kbl(booktabs = T, format = 'latex',linesep = "", escape = F, col.names = NULL) %>% 
@@ -418,8 +436,8 @@ CMA_kable_output <- function(table, cat='taxo'){
           col.names = NULL) %>% 
       kable_styling(latex_options = c('striped', "HOLD_position"),
                     position = "center", full_width = T) %>%
-      column_spec(1, width = '7cm', bold=TRUE) %>% 
-      column_spec(3,  width = '7cm', bold=TRUE)
+      column_spec(1, width = '6.5cm', bold=TRUE) %>% 
+      column_spec(3,  width = '6.5cm', bold=TRUE)
   }
 }
 
@@ -477,11 +495,11 @@ CMA_print_photo <- function(x, credits){
   stopifnot(length(x) == length(credits))
   if(length(x) == 1){
     
-  paste0("\\begin{figure}[H]", 
-         "\\centering", 
-         paste0("\\includegraphics[width=162mm]{", x, "}"), 
-         paste0( "\\caption{Foto: ", credits, "}"), 
-         "\\end{figure}\n\n", sep='\n')
+    paste0("\\begin{figure}[H]", 
+           "\\centering", 
+           paste0("\\includegraphics[width=162mm]{", x, "}"), 
+           paste0( "\\caption{Foto: ", credits, "}"), 
+           "\\end{figure}\n\n", sep='\n')
   } else {
     paste0("\\begin{figure}[H]", 
            "\\centering", 
@@ -498,8 +516,10 @@ drop_col_na <- function(x){
 
 CMA_print_in_line <- function(x, title, 
                               skip.line=''){
+  
+  title <- ifelse(title == '', title, paste0('**', title, '**'))
   if(!is.na(x)) {
-    cat(paste0('**', title, '** ', skip.line, x))
+    cat(paste0(title, ' ', skip.line, x))
     cat('\n\n')
   }
 }

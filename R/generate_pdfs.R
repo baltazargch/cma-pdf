@@ -3,12 +3,8 @@ library(sessioninfo)
 library(rmarkdown)
 library(purrr)
 library(tidyverse)
-library(furrr)
-
-
-future::plan(multisession)
-
 library(tictoc)
+
 # db$sp_cat_nac_conserv_2019 %>% unique()
 db <- read_csv('data/especies_nativas.csv')
 
@@ -52,14 +48,22 @@ map(species, ~ try({my_render(.x)}))
 
 list.files('pdfs', '.tex$', full.names = T) %>% unlink()
 
+ords <- db$sp_taxonomia_orden[ match(list.files('pdfs/', '*.pdf$') %>% str_remove('.pdf$'), 
+                                     db$title) ]
+paste0('G:/My Drive/CMA pdfs/', ords) %>% walk(~dir.create(.x,F))
+
 dt_to_copy <- tibble(
   basename = list.files('pdfs/', '*.pdf$'), 
   local = paste0(getwd(), '/',  list.files('pdfs/', '*.pdf$', full.names = T)), 
   local_exists = file.exists(local), 
-  drive = paste0('G:/My Drive/CMA pdfs/', basename), 
+  drive = paste0('G:/My Drive/CMA pdfs/', ords,'/', basename), 
   drive_exists = file.exists(drive)
 )
 
 file.copy( 
   dt_to_copy$local[dt_to_copy$local_exists], 
   dt_to_copy$drive[dt_to_copy$local_exists])
+
+db %>%  filter(!sp_cat_nac_conserv_2019  %in% c('NA (No Aplicable)', 
+                                                'NE (No Evaluada')) %>% 
+  select(sp_taxonomia_orden) %>% table()
