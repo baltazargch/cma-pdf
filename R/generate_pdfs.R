@@ -25,10 +25,10 @@ species <- db %>%
 dir.create('pdfs', recursive = T, showWarnings = F)
 
 my_render <- function(x){
-    tic()
   if(file.exists(paste0('pdfs/', x, '.pdf'))){
     NULL
   } else {
+    tic()
     print(x)
     xfun::Rscript_call(
       render, 
@@ -41,8 +41,8 @@ my_render <- function(x){
         clean = TRUE
       )
     )
-  }
     toc()
+  }
 }
 
 map(species, ~ try({my_render(.x)}))
@@ -66,5 +66,8 @@ file.copy(
   dt_to_copy$drive[dt_to_copy$local_exists])
 
 db %>%  filter(!sp_cat_nac_conserv_2019  %in% c('NA (No Aplicable)', 
-                                                'NE (No Evaluada')) %>% 
+                                                'NE (No Evaluada'), 
+               sp_taxonomia_orden   %in% ords) %>% 
   select(sp_taxonomia_orden) %>% table()
+
+table(ords)

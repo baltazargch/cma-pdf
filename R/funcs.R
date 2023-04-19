@@ -109,12 +109,12 @@ CMA_subpop_cons <- function(data){
       str_trim()
     
     spListPop <- spListPop[ !spListPop %in%  c("", ",")]
-    
-    nSubPob <- sum(str_detect(spListPop, 'Subpoblación'))
+    # spListPop[str_detect(spListPop, 'Subpoblación$')]
+    nSubPob <- sum(str_detect(spListPop, 'Subpoblación$'))
     
     ies <- data.frame(
-      from = which(str_detect(spListPop, 'Subpoblación')),
-      to = c( (which(str_detect(spListPop, 'Subpoblación'))[-1]) -1,
+      from = which(str_detect(spListPop, 'Subpoblación$')),
+      to = c( (which(str_detect(spListPop, 'Subpoblación$'))[-1]) -1,
               length(spListPop))
     )
     
@@ -123,7 +123,7 @@ CMA_subpop_cons <- function(data){
     dfNames <- c('Subpoblación', 'Categoría', 'Criterios y subcriterios')
     tbsPob <- vector('list', nSubPob)
     for(i in 1:nSubPob){
-      # i=3
+      # i=6
       items <- c(ies$from[i]+c(1,3,5))
       
       hasjust <- any(spListPop[ ies$from[i]:ies$to[i] ] == 'Justificación')
@@ -134,7 +134,7 @@ CMA_subpop_cons <- function(data){
         colnames(tbsPob[[i]][[1]]) <- dfNames
       } else { 
         whichIn <- which(dfNames  %in% spListPop[ ies$from[i]:ies$to[i] ])
-        tbsPob[[i]][[1]] <- data.frame( t(spListPop[ items[whichIn] ]))
+        tbsPob[[i]][[1]] <- data.frame( t(spListPop[ items[c(1,2)] ]))
         colnames(tbsPob[[i]][[1]]) <- dfNames[whichIn]
       }
       
@@ -213,8 +213,10 @@ CMA_parse_taxonomy <- function(data){
   # data <- db.sp
   
   nombCienti <- paste0('\\textit{', data$title,'}', ' ', 
-                       str_remove(data$sp_nombre_cientifico, data$title) %>% str_trim())
-  
+                       str_remove(data$sp_nombre_cientifico, data$title) %>% 
+                         str_trim() %>% str_replace('\\&', '\\\\&')
+                       ) 
+ 
   dbList <- vector('list', 7)
   dbList[[1]] <- tibble("Orden", '', data$sp_taxonomia_orden)
   dbList[[2]] <- tibble("Familia", '', data$sp_taxonomia_familia) 
