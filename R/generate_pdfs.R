@@ -8,7 +8,7 @@ library(tictoc)
 # db$sp_cat_nac_conserv_2019 %>% unique()
 db <- read_csv('data/especies_nativas.csv')
 
-photo <- list.files('photos/', '.jpg$', full.names = T, recursive = T)
+photo <- list.files('photos/', 'g$', full.names = T, recursive = T)
 
 spIn <- map(db$title, 
             ~ photo %>% 
@@ -29,6 +29,7 @@ my_render <- function(x){
   if(file.exists(paste0('pdfs/', x, '.pdf'))){
     NULL
   } else {
+    print(x)
     xfun::Rscript_call(
       render, 
       list(

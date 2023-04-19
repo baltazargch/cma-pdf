@@ -30,10 +30,11 @@ header-includes:
   \PassOptionsToPackage{dvipsnames,svgnames*,x11names*}{xcolor}
   \definecolor{ceil}{rgb}{0.57, 0.63, 0.81}
 params:
-  species:  "Pudu puda"
+  species:  "Lagenorhynchus cruciger"
 editor_options: 
   chunk_output_type: console
 ---
+
 
 \renewenvironment{framed}[1][\hsize]
   {\MakeFramed{\hsize#1\advance\hsize-\width \FrameRestore}}%
@@ -67,9 +68,9 @@ cat.logo <- db.sp$sp_cat_nac_conserv_2019 %>%
 
 cat.logo <- paste0('images/', cat.logo, '.png')
 
-photo <- list.files('photos/', '.jpg$', full.names = T, recursive = T)
+photo <- list.files('photos/', 'g$', full.names = T, recursive = T)
 filePhoto <- CMA_get_photo_index(db.sp$title)
-credistPhoto <- CMA_get_photo_credits(photo[filePhoto])
+credistPhoto <- CMA_get_photo_credits(photo[filePhoto]) %>% str_replace('&', 'y')
 ```
 
 \setmainfont{Arial}
@@ -104,7 +105,7 @@ credistPhoto <- CMA_get_photo_credits(photo[filePhoto])
 
 \normalsize
 
-```{r photo, fig.pos='H',  fig.align='center', out.width='162 mm',fig.cap= paste0("Foto: ", credistPhoto[1]), eval=TRUE}
+```{r photo, fig.pos='H',  fig.align='center', out.width='162 mm',fig.cap= paste0("Foto: ", credistPhoto[1])}
 if(length(filePhoto) > 0){
   knitr::include_graphics(photo[filePhoto[1]]) 
 } else { 
@@ -145,17 +146,18 @@ if(length(filePhoto)>1) {
 \vspace{-0.4cm}
 
 ```{r map.sp,  results='asis', eval=TRUE}
-CMA_print_titles("ÁREA DE DISTRIBUCIÓN ACTUAL")%>% cat()
+if(file.exists(paste0('maps/', db.sp$sp_taxonomia_orden, '/',
+         gsub(' ', '_', db.sp$title), '.png'))) 
+  CMA_print_titles("ÁREA DE DISTRIBUCIÓN ACTUAL")%>% cat()
 ```
 
 \vspace{-0.4cm}
 
 ```{r map, fig.pos="H",  out.width="100%", eval=TRUE}
-knitr::include_graphics(
-  # 'maps/Cetartiodactyla/Balaenoptera_acutorostrata.png')
-  paste0('maps/', db.sp$sp_taxonomia_orden, '/',
-         gsub(' ', '_', db.sp$title), '.png')
-  )
+if(file.exists(paste0('maps/', db.sp$sp_taxonomia_orden, '/',
+         gsub(' ', '_', db.sp$title), '.png')))
+  knitr::include_graphics(paste0('maps/', db.sp$sp_taxonomia_orden, '/', 
+                                 gsub(' ', '_', db.sp$title), '.png'))
 ```
 
 ```{r title.cons,  results='asis'}
@@ -302,12 +304,14 @@ CMA_print_titles("RANGO GEOGRÁFICO, OCURRENCIA Y ABUNDANCIA") %>% cat()
 \vspace{-0.4cm}
 
 ```{r cont.rango, echo=F, include=TRUE, results='asis'}
-cat(paste0('**Presencia en el territorio nacional:** ', 
-    db.sp$sp_residente_migrante_o_errante, '\n\n'))
 
-cat('**Comentarios sobre la distribución actual e histórica**\n\n')
-cat(db.sp$sp_distribucion_historica_coment)
-cat('\n\n')
+CMA_print_in_line(db.sp$sp_residente_migrante_o_errante, 
+                  'Presencia en el territorio nacional:')
+
+CMA_print_in_line(db.sp$sp_distribucion_historica_coment, 
+                  'Comentarios sobre la distribución actual e histórica', 
+                  '\n\n')
+
 n <- db.sp$sp_presencia_confirmada_por_pcia %>% str_split(',', simplify = T) %>% str_trim()
 if(!all(is.na(n))){
 tibble(
@@ -332,6 +336,9 @@ tibble(
 cat('\n\n')
 }
 
+allNA <- all(is.na(c(db.sp$sp_patron_de_distribucion, db.sp$sp_numero_de_localidades, 
+   db.sp$sp_rango_altitudinal, db.sp$sp_rango_de_profundidad)))
+if(!allNA){
 tibble(
   "Patrón de distribución"= db.sp$sp_patron_de_distribucion,
   "Cantidad de localidades" = db.sp$sp_numero_de_localidades, 
@@ -342,9 +349,9 @@ tibble(
       kable_styling(latex_options = c('striped', "HOLD_position"),
                     position = "center", full_width = T) %>%
   row_spec(0, bold=T) %>% cat
+}
 
-
-cat('\n\n')
+if(!is.na(db.sp$sp_distribucion_endemismo)){
 tibble(
   x= c('Endemismo'), 
   y = c(db.sp$sp_distribucion_endemismo)
@@ -353,8 +360,9 @@ tibble(
   kable_styling(latex_options = c('striped', "HOLD_position"),
                     position = "center", full_width = T) %>%
   column_spec(1, bold=T) %>% cat
+}
 
-cat('\n\n')
+if(!is.na(db.sp$sp_abundancia)){
 tibble(
   x= c('Abundancia relativa estimada en su área de ocupación'), 
   y = c(db.sp$sp_abundancia)
@@ -363,16 +371,22 @@ tibble(
   kable_styling(latex_options = c('striped', "HOLD_position"),
                     position = "center", full_width = T) %>%
   column_spec(1, bold=T) %>% cat
+}
 
-cat('\n\n**Comentarios sobre la abundancia, densidad o probabilidad de ocupación de la especie**\n\n')
+cat('\n\n')
 
-cat(db.sp$sp_abundancia_comentarios %>% 
+CMA_print_in_line(db.sp$sp_abundancia_comentarios %>% 
       str_replace_all('\n', '\n\n') %>% 
-      CMA_italize_binomial(., db.sp$title))
+      CMA_italize_binomial(., db.sp$title), 
+      'Comentarios sobre la abundancia, densidad o probabilidad de ocupación de la especie',
+      'n\n')
 
-cat(paste0('\n\n**¿Existen actualmente programas de monitoreo?:** ',
-           db.sp$sp_programas_de_monitoreo,
-           '\n\n'))
+
+CMA_print_in_line(db.sp$sp_programas_de_monitoreo,
+                  '¿Existen actualmente programas de monitoreo?: ',)
+        
+cat('\n\n')
+
 if(!is.na(db.sp$sp_programas_de_monitoreo_coment)) db.sp$sp_programas_de_monitoreo_coment%>% str_replace_all('\n', '\n\n') %>% cat
 
 ```
@@ -393,13 +407,15 @@ if(!allNA){
   
   cat('\\vspace{-0.4cm}')
   
-out <- out[ , which(!is.na(out[1,])) ]
+out <- out[ , which(!is.na(out[1,-4])) ]
 
 out %>%  
   kbl(booktabs = T, format = 'latex',linesep = "", escape = F) %>% 
   kable_styling(latex_options = c('striped', "HOLD_position"),
                     position = "center", full_width = T) %>%
   row_spec(0, bold=T) %>% cat
+
+  CMA_print_in_line(db.sp$sp_peso_comentarios, '')
 }
 ```
 
@@ -507,7 +523,8 @@ CMA_print_in_line(db.sp$sp_reintroducciones,
 ```
 
 ```{r, results='asis'}
-if(db.sp$sp_reintroducciones != 'no'){
+if(db.sp$sp_reintroducciones != 'no' &&
+   !is.na(db.sp$sp_reintroducciones)){
 db.sp$sp_reintroducciones_comentarios %>%   
   str_replace_all('\n', '\n\n') %>% 
   CMA_italize_binomial(., db.sp$title) %>% cat
@@ -521,13 +538,13 @@ tibble(
   }
 cat('\n\n')
 
-if(all(is.na(n))){
-CMA_print_in_line(db.sp$sp_usos_y_valores %>% CMA_italize_binomial(db.sp$title) %>% 
-                    str_replace_all('\n', '\n\n') %>% 
-    str_trim(side = 'right'), 
+if(all(is.na(n)) && !is.na( db.sp$sp_usos_y_valores)){
+  
+CMA_print_in_line( db.sp$sp_usos_y_valores %>% CMA_italize_binomial(., db.sp$title) %>% 
+                    str_replace_all('\n', '\n\n') %>% str_trim(side = 'right'), 
                   'Valorización socioeconómica de la especie', '\n\n')
-} else {
-    db.sp$sp_usos_y_valores %>% CMA_italize_binomial(db.sp$title) %>% 
+} else if(!is.na( db.sp$sp_usos_y_valores)){
+    db.sp$sp_usos_y_valores %>% CMA_italize_binomial(., db.sp$title) %>% 
                       str_replace_all('\n', '\n\n') %>% 
     str_trim(side = 'right') %>% cat
 }

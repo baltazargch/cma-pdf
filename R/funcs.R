@@ -448,6 +448,7 @@ CMA_italize_binomial <- function(text, species=NULL){
   if(is.null(species)){
     species = read_csv('data/especies_nativas.csv')$title
   }
+  if(!is.na(text)){
   # text <- c('P. concolor Blastocerus Parachoerus Catagonus')
   for(sp in species){
     
@@ -467,6 +468,8 @@ CMA_italize_binomial <- function(text, species=NULL){
     }
     
   }
+  } 
+  
   text
 }
 
@@ -485,8 +488,11 @@ CMA_get_photo_credits <- function(x){
 }
 
 CMA_get_photo_index <- function(x){
-  list.files('photos/', '.jpg$', full.names = F, recursive = T) %>% 
-    str_to_lower() %>% str_detect(gsub(' ', '-', str_to_lower(x))) %>% 
+  lp <- list.files('photos/', 'g$', full.names = F, recursive = T) %>% 
+    str_to_lower() %>% str_replace_all(' ', '-') %>% 
+    str_replace_all('_', '-')
+
+    str_detect(lp, gsub(' ', '-', str_to_lower(x))) %>% 
     which()
 }
 
