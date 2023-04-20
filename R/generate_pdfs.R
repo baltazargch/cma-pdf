@@ -5,7 +5,6 @@ library(purrr)
 library(tidyverse)
 library(tictoc)
 
-# db$sp_cat_nac_conserv_2019 %>% unique()
 db <- read_csv('data/especies_nativas.csv')
 
 photo <- list.files('photos/', 'g$', full.names = T, recursive = T)

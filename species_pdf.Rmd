@@ -30,7 +30,7 @@ header-includes:
   \PassOptionsToPackage{dvipsnames,svgnames*,x11names*}{xcolor}
   \definecolor{ceil}{rgb}{0.57, 0.63, 0.81}
 params:
-  species:  "Dromiciops bozinovici"
+  species:  "Caperea marginata"
 editor_options: 
   chunk_output_type: console
 ---
@@ -271,9 +271,8 @@ for(i in conTaxo){
   cat(i, collapse = '\\vspace{0.3cm}')
 }
 
-
+  cat('\\vspace{-0.3cm}')
 if(!is.na(db.sp$sp_taxonomia_comentarios)){
-  cat('\n\n')
   cat('**Comentarios taxonómicos**\n\n')
   cat(CMA_italize_binomial(db.sp$sp_taxonomia_comentarios, db.sp$title) %>% 
         str_replace_all('\n', '\n\n'))
@@ -495,13 +494,12 @@ fl <- db.sp %>% select(contains("amenaza")) %>%
     select(!sp_amenazas_comentarios) %>% 
   .[1,]
 
-if(all(is.na(fl)) && db.sp$sp_cat_nac_conserv_2019  %in% c('NA (No Aplicable)', 
-                                                            'NE (No Evaluada)',
-                                                            'EX (Extinta)')){
+cats.out <- c('NA (No Aplicable)', 'NE (No Evaluada)', 
+              'EX (Extinta)', 'RE (Extinta a Nivel Regional)')
+
+if(all(is.na(fl)) && db.sp$sp_cat_nac_conserv_2019  %in% cats.out){
   cat('')
-} else if(all(is.na(fl)) && !db.sp$sp_cat_nac_conserv_2019  %in% c('NA (No Aplicable)', 
-                                                            'NE (No Evaluada)',
-                                                            'EX (Extinta)')){
+} else if(all(is.na(fl)) && !db.sp$sp_cat_nac_conserv_2019 %in% cats.out){
   cat('Sin amenazas reportadas\n\n')
 } else {
 
