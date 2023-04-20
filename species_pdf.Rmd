@@ -30,7 +30,7 @@ header-includes:
   \PassOptionsToPackage{dvipsnames,svgnames*,x11names*}{xcolor}
   \definecolor{ceil}{rgb}{0.57, 0.63, 0.81}
 params:
-  species:  "Tremarctos ornatus"
+  species:  "Dromiciops bozinovici"
 editor_options: 
   chunk_output_type: console
 ---
@@ -112,7 +112,7 @@ if(length(filePhoto) > 0){
 ```
 
 ```{r photo.space, results='asis'}
-if(!length(filePhoto) > 0)cat('\\vspace{10cm}')
+if(!length(filePhoto) > 0) cat('\\vspace{13cm}')
 ```
 
 \vspace{-1cm}
@@ -136,11 +136,6 @@ if(length(filePhoto)>1) {
   cat('\\vspace{-0.7cm}\n\n')
   
   CMA_print_photo(photo[ filePhoto[-1] ], credits = credistPhoto[-1]) %>% cat
-  # for(i in 2:length(filePhoto)) {
-  #   CMA_print_photo(x = photo[ filePhoto[i] ],
-  #                   credits = credistPhoto[i]) %>% cat
-  #   # cat('\n\n\\vspace{-0.3cm}')
-  # }
 }
 ```
 
@@ -169,7 +164,7 @@ CMA_print_titles("CATEGORÍAS DE CONSERVACIÓN")%>% cat()
 
 \vspace{-0.4cm}
 
-```{r cont.cons.b, results='asis'}
+```{r cont.cons, results='asis'}
 out <- tibble(
   "Categoría Nacional de Conservación 2019" = db.sp$sp_cat_nac_conserv_2019) 
 
@@ -184,15 +179,14 @@ out %>%
                     position = "center", full_width = T) %>%
   row_spec(0, bold=T) %>% cat
 
-```
+cat('\n\n')
 
-```{r, results='asis'}
 CMA_print_in_line(db.sp$sp_cat_nac_conserv_2019_justific %>% 
                     str_replace_all('\n', '\n\n'), 
                   'Justificación de la categorización', '\n\n')
 ```
 
-```{r tabla-subpoblaciones,  results='asis'}
+```{r tabla.subpoblaciones,  results='asis'}
 if(!is.na(db.sp$group_sp_eval_subpob)) {
   cat("**Evaluación de subpoblaciones locales**\n\n")
 
@@ -276,12 +270,11 @@ conTaxo <- CMA_parse_taxonomy(db.sp)
 for(i in conTaxo){
   cat(i, collapse = '\\vspace{0.3cm}')
 }
-```
 
-```{r taxo.comment,  results='asis'}
+
 if(!is.na(db.sp$sp_taxonomia_comentarios)){
+  cat('\n\n')
   cat('**Comentarios taxonómicos**\n\n')
-  
   cat(CMA_italize_binomial(db.sp$sp_taxonomia_comentarios, db.sp$title) %>% 
         str_replace_all('\n', '\n\n'))
 }
@@ -290,21 +283,31 @@ if(!is.na(db.sp$sp_taxonomia_comentarios)){
 \arrayrulecolor{white}
 
 ```{r title.eval, results='asis', eval=TRUE}
-CMA_print_titles("INFORMACIÓN RELEVANTE PARA LA EVALUACIÓN") %>% cat()
 
+fl <- db.sp %>% 
+    select(sp_tendencia_poblacional:sp_fluct_extrem_en_indiv_maduros) %>% 
+  .[1,]
+
+if(!all(is.na(fl))){ 
+  CMA_print_titles("INFORMACIÓN RELEVANTE PARA LA EVALUACIÓN") %>% cat()
+  cat('\\vspace{-0.4cm}')
+}
 ```
-
-\vspace{-0.4cm}
 
 ```{r cont.eval,  results='asis', eval=TRUE}
 CMA_parse_eval(db.sp)
 ```
 
 ```{r title.rango, results='asis'}
-CMA_print_titles("RANGO GEOGRÁFICO, OCURRENCIA Y ABUNDANCIA") %>% cat()
-```
+fl <- db.sp %>% 
+  select(sp_residente_migrante_o_errante:sp_programas_de_monitoreo_coment) %>% 
+  .[1,]
 
-\vspace{-0.4cm}
+if(all(!is.na(fl))) {
+  CMA_print_titles("RANGO GEOGRÁFICO, OCURRENCIA Y ABUNDANCIA") %>% cat()
+  cat('\\vspace{-0.4cm}')
+}
+```
 
 ```{r cont.rango, echo=F, include=TRUE, results='asis'}
 
@@ -374,9 +377,9 @@ if(!is.na(db.sp$sp_abundancia)){
     kable_styling(latex_options = c('striped', "HOLD_position"),
                   position = "center", full_width = T) %>%
     column_spec(1, bold=T) %>% cat
+  cat('\n\n')
 }
 
-cat('\n\n')
 
 CMA_print_in_line(db.sp$sp_abundancia_comentarios %>% 
                     str_replace_all('\n', '\n\n') %>% 
@@ -388,14 +391,15 @@ CMA_print_in_line(db.sp$sp_abundancia_comentarios %>%
 CMA_print_in_line(db.sp$sp_programas_de_monitoreo,
                   '¿Existen actualmente programas de monitoreo?: ',)
 
-cat('\n\n')
 
-if(!is.na(db.sp$sp_programas_de_monitoreo_coment)) db.sp$sp_programas_de_monitoreo_coment%>% str_replace_all('\n', '\n\n') %>% cat
 
+if(!is.na(db.sp$sp_programas_de_monitoreo_coment)){
+  cat('\n\n')
+ db.sp$sp_programas_de_monitoreo_coment%>% str_replace_all('\n', '\n\n') %>% cat
+}
 ```
 
 \arrayrulecolor{white}
-
 
 ```{r cont.morfo,  results='asis'}
 out <- tibble(
@@ -425,10 +429,14 @@ if(!allNA){
 \arrayrulecolor{white}
 
 ```{r title.eto, results='asis'}
-CMA_print_titles("RASGOS ETO-ECOLÓGICOS") %>% cat()
-```
+fl <- db.sp %>% 
+  select(sp_habitos:sp_area_de_accion) %>% .[1,] %>% is.na() %>% all
 
-\vspace{-0.4cm}
+if(!fl) {
+  CMA_print_titles("RASGOS ETO-ECOLÓGICOS") %>% cat()
+  cat('\\vspace{-0.4cm}')
+}
+```
 
 ```{r habs.espe, results='asis'}
 
@@ -472,12 +480,31 @@ CMA_print_in_line(db.sp$sp_area_de_accion,'Área de acción', '\n\n')
 ```
 
 ```{r title.inves, results='asis'}
-CMA_print_titles("CONSERVACIÓN E INVESTIGACIÓN") %>% cat()
+fl <- db.sp %>% 
+  select(sp_amenazas_perdida_de_habitat:sp_necesidades_de_investigacion) %>% 
+  .[1,] %>% is.na() %>% all
+
+if(!fl) {
+  CMA_print_titles("CONSERVACIÓN E INVESTIGACIÓN") %>% cat()
+  cat('\\vspace{-0.4cm}')
+}
 ```
 
-\vspace{-0.4cm}
-
 ```{r cont.inves,results='asis'}
+fl <- db.sp %>% select(contains("amenaza")) %>% 
+    select(!sp_amenazas_comentarios) %>% 
+  .[1,]
+
+if(all(is.na(fl)) && db.sp$sp_cat_nac_conserv_2019  %in% c('NA (No Aplicable)', 
+                                                            'NE (No Evaluada)',
+                                                            'EX (Extinta)')){
+  cat('')
+} else if(all(is.na(fl)) && !db.sp$sp_cat_nac_conserv_2019  %in% c('NA (No Aplicable)', 
+                                                            'NE (No Evaluada)',
+                                                            'EX (Extinta)')){
+  cat('Sin amenazas reportadas\n\n')
+} else {
+
 cat('**Amenazas por grado: de 1 (menor) a 5 (mayor)**\n\n')
 
 CMA_parse_threats(db.sp) %>% cat
@@ -487,7 +514,7 @@ db.sp$sp_amenazas_comentarios %>%
   str_replace_all('\n', '\n\n') %>% cat
 
 cat('\n\n')
-
+}
 CMA_print_in_line(db.sp$sp_en_area_nat_protegida, 
                   'La especie ¿está presente en áreas naturales protegidas?:')
 ```
@@ -517,9 +544,9 @@ if(!is.na(db.sp$sp_planes_de_conservacion)){
   db.sp$sp_planes_de_conservacion %>%    
     str_replace_all('\n', '\n\n') %>% 
     CMA_italize_binomial(., db.sp$title) %>% cat
-}
 
 cat('\n\n')
+}
 
 CMA_print_in_line(db.sp$sp_reintroducciones, 
                   'Experiencias de reintroducción o erradicación:')
@@ -538,8 +565,8 @@ if(!all(is.na(n))){
   tibble(
     c("Valorización socioeconómica de la especie:", 
       rep("", length(n)-1)), '', n) %>% CMA_kable_output(cat = 'other') %>% cat
-}
 cat('\n\n')
+}
 
 if(all(is.na(n)) && !is.na( db.sp$sp_usos_y_valores)){
   
@@ -564,16 +591,19 @@ if(!is.na(db.sp$sp_rol_ecologico_y_ecoservicios)){
 ```
 
 ```{r, results='asis'}
+if(!is.na(db.sp$sp_necesidades_de_investigacion)){
 cat('**Necesidades de investigación y conocimiento**\n\n')
 
 db.sp$sp_necesidades_de_investigacion %>% 
   str_replace_all('\n', '\n\n') %>% 
   CMA_italize_binomial(., db.sp$title) %>% cat
+}
 ```
 
 \arrayrulecolor{white}
 
 ```{r title.biblio, results='asis'}
+cat('\\vspace{-0.4cm}')
 CMA_print_titles("BIBLIOGRAFÍA") %>% cat()
 ```
 

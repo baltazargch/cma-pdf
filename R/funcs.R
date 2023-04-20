@@ -395,7 +395,7 @@ CMA_parse_eto_eco <- function(data){
               "Marinos" = c(9:10),  
               "Antrópicos" = c(11:16))
   
-  cat('**Tipos de hábitat en donde la especie está presente**\n\n')
+  if(!all(is.na(dbeto[1,]))) cat('**Tipos de hábitat en donde la especie está presente**\n\n')
   
   for(i in seq_along(grp)){
     trr <- dbeto %>% 
