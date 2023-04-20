@@ -18,8 +18,7 @@ spIn <- map(db$title,
 ords <- db$sp_taxonomia_orden[spIn] %>% unique()
 species <- db %>% 
   filter(sp_taxonomia_orden %in% ords) %>%
-  filter(!sp_cat_nac_conserv_2019  %in% c('NA (No Aplicable)', 
-                                          'NE (No Evaluada')) %>% 
+  filter(!sp_cat_nac_conserv_2019  %in% c('NE (No Evaluada')) %>% 
   select(title) %>% unlist() %>% unname() %>% sort()
 
 dir.create('pdfs', recursive = T, showWarnings = F)
@@ -65,8 +64,7 @@ file.copy(
   dt_to_copy$local[dt_to_copy$local_exists], 
   dt_to_copy$drive[dt_to_copy$local_exists])
 
-db %>%  filter(!sp_cat_nac_conserv_2019  %in% c('NA (No Aplicable)', 
-                                                'NE (No Evaluada'), 
+db %>%  filter(!sp_cat_nac_conserv_2019  %in% c('NE (No Evaluada'), 
                sp_taxonomia_orden   %in% ords) %>% 
   select(sp_taxonomia_orden) %>% table()
 

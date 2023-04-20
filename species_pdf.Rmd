@@ -30,7 +30,7 @@ header-includes:
   \PassOptionsToPackage{dvipsnames,svgnames*,x11names*}{xcolor}
   \definecolor{ceil}{rgb}{0.57, 0.63, 0.81}
 params:
-  species:  "Lagenorhynchus cruciger"
+  species:  "Tremarctos ornatus"
 editor_options: 
   chunk_output_type: console
 ---
@@ -108,12 +108,15 @@ credistPhoto <- CMA_get_photo_credits(photo[filePhoto]) %>% str_replace('&', 'y'
 ```{r photo, fig.pos='H',  fig.align='center', out.width='162 mm',fig.cap= paste0("Foto: ", credistPhoto[1])}
 if(length(filePhoto) > 0){
   knitr::include_graphics(photo[filePhoto[1]]) 
-} else { 
-  knitr::include_graphics('photos/Insert-Image-Here.png') 
 }
 ```
 
+```{r photo.space, results='asis'}
+if(!length(filePhoto) > 0)cat('\\vspace{10cm}')
+```
+
 \vspace{-1cm}
+
 ***
 
 \justifying
