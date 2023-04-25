@@ -30,7 +30,7 @@ header-includes:
   \PassOptionsToPackage{dvipsnames,svgnames*,x11names*}{xcolor}
   \definecolor{ceil}{rgb}{0.57, 0.63, 0.81}
 params:
-  species:  "Mus musculus"
+  species:  "Leopardus colocolo"
 editor_options: 
   chunk_output_type: console
 ---
