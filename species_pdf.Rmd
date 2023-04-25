@@ -30,7 +30,7 @@ header-includes:
   \PassOptionsToPackage{dvipsnames,svgnames*,x11names*}{xcolor}
   \definecolor{ceil}{rgb}{0.57, 0.63, 0.81}
 params:
-  species:  "Caperea marginata"
+  species:  "Mus musculus"
 editor_options: 
   chunk_output_type: console
 ---
@@ -86,7 +86,7 @@ credistPhoto <- CMA_get_photo_credits(photo[filePhoto]) %>% str_replace('&', 'y'
 
 \invisiblesection{GENERALIDADES}
 
-\vspace{-3cm}
+\vspace{-1.3cm}
 
 
 \begin{minipage}{0.75\textwidth}
@@ -115,15 +115,15 @@ if(length(filePhoto) > 0){
 if(!length(filePhoto) > 0) cat('\\vspace{13cm}')
 ```
 
-\vspace{-1cm}
+<!-- \vspace{-1cm} -->
 
-***
+<!-- *** -->
 
 \justifying
 
 **Cita sugerida:** `r db.sp$sp_autores_de_ficha`. (2019). *`r db.sp$title`*. En: SAyDS--SAREM (eds.) Categorización 2019 de los mamíferos de Argentina según su riesgo de extinción. Lista Roja de los mamíferos de Argentina. `r spDoi`
 
-***
+<!-- *** -->
 
 \newpage
 
