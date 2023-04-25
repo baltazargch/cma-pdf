@@ -11,3 +11,4 @@ namesOut <- dt_names %>% filter(TaxonLevel  %in% c("GENUS",
 namesOut <- c(namesOut, db$title) %>% unique()
 
 write_csv(tibble(Names = namesOut), 'data/Names_italics.csv')
+ 
