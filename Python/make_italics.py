@@ -10,10 +10,11 @@ def str_squish(string):
 def make_italics(data, name):
     data = str_squish(data)
     for x in name:
-      data = re.sub(x, r' \\textit{' + re.sub(r'\s+', '', x.replace('\\', '')) + r'} ', data)
-      data = str_squish(data)
+      # re.sub(r'\s+', '', 
+      data = re.sub(x, r'  \\textit{' + str_squish(x.replace('\\', '')) + r'} ', data)
+      # data = str_squish(data)
     
-    return data;
+    return str_squish(data).replace('( ','(').replace(') ',')');
   
 def atomic_names(names):
     # Split each name into individual words
@@ -42,15 +43,18 @@ def make_pad(string):
     for s in string:
         # Add the cases
         out.append(' ' + s + ' ')
+        out.append(s + ',')
+        out.append(s + '\.')
         out.append(s + ' ')
         out.append('\(' + s)
         out.append(s + '\)')
     
     # Return the list of padded strings
-    return out;
+    return out
 
 def apply_italics_to_cols(df, col_names, name_list):
     for col in col_names:
         if df[col].dtype == 'O': # Check if column is of object type (i.e., string)
             df[col] = df[col].apply(lambda x: make_italics(x, name_list))
-    return df
+            df[col] = str_squish(df[col])
+    return df;

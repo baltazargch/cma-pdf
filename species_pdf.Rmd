@@ -71,6 +71,7 @@ Names <- Names[ Names != 'sp' ]
 
 Names <- Names %>% atomic_names %>% make_pad
 
+
 db.init <- db.sp %>% select(c(sp_id:sp_nombres_comunes_portugues, sp_bibliografia_citada, 
                               sp_bibliografia_de_referencia))
 
