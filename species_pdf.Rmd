@@ -30,7 +30,7 @@ header-includes:
   \PassOptionsToPackage{dvipsnames,svgnames*,x11names*}{xcolor}
   \definecolor{ceil}{rgb}{0.57, 0.63, 0.81}
 params:
-  species:  "Leopardus colocolo"
+  species:  "Leopardus wiedii"
 editor_options: 
   chunk_output_type: console
 ---
@@ -43,11 +43,14 @@ editor_options:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, include = TRUE, eval=TRUE)
 library(rvest)
+library(reticulate)
 library(tidyverse)
 library(kableExtra)
 library(huxtable)
 options(huxtable.latex_use_fontspec = TRUE)
 source('R/funcs.R', local = knitr::knit_global())
+# source('R/scientific_name_binarization.R', local = knitr::knit_global())
+source_python("Python/make_italics.py")
 
 db <- read_csv('data/especies_nativas.csv')
 dois <- read_csv('data/species_doi.csv')
@@ -61,6 +64,34 @@ db.sp <- db %>% filter(title == params$species) %>%
                                                     !is.na(sp_distribuida_en_numero_de_loc),
                                            sp_distribuida_en_numero_de_loc,
                                            sp_numero_de_localidades))
+
+Names <- read_csv('data/Names_italics.csv')$Names #%>% as.data.frame %>% View()
+Names <- Names  %>% str_replace_all(regex("\\W+"), ' ')
+Names <- Names[ Names != 'sp' ]
+
+Names <- Names %>% atomic_names %>% make_pad
+
+db.init <- db.sp %>% select(c(sp_id:sp_nombres_comunes_portugues, sp_bibliografia_citada, 
+                              sp_bibliografia_de_referencia))
+
+db.sp.it <- db.sp %>% 
+  select(-c(sp_id:sp_nombres_comunes_portugues, sp_bibliografia_citada, 
+                              sp_bibliografia_de_referencia)) %>% 
+  select(where(is.character))
+
+db.sp.it <- map_df(db.sp.it, \(x) make_italics(x, Names))
+  # apply_italics_to_cols(db.sp.it, colnames(db.sp.it), Names)
+
+db.sp <- bind_cols(
+  db.sp.it,  db.init,
+  db.sp %>%  select(-c(sp_id:sp_nombres_comunes_portugues, sp_bibliografia_citada, 
+                              sp_bibliografia_de_referencia)) %>%  select(!where(is.character))
+)
+
+db.sp <- db.sp[, colnames(db)] %>% as_tibble()
+
+write_csv(db.sp, 'tempdb.csv')
+db.sp <- read_csv('tempdb.csv')
 
 spDoi <- dois$DOI[ match(db.sp$title, dois$Especie) ] %>% str_trim()
 cat.logo <- db.sp$sp_cat_nac_conserv_2019 %>% 
@@ -274,8 +305,8 @@ for(i in conTaxo){
   cat('\\vspace{-0.3cm}')
 if(!is.na(db.sp$sp_taxonomia_comentarios)){
   cat('**Comentarios taxonómicos**\n\n')
-  cat(CMA_italize_binomial(db.sp$sp_taxonomia_comentarios, db.sp$title) %>% 
-        str_replace_all('\n', '\n\n'))
+  db.sp$sp_taxonomia_comentarios %>% 
+    str_replace_all('\n', '\n\n') %>% cat
 }
 ```
 
@@ -381,10 +412,8 @@ if(!is.na(db.sp$sp_abundancia)){
 
 
 CMA_print_in_line(db.sp$sp_abundancia_comentarios %>% 
-                    str_replace_all('\n', '\n\n') %>% 
-                    CMA_italize_binomial(., db.sp$title), 
-                  'Comentarios sobre la abundancia, densidad o probabilidad de ocupación de la especie',
-                  'n\n')
+                    str_replace_all('\n', '\n\n'), 
+                  'Comentarios sobre la abundancia, densidad o probabilidad de ocupación de la especie', 'n\n')
 
 
 CMA_print_in_line(db.sp$sp_programas_de_monitoreo,
@@ -508,7 +537,6 @@ cat('**Amenazas por grado: de 1 (menor) a 5 (mayor)**\n\n')
 CMA_parse_threats(db.sp) %>% cat
 
 db.sp$sp_amenazas_comentarios %>% 
-  CMA_italize_binomial(., db.sp$title) %>% 
   str_replace_all('\n', '\n\n') %>% cat
 
 cat('\n\n')
@@ -523,7 +551,6 @@ if(!is.na(db.sp$sp_en_area_nat_protegida_coment)){
   
   db.sp$sp_en_area_nat_protegida_coment %>% 
     str_replace_all('\n', '\n\n') %>% 
-    CMA_italize_binomial(., db.sp$title) %>% 
     str_trim(side = 'right') %>% cat
 }
 ```
@@ -532,16 +559,14 @@ if(!is.na(db.sp$sp_en_area_nat_protegida_coment)){
 if(!is.na(db.sp$sp_marco_legal)){
   cat('**Marco legal de la especie**\n\n')
   db.sp$sp_marco_legal %>%    
-    str_replace_all('\n', '\n\n') %>% 
-    CMA_italize_binomial(., db.sp$title) %>% cat}
+    str_replace_all('\n', '\n\n') %>%  cat}
 ```
 
 ```{r, results='asis'}
 if(!is.na(db.sp$sp_planes_de_conservacion)){
   cat('**Planes de acción y/o proyectos de conservación o manejo actuales**\n\n')
   db.sp$sp_planes_de_conservacion %>%    
-    str_replace_all('\n', '\n\n') %>% 
-    CMA_italize_binomial(., db.sp$title) %>% cat
+    str_replace_all('\n', '\n\n') %>% cat
 
 cat('\n\n')
 }
@@ -554,8 +579,7 @@ CMA_print_in_line(db.sp$sp_reintroducciones,
 if(db.sp$sp_reintroducciones != 'no' &&
    !is.na(db.sp$sp_reintroducciones)){
   db.sp$sp_reintroducciones_comentarios %>%   
-    str_replace_all('\n', '\n\n') %>% 
-    CMA_italize_binomial(., db.sp$title) %>% cat
+    str_replace_all('\n', '\n\n') %>% cat
 }
 
 n <- db.sp$sp_valorizacion_socioeconomica %>% str_split(',', simplify = T) %>% str_trim()
@@ -568,11 +592,12 @@ cat('\n\n')
 
 if(all(is.na(n)) && !is.na( db.sp$sp_usos_y_valores)){
   
-  CMA_print_in_line( db.sp$sp_usos_y_valores %>% CMA_italize_binomial(., db.sp$title) %>% 
-                       str_replace_all('\n', '\n\n') %>% str_trim(side = 'right'), 
+  CMA_print_in_line( db.sp$sp_usos_y_valores %>% 
+                       str_replace_all('\n', '\n\n') %>% 
+                       str_trim(side = 'right'), 
                      'Valorización socioeconómica de la especie', '\n\n')
 } else if(!is.na( db.sp$sp_usos_y_valores)){
-  db.sp$sp_usos_y_valores %>% CMA_italize_binomial(., db.sp$title) %>% 
+  db.sp$sp_usos_y_valores %>% 
     str_replace_all('\n', '\n\n') %>% 
     str_trim(side = 'right') %>% cat
 }
@@ -583,8 +608,7 @@ if(all(is.na(n)) && !is.na( db.sp$sp_usos_y_valores)){
 if(!is.na(db.sp$sp_rol_ecologico_y_ecoservicios)){
   cat('**Rol ecológico / servicios ecosistémicos**\n\n')
   db.sp$sp_rol_ecologico_y_ecoservicios %>%   
-    str_replace_all('\n', '\n\n') %>% 
-    CMA_italize_binomial(., db.sp$title) %>% cat
+    str_replace_all('\n', '\n\n') %>% cat
 }
 ```
 
@@ -593,8 +617,7 @@ if(!is.na(db.sp$sp_necesidades_de_investigacion)){
 cat('**Necesidades de investigación y conocimiento**\n\n')
 
 db.sp$sp_necesidades_de_investigacion %>% 
-  str_replace_all('\n', '\n\n') %>% 
-  CMA_italize_binomial(., db.sp$title) %>% cat
+  str_replace_all('\n', '\n\n') %>% cat
 }
 ```
 
@@ -614,7 +637,7 @@ cat('\\setlength{\\parindent}{20pt}')
 cat('\\noindent\\textbf{LITERATURA CITADA}\n\n')
 
 cit.bib <- db.sp$sp_bibliografia_citada %>% str_split('\n') %>% unlist() %>% 
-  map_chr(., ~CMA_italize_binomial(.x, db.sp$title))
+  map_chr(., ~ make_italics(.x, Names))
 
 cat(paste(cit.bib, collapse = '\n\n'))
 cat('\n\n')
@@ -623,7 +646,7 @@ if(!is.na(db.sp$sp_bibliografia_de_referencia)){
   cat('\\noindent\\textbf{LITERATURA DE REFERENCIA}\n\n')
   
   ref.bib <- db.sp$sp_bibliografia_de_referencia %>% str_split('\n') %>% unlist()%>% 
-    map_chr(., ~CMA_italize_binomial(.x, db.sp$title))
+    map_chr(., ~make_italics(.x, Names))
   cat(paste(ref.bib, collapse = '\n\n'))
   cat('\n\n')
 }

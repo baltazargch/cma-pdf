@@ -9,7 +9,6 @@ db <- read_csv('data/especies_nativas.csv')
 
 photo <- list.files('photos/', 'g$', full.names = T, recursive = T)
 
-
 spIn <- map(db$title, 
             ~ photo %>% 
               str_to_lower() %>% str_detect(gsub(' ', '-', str_to_lower(.x))) %>% 

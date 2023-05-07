@@ -336,7 +336,6 @@ CMA_parse_eval <- function(data){
            db.eval1[[c]][2]  %in% c('Estudios de viabilidad poblacional',
                                     'Variabilidad genética'))) 
       cat(paste0('\n\n', db.eval1[[c]][1] %>% 
-                   CMA_italize_binomial(., data$title) %>% 
                    str_replace_all('\n', '\n\n'), '\n\n'))
     else 
       cat(paste0(db.eval1[[c]][1], '\n\n'))
