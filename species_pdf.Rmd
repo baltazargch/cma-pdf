@@ -30,7 +30,7 @@ header-includes:
   \PassOptionsToPackage{dvipsnames,svgnames*,x11names*}{xcolor}
   \definecolor{ceil}{rgb}{0.57, 0.63, 0.81}
 params:
-  species:  "Leopardus wiedii"
+  species:  "Alouatta caraya"
 editor_options: 
   chunk_output_type: console
 ---
@@ -70,29 +70,31 @@ Names <- Names  %>% str_replace_all(regex("\\W+"), ' ')
 Names <- Names[ Names != 'sp' ]
 
 Names <- Names %>% atomic_names %>% make_pad
-
-
-db.init <- db.sp %>% select(c(sp_id:sp_nombres_comunes_portugues, sp_bibliografia_citada, 
-                              sp_bibliografia_de_referencia))
-
-db.sp.it <- db.sp %>% 
-  select(-c(sp_id:sp_nombres_comunes_portugues, sp_bibliografia_citada, 
-                              sp_bibliografia_de_referencia)) %>% 
-  select(where(is.character))
-
-db.sp.it <- map_df(db.sp.it, \(x) make_italics(x, Names))
-  # apply_italics_to_cols(db.sp.it, colnames(db.sp.it), Names)
-
-db.sp <- bind_cols(
-  db.sp.it,  db.init,
-  db.sp %>%  select(-c(sp_id:sp_nombres_comunes_portugues, sp_bibliografia_citada, 
-                              sp_bibliografia_de_referencia)) %>%  select(!where(is.character))
-)
-
-db.sp <- db.sp[, colnames(db)] %>% as_tibble()
-
-write_csv(db.sp, 'tempdb.csv')
-db.sp <- read_csv('tempdb.csv')
+# 
+# db.init <- db.sp %>% select(c(sp_id:sp_nombres_comunes_portugues,
+#                        group_sp_eval_subpob, sp_cat_nac_conserv_2019, 
+#                        sp_bibliografia_citada:sp_kml_archivo))
+# 
+# db.sp.it <- db.sp %>% select(-c(sp_id:sp_nombres_comunes_portugues,
+#                        group_sp_eval_subpob, sp_cat_nac_conserv_2019, 
+#                        sp_bibliografia_citada:sp_kml_archivo)) %>% 
+#   select(where(is.character))
+# 
+# db.sp.it <- map_df(db.sp.it, \(x) make_italics(x, c(Names ,paste0(LETTERS, '\\.'))))
+#   # apply_italics_to_cols(db.sp.it, colnames(db.sp.it), Names)
+# 
+# db.sp <- bind_cols(
+#   db.sp.it,  db.init,
+#   db.sp %>%  select(-c(sp_id:sp_nombres_comunes_portugues,
+#                        group_sp_eval_subpob, sp_cat_nac_conserv_2019, 
+#                        sp_bibliografia_citada:sp_kml_archivo)) %>%
+#     select(!where(is.character))
+# )
+# 
+# db.sp <- db.sp[, colnames(db)] %>% as_tibble()
+# 
+# write_csv(db.sp, 'tempdb.csv')
+# db.sp <- read_csv('tempdb.csv')
 
 spDoi <- dois$DOI[ match(db.sp$title, dois$Especie) ] %>% str_trim()
 cat.logo <- db.sp$sp_cat_nac_conserv_2019 %>% 
@@ -101,7 +103,7 @@ cat.logo <- db.sp$sp_cat_nac_conserv_2019 %>%
 cat.logo <- paste0('images/', cat.logo, '.png')
 
 photo <- list.files('photos/', 'g$', full.names = T, recursive = T)
-filePhoto <- CMA_get_photo_index(db.sp$title)
+filePhoto <- CMA_get_photo_index(db.sp$title, photo)
 credistPhoto <- CMA_get_photo_credits(photo[filePhoto]) %>% str_replace('&', 'y')
 ```
 
@@ -222,7 +224,7 @@ CMA_print_in_line(db.sp$sp_cat_nac_conserv_2019_justific %>%
 if(!is.na(db.sp$group_sp_eval_subpob)) {
   cat("**Evaluación de subpoblaciones locales**\n\n")
 
-tbsPob <- CMA_subpop_cons(db.sp)
+tbsPob <- CMA_subpop_cons(db.sp, c(Names, paste0(LETTERS, '\\.')))
 
 for(x in seq_along(tbsPob)){
   cat(paste0(tbsPob[[x]][[1]], collapse = '\\vspace{0.3cm}'))
@@ -414,7 +416,7 @@ if(!is.na(db.sp$sp_abundancia)){
 
 CMA_print_in_line(db.sp$sp_abundancia_comentarios %>% 
                     str_replace_all('\n', '\n\n'), 
-                  'Comentarios sobre la abundancia, densidad o probabilidad de ocupación de la especie', 'n\n')
+                  'Comentarios sobre la abundancia, densidad o probabilidad de ocupación de la especie', '\n\n')
 
 
 CMA_print_in_line(db.sp$sp_programas_de_monitoreo,
@@ -662,8 +664,7 @@ CMA_print_titles("AUTORES Y COLABOLADORES") %>% cat()
 \vspace{-0.4cm}
 
 ```{r cont.autores, echo=FALSE,include=TRUE, results='asis'}
-CMA_parse_authors(db.sp) %>% 
-  CMA_print_authors()
+CMA_parse_authors(db.sp) %>% CMA_print_authors()
 ```
 
 <!-- \begin{Center} -->

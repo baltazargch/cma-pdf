@@ -35,58 +35,58 @@ make_abbv <- function(name){
   }, USE.NAMES = F) %>% unlist()
 }
 
-make_pad <- function(string) 
-{
-  # string <- Names[1:1000]
-  out <- c()
-  for(s in string){
-    out <- c(out, 
-             # s,
-             paste0(s, ' '), 
-             paste0(' ', s)
-    )
-  }
-  return(out)
-}
-
-atomic_names <- function(names){
-  # names <- Names
-  out <- c()
-  for(x in names) out <- c(out, str_split(x, ' ', simplify = T))
-  out <- unique(out) %>% na.omit()
-  out[ out != '']
-  out <- tibble(out = out, count = str_width(out))
-  out <- out %>% filter(count > 1) %>% arrange(-count) %>% .$out  
-  return(out)
-}
-
-make_italics <- function(data, name){
-  data <- str_squish(data)
-  for(x in name) {
-    data <- str_replace_all(data, x, paste0('\\\\textit{', 
-                                            str_squish(x), '} ')) %>% str_squish()
-    }
-  
-  return(data)
-}
-
-CMA_italize_db <- function(data, names){
-  # require(taxadb)
-  require(tidyverse)
-  
-  data <- read_csv('data/especies_nativas.csv')
-  data <- data %>% filter(title == 'Leopardus wiedii')
-  
-  dataIita <- data %>% 
-    select(-c(sp_id:sp_nombres_comunes_portugues, sp_autores_de_ficha:last_col())) 
-  
-  dataIita <- lapply(1:ncol(dataIita), \(x) make_italics(dataIita[[x]], names))
-  
-  dataOut <- cbind(
-    data %>% 
-      select(sp_id:sp_nombres_comunes_portugues, sp_autores_de_ficha:last_col()), 
-    dataIita %>% do.call(cbind, .)
-  ) %>% as_tibble()
-  return(dataOut)
-}
+# make_pad <- function(string) 
+# {
+#   # string <- Names[1:1000]
+#   out <- c()
+#   for(s in string){
+#     out <- c(out, 
+#              # s,
+#              paste0(s, ' '), 
+#              paste0(' ', s)
+#     )
+#   }
+#   return(out)
+# }
+# 
+# atomic_names <- function(names){
+#   # names <- Names
+#   out <- c()
+#   for(x in names) out <- c(out, str_split(x, ' ', simplify = T))
+#   out <- unique(out) %>% na.omit()
+#   out[ out != '']
+#   out <- tibble(out = out, count = str_width(out))
+#   out <- out %>% filter(count > 1) %>% arrange(-count) %>% .$out  
+#   return(out)
+# }
+# 
+# make_italics <- function(data, name){
+#   data <- str_squish(data)
+#   for(x in name) {
+#     data <- str_replace_all(data, x, paste0('\\\\textit{', 
+#                                             str_squish(x), '} ')) %>% str_squish()
+#     }
+#   
+#   return(data)
+# }
+# 
+# CMA_italize_db <- function(data, names){
+#   # require(taxadb)
+#   require(tidyverse)
+#   
+#   data <- read_csv('data/especies_nativas.csv')
+#   data <- data %>% filter(title == 'Leopardus wiedii')
+#   
+#   dataIita <- data %>% 
+#     select(-c(sp_id:sp_nombres_comunes_portugues, sp_autores_de_ficha:last_col())) 
+#   
+#   dataIita <- lapply(1:ncol(dataIita), \(x) make_italics(dataIita[[x]], names))
+#   
+#   dataOut <- cbind(
+#     data %>% 
+#       select(sp_id:sp_nombres_comunes_portugues, sp_autores_de_ficha:last_col()), 
+#     dataIita %>% do.call(cbind, .)
+#   ) %>% as_tibble()
+#   return(dataOut)
+# }
 

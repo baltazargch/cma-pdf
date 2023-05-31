@@ -92,11 +92,11 @@ CMA_print_authors <- function(authors){
 
 #### Parse conservation ----
 ##### Parse subpopulation ----
-CMA_subpop_cons <- function(data){
+CMA_subpop_cons <- function(data, names){
   require(tidyverse)
   require(kableExtra)
   # db <- read_csv('data/especies_nativas.csv')
-  # data <- db.sp # %>% filter(title == 'Blastocerus dichotomus')
+  # data <- db.sp # %>% filter(title == 'Alouatta caraya')
   
   stopifnot(nrow(data) == 1, ncol(data) > 1)
   
@@ -106,7 +106,7 @@ CMA_subpop_cons <- function(data){
     spListPop <- data$group_sp_eval_subpob %>% 
       str_split('\n') %>% 
       unlist() %>% 
-      str_trim()
+      str_trim() %>% map_chr(~make_italics(.x, names))
     
     spListPop <- spListPop[ !spListPop %in%  c("", ",")]
     # spListPop[str_detect(spListPop, 'Subpoblación$')]
@@ -488,8 +488,8 @@ CMA_get_photo_credits <- function(x){
     str_replace_all('-', ' ')
 }
 
-CMA_get_photo_index <- function(x){
-  lp <- list.files('photos/', 'g$', full.names = F, recursive = T) %>% 
+CMA_get_photo_index <- function(x, photos){
+  lp <- photos %>% #list.files('photos/', 'g$', full.names = F, recursive = T) %>% 
     str_to_lower() %>% str_replace_all(' ', '-') %>% 
     str_replace_all('_', '-')
 
@@ -510,8 +510,8 @@ CMA_print_photo <- function(x, credits){
   } else {
     paste0("\\begin{figure}[H]", 
            "\\centering", 
-           paste0("\\includegraphics[width=0.9\\linewidth]{", x[2], "}\n"), 
-           paste0("\\includegraphics[width=0.9\\linewidth]{", x[1], "}"),
+           paste0("\\includegraphics[width=0.88\\linewidth]{", x[2], "}\n"), 
+           paste0("\\includegraphics[width=0.88\\linewidth]{", x[1], "}"),
            paste0( "\\caption{Foto: ", credits[1],' (arriba); ', credits[2], ' (abajo)', "}"),
            "\\end{figure}", sep='\n')
   }

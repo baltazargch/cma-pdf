@@ -14,7 +14,7 @@ def make_italics(data, name):
       data = re.sub(x, r'  \\textit{' + str_squish(x.replace('\\', '')) + r'} ', data)
       # data = str_squish(data)
     
-    return str_squish(data).replace('( ','(').replace(') ',')');
+    return str_squish(data).replace(' ( ',' (').replace(')} .',')}.');
   
 def atomic_names(names):
     # Split each name into individual words
