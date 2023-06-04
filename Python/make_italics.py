@@ -5,16 +5,18 @@ import re
 
 def str_squish(string):
     # Replace any sequence of whitespace characters with a single space
-    return re.sub(r'\s+', ' ', string.strip())
+    return re.sub(r'(?<=\S)\s{2,}(?=\S)', ' ', string.strip())
 
 def make_italics(data, name):
-    data = str_squish(data)
-    for x in name:
-      # re.sub(r'\s+', '', 
-      data = re.sub(x, r'  \\textit{' + str_squish(x.replace('\\', '')) + r'} ', data)
-      # data = str_squish(data)
+    if data == 'NA':
+        return np.nan
+    else:
+        data = str_squish(data)
+        for x in name:
+            data = re.sub(x, r'  \\textit{' + str_squish(x.replace('\\', '')) + r'} ', data)
+            # data = re.sub(x, r'  \\textit{' + x.replace('\\', '') + r'} ', data)
     
-    return str_squish(data).replace(' ( ',' (').replace(')} .',')}.');
+        return str_squish(data).replace(' ( ',' (').replace(')} .',')}.').replace(r'(?<![a-zA-Z])', '');
   
 def atomic_names(names):
     # Split each name into individual words
@@ -45,16 +47,32 @@ def make_pad(string):
         out.append(' ' + s + ' ')
         out.append(s + ',')
         out.append(s + '\.')
-        out.append(s + ' ')
+        out.append(r'(?<![a-zA-Z])' + s + ' ')
         out.append('\(' + s)
         out.append(s + '\)')
     
     # Return the list of padded strings
     return out
 
-def apply_italics_to_cols(df, col_names, name_list):
-    for col in col_names:
-        if df[col].dtype == 'O': # Check if column is of object type (i.e., string)
-            df[col] = df[col].apply(lambda x: make_italics(x, name_list))
-            df[col] = str_squish(df[col])
-    return df;
+def make_pad_uniletter(string):
+    # Create an empty list to store the padded strings
+    out = []
+    
+    # Iterate over each string in the input list
+    for s in string:
+        # Add the cases
+        # out.append(' ' + s + '\. ')
+        out.append(r'(?<![a-zA-Z])' + s + '\. ')
+        out.append('\(' + s + '\. ')
+    
+    # Return the list of padded strings
+    return out  
+  
+
+def apply_italics_to_cols(df, names):
+    str_cols = df.select_dtypes(include=[object]).columns
+    
+    for col in str_cols:
+        df[col] = np.where(df[col].apply(lambda x: isinstance(x, str)), df[col].apply(lambda x: make_italics(x, names)), df[col])
+    
+    return df

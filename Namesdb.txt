@@ -1,0 +1,13342 @@
+ loschalchalerosorum 
+loschalchalerosorum,
+loschalchalerosorum\.
+(?<![a-zA-Z])loschalchalerosorum 
+\(loschalchalerosorum
+loschalchalerosorum\)
+ santacristobalensis 
+santacristobalensis,
+santacristobalensis\.
+(?<![a-zA-Z])santacristobalensis 
+\(santacristobalensis
+santacristobalensis\)
+ Brucepattersonius 
+Brucepattersonius,
+Brucepattersonius\.
+(?<![a-zA-Z])Brucepattersonius 
+\(Brucepattersonius
+Brucepattersonius\)
+ espiritosantensis 
+espiritosantensis,
+espiritosantensis\.
+(?<![a-zA-Z])espiritosantensis 
+\(espiritosantensis
+espiritosantensis\)
+ cinereoargenteus 
+cinereoargenteus,
+cinereoargenteus\.
+(?<![a-zA-Z])cinereoargenteus 
+\(cinereoargenteus
+cinereoargenteus\)
+ tridecemlineatus 
+tridecemlineatus,
+tridecemlineatus\.
+(?<![a-zA-Z])tridecemlineatus 
+\(tridecemlineatus
+tridecemlineatus\)
+ argenteocinereus 
+argenteocinereus,
+argenteocinereus\.
+(?<![a-zA-Z])argenteocinereus 
+\(argenteocinereus
+argenteocinereus\)
+ Ammospermophilus 
+Ammospermophilus,
+Ammospermophilus\.
+(?<![a-zA-Z])Ammospermophilus 
+\(Ammospermophilus
+Ammospermophilus\)
+ africaeaustralis 
+africaeaustralis,
+africaeaustralis\.
+(?<![a-zA-Z])africaeaustralis 
+\(africaeaustralis
+africaeaustralis\)
+ macrocephalicus 
+macrocephalicus,
+macrocephalicus\.
+(?<![a-zA-Z])macrocephalicus 
+\(macrocephalicus
+macrocephalicus\)
+ novehebridensis 
+novehebridensis,
+novehebridensis\.
+(?<![a-zA-Z])novehebridensis 
+\(novehebridensis
+novehebridensis\)
+ vancourverensis 
+vancourverensis,
+vancourverensis\.
+(?<![a-zA-Z])vancourverensis 
+\(vancourverensis
+vancourverensis\)
+ Cephalorhynchus 
+Cephalorhynchus,
+Cephalorhynchus\.
+(?<![a-zA-Z])Cephalorhynchus 
+\(Cephalorhynchus
+Cephalorhynchus\)
+ Microperoryctes 
+Microperoryctes,
+Microperoryctes\.
+(?<![a-zA-Z])Microperoryctes 
+\(Microperoryctes
+Microperoryctes\)
+ tropidorhynchus 
+tropidorhynchus,
+tropidorhynchus\.
+(?<![a-zA-Z])tropidorhynchus 
+\(tropidorhynchus
+tropidorhynchus\)
+ septentrionalis 
+septentrionalis,
+septentrionalis\.
+(?<![a-zA-Z])septentrionalis 
+\(septentrionalis
+septentrionalis\)
+ transcaucasicus 
+transcaucasicus,
+transcaucasicus\.
+(?<![a-zA-Z])transcaucasicus 
+\(transcaucasicus
+transcaucasicus\)
+ Calyptophractus 
+Calyptophractus,
+Calyptophractus\.
+(?<![a-zA-Z])Calyptophractus 
+\(Calyptophractus
+Calyptophractus\)
+ Euryzygomatomys 
+Euryzygomatomys,
+Euryzygomatomys\.
+(?<![a-zA-Z])Euryzygomatomys 
+\(Euryzygomatomys
+Euryzygomatomys\)
+ rosendopascuali 
+rosendopascuali,
+rosendopascuali\.
+(?<![a-zA-Z])rosendopascuali 
+\(rosendopascuali
+rosendopascuali\)
+ centroamericana 
+centroamericana,
+centroamericana\.
+(?<![a-zA-Z])centroamericana 
+\(centroamericana
+centroamericana\)
+ fusconigricans 
+fusconigricans,
+fusconigricans\.
+(?<![a-zA-Z])fusconigricans 
+\(fusconigricans
+fusconigricans\)
+ californiensis 
+californiensis,
+californiensis\.
+(?<![a-zA-Z])californiensis 
+\(californiensis
+californiensis\)
+ arerunguaensis 
+arerunguaensis,
+arerunguaensis\.
+(?<![a-zA-Z])arerunguaensis 
+\(arerunguaensis
+arerunguaensis\)
+ splendidissima 
+splendidissima,
+splendidissima\.
+(?<![a-zA-Z])splendidissima 
+\(splendidissima
+splendidissima\)
+ Glauconycteris 
+Glauconycteris,
+Glauconycteris\.
+(?<![a-zA-Z])Glauconycteris 
+\(Glauconycteris
+Glauconycteris\)
+ cryptospilotus 
+cryptospilotus,
+cryptospilotus\.
+(?<![a-zA-Z])cryptospilotus 
+\(cryptospilotus
+cryptospilotus\)
+ Chaetophractus 
+Chaetophractus,
+Chaetophractus\.
+(?<![a-zA-Z])Chaetophractus 
+\(Chaetophractus
+Chaetophractus\)
+ hermaphroditus 
+hermaphroditus,
+hermaphroditus\.
+(?<![a-zA-Z])hermaphroditus 
+\(hermaphroditus
+hermaphroditus\)
+ martiniquensis 
+martiniquensis,
+martiniquensis\.
+(?<![a-zA-Z])martiniquensis 
+\(martiniquensis
+martiniquensis\)
+ conspicillatus 
+conspicillatus,
+conspicillatus\.
+(?<![a-zA-Z])conspicillatus 
+\(conspicillatus
+conspicillatus\)
+ milneedwardsii 
+milneedwardsii,
+milneedwardsii\.
+(?<![a-zA-Z])milneedwardsii 
+\(milneedwardsii
+milneedwardsii\)
+ camelopardalis 
+camelopardalis,
+camelopardalis\.
+(?<![a-zA-Z])camelopardalis 
+\(camelopardalis
+camelopardalis\)
+ Lagenorhynchus 
+Lagenorhynchus,
+Lagenorhynchus\.
+(?<![a-zA-Z])Lagenorhynchus 
+\(Lagenorhynchus
+Lagenorhynchus\)
+ centrasiaticus 
+centrasiaticus,
+centrasiaticus\.
+(?<![a-zA-Z])centrasiaticus 
+\(centrasiaticus
+centrasiaticus\)
+ pallidiventris 
+pallidiventris,
+pallidiventris\.
+(?<![a-zA-Z])pallidiventris 
+\(pallidiventris
+pallidiventris\)
+ pseudopardalis 
+pseudopardalis,
+pseudopardalis\.
+(?<![a-zA-Z])pseudopardalis 
+\(pseudopardalis
+pseudopardalis\)
+ pilosotibialis 
+pilosotibialis,
+pilosotibialis\.
+(?<![a-zA-Z])pilosotibialis 
+\(pilosotibialis
+pilosotibialis\)
+ philippinensis 
+philippinensis,
+philippinensis\.
+(?<![a-zA-Z])philippinensis 
+\(philippinensis
+philippinensis\)
+ chinchilloides 
+chinchilloides,
+chinchilloides\.
+(?<![a-zA-Z])chinchilloides 
+\(chinchilloides
+chinchilloides\)
+ Trachypithecus 
+Trachypithecus,
+Trachypithecus\.
+(?<![a-zA-Z])Trachypithecus 
+\(Trachypithecus
+Trachypithecus\)
+ transvaalensis 
+transvaalensis,
+transvaalensis\.
+(?<![a-zA-Z])transvaalensis 
+\(transvaalensis
+transvaalensis\)
+ darjelingensis 
+darjelingensis,
+darjelingensis\.
+(?<![a-zA-Z])darjelingensis 
+\(darjelingensis
+darjelingensis\)
+ vancouverensis 
+vancouverensis,
+vancouverensis\.
+(?<![a-zA-Z])vancouverensis 
+\(vancouverensis
+vancouverensis\)
+ Glyphonycteris 
+Glyphonycteris,
+Glyphonycteris\.
+(?<![a-zA-Z])Glyphonycteris 
+\(Glyphonycteris
+Glyphonycteris\)
+ cristobalensis 
+cristobalensis,
+cristobalensis\.
+(?<![a-zA-Z])cristobalensis 
+\(cristobalensis
+cristobalensis\)
+ desmarestianus 
+desmarestianus,
+desmarestianus\.
+(?<![a-zA-Z])desmarestianus 
+\(desmarestianus
+desmarestianus\)
+ mesoamericanus 
+mesoamericanus,
+mesoamericanus\.
+(?<![a-zA-Z])mesoamericanus 
+\(mesoamericanus
+mesoamericanus\)
+ tippelskirchi 
+tippelskirchi,
+tippelskirchi\.
+(?<![a-zA-Z])tippelskirchi 
+\(tippelskirchi
+tippelskirchi\)
+ acutorostrata 
+acutorostrata,
+acutorostrata\.
+(?<![a-zA-Z])acutorostrata 
+\(acutorostrata
+acutorostrata\)
+ latijugularis 
+latijugularis,
+latijugularis\.
+(?<![a-zA-Z])latijugularis 
+\(latijugularis
+latijugularis\)
+ sanctaecruzae 
+sanctaecruzae,
+sanctaecruzae\.
+(?<![a-zA-Z])sanctaecruzae 
+\(sanctaecruzae
+sanctaecruzae\)
+ sanctaemartae 
+sanctaemartae,
+sanctaemartae\.
+(?<![a-zA-Z])sanctaemartae 
+\(sanctaemartae
+sanctaemartae\)
+ Theropithecus 
+Theropithecus,
+Theropithecus\.
+(?<![a-zA-Z])Theropithecus 
+\(Theropithecus
+Theropithecus\)
+ jingdongensis 
+jingdongensis,
+jingdongensis\.
+(?<![a-zA-Z])jingdongensis 
+\(jingdongensis
+jingdongensis\)
+ leucocephalus 
+leucocephalus,
+leucocephalus\.
+(?<![a-zA-Z])leucocephalus 
+\(leucocephalus
+leucocephalus\)
+ Lagenodelphis 
+Lagenodelphis,
+Lagenodelphis\.
+(?<![a-zA-Z])Lagenodelphis 
+\(Lagenodelphis
+Lagenodelphis\)
+ septemcinctus 
+septemcinctus,
+septemcinctus\.
+(?<![a-zA-Z])septemcinctus 
+\(septemcinctus
+septemcinctus\)
+ villosissimus 
+villosissimus,
+villosissimus\.
+(?<![a-zA-Z])villosissimus 
+\(villosissimus
+villosissimus\)
+ aequatorialis 
+aequatorialis,
+aequatorialis\.
+(?<![a-zA-Z])aequatorialis 
+\(aequatorialis
+aequatorialis\)
+ transcaspicus 
+transcaspicus,
+transcaspicus\.
+(?<![a-zA-Z])transcaspicus 
+\(transcaspicus
+transcaspicus\)
+ leucoblephara 
+leucoblephara,
+leucoblephara\.
+(?<![a-zA-Z])leucoblephara 
+\(leucoblephara
+leucoblephara\)
+ windhoekensis 
+windhoekensis,
+windhoekensis\.
+(?<![a-zA-Z])windhoekensis 
+\(windhoekensis
+windhoekensis\)
+ crassicaudata 
+crassicaudata,
+crassicaudata\.
+(?<![a-zA-Z])crassicaudata 
+\(crassicaudata
+crassicaudata\)
+ Pseudoryzomys 
+Pseudoryzomys,
+Pseudoryzomys\.
+(?<![a-zA-Z])Pseudoryzomys 
+\(Pseudoryzomys
+Pseudoryzomys\)
+ Microdipodops 
+Microdipodops,
+Microdipodops\.
+(?<![a-zA-Z])Microdipodops 
+\(Microdipodops
+Microdipodops\)
+ longicaudatus 
+longicaudatus,
+longicaudatus\.
+(?<![a-zA-Z])longicaudatus 
+\(longicaudatus
+longicaudatus\)
+ Prosciurillus 
+Prosciurillus,
+Prosciurillus\.
+(?<![a-zA-Z])Prosciurillus 
+\(Prosciurillus
+Prosciurillus\)
+ Scotonycteris 
+Scotonycteris,
+Scotonycteris\.
+(?<![a-zA-Z])Scotonycteris 
+\(Scotonycteris
+Scotonycteris\)
+ berkeleyensis 
+berkeleyensis,
+berkeleyensis\.
+(?<![a-zA-Z])berkeleyensis 
+\(berkeleyensis
+berkeleyensis\)
+ macrodactylus 
+macrodactylus,
+macrodactylus\.
+(?<![a-zA-Z])macrodactylus 
+\(macrodactylus
+macrodactylus\)
+ macrocephalus 
+macrocephalus,
+macrocephalus\.
+(?<![a-zA-Z])macrocephalus 
+\(macrocephalus
+macrocephalus\)
+ yucantanensis 
+yucantanensis,
+yucantanensis\.
+(?<![a-zA-Z])yucantanensis 
+\(yucantanensis
+yucantanensis\)
+ Tympanoctomys 
+Tympanoctomys,
+Tympanoctomys\.
+(?<![a-zA-Z])Tympanoctomys 
+\(Tympanoctomys
+Tympanoctomys\)
+ Pseudocheirus 
+Pseudocheirus,
+Pseudocheirus\.
+(?<![a-zA-Z])Pseudocheirus 
+\(Pseudocheirus
+Pseudocheirus\)
+ Leptonychotes 
+Leptonychotes,
+Leptonychotes\.
+(?<![a-zA-Z])Leptonychotes 
+\(Leptonychotes
+Leptonychotes\)
+ perspicillata 
+perspicillata,
+perspicillata\.
+(?<![a-zA-Z])perspicillata 
+\(perspicillata
+perspicillata\)
+ Gyldenstolpia 
+Gyldenstolpia,
+Gyldenstolpia\.
+(?<![a-zA-Z])Gyldenstolpia 
+\(Gyldenstolpia
+Gyldenstolpia\)
+ Kannabateomys 
+Kannabateomys,
+Kannabateomys\.
+(?<![a-zA-Z])Kannabateomys 
+\(Kannabateomys
+Kannabateomys\)
+ Micronycteris 
+Micronycteris,
+Micronycteris\.
+(?<![a-zA-Z])Micronycteris 
+\(Micronycteris
+Micronycteris\)
+ Cercopithecus 
+Cercopithecus,
+Cercopithecus\.
+(?<![a-zA-Z])Cercopithecus 
+\(Cercopithecus
+Cercopithecus\)
+ altiplanensis 
+altiplanensis,
+altiplanensis\.
+(?<![a-zA-Z])altiplanensis 
+\(altiplanensis
+altiplanensis\)
+ tricuspidatus 
+tricuspidatus,
+tricuspidatus\.
+(?<![a-zA-Z])tricuspidatus 
+\(tricuspidatus
+tricuspidatus\)
+ altifrontalis 
+altifrontalis,
+altifrontalis\.
+(?<![a-zA-Z])altifrontalis 
+\(altifrontalis
+altifrontalis\)
+ tehuantepecus 
+tehuantepecus,
+tehuantepecus\.
+(?<![a-zA-Z])tehuantepecus 
+\(tehuantepecus
+tehuantepecus\)
+ tanimbarensis 
+tanimbarensis,
+tanimbarensis\.
+(?<![a-zA-Z])tanimbarensis 
+\(tanimbarensis
+tanimbarensis\)
+ taftanimontis 
+taftanimontis,
+taftanimontis\.
+(?<![a-zA-Z])taftanimontis 
+\(taftanimontis
+taftanimontis\)
+ superiorensis 
+superiorensis,
+superiorensis\.
+(?<![a-zA-Z])superiorensis 
+\(superiorensis
+superiorensis\)
+ superciliaris 
+superciliaris,
+superciliaris\.
+(?<![a-zA-Z])superciliaris 
+\(superciliaris
+superciliaris\)
+ Rhyncholestes 
+Rhyncholestes,
+Rhyncholestes\.
+(?<![a-zA-Z])Rhyncholestes 
+\(Rhyncholestes
+Rhyncholestes\)
+ subtropicalis 
+subtropicalis,
+subtropicalis\.
+(?<![a-zA-Z])subtropicalis 
+\(subtropicalis
+subtropicalis\)
+ alticraniatus 
+alticraniatus,
+alticraniatus\.
+(?<![a-zA-Z])alticraniatus 
+\(alticraniatus
+alticraniatus\)
+ Chrysochloris 
+Chrysochloris,
+Chrysochloris\.
+(?<![a-zA-Z])Chrysochloris 
+\(Chrysochloris
+Chrysochloris\)
+ nigronuchalis 
+nigronuchalis,
+nigronuchalis\.
+(?<![a-zA-Z])nigronuchalis 
+\(nigronuchalis
+nigronuchalis\)
+ continentalis 
+continentalis,
+continentalis\.
+(?<![a-zA-Z])continentalis 
+\(continentalis
+continentalis\)
+ Pseudochirops 
+Pseudochirops,
+Pseudochirops\.
+(?<![a-zA-Z])Pseudochirops 
+\(Pseudochirops
+Pseudochirops\)
+ Arctocephalus 
+Arctocephalus,
+Arctocephalus\.
+(?<![a-zA-Z])Arctocephalus 
+\(Arctocephalus
+Arctocephalus\)
+ medellinensis 
+medellinensis,
+medellinensis\.
+(?<![a-zA-Z])medellinensis 
+\(medellinensis
+medellinensis\)
+ Phascolosorex 
+Phascolosorex,
+Phascolosorex\.
+(?<![a-zA-Z])Phascolosorex 
+\(Phascolosorex
+Phascolosorex\)
+ costaricensis 
+costaricensis,
+costaricensis\.
+(?<![a-zA-Z])costaricensis 
+\(costaricensis
+costaricensis\)
+ variegatoides 
+variegatoides,
+variegatoides\.
+(?<![a-zA-Z])variegatoides 
+\(variegatoides
+variegatoides\)
+ Guerlinguetus 
+Guerlinguetus,
+Guerlinguetus\.
+(?<![a-zA-Z])Guerlinguetus 
+\(Guerlinguetus
+Guerlinguetus\)
+ humboldtensis 
+humboldtensis,
+humboldtensis\.
+(?<![a-zA-Z])humboldtensis 
+\(humboldtensis
+humboldtensis\)
+ dominicanorum 
+dominicanorum,
+dominicanorum\.
+(?<![a-zA-Z])dominicanorum 
+\(dominicanorum
+dominicanorum\)
+ megacephalus 
+megacephalus,
+megacephalus\.
+(?<![a-zA-Z])megacephalus 
+\(megacephalus
+megacephalus\)
+ Lestodelphys 
+Lestodelphys,
+Lestodelphys\.
+(?<![a-zA-Z])Lestodelphys 
+\(Lestodelphys
+Lestodelphys\)
+ machrinoides 
+machrinoides,
+machrinoides\.
+(?<![a-zA-Z])machrinoides 
+\(machrinoides
+machrinoides\)
+ Hydrochoerus 
+Hydrochoerus,
+Hydrochoerus\.
+(?<![a-zA-Z])Hydrochoerus 
+\(Hydrochoerus
+Hydrochoerus\)
+ melanochaita 
+melanochaita,
+melanochaita\.
+(?<![a-zA-Z])melanochaita 
+\(melanochaita
+melanochaita\)
+ brevirostris 
+brevirostris,
+brevirostris\.
+(?<![a-zA-Z])brevirostris 
+\(brevirostris
+brevirostris\)
+ californicus 
+californicus,
+californicus\.
+(?<![a-zA-Z])californicus 
+\(californicus
+californicus\)
+ magnamolaris 
+magnamolaris,
+magnamolaris\.
+(?<![a-zA-Z])magnamolaris 
+\(magnamolaris
+magnamolaris\)
+ melanopterus 
+melanopterus,
+melanopterus\.
+(?<![a-zA-Z])melanopterus 
+\(melanopterus
+melanopterus\)
+ macrophyllum 
+macrophyllum,
+macrophyllum\.
+(?<![a-zA-Z])macrophyllum 
+\(macrophyllum
+macrophyllum\)
+ Hippocamelus 
+Hippocamelus,
+Hippocamelus\.
+(?<![a-zA-Z])Hippocamelus 
+\(Hippocamelus
+Hippocamelus\)
+ meridionalis 
+meridionalis,
+meridionalis\.
+(?<![a-zA-Z])meridionalis 
+\(meridionalis
+meridionalis\)
+ Hipposideros 
+Hipposideros,
+Hipposideros\.
+(?<![a-zA-Z])Hipposideros 
+\(Hipposideros
+Hipposideros\)
+ magellanicus 
+magellanicus,
+magellanicus\.
+(?<![a-zA-Z])magellanicus 
+\(magellanicus
+magellanicus\)
+ megalophylla 
+megalophylla,
+megalophylla\.
+(?<![a-zA-Z])megalophylla 
+\(megalophylla
+megalophylla\)
+ hydrochaeris 
+hydrochaeris,
+hydrochaeris\.
+(?<![a-zA-Z])hydrochaeris 
+\(hydrochaeris
+hydrochaeris\)
+ Lissodelphis 
+Lissodelphis,
+Lissodelphis\.
+(?<![a-zA-Z])Lissodelphis 
+\(Lissodelphis
+Lissodelphis\)
+ franciscorum 
+franciscorum,
+franciscorum\.
+(?<![a-zA-Z])franciscorum 
+\(franciscorum
+franciscorum\)
+ Phacochoerus 
+Phacochoerus,
+Phacochoerus\.
+(?<![a-zA-Z])Phacochoerus 
+\(Phacochoerus
+Phacochoerus\)
+ Myrmecophaga 
+Myrmecophaga,
+Myrmecophaga\.
+(?<![a-zA-Z])Myrmecophaga 
+\(Myrmecophaga
+Myrmecophaga\)
+ coeruleoalba 
+coeruleoalba,
+coeruleoalba\.
+(?<![a-zA-Z])coeruleoalba 
+\(coeruleoalba
+coeruleoalba\)
+ Nannosciurus 
+Nannosciurus,
+Nannosciurus\.
+(?<![a-zA-Z])Nannosciurus 
+\(Nannosciurus
+Nannosciurus\)
+ gloveralleni 
+gloveralleni,
+gloveralleni\.
+(?<![a-zA-Z])gloveralleni 
+\(gloveralleni
+gloveralleni\)
+ fuscogriseus 
+fuscogriseus,
+fuscogriseus\.
+(?<![a-zA-Z])fuscogriseus 
+\(fuscogriseus
+fuscogriseus\)
+ commissarisi 
+commissarisi,
+commissarisi\.
+(?<![a-zA-Z])commissarisi 
+\(commissarisi
+commissarisi\)
+ fascicularis 
+fascicularis,
+fascicularis\.
+(?<![a-zA-Z])fascicularis 
+\(fascicularis
+fascicularis\)
+ griseiventer 
+griseiventer,
+griseiventer\.
+(?<![a-zA-Z])griseiventer 
+\(griseiventer
+griseiventer\)
+ elephantinus 
+elephantinus,
+elephantinus\.
+(?<![a-zA-Z])elephantinus 
+\(elephantinus
+elephantinus\)
+ Octodontomys 
+Octodontomys,
+Octodontomys\.
+(?<![a-zA-Z])Octodontomys 
+\(Octodontomys
+Octodontomys\)
+ elassodontus 
+elassodontus,
+elassodontus\.
+(?<![a-zA-Z])elassodontus 
+\(elassodontus
+elassodontus\)
+ Oligoryzomys 
+Oligoryzomys,
+Oligoryzomys\.
+(?<![a-zA-Z])Oligoryzomys 
+\(Oligoryzomys
+Oligoryzomys\)
+ decemlineata 
+decemlineata,
+decemlineata\.
+(?<![a-zA-Z])decemlineata 
+\(decemlineata
+decemlineata\)
+ darehshourii 
+darehshourii,
+darehshourii\.
+(?<![a-zA-Z])darehshourii 
+\(darehshourii
+darehshourii\)
+ cunicularius 
+cunicularius,
+cunicularius\.
+(?<![a-zA-Z])cunicularius 
+\(cunicularius
+cunicularius\)
+ griseimembra 
+griseimembra,
+griseimembra\.
+(?<![a-zA-Z])griseimembra 
+\(griseimembra
+griseimembra\)
+ griseoflavus 
+griseoflavus,
+griseoflavus\.
+(?<![a-zA-Z])griseoflavus 
+\(griseoflavus
+griseoflavus\)
+ Lonchophylla 
+Lonchophylla,
+Lonchophylla\.
+(?<![a-zA-Z])Lonchophylla 
+\(Lonchophylla
+Lonchophylla\)
+ Macroglossus 
+Macroglossus,
+Macroglossus\.
+(?<![a-zA-Z])Macroglossus 
+\(Macroglossus
+Macroglossus\)
+ macarenensis 
+macarenensis,
+macarenensis\.
+(?<![a-zA-Z])macarenensis 
+\(macarenensis
+macarenensis\)
+ luteiventris 
+luteiventris,
+luteiventris\.
+(?<![a-zA-Z])luteiventris 
+\(luteiventris
+luteiventris\)
+ Loxodontomys 
+Loxodontomys,
+Loxodontomys\.
+(?<![a-zA-Z])Loxodontomys 
+\(Loxodontomys
+Loxodontomys\)
+ caracasensis 
+caracasensis,
+caracasensis\.
+(?<![a-zA-Z])caracasensis 
+\(caracasensis
+caracasensis\)
+ longirostris 
+longirostris,
+longirostris\.
+(?<![a-zA-Z])longirostris 
+\(longirostris
+longirostris\)
+ longimembris 
+longimembris,
+longimembris\.
+(?<![a-zA-Z])longimembris 
+\(longimembris
+longimembris\)
+ carcinophaga 
+carcinophaga,
+carcinophaga\.
+(?<![a-zA-Z])carcinophaga 
+\(carcinophaga
+carcinophaga\)
+ Macrophyllum 
+Macrophyllum,
+Macrophyllum\.
+(?<![a-zA-Z])Macrophyllum 
+\(Macrophyllum
+Macrophyllum\)
+ hipposideros 
+hipposideros,
+hipposideros\.
+(?<![a-zA-Z])hipposideros 
+\(hipposideros
+hipposideros\)
+ laticaudatus 
+laticaudatus,
+laticaudatus\.
+(?<![a-zA-Z])laticaudatus 
+\(laticaudatus
+laticaudatus\)
+ kirchnerorum 
+kirchnerorum,
+kirchnerorum\.
+(?<![a-zA-Z])kirchnerorum 
+\(kirchnerorum
+kirchnerorum\)
+ Platyrrhinus 
+Platyrrhinus,
+Platyrrhinus\.
+(?<![a-zA-Z])Platyrrhinus 
+\(Platyrrhinus
+Platyrrhinus\)
+ chasiquensis 
+chasiquensis,
+chasiquensis\.
+(?<![a-zA-Z])chasiquensis 
+\(chasiquensis
+chasiquensis\)
+ Pipistrellus 
+Pipistrellus,
+Pipistrellus\.
+(?<![a-zA-Z])Pipistrellus 
+\(Pipistrellus
+Pipistrellus\)
+ Piliocolobus 
+Piliocolobus,
+Piliocolobus\.
+(?<![a-zA-Z])Piliocolobus 
+\(Piliocolobus
+Piliocolobus\)
+ chiriquensis 
+chiriquensis,
+chiriquensis\.
+(?<![a-zA-Z])chiriquensis 
+\(chiriquensis
+chiriquensis\)
+ brevicaudata 
+brevicaudata,
+brevicaudata\.
+(?<![a-zA-Z])brevicaudata 
+\(brevicaudata
+brevicaudata\)
+ Abrawayaomys 
+Abrawayaomys,
+Abrawayaomys\.
+(?<![a-zA-Z])Abrawayaomys 
+\(Abrawayaomys
+Abrawayaomys\)
+ Heliosciurus 
+Heliosciurus,
+Heliosciurus\.
+(?<![a-zA-Z])Heliosciurus 
+\(Heliosciurus
+Heliosciurus\)
+ rionegrensis 
+rionegrensis,
+rionegrensis\.
+(?<![a-zA-Z])rionegrensis 
+\(rionegrensis
+rionegrensis\)
+ Sundasciurus 
+Sundasciurus,
+Sundasciurus\.
+(?<![a-zA-Z])Sundasciurus 
+\(Sundasciurus
+Sundasciurus\)
+ Chalinolobus 
+Chalinolobus,
+Chalinolobus\.
+(?<![a-zA-Z])Chalinolobus 
+\(Chalinolobus
+Chalinolobus\)
+ Chilonatalus 
+Chilonatalus,
+Chilonatalus\.
+(?<![a-zA-Z])Chilonatalus 
+\(Chilonatalus
+Chilonatalus\)
+ Chlamyphorus 
+Chlamyphorus,
+Chlamyphorus\.
+(?<![a-zA-Z])Chlamyphorus 
+\(Chlamyphorus
+Chlamyphorus\)
+ Chrotopterus 
+Chrotopterus,
+Chrotopterus\.
+(?<![a-zA-Z])Chrotopterus 
+\(Chrotopterus
+Chrotopterus\)
+ solomonensis 
+solomonensis,
+solomonensis\.
+(?<![a-zA-Z])solomonensis 
+\(solomonensis
+solomonensis\)
+ Chrysospalax 
+Chrysospalax,
+Chrysospalax\.
+(?<![a-zA-Z])Chrysospalax 
+\(Chrysospalax
+Chrysospalax\)
+ siligorensis 
+siligorensis,
+siligorensis\.
+(?<![a-zA-Z])siligorensis 
+\(siligorensis
+siligorensis\)
+ atrirelictus 
+atrirelictus,
+atrirelictus\.
+(?<![a-zA-Z])atrirelictus 
+\(atrirelictus
+atrirelictus\)
+ senegalensis 
+senegalensis,
+senegalensis\.
+(?<![a-zA-Z])senegalensis 
+\(senegalensis
+senegalensis\)
+ Corynorhinus 
+Corynorhinus,
+Corynorhinus\.
+(?<![a-zA-Z])Corynorhinus 
+\(Corynorhinus
+Corynorhinus\)
+ semistriatus 
+semistriatus,
+semistriatus\.
+(?<![a-zA-Z])semistriatus 
+\(semistriatus
+semistriatus\)
+ Heliophobius 
+Heliophobius,
+Heliophobius\.
+(?<![a-zA-Z])Heliophobius 
+\(Heliophobius
+Heliophobius\)
+ semispinosus 
+semispinosus,
+semispinosus\.
+(?<![a-zA-Z])semispinosus 
+\(semispinosus
+semispinosus\)
+ Spermophilus 
+Spermophilus,
+Spermophilus\.
+(?<![a-zA-Z])Spermophilus 
+\(Spermophilus
+Spermophilus\)
+ sanctiluciae 
+sanctiluciae,
+sanctiluciae\.
+(?<![a-zA-Z])sanctiluciae 
+\(sanctiluciae
+sanctiluciae\)
+ salicornicus 
+salicornicus,
+salicornicus\.
+(?<![a-zA-Z])salicornicus 
+\(salicornicus
+salicornicus\)
+ atristriatus 
+atristriatus,
+atristriatus\.
+(?<![a-zA-Z])atristriatus 
+\(atristriatus
+atristriatus\)
+ rufopallidus 
+rufopallidus,
+rufopallidus\.
+(?<![a-zA-Z])rufopallidus 
+\(rufopallidus
+rufopallidus\)
+ atrodorsalis 
+atrodorsalis,
+atrodorsalis\.
+(?<![a-zA-Z])atrodorsalis 
+\(atrodorsalis
+atrodorsalis\)
+ rufobrachium 
+rufobrachium,
+rufobrachium\.
+(?<![a-zA-Z])rufobrachium 
+\(rufobrachium
+rufobrachium\)
+ Chacodelphys 
+Chacodelphys,
+Chacodelphys\.
+(?<![a-zA-Z])Chacodelphys 
+\(Chacodelphys
+Chacodelphys\)
+ squamicaudis 
+squamicaudis,
+squamicaudis\.
+(?<![a-zA-Z])squamicaudis 
+\(squamicaudis
+squamicaudis\)
+ Syconycteris 
+Syconycteris,
+Syconycteris\.
+(?<![a-zA-Z])Syconycteris 
+\(Syconycteris
+Syconycteris\)
+ turcomanicus 
+turcomanicus,
+turcomanicus\.
+(?<![a-zA-Z])turcomanicus 
+\(turcomanicus
+turcomanicus\)
+ yucatanensis 
+yucatanensis,
+yucatanensis\.
+(?<![a-zA-Z])yucatanensis 
+\(yucatanensis
+yucatanensis\)
+ yagouaroundi 
+yagouaroundi,
+yagouaroundi\.
+(?<![a-zA-Z])yagouaroundi 
+\(yagouaroundi
+yagouaroundi\)
+ abietinoides 
+abietinoides,
+abietinoides\.
+(?<![a-zA-Z])abietinoides 
+\(abietinoides
+abietinoides\)
+ aenigmaticus 
+aenigmaticus,
+aenigmaticus\.
+(?<![a-zA-Z])aenigmaticus 
+\(aenigmaticus
+aenigmaticus\)
+ Andalgalomys 
+Andalgalomys,
+Andalgalomys\.
+(?<![a-zA-Z])Andalgalomys 
+\(Andalgalomys
+Andalgalomys\)
+ veraecruscis 
+veraecruscis,
+veraecruscis\.
+(?<![a-zA-Z])veraecruscis 
+\(veraecruscis
+veraecruscis\)
+ Arctogalidia 
+Arctogalidia,
+Arctogalidia\.
+(?<![a-zA-Z])Arctogalidia 
+\(Arctogalidia
+Arctogalidia\)
+ uruguayensis 
+uruguayensis,
+uruguayensis\.
+(?<![a-zA-Z])uruguayensis 
+\(uruguayensis
+uruguayensis\)
+ alisosiensis 
+alisosiensis,
+alisosiensis\.
+(?<![a-zA-Z])alisosiensis 
+\(alisosiensis
+alisosiensis\)
+ tschuliensis 
+tschuliensis,
+tschuliensis\.
+(?<![a-zA-Z])tschuliensis 
+\(tschuliensis
+tschuliensis\)
+ antillularum 
+antillularum,
+antillularum\.
+(?<![a-zA-Z])antillularum 
+\(antillularum
+antillularum\)
+ Balaenoptera 
+Balaenoptera,
+Balaenoptera\.
+(?<![a-zA-Z])Balaenoptera 
+\(Balaenoptera
+Balaenoptera\)
+ Tamiasciurus 
+Tamiasciurus,
+Tamiasciurus\.
+(?<![a-zA-Z])Tamiasciurus 
+\(Tamiasciurus
+Tamiasciurus\)
+ thornicrofti 
+thornicrofti,
+thornicrofti\.
+(?<![a-zA-Z])thornicrofti 
+\(thornicrofti
+thornicrofti\)
+ tetradactyla 
+tetradactyla,
+tetradactyla\.
+(?<![a-zA-Z])tetradactyla 
+\(tetradactyla
+tetradactyla\)
+ tereticaudus 
+tereticaudus,
+tereticaudus\.
+(?<![a-zA-Z])tereticaudus 
+\(tereticaudus
+tereticaudus\)
+ Callosciurus 
+Callosciurus,
+Callosciurus\.
+(?<![a-zA-Z])Callosciurus 
+\(Callosciurus
+Callosciurus\)
+ alvenslebeni 
+alvenslebeni,
+alvenslebeni\.
+(?<![a-zA-Z])alvenslebeni 
+\(alvenslebeni
+alvenslebeni\)
+ angustifrons 
+angustifrons,
+angustifrons\.
+(?<![a-zA-Z])angustifrons 
+\(angustifrons
+angustifrons\)
+ subtilissima 
+subtilissima,
+subtilissima\.
+(?<![a-zA-Z])subtilissima 
+\(subtilissima
+subtilissima\)
+ auripendulus 
+auripendulus,
+auripendulus\.
+(?<![a-zA-Z])auripendulus 
+\(auripendulus
+auripendulus\)
+ nigrogriseus 
+nigrogriseus,
+nigrogriseus\.
+(?<![a-zA-Z])nigrogriseus 
+\(nigrogriseus
+nigrogriseus\)
+ bavicorensis 
+bavicorensis,
+bavicorensis\.
+(?<![a-zA-Z])bavicorensis 
+\(bavicorensis
+bavicorensis\)
+ bleyenberghi 
+bleyenberghi,
+bleyenberghi\.
+(?<![a-zA-Z])bleyenberghi 
+\(bleyenberghi
+bleyenberghi\)
+ pangandarana 
+pangandarana,
+pangandarana\.
+(?<![a-zA-Z])pangandarana 
+\(pangandarana
+pangandarana\)
+ Euryoryzomys 
+Euryoryzomys,
+Euryoryzomys\.
+(?<![a-zA-Z])Euryoryzomys 
+\(Euryoryzomys
+Euryoryzomys\)
+ osvaldoreigi 
+osvaldoreigi,
+osvaldoreigi\.
+(?<![a-zA-Z])osvaldoreigi 
+\(osvaldoreigi
+osvaldoreigi\)
+ opistholeuca 
+opistholeuca,
+opistholeuca\.
+(?<![a-zA-Z])opistholeuca 
+\(opistholeuca
+opistholeuca\)
+ occidentalis 
+occidentalis,
+occidentalis\.
+(?<![a-zA-Z])occidentalis 
+\(occidentalis
+occidentalis\)
+ nudicaudatus 
+nudicaudatus,
+nudicaudatus\.
+(?<![a-zA-Z])nudicaudatus 
+\(nudicaudatus
+nudicaudatus\)
+ novemcinctus 
+novemcinctus,
+novemcinctus\.
+(?<![a-zA-Z])novemcinctus 
+\(novemcinctus
+novemcinctus\)
+ novaeangliae 
+novaeangliae,
+novaeangliae\.
+(?<![a-zA-Z])novaeangliae 
+\(novaeangliae
+novaeangliae\)
+ neomexicanus 
+neomexicanus,
+neomexicanus\.
+(?<![a-zA-Z])neomexicanus 
+\(neomexicanus
+neomexicanus\)
+ Globicephala 
+Globicephala,
+Globicephala\.
+(?<![a-zA-Z])Globicephala 
+\(Globicephala
+Globicephala\)
+ brasiliensis 
+brasiliensis,
+brasiliensis\.
+(?<![a-zA-Z])brasiliensis 
+\(brasiliensis
+brasiliensis\)
+ Gracilinanus 
+Gracilinanus,
+Gracilinanus\.
+(?<![a-zA-Z])Gracilinanus 
+\(Gracilinanus
+Gracilinanus\)
+ multivittata 
+multivittata,
+multivittata\.
+(?<![a-zA-Z])multivittata 
+\(multivittata
+multivittata\)
+ Rhinosciurus 
+Rhinosciurus,
+Rhinosciurus\.
+(?<![a-zA-Z])Rhinosciurus 
+\(Rhinosciurus
+Rhinosciurus\)
+ miradorensis 
+miradorensis,
+miradorensis\.
+(?<![a-zA-Z])miradorensis 
+\(miradorensis
+miradorensis\)
+ blossevillii 
+blossevillii,
+blossevillii\.
+(?<![a-zA-Z])blossevillii 
+\(blossevillii
+blossevillii\)
+ pahasapensis 
+pahasapensis,
+pahasapensis\.
+(?<![a-zA-Z])pahasapensis 
+\(pahasapensis
+pahasapensis\)
+ psammophilus 
+psammophilus,
+psammophilus\.
+(?<![a-zA-Z])psammophilus 
+\(psammophilus
+psammophilus\)
+ Eligmodontia 
+Eligmodontia,
+Eligmodontia\.
+(?<![a-zA-Z])Eligmodontia 
+\(Eligmodontia
+Eligmodontia\)
+ periclyzomae 
+periclyzomae,
+periclyzomae\.
+(?<![a-zA-Z])periclyzomae 
+\(periclyzomae
+periclyzomae\)
+ poliocephala 
+poliocephala,
+poliocephala\.
+(?<![a-zA-Z])poliocephala 
+\(poliocephala
+poliocephala\)
+ pentadactyla 
+pentadactyla,
+pentadactyla\.
+(?<![a-zA-Z])pentadactyla 
+\(pentadactyla
+pentadactyla\)
+ philipmyersi 
+philipmyersi,
+philipmyersi\.
+(?<![a-zA-Z])philipmyersi 
+\(philipmyersi
+philipmyersi\)
+ peninsularis 
+peninsularis,
+peninsularis\.
+(?<![a-zA-Z])peninsularis 
+\(peninsularis
+peninsularis\)
+ planirostris 
+planirostris,
+planirostris\.
+(?<![a-zA-Z])planirostris 
+\(planirostris
+planirostris\)
+ blainvillei 
+blainvillei,
+blainvillei\.
+(?<![a-zA-Z])blainvillei 
+\(blainvillei
+blainvillei\)
+ continentis 
+continentis,
+continentis\.
+(?<![a-zA-Z])continentis 
+\(continentis
+continentis\)
+ condorensis 
+condorensis,
+condorensis\.
+(?<![a-zA-Z])condorensis 
+\(condorensis
+condorensis\)
+ consobrinus 
+consobrinus,
+consobrinus\.
+(?<![a-zA-Z])consobrinus 
+\(consobrinus
+consobrinus\)
+ borneoensis 
+borneoensis,
+borneoensis\.
+(?<![a-zA-Z])borneoensis 
+\(borneoensis
+borneoensis\)
+ constantiae 
+constantiae,
+constantiae\.
+(?<![a-zA-Z])constantiae 
+\(constantiae
+constantiae\)
+ cruesemanni 
+cruesemanni,
+cruesemanni\.
+(?<![a-zA-Z])cruesemanni 
+\(cruesemanni
+cruesemanni\)
+ brachymeles 
+brachymeles,
+brachymeles\.
+(?<![a-zA-Z])brachymeles 
+\(brachymeles
+brachymeles\)
+ cavirostris 
+cavirostris,
+cavirostris\.
+(?<![a-zA-Z])cavirostris 
+\(cavirostris
+cavirostris\)
+ commersonii 
+commersonii,
+commersonii\.
+(?<![a-zA-Z])commersonii 
+\(commersonii
+commersonii\)
+ californica 
+californica,
+californica\.
+(?<![a-zA-Z])californica 
+\(californica
+californica\)
+ albiventris 
+albiventris,
+albiventris\.
+(?<![a-zA-Z])albiventris 
+\(albiventris
+albiventris\)
+ albirostris 
+albirostris,
+albirostris\.
+(?<![a-zA-Z])albirostris 
+\(albirostris
+albirostris\)
+ cascadensis 
+cascadensis,
+cascadensis\.
+(?<![a-zA-Z])cascadensis 
+\(cascadensis
+cascadensis\)
+ craspedotis 
+craspedotis,
+craspedotis\.
+(?<![a-zA-Z])craspedotis 
+\(craspedotis
+craspedotis\)
+ cacsilensis 
+cacsilensis,
+cacsilensis\.
+(?<![a-zA-Z])cacsilensis 
+\(cacsilensis
+cacsilensis\)
+ bezoarticus 
+bezoarticus,
+bezoarticus\.
+(?<![a-zA-Z])bezoarticus 
+\(bezoarticus
+bezoarticus\)
+ bernardinus 
+bernardinus,
+bernardinus\.
+(?<![a-zA-Z])bernardinus 
+\(bernardinus
+bernardinus\)
+ Vespertilio 
+Vespertilio,
+Vespertilio\.
+(?<![a-zA-Z])Vespertilio 
+\(Vespertilio
+Vespertilio\)
+ Vampyriscus 
+Vampyriscus,
+Vampyriscus\.
+(?<![a-zA-Z])Vampyriscus 
+\(Vampyriscus
+Vampyriscus\)
+ brevetianus 
+brevetianus,
+brevetianus\.
+(?<![a-zA-Z])brevetianus 
+\(brevetianus
+brevetianus\)
+ caliginosus 
+caliginosus,
+caliginosus\.
+(?<![a-zA-Z])caliginosus 
+\(caliginosus
+caliginosus\)
+ colombianus 
+colombianus,
+colombianus\.
+(?<![a-zA-Z])colombianus 
+\(colombianus
+colombianus\)
+ biedermanni 
+biedermanni,
+biedermanni\.
+(?<![a-zA-Z])biedermanni 
+\(biedermanni
+biedermanni\)
+ callipeplus 
+callipeplus,
+callipeplus\.
+(?<![a-zA-Z])callipeplus 
+\(callipeplus
+callipeplus\)
+ bimaculatus 
+bimaculatus,
+bimaculatus\.
+(?<![a-zA-Z])bimaculatus 
+\(bimaculatus
+bimaculatus\)
+ boliviensis 
+boliviensis,
+boliviensis\.
+(?<![a-zA-Z])boliviensis 
+\(boliviensis
+boliviensis\)
+ bolsonensis 
+bolsonensis,
+bolsonensis\.
+(?<![a-zA-Z])bolsonensis 
+\(bolsonensis
+bolsonensis\)
+ canfieldiae 
+canfieldiae,
+canfieldiae\.
+(?<![a-zA-Z])canfieldiae 
+\(canfieldiae
+canfieldiae\)
+ argyrodytes 
+argyrodytes,
+argyrodytes\.
+(?<![a-zA-Z])argyrodytes 
+\(argyrodytes
+argyrodytes\)
+ chasanensis 
+chasanensis,
+chasanensis\.
+(?<![a-zA-Z])chasanensis 
+\(chasanensis
+chasanensis\)
+ argentinius 
+argentinius,
+argentinius\.
+(?<![a-zA-Z])argentinius 
+\(argentinius
+argentinius\)
+ chiriquinus 
+chiriquinus,
+chiriquinus\.
+(?<![a-zA-Z])chiriquinus 
+\(chiriquinus
+chiriquinus\)
+ chrysauchen 
+chrysauchen,
+chrysauchen\.
+(?<![a-zA-Z])chrysauchen 
+\(chrysauchen
+chrysauchen\)
+ bonaerensis 
+bonaerensis,
+bonaerensis\.
+(?<![a-zA-Z])bonaerensis 
+\(bonaerensis
+bonaerensis\)
+ chrysomelas 
+chrysomelas,
+chrysomelas\.
+(?<![a-zA-Z])chrysomelas 
+\(chrysomelas
+chrysomelas\)
+ chrysonotus 
+chrysonotus,
+chrysonotus\.
+(?<![a-zA-Z])chrysonotus 
+\(chrysonotus
+chrysonotus\)
+ chapadensis 
+chapadensis,
+chapadensis\.
+(?<![a-zA-Z])chapadensis 
+\(chapadensis
+chapadensis\)
+ chrysospila 
+chrysospila,
+chrysospila\.
+(?<![a-zA-Z])chrysospila 
+\(chrysospila
+chrysospila\)
+ candelensis 
+candelensis,
+candelensis\.
+(?<![a-zA-Z])candelensis 
+\(candelensis
+candelensis\)
+ cancrivorus 
+cancrivorus,
+cancrivorus\.
+(?<![a-zA-Z])cancrivorus 
+\(cancrivorus
+cancrivorus\)
+ apollinaris 
+apollinaris,
+apollinaris\.
+(?<![a-zA-Z])apollinaris 
+\(apollinaris
+apollinaris\)
+ barbarensis 
+barbarensis,
+barbarensis\.
+(?<![a-zA-Z])barbarensis 
+\(barbarensis
+barbarensis\)
+ cinerascens 
+cinerascens,
+cinerascens\.
+(?<![a-zA-Z])cinerascens 
+\(cinerascens
+cinerascens\)
+ bonariensis 
+bonariensis,
+bonariensis\.
+(?<![a-zA-Z])bonariensis 
+\(bonariensis
+bonariensis\)
+ cinnamomeus 
+cinnamomeus,
+cinnamomeus\.
+(?<![a-zA-Z])cinnamomeus 
+\(cinnamomeus
+cinnamomeus\)
+ angustidens 
+angustidens,
+angustidens\.
+(?<![a-zA-Z])angustidens 
+\(angustidens
+angustidens\)
+ arizonensis 
+arizonensis,
+arizonensis\.
+(?<![a-zA-Z])arizonensis 
+\(arizonensis
+arizonensis\)
+ cerrosensis 
+cerrosensis,
+cerrosensis\.
+(?<![a-zA-Z])cerrosensis 
+\(cerrosensis
+cerrosensis\)
+ maccarthiae 
+maccarthiae,
+maccarthiae\.
+(?<![a-zA-Z])maccarthiae 
+\(maccarthiae
+maccarthiae\)
+ cynocephala 
+cynocephala,
+cynocephala\.
+(?<![a-zA-Z])cynocephala 
+\(cynocephala
+cynocephala\)
+ peruviensis 
+peruviensis,
+peruviensis\.
+(?<![a-zA-Z])peruviensis 
+\(peruviensis
+peruviensis\)
+ sequoiensis 
+sequoiensis,
+sequoiensis\.
+(?<![a-zA-Z])sequoiensis 
+\(sequoiensis
+sequoiensis\)
+ schoutedeni 
+schoutedeni,
+schoutedeni\.
+(?<![a-zA-Z])schoutedeni 
+\(schoutedeni
+schoutedeni\)
+ sacrimontis 
+sacrimontis,
+sacrimontis\.
+(?<![a-zA-Z])sacrimontis 
+\(sacrimontis
+sacrimontis\)
+ rufogriseus 
+rufogriseus,
+rufogriseus\.
+(?<![a-zA-Z])rufogriseus 
+\(rufogriseus
+rufogriseus\)
+ rothschildi 
+rothschildi,
+rothschildi\.
+(?<![a-zA-Z])rothschildi 
+\(rothschildi
+rothschildi\)
+ rosenbergii 
+rosenbergii,
+rosenbergii\.
+(?<![a-zA-Z])rosenbergii 
+\(rosenbergii
+rosenbergii\)
+ richardsoni 
+richardsoni,
+richardsoni\.
+(?<![a-zA-Z])richardsoni 
+\(richardsoni
+richardsoni\)
+ rafinesquii 
+rafinesquii,
+rafinesquii\.
+(?<![a-zA-Z])rafinesquii 
+\(rafinesquii
+rafinesquii\)
+ przewalskii 
+przewalskii,
+przewalskii\.
+(?<![a-zA-Z])przewalskii 
+\(przewalskii
+przewalskii\)
+ prehensilis 
+prehensilis,
+prehensilis\.
+(?<![a-zA-Z])prehensilis 
+\(prehensilis
+prehensilis\)
+ portavernus 
+portavernus,
+portavernus\.
+(?<![a-zA-Z])portavernus 
+\(portavernus
+portavernus\)
+ penicillata 
+penicillata,
+penicillata\.
+(?<![a-zA-Z])penicillata 
+\(penicillata
+penicillata\)
+ sonoriensis 
+sonoriensis,
+sonoriensis\.
+(?<![a-zA-Z])sonoriensis 
+\(sonoriensis
+sonoriensis\)
+ patagonicus 
+patagonicus,
+patagonicus\.
+(?<![a-zA-Z])patagonicus 
+\(patagonicus
+patagonicus\)
+ pardinoides 
+pardinoides,
+pardinoides\.
+(?<![a-zA-Z])pardinoides 
+\(pardinoides
+pardinoides\)
+ paranaensis 
+paranaensis,
+paranaensis\.
+(?<![a-zA-Z])paranaensis 
+\(paranaensis
+paranaensis\)
+ paraguensis 
+paraguensis,
+paraguensis\.
+(?<![a-zA-Z])paraguensis 
+\(paraguensis
+paraguensis\)
+ paraguayana 
+paraguayana,
+paraguayana\.
+(?<![a-zA-Z])paraguayana 
+\(paraguayana
+paraguayana\)
+ paludinosus 
+paludinosus,
+paludinosus\.
+(?<![a-zA-Z])paludinosus 
+\(paludinosus
+paludinosus\)
+ oporaphilum 
+oporaphilum,
+oporaphilum\.
+(?<![a-zA-Z])oporaphilum 
+\(oporaphilum
+oporaphilum\)
+ novaeguinae 
+novaeguinae,
+novaeguinae\.
+(?<![a-zA-Z])novaeguinae 
+\(novaeguinae
+novaeguinae\)
+ namaquensis 
+namaquensis,
+namaquensis\.
+(?<![a-zA-Z])namaquensis 
+\(namaquensis
+namaquensis\)
+ musteloides 
+musteloides,
+musteloides\.
+(?<![a-zA-Z])musteloides 
+\(musteloides
+musteloides\)
+ muscatensis 
+muscatensis,
+muscatensis\.
+(?<![a-zA-Z])muscatensis 
+\(muscatensis
+muscatensis\)
+ shirazensis 
+shirazensis,
+shirazensis\.
+(?<![a-zA-Z])shirazensis 
+\(shirazensis
+shirazensis\)
+ spectabilis 
+spectabilis,
+spectabilis\.
+(?<![a-zA-Z])spectabilis 
+\(spectabilis
+spectabilis\)
+ daubentonii 
+daubentonii,
+daubentonii\.
+(?<![a-zA-Z])daubentonii 
+\(daubentonii
+daubentonii\)
+ ulapesensis 
+ulapesensis,
+ulapesensis\.
+(?<![a-zA-Z])ulapesensis 
+\(ulapesensis
+ulapesensis\)
+ yucatanicus 
+yucatanicus,
+yucatanicus\.
+(?<![a-zA-Z])yucatanicus 
+\(yucatanicus
+yucatanicus\)
+ xanthorhina 
+xanthorhina,
+xanthorhina\.
+(?<![a-zA-Z])xanthorhina 
+\(xanthorhina
+xanthorhina\)
+ xanthopygus 
+xanthopygus,
+xanthopygus\.
+(?<![a-zA-Z])xanthopygus 
+\(xanthopygus
+xanthopygus\)
+ waterhousii 
+waterhousii,
+waterhousii\.
+(?<![a-zA-Z])waterhousii 
+\(waterhousii
+waterhousii\)
+ vulcanensis 
+vulcanensis,
+vulcanensis\.
+(?<![a-zA-Z])vulcanensis 
+\(vulcanensis
+vulcanensis\)
+ vitticollis 
+vitticollis,
+vitticollis\.
+(?<![a-zA-Z])vitticollis 
+\(vitticollis
+vitticollis\)
+ virginianus 
+virginianus,
+virginianus\.
+(?<![a-zA-Z])virginianus 
+\(virginianus
+virginianus\)
+ vespertinus 
+vespertinus,
+vespertinus\.
+(?<![a-zA-Z])vespertinus 
+\(vespertinus
+vespertinus\)
+ veraecrucis 
+veraecrucis,
+veraecrucis\.
+(?<![a-zA-Z])veraecrucis 
+\(veraecrucis
+veraecrucis\)
+ valdivianus 
+valdivianus,
+valdivianus\.
+(?<![a-zA-Z])valdivianus 
+\(valdivianus
+valdivianus\)
+ ussuriensis 
+ussuriensis,
+ussuriensis\.
+(?<![a-zA-Z])ussuriensis 
+\(ussuriensis
+ussuriensis\)
+ troglodytes 
+troglodytes,
+troglodytes\.
+(?<![a-zA-Z])troglodytes 
+\(troglodytes
+troglodytes\)
+ spegazzinii 
+spegazzinii,
+spegazzinii\.
+(?<![a-zA-Z])spegazzinii 
+\(spegazzinii
+spegazzinii\)
+ trivittatus 
+trivittatus,
+trivittatus\.
+(?<![a-zA-Z])trivittatus 
+\(trivittatus
+trivittatus\)
+ trifoliatus 
+trifoliatus,
+trifoliatus\.
+(?<![a-zA-Z])trifoliatus 
+\(trifoliatus
+trifoliatus\)
+ tephromelas 
+tephromelas,
+tephromelas\.
+(?<![a-zA-Z])tephromelas 
+\(tephromelas
+tephromelas\)
+ telmalestes 
+telmalestes,
+telmalestes\.
+(?<![a-zA-Z])telmalestes 
+\(telmalestes
+telmalestes\)
+ taiwanensis 
+taiwanensis,
+taiwanensis\.
+(?<![a-zA-Z])taiwanensis 
+\(taiwanensis
+taiwanensis\)
+ sundevallii 
+sundevallii,
+sundevallii\.
+(?<![a-zA-Z])sundevallii 
+\(sundevallii
+sundevallii\)
+ sublineatus 
+sublineatus,
+sublineatus\.
+(?<![a-zA-Z])sublineatus 
+\(sublineatus
+sublineatus\)
+ stresemanni 
+stresemanni,
+stresemanni\.
+(?<![a-zA-Z])stresemanni 
+\(stresemanni
+stresemanni\)
+ splendidula 
+splendidula,
+splendidula\.
+(?<![a-zA-Z])splendidula 
+\(splendidula
+splendidula\)
+ spissigrada 
+spissigrada,
+spissigrada\.
+(?<![a-zA-Z])spissigrada 
+\(spissigrada
+spissigrada\)
+ spinipinnis 
+spinipinnis,
+spinipinnis\.
+(?<![a-zA-Z])spinipinnis 
+\(spinipinnis
+spinipinnis\)
+ moupinensis 
+moupinensis,
+moupinensis\.
+(?<![a-zA-Z])moupinensis 
+\(moupinensis
+moupinensis\)
+ misionensis 
+misionensis,
+misionensis\.
+(?<![a-zA-Z])misionensis 
+\(misionensis
+misionensis\)
+ microtarsus 
+microtarsus,
+microtarsus\.
+(?<![a-zA-Z])microtarsus 
+\(microtarsus
+microtarsus\)
+ gouazoubira 
+gouazoubira,
+gouazoubira\.
+(?<![a-zA-Z])gouazoubira 
+\(gouazoubira
+gouazoubira\)
+ hottentotus 
+hottentotus,
+hottentotus\.
+(?<![a-zA-Z])hottentotus 
+\(hottentotus
+hottentotus\)
+ horsfieldii 
+horsfieldii,
+horsfieldii\.
+(?<![a-zA-Z])horsfieldii 
+\(horsfieldii
+horsfieldii\)
+ hondurensis 
+hondurensis,
+hondurensis\.
+(?<![a-zA-Z])hondurensis 
+\(hondurensis
+hondurensis\)
+ hispaniolae 
+hispaniolae,
+hispaniolae\.
+(?<![a-zA-Z])hispaniolae 
+\(hispaniolae
+hispaniolae\)
+ hernandezii 
+hernandezii,
+hernandezii\.
+(?<![a-zA-Z])hernandezii 
+\(hernandezii
+hernandezii\)
+ hernandesii 
+hernandesii,
+hernandesii\.
+(?<![a-zA-Z])hernandesii 
+\(hernandesii
+hernandesii\)
+ gymnocercus 
+gymnocercus,
+gymnocercus\.
+(?<![a-zA-Z])gymnocercus 
+\(gymnocercus
+gymnocercus\)
+ guinasensis 
+guinasensis,
+guinasensis\.
+(?<![a-zA-Z])guinasensis 
+\(guinasensis
+guinasensis\)
+ grenadensis 
+grenadensis,
+grenadensis\.
+(?<![a-zA-Z])grenadensis 
+\(grenadensis
+grenadensis\)
+ granatensis 
+granatensis,
+granatensis\.
+(?<![a-zA-Z])granatensis 
+\(granatensis
+granatensis\)
+ gradojevici 
+gradojevici,
+gradojevici\.
+(?<![a-zA-Z])gradojevici 
+\(gradojevici
+gradojevici\)
+ goodpasteri 
+goodpasteri,
+goodpasteri\.
+(?<![a-zA-Z])goodpasteri 
+\(goodpasteri
+goodpasteri\)
+ michaelseni 
+michaelseni,
+michaelseni\.
+(?<![a-zA-Z])michaelseni 
+\(michaelseni
+michaelseni\)
+ geoffrensis 
+geoffrensis,
+geoffrensis\.
+(?<![a-zA-Z])geoffrensis 
+\(geoffrensis
+geoffrensis\)
+ fuscicollis 
+fuscicollis,
+fuscicollis\.
+(?<![a-zA-Z])fuscicollis 
+\(fuscicollis
+fuscicollis\)
+ furvogaster 
+furvogaster,
+furvogaster\.
+(?<![a-zA-Z])furvogaster 
+\(furvogaster
+furvogaster\)
+ fulviventer 
+fulviventer,
+fulviventer\.
+(?<![a-zA-Z])fulviventer 
+\(fulviventer
+fulviventer\)
+ fuliginosus 
+fuliginosus,
+fuliginosus\.
+(?<![a-zA-Z])fuliginosus 
+\(fuliginosus
+fuliginosus\)
+ fraterculus 
+fraterculus,
+fraterculus\.
+(?<![a-zA-Z])fraterculus 
+\(fraterculus
+fraterculus\)
+ flavissimus 
+flavissimus,
+flavissimus\.
+(?<![a-zA-Z])flavissimus 
+\(flavissimus
+flavissimus\)
+ fenestratus 
+fenestratus,
+fenestratus\.
+(?<![a-zA-Z])fenestratus 
+\(fenestratus
+fenestratus\)
+ entrerianus 
+entrerianus,
+entrerianus\.
+(?<![a-zA-Z])entrerianus 
+\(entrerianus
+entrerianus\)
+ emarginatus 
+emarginatus,
+emarginatus\.
+(?<![a-zA-Z])emarginatus 
+\(emarginatus
+emarginatus\)
+ domeykoanus 
+domeykoanus,
+domeykoanus\.
+(?<![a-zA-Z])domeykoanus 
+\(domeykoanus
+domeykoanus\)
+ hypomelanus 
+hypomelanus,
+hypomelanus\.
+(?<![a-zA-Z])hypomelanus 
+\(hypomelanus
+hypomelanus\)
+ inesperatus 
+inesperatus,
+inesperatus\.
+(?<![a-zA-Z])inesperatus 
+\(inesperatus
+inesperatus\)
+ intermedius 
+intermedius,
+intermedius\.
+(?<![a-zA-Z])intermedius 
+\(intermedius
+intermedius\)
+ isabellinus 
+isabellinus,
+isabellinus\.
+(?<![a-zA-Z])isabellinus 
+\(isabellinus
+isabellinus\)
+ melanopogon 
+melanopogon,
+melanopogon\.
+(?<![a-zA-Z])melanopogon 
+\(melanopogon
+melanopogon\)
+ melanopepla 
+melanopepla,
+melanopepla\.
+(?<![a-zA-Z])melanopepla 
+\(melanopepla
+melanopepla\)
+ megapotamus 
+megapotamus,
+megapotamus\.
+(?<![a-zA-Z])megapotamus 
+\(megapotamus
+megapotamus\)
+ megaphyllus 
+megaphyllus,
+megaphyllus\.
+(?<![a-zA-Z])megaphyllus 
+\(megaphyllus
+megaphyllus\)
+ maullinicus 
+maullinicus,
+maullinicus\.
+(?<![a-zA-Z])maullinicus 
+\(maullinicus
+maullinicus\)
+ marsupialis 
+marsupialis,
+marsupialis\.
+(?<![a-zA-Z])marsupialis 
+\(marsupialis
+marsupialis\)
+ managuensis 
+managuensis,
+managuensis\.
+(?<![a-zA-Z])managuensis 
+\(managuensis
+managuensis\)
+ madeirensis 
+madeirensis,
+madeirensis\.
+(?<![a-zA-Z])madeirensis 
+\(madeirensis
+madeirensis\)
+ macrotarsus 
+macrotarsus,
+macrotarsus\.
+(?<![a-zA-Z])macrotarsus 
+\(macrotarsus
+macrotarsus\)
+ macrosensis 
+macrosensis,
+macrosensis\.
+(?<![a-zA-Z])macrosensis 
+\(macrosensis
+macrosensis\)
+ macrocorpus 
+macrocorpus,
+macrocorpus\.
+(?<![a-zA-Z])macrocorpus 
+\(macrocorpus
+macrocorpus\)
+ macconnelli 
+macconnelli,
+macconnelli\.
+(?<![a-zA-Z])macconnelli 
+\(macconnelli
+macconnelli\)
+ luridavolta 
+luridavolta,
+luridavolta\.
+(?<![a-zA-Z])luridavolta 
+\(luridavolta
+luridavolta\)
+ loukashkini 
+loukashkini,
+loukashkini\.
+(?<![a-zA-Z])loukashkini 
+\(loukashkini
+loukashkini\)
+ longicaudis 
+longicaudis,
+longicaudis\.
+(?<![a-zA-Z])longicaudis 
+\(longicaudis
+longicaudis\)
+ leucogaster 
+leucogaster,
+leucogaster\.
+(?<![a-zA-Z])leucogaster 
+\(leucogaster
+leucogaster\)
+ leucobaptus 
+leucobaptus,
+leucobaptus\.
+(?<![a-zA-Z])leucobaptus 
+\(leucobaptus
+leucobaptus\)
+ latirostris 
+latirostris,
+latirostris\.
+(?<![a-zA-Z])latirostris 
+\(latirostris
+latirostris\)
+ langsdorffi 
+langsdorffi,
+langsdorffi\.
+(?<![a-zA-Z])langsdorffi 
+\(langsdorffi
+langsdorffi\)
+ kodiacensis 
+kodiacensis,
+kodiacensis\.
+(?<![a-zA-Z])kodiacensis 
+\(kodiacensis
+kodiacensis\)
+ kashgaricus 
+kashgaricus,
+kashgaricus\.
+(?<![a-zA-Z])kashgaricus 
+\(kashgaricus
+kashgaricus\)
+ jamaicensis 
+jamaicensis,
+jamaicensis\.
+(?<![a-zA-Z])jamaicensis 
+\(jamaicensis
+jamaicensis\)
+ isphahanica 
+isphahanica,
+isphahanica\.
+(?<![a-zA-Z])isphahanica 
+\(isphahanica
+isphahanica\)
+ Tragelaphus 
+Tragelaphus,
+Tragelaphus\.
+(?<![a-zA-Z])Tragelaphus 
+\(Tragelaphus
+Tragelaphus\)
+ zygomaticus 
+zygomaticus,
+zygomaticus\.
+(?<![a-zA-Z])zygomaticus 
+\(zygomaticus
+zygomaticus\)
+ Pappogeomys 
+Pappogeomys,
+Pappogeomys\.
+(?<![a-zA-Z])Pappogeomys 
+\(Pappogeomys
+Pappogeomys\)
+ Rhynchocyon 
+Rhynchocyon,
+Rhynchocyon\.
+(?<![a-zA-Z])Rhynchocyon 
+\(Rhynchocyon
+Rhynchocyon\)
+ Nyctophilus 
+Nyctophilus,
+Nyctophilus\.
+(?<![a-zA-Z])Nyctophilus 
+\(Nyctophilus
+Nyctophilus\)
+ Civettictis 
+Civettictis,
+Civettictis\.
+(?<![a-zA-Z])Civettictis 
+\(Civettictis
+Civettictis\)
+ Parachoerus 
+Parachoerus,
+Parachoerus\.
+(?<![a-zA-Z])Parachoerus 
+\(Parachoerus
+Parachoerus\)
+ Paradoxurus 
+Paradoxurus,
+Paradoxurus\.
+(?<![a-zA-Z])Paradoxurus 
+\(Paradoxurus
+Paradoxurus\)
+ Paraechinus 
+Paraechinus,
+Paraechinus\.
+(?<![a-zA-Z])Paraechinus 
+\(Paraechinus
+Paraechinus\)
+ Emballonura 
+Emballonura,
+Emballonura\.
+(?<![a-zA-Z])Emballonura 
+\(Emballonura
+Emballonura\)
+ Blastocerus 
+Blastocerus,
+Blastocerus\.
+(?<![a-zA-Z])Blastocerus 
+\(Blastocerus
+Blastocerus\)
+ Heterohyrax 
+Heterohyrax,
+Heterohyrax\.
+(?<![a-zA-Z])Heterohyrax 
+\(Heterohyrax
+Heterohyrax\)
+ Perognathus 
+Perognathus,
+Perognathus\.
+(?<![a-zA-Z])Perognathus 
+\(Perognathus
+Perognathus\)
+ Mungotictis 
+Mungotictis,
+Mungotictis\.
+(?<![a-zA-Z])Mungotictis 
+\(Mungotictis
+Mungotictis\)
+ Nyctinomops 
+Nyctinomops,
+Nyctinomops\.
+(?<![a-zA-Z])Nyctinomops 
+\(Nyctinomops
+Nyctinomops\)
+ Monophyllus 
+Monophyllus,
+Monophyllus\.
+(?<![a-zA-Z])Monophyllus 
+\(Monophyllus
+Monophyllus\)
+ Chaetodipus 
+Chaetodipus,
+Chaetodipus\.
+(?<![a-zA-Z])Chaetodipus 
+\(Chaetodipus
+Chaetodipus\)
+ Herpailurus 
+Herpailurus,
+Herpailurus\.
+(?<![a-zA-Z])Herpailurus 
+\(Herpailurus
+Herpailurus\)
+ Dendrohyrax 
+Dendrohyrax,
+Dendrohyrax\.
+(?<![a-zA-Z])Dendrohyrax 
+\(Dendrohyrax
+Dendrohyrax\)
+ Hemiechinus 
+Hemiechinus,
+Hemiechinus\.
+(?<![a-zA-Z])Hemiechinus 
+\(Hemiechinus
+Hemiechinus\)
+ Philantomba 
+Philantomba,
+Philantomba\.
+(?<![a-zA-Z])Philantomba 
+\(Philantomba
+Philantomba\)
+ Monodelphis 
+Monodelphis,
+Monodelphis\.
+(?<![a-zA-Z])Monodelphis 
+\(Monodelphis
+Monodelphis\)
+ Phylloderma 
+Phylloderma,
+Phylloderma\.
+(?<![a-zA-Z])Phylloderma 
+\(Phylloderma
+Phylloderma\)
+ Glossophaga 
+Glossophaga,
+Glossophaga\.
+(?<![a-zA-Z])Glossophaga 
+\(Glossophaga
+Glossophaga\)
+ Cryptonanus 
+Cryptonanus,
+Cryptonanus\.
+(?<![a-zA-Z])Cryptonanus 
+\(Cryptonanus
+Cryptonanus\)
+ Antilocapra 
+Antilocapra,
+Antilocapra\.
+(?<![a-zA-Z])Antilocapra 
+\(Antilocapra
+Antilocapra\)
+ Spilocuscus 
+Spilocuscus,
+Spilocuscus\.
+(?<![a-zA-Z])Spilocuscus 
+\(Spilocuscus
+Spilocuscus\)
+ Chironectes 
+Chironectes,
+Chironectes\.
+(?<![a-zA-Z])Chironectes 
+\(Chironectes
+Chironectes\)
+ Caenolestes 
+Caenolestes,
+Caenolestes\.
+(?<![a-zA-Z])Caenolestes 
+\(Caenolestes
+Caenolestes\)
+ Lonchorhina 
+Lonchorhina,
+Lonchorhina\.
+(?<![a-zA-Z])Lonchorhina 
+\(Lonchorhina
+Lonchorhina\)
+ Notosciurus 
+Notosciurus,
+Notosciurus\.
+(?<![a-zA-Z])Notosciurus 
+\(Notosciurus
+Notosciurus\)
+ Leptailurus 
+Leptailurus,
+Leptailurus\.
+(?<![a-zA-Z])Leptailurus 
+\(Leptailurus
+Leptailurus\)
+ Lasiorhinus 
+Lasiorhinus,
+Lasiorhinus\.
+(?<![a-zA-Z])Lasiorhinus 
+\(Lasiorhinus
+Lasiorhinus\)
+ Rhinolophus 
+Rhinolophus,
+Rhinolophus\.
+(?<![a-zA-Z])Rhinolophus 
+\(Rhinolophus
+Rhinolophus\)
+ Miniopterus 
+Miniopterus,
+Miniopterus\.
+(?<![a-zA-Z])Miniopterus 
+\(Miniopterus
+Miniopterus\)
+ Naemorhedus 
+Naemorhedus,
+Naemorhedus\.
+(?<![a-zA-Z])Naemorhedus 
+\(Naemorhedus
+Naemorhedus\)
+ Bassariscus 
+Bassariscus,
+Bassariscus\.
+(?<![a-zA-Z])Bassariscus 
+\(Bassariscus
+Bassariscus\)
+ Orycteropus 
+Orycteropus,
+Orycteropus\.
+(?<![a-zA-Z])Orycteropus 
+\(Orycteropus
+Orycteropus\)
+ Scapteromys 
+Scapteromys,
+Scapteromys\.
+(?<![a-zA-Z])Scapteromys 
+\(Scapteromys
+Scapteromys\)
+ Capricornis 
+Capricornis,
+Capricornis\.
+(?<![a-zA-Z])Capricornis 
+\(Capricornis
+Capricornis\)
+ Oxymycterus 
+Oxymycterus,
+Oxymycterus\.
+(?<![a-zA-Z])Oxymycterus 
+\(Oxymycterus
+Oxymycterus\)
+ Cephalophus 
+Cephalophus,
+Cephalophus\.
+(?<![a-zA-Z])Cephalophus 
+\(Cephalophus
+Cephalophus\)
+ Scotophilus 
+Scotophilus,
+Scotophilus\.
+(?<![a-zA-Z])Scotophilus 
+\(Scotophilus
+Scotophilus\)
+ Eoglaucomys 
+Eoglaucomys,
+Eoglaucomys\.
+(?<![a-zA-Z])Eoglaucomys 
+\(Eoglaucomys
+Eoglaucomys\)
+ Ommatophoca 
+Ommatophoca,
+Ommatophoca\.
+(?<![a-zA-Z])Ommatophoca 
+\(Ommatophoca
+Ommatophoca\)
+ Myrmecobius 
+Myrmecobius,
+Myrmecobius\.
+(?<![a-zA-Z])Myrmecobius 
+\(Myrmecobius
+Myrmecobius\)
+ Barbastella 
+Barbastella,
+Barbastella\.
+(?<![a-zA-Z])Barbastella 
+\(Barbastella
+Barbastella\)
+ Cratogeomys 
+Cratogeomys,
+Cratogeomys\.
+(?<![a-zA-Z])Cratogeomys 
+\(Cratogeomys
+Cratogeomys\)
+ Orthogeomys 
+Orthogeomys,
+Orthogeomys\.
+(?<![a-zA-Z])Orthogeomys 
+\(Orthogeomys
+Orthogeomys\)
+ canadensis 
+canadensis,
+canadensis\.
+(?<![a-zA-Z])canadensis 
+\(canadensis
+canadensis\)
+ nemorivaga 
+nemorivaga,
+nemorivaga\.
+(?<![a-zA-Z])nemorivaga 
+\(nemorivaga
+nemorivaga\)
+ fulvescens 
+fulvescens,
+fulvescens\.
+(?<![a-zA-Z])fulvescens 
+\(fulvescens
+fulvescens\)
+ morroensis 
+morroensis,
+morroensis\.
+(?<![a-zA-Z])morroensis 
+\(morroensis
+morroensis\)
+ raffrayana 
+raffrayana,
+raffrayana\.
+(?<![a-zA-Z])raffrayana 
+\(raffrayana
+raffrayana\)
+ campestris 
+campestris,
+campestris\.
+(?<![a-zA-Z])campestris 
+\(campestris
+campestris\)
+ Auliscomys 
+Auliscomys,
+Auliscomys\.
+(?<![a-zA-Z])Auliscomys 
+\(Auliscomys
+Auliscomys\)
+ cameloides 
+cameloides,
+cameloides\.
+(?<![a-zA-Z])cameloides 
+\(cameloides
+cameloides\)
+ personatus 
+personatus,
+personatus\.
+(?<![a-zA-Z])personatus 
+\(personatus
+personatus\)
+ longicauda 
+longicauda,
+longicauda\.
+(?<![a-zA-Z])longicauda 
+\(longicauda
+longicauda\)
+ townsendii 
+townsendii,
+townsendii\.
+(?<![a-zA-Z])townsendii 
+\(townsendii
+townsendii\)
+ trinitatis 
+trinitatis,
+trinitatis\.
+(?<![a-zA-Z])trinitatis 
+\(trinitatis
+trinitatis\)
+ sexcinctus 
+sexcinctus,
+sexcinctus\.
+(?<![a-zA-Z])sexcinctus 
+\(sexcinctus
+sexcinctus\)
+ Protoxerus 
+Protoxerus,
+Protoxerus\.
+(?<![a-zA-Z])Protoxerus 
+\(Protoxerus
+Protoxerus\)
+ Sciurillus 
+Sciurillus,
+Sciurillus\.
+(?<![a-zA-Z])Sciurillus 
+\(Sciurillus
+Sciurillus\)
+ Proechimys 
+Proechimys,
+Proechimys\.
+(?<![a-zA-Z])Proechimys 
+\(Proechimys
+Proechimys\)
+ soudanicus 
+soudanicus,
+soudanicus\.
+(?<![a-zA-Z])soudanicus 
+\(soudanicus
+soudanicus\)
+ formosanus 
+formosanus,
+formosanus\.
+(?<![a-zA-Z])formosanus 
+\(formosanus
+formosanus\)
+ monticolus 
+monticolus,
+monticolus\.
+(?<![a-zA-Z])monticolus 
+\(monticolus
+monticolus\)
+ montivagus 
+montivagus,
+montivagus\.
+(?<![a-zA-Z])montivagus 
+\(montivagus
+montivagus\)
+ petilidens 
+petilidens,
+petilidens\.
+(?<![a-zA-Z])petilidens 
+\(petilidens
+petilidens\)
+ nevadensis 
+nevadensis,
+nevadensis\.
+(?<![a-zA-Z])nevadensis 
+\(nevadensis
+nevadensis\)
+ Chrysocyon 
+Chrysocyon,
+Chrysocyon\.
+(?<![a-zA-Z])Chrysocyon 
+\(Chrysocyon
+Chrysocyon\)
+ bilabiatum 
+bilabiatum,
+bilabiatum\.
+(?<![a-zA-Z])bilabiatum 
+\(bilabiatum
+bilabiatum\)
+ sociabilis 
+sociabilis,
+sociabilis\.
+(?<![a-zA-Z])sociabilis 
+\(sociabilis
+sociabilis\)
+ petaurista 
+petaurista,
+petaurista\.
+(?<![a-zA-Z])petaurista 
+\(petaurista
+petaurista\)
+ canicaudus 
+canicaudus,
+canicaudus\.
+(?<![a-zA-Z])canicaudus 
+\(canicaudus
+canicaudus\)
+ Pteronotus 
+Pteronotus,
+Pteronotus\.
+(?<![a-zA-Z])Pteronotus 
+\(Pteronotus
+Pteronotus\)
+ fuliginosa 
+fuliginosa,
+fuliginosa\.
+(?<![a-zA-Z])fuliginosa 
+\(fuliginosa
+fuliginosa\)
+ musculinus 
+musculinus,
+musculinus\.
+(?<![a-zA-Z])musculinus 
+\(musculinus
+musculinus\)
+ tropicalis 
+tropicalis,
+tropicalis\.
+(?<![a-zA-Z])tropicalis 
+\(tropicalis
+tropicalis\)
+ gillespiei 
+gillespiei,
+gillespiei\.
+(?<![a-zA-Z])gillespiei 
+\(gillespiei
+gillespiei\)
+ tridactyla 
+tridactyla,
+tridactyla\.
+(?<![a-zA-Z])tridactyla 
+\(tridactyla
+tridactyla\)
+ Lutreolina 
+Lutreolina,
+Lutreolina\.
+(?<![a-zA-Z])Lutreolina 
+\(Lutreolina
+Lutreolina\)
+ glandifera 
+glandifera,
+glandifera\.
+(?<![a-zA-Z])glandifera 
+\(glandifera
+glandifera\)
+ peregrinus 
+peregrinus,
+peregrinus\.
+(?<![a-zA-Z])peregrinus 
+\(peregrinus
+peregrinus\)
+ trinitatus 
+trinitatus,
+trinitatus\.
+(?<![a-zA-Z])trinitatus 
+\(trinitatus
+trinitatus\)
+ brevimanus 
+brevimanus,
+brevimanus\.
+(?<![a-zA-Z])brevimanus 
+\(brevimanus
+brevimanus\)
+ Reithrodon 
+Reithrodon,
+Reithrodon\.
+(?<![a-zA-Z])Reithrodon 
+\(Reithrodon
+Reithrodon\)
+ raphanurus 
+raphanurus,
+raphanurus\.
+(?<![a-zA-Z])raphanurus 
+\(raphanurus
+raphanurus\)
+ brevicauda 
+brevicauda,
+brevicauda\.
+(?<![a-zA-Z])brevicauda 
+\(brevicauda
+brevicauda\)
+ perblandus 
+perblandus,
+perblandus\.
+(?<![a-zA-Z])perblandus 
+\(perblandus
+perblandus\)
+ reticulata 
+reticulata,
+reticulata\.
+(?<![a-zA-Z])reticulata 
+\(reticulata
+reticulata\)
+ Rhipidomys 
+Rhipidomys,
+Rhipidomys\.
+(?<![a-zA-Z])Rhipidomys 
+\(Rhipidomys
+Rhipidomys\)
+ brachyurus 
+brachyurus,
+brachyurus\.
+(?<![a-zA-Z])brachyurus 
+\(brachyurus
+brachyurus\)
+ brachyotis 
+brachyotis,
+brachyotis\.
+(?<![a-zA-Z])brachyotis 
+\(brachyotis
+brachyotis\)
+ silvaticus 
+silvaticus,
+silvaticus\.
+(?<![a-zA-Z])silvaticus 
+\(silvaticus
+silvaticus\)
+ Blarinomys 
+Blarinomys,
+Blarinomys\.
+(?<![a-zA-Z])Blarinomys 
+\(Blarinomys
+Blarinomys\)
+ floridanus 
+floridanus,
+floridanus\.
+(?<![a-zA-Z])floridanus 
+\(floridanus
+floridanus\)
+ reperticia 
+reperticia,
+reperticia\.
+(?<![a-zA-Z])reperticia 
+\(reperticia
+reperticia\)
+ trivirgata 
+trivirgata,
+trivirgata\.
+(?<![a-zA-Z])trivirgata 
+\(trivirgata
+trivirgata\)
+ borneensis 
+borneensis,
+borneensis\.
+(?<![a-zA-Z])borneensis 
+\(borneensis
+borneensis\)
+ nathalinae 
+nathalinae,
+nathalinae\.
+(?<![a-zA-Z])nathalinae 
+\(nathalinae
+nathalinae\)
+ gentilulus 
+gentilulus,
+gentilulus\.
+(?<![a-zA-Z])gentilulus 
+\(gentilulus
+gentilulus\)
+ Eonycteris 
+Eonycteris,
+Eonycteris\.
+(?<![a-zA-Z])Eonycteris 
+\(Eonycteris
+Eonycteris\)
+ silvicolum 
+silvicolum,
+silvicolum\.
+(?<![a-zA-Z])silvicolum 
+\(silvicolum
+silvicolum\)
+ peninsulae 
+peninsulae,
+peninsulae\.
+(?<![a-zA-Z])peninsulae 
+\(peninsulae
+peninsulae\)
+ mystacinus 
+mystacinus,
+mystacinus\.
+(?<![a-zA-Z])mystacinus 
+\(mystacinus
+mystacinus\)
+ ludibundus 
+ludibundus,
+ludibundus\.
+(?<![a-zA-Z])ludibundus 
+\(ludibundus
+ludibundus\)
+ Raphicerus 
+Raphicerus,
+Raphicerus\.
+(?<![a-zA-Z])Raphicerus 
+\(Raphicerus
+Raphicerus\)
+ bombifrons 
+bombifrons,
+bombifrons\.
+(?<![a-zA-Z])bombifrons 
+\(bombifrons
+bombifrons\)
+ Lophostoma 
+Lophostoma,
+Lophostoma\.
+(?<![a-zA-Z])Lophostoma 
+\(Lophostoma
+Lophostoma\)
+ bozinovici 
+bozinovici,
+bozinovici\.
+(?<![a-zA-Z])bozinovici 
+\(bozinovici
+bozinovici\)
+ perforatus 
+perforatus,
+perforatus\.
+(?<![a-zA-Z])perforatus 
+\(perforatus
+perforatus\)
+ celebensis 
+celebensis,
+celebensis\.
+(?<![a-zA-Z])celebensis 
+\(celebensis
+celebensis\)
+ florenciae 
+florenciae,
+florenciae\.
+(?<![a-zA-Z])florenciae 
+\(florenciae
+florenciae\)
+ cucullatus 
+cucullatus,
+cucullatus\.
+(?<![a-zA-Z])cucullatus 
+\(cucullatus
+cucullatus\)
+ Ozotoceros 
+Ozotoceros,
+Ozotoceros\.
+(?<![a-zA-Z])Ozotoceros 
+\(Ozotoceros
+Ozotoceros\)
+ Hyperoodon 
+Hyperoodon,
+Hyperoodon\.
+(?<![a-zA-Z])Hyperoodon 
+\(Hyperoodon
+Hyperoodon\)
+ cratericus 
+cratericus,
+cratericus\.
+(?<![a-zA-Z])cratericus 
+\(cratericus
+cratericus\)
+ marginatus 
+marginatus,
+marginatus\.
+(?<![a-zA-Z])marginatus 
+\(marginatus
+marginatus\)
+ crassidens 
+crassidens,
+crassidens\.
+(?<![a-zA-Z])crassidens 
+\(crassidens
+crassidens\)
+ melalophos 
+melalophos,
+melalophos\.
+(?<![a-zA-Z])melalophos 
+\(melalophos
+melalophos\)
+ margaritae 
+margaritae,
+margaritae\.
+(?<![a-zA-Z])margaritae 
+\(margaritae
+margaritae\)
+ sylvestris 
+sylvestris,
+sylvestris\.
+(?<![a-zA-Z])sylvestris 
+\(sylvestris
+sylvestris\)
+ Holochilus 
+Holochilus,
+Holochilus\.
+(?<![a-zA-Z])Holochilus 
+\(Holochilus
+Holochilus\)
+ sponsorius 
+sponsorius,
+sponsorius\.
+(?<![a-zA-Z])sponsorius 
+\(sponsorius
+sponsorius\)
+ corsicanus 
+corsicanus,
+corsicanus\.
+(?<![a-zA-Z])corsicanus 
+\(corsicanus
+corsicanus\)
+ splendidus 
+splendidus,
+splendidus\.
+(?<![a-zA-Z])splendidus 
+\(splendidus
+splendidus\)
+ eniseensis 
+eniseensis,
+eniseensis\.
+(?<![a-zA-Z])eniseensis 
+\(eniseensis
+eniseensis\)
+ ephippiger 
+ephippiger,
+ephippiger\.
+(?<![a-zA-Z])ephippiger 
+\(ephippiger
+ephippiger\)
+ convelatus 
+convelatus,
+convelatus\.
+(?<![a-zA-Z])convelatus 
+\(convelatus
+convelatus\)
+ constanzae 
+constanzae,
+constanzae\.
+(?<![a-zA-Z])constanzae 
+\(constanzae
+constanzae\)
+ Dromiciops 
+Dromiciops,
+Dromiciops\.
+(?<![a-zA-Z])Dromiciops 
+\(Dromiciops
+Dromiciops\)
+ mendocinus 
+mendocinus,
+mendocinus\.
+(?<![a-zA-Z])mendocinus 
+\(mendocinus
+mendocinus\)
+ connectens 
+connectens,
+connectens\.
+(?<![a-zA-Z])connectens 
+\(connectens
+connectens\)
+ crusnigrum 
+crusnigrum,
+crusnigrum\.
+(?<![a-zA-Z])crusnigrum 
+\(crusnigrum
+crusnigrum\)
+ planifrons 
+planifrons,
+planifrons\.
+(?<![a-zA-Z])planifrons 
+\(planifrons
+planifrons\)
+ thysanodes 
+thysanodes,
+thysanodes\.
+(?<![a-zA-Z])thysanodes 
+\(thysanodes
+thysanodes\)
+ megalodous 
+megalodous,
+megalodous\.
+(?<![a-zA-Z])megalodous 
+\(megalodous
+megalodous\)
+ dichotomus 
+dichotomus,
+dichotomus\.
+(?<![a-zA-Z])dichotomus 
+\(dichotomus
+dichotomus\)
+ desertorum 
+desertorum,
+desertorum\.
+(?<![a-zA-Z])desertorum 
+\(desertorum
+desertorum\)
+ mastersoni 
+mastersoni,
+mastersoni\.
+(?<![a-zA-Z])mastersoni 
+\(mastersoni
+mastersoni\)
+ stuhlmanni 
+stuhlmanni,
+stuhlmanni\.
+(?<![a-zA-Z])stuhlmanni 
+\(stuhlmanni
+stuhlmanni\)
+ dogalensis 
+dogalensis,
+dogalensis\.
+(?<![a-zA-Z])dogalensis 
+\(dogalensis
+dogalensis\)
+ struthopus 
+struthopus,
+struthopus\.
+(?<![a-zA-Z])struthopus 
+\(struthopus
+struthopus\)
+ domesticus 
+domesticus,
+domesticus\.
+(?<![a-zA-Z])domesticus 
+\(domesticus
+domesticus\)
+ Odocoileus 
+Odocoileus,
+Odocoileus\.
+(?<![a-zA-Z])Odocoileus 
+\(Odocoileus
+Odocoileus\)
+ stramineus 
+stramineus,
+stramineus\.
+(?<![a-zA-Z])stramineus 
+\(stramineus
+stramineus\)
+ polionotus 
+polionotus,
+polionotus\.
+(?<![a-zA-Z])polionotus 
+\(polionotus
+polionotus\)
+ dambrensis 
+dambrensis,
+dambrensis\.
+(?<![a-zA-Z])dambrensis 
+\(dambrensis
+dambrensis\)
+ Dolichotis 
+Dolichotis,
+Dolichotis\.
+(?<![a-zA-Z])Dolichotis 
+\(Dolichotis
+Dolichotis\)
+ stolzmanni 
+stolzmanni,
+stolzmanni\.
+(?<![a-zA-Z])stolzmanni 
+\(stolzmanni
+stolzmanni\)
+ massaesyla 
+massaesyla,
+massaesyla\.
+(?<![a-zA-Z])massaesyla 
+\(massaesyla
+massaesyla\)
+ sumatranus 
+sumatranus,
+sumatranus\.
+(?<![a-zA-Z])sumatranus 
+\(sumatranus
+sumatranus\)
+ dutertreus 
+dutertreus,
+dutertreus\.
+(?<![a-zA-Z])dutertreus 
+\(dutertreus
+dutertreus\)
+ currentium 
+currentium,
+currentium\.
+(?<![a-zA-Z])currentium 
+\(currentium
+currentium\)
+ ecsedensis 
+ecsedensis,
+ecsedensis\.
+(?<![a-zA-Z])ecsedensis 
+\(ecsedensis
+ecsedensis\)
+ steinbachi 
+steinbachi,
+steinbachi\.
+(?<![a-zA-Z])steinbachi 
+\(steinbachi
+steinbachi\)
+ Chaerephon 
+Chaerephon,
+Chaerephon\.
+(?<![a-zA-Z])Chaerephon 
+\(Chaerephon
+Chaerephon\)
+ erythraeus 
+erythraeus,
+erythraeus\.
+(?<![a-zA-Z])erythraeus 
+\(erythraeus
+erythraeus\)
+ meridensis 
+meridensis,
+meridensis\.
+(?<![a-zA-Z])meridensis 
+\(meridensis
+meridensis\)
+ erythromos 
+erythromos,
+erythromos\.
+(?<![a-zA-Z])erythromos 
+\(erythromos
+erythromos\)
+ speculator 
+speculator,
+speculator\.
+(?<![a-zA-Z])speculator 
+\(speculator
+speculator\)
+ Pontoporia 
+Pontoporia,
+Pontoporia\.
+(?<![a-zA-Z])Pontoporia 
+\(Pontoporia
+Pontoporia\)
+ chacoensis 
+chacoensis,
+chacoensis\.
+(?<![a-zA-Z])chacoensis 
+\(chacoensis
+chacoensis\)
+ ceylonicus 
+ceylonicus,
+ceylonicus\.
+(?<![a-zA-Z])ceylonicus 
+\(ceylonicus
+ceylonicus\)
+ ceylonense 
+ceylonense,
+ceylonense\.
+(?<![a-zA-Z])ceylonense 
+\(ceylonense
+ceylonense\)
+ Nycticeius 
+Nycticeius,
+Nycticeius\.
+(?<![a-zA-Z])Nycticeius 
+\(Nycticeius
+Nycticeius\)
+ ferruginea 
+ferruginea,
+ferruginea\.
+(?<![a-zA-Z])ferruginea 
+\(ferruginea
+ferruginea\)
+ centricola 
+centricola,
+centricola\.
+(?<![a-zA-Z])centricola 
+\(centricola
+centricola\)
+ Priodontes 
+Priodontes,
+Priodontes\.
+(?<![a-zA-Z])Priodontes 
+\(Priodontes
+Priodontes\)
+ fimbriatus 
+fimbriatus,
+fimbriatus\.
+(?<![a-zA-Z])fimbriatus 
+\(fimbriatus
+fimbriatus\)
+ phaeopepla 
+phaeopepla,
+phaeopepla\.
+(?<![a-zA-Z])phaeopepla 
+\(phaeopepla
+phaeopepla\)
+ greenhalli 
+greenhalli,
+greenhalli\.
+(?<![a-zA-Z])greenhalli 
+\(greenhalli
+greenhalli\)
+ flavescens 
+flavescens,
+flavescens\.
+(?<![a-zA-Z])flavescens 
+\(flavescens
+flavescens\)
+ thibetanus 
+thibetanus,
+thibetanus\.
+(?<![a-zA-Z])thibetanus 
+\(thibetanus
+thibetanus\)
+ flavicauda 
+flavicauda,
+flavicauda\.
+(?<![a-zA-Z])flavicauda 
+\(flavicauda
+flavicauda\)
+ phaeomelas 
+phaeomelas,
+phaeomelas\.
+(?<![a-zA-Z])phaeomelas 
+\(phaeomelas
+phaeomelas\)
+ moluccarum 
+moluccarum,
+moluccarum\.
+(?<![a-zA-Z])moluccarum 
+\(moluccarum
+moluccarum\)
+ flavimanus 
+flavimanus,
+flavimanus\.
+(?<![a-zA-Z])flavimanus 
+\(flavimanus
+flavimanus\)
+ caucasicus 
+caucasicus,
+caucasicus\.
+(?<![a-zA-Z])caucasicus 
+\(caucasicus
+caucasicus\)
+ Echymipera 
+Echymipera,
+Echymipera\.
+(?<![a-zA-Z])Echymipera 
+\(Echymipera
+Echymipera\)
+ Chinchilla 
+Chinchilla,
+Chinchilla\.
+(?<![a-zA-Z])Chinchilla 
+\(Chinchilla
+Chinchilla\)
+ chiapensis 
+chiapensis,
+chiapensis\.
+(?<![a-zA-Z])chiapensis 
+\(chiapensis
+chiapensis\)
+ cinnamomum 
+cinnamomum,
+cinnamomum\.
+(?<![a-zA-Z])cinnamomum 
+\(cinnamomum
+cinnamomum\)
+ tapetillus 
+tapetillus,
+tapetillus\.
+(?<![a-zA-Z])tapetillus 
+\(tapetillus
+tapetillus\)
+ columbiana 
+columbiana,
+columbiana\.
+(?<![a-zA-Z])columbiana 
+\(columbiana
+columbiana\)
+ escuinapae 
+escuinapae,
+escuinapae\.
+(?<![a-zA-Z])escuinapae 
+\(escuinapae
+escuinapae\)
+ Petaurista 
+Petaurista,
+Petaurista\.
+(?<![a-zA-Z])Petaurista 
+\(Petaurista
+Petaurista\)
+ pucheranii 
+pucheranii,
+pucheranii\.
+(?<![a-zA-Z])pucheranii 
+\(pucheranii
+pucheranii\)
+ euryspilus 
+euryspilus,
+euryspilus\.
+(?<![a-zA-Z])euryspilus 
+\(euryspilus
+euryspilus\)
+ eversmanni 
+eversmanni,
+eversmanni\.
+(?<![a-zA-Z])eversmanni 
+\(eversmanni
+eversmanni\)
+ pulchellus 
+pulchellus,
+pulchellus\.
+(?<![a-zA-Z])pulchellus 
+\(pulchellus
+pulchellus\)
+ temminckii 
+temminckii,
+temminckii\.
+(?<![a-zA-Z])temminckii 
+\(temminckii
+temminckii\)
+ terrestris 
+terrestris,
+terrestris\.
+(?<![a-zA-Z])terrestris 
+\(terrestris
+terrestris\)
+ magdalenae 
+magdalenae,
+magdalenae\.
+(?<![a-zA-Z])magdalenae 
+\(magdalenae
+magdalenae\)
+ cinamomeus 
+cinamomeus,
+cinamomeus\.
+(?<![a-zA-Z])cinamomeus 
+\(cinamomeus
+cinamomeus\)
+ phillipsii 
+phillipsii,
+phillipsii\.
+(?<![a-zA-Z])phillipsii 
+\(phillipsii
+phillipsii\)
+ chocoensis 
+chocoensis,
+chocoensis\.
+(?<![a-zA-Z])chocoensis 
+\(chocoensis
+chocoensis\)
+ Lagostomus 
+Lagostomus,
+Lagostomus\.
+(?<![a-zA-Z])Lagostomus 
+\(Lagostomus
+Lagostomus\)
+ Callicebus 
+Callicebus,
+Callicebus\.
+(?<![a-zA-Z])Callicebus 
+\(Callicebus
+Callicebus\)
+ chinchilla 
+chinchilla,
+chinchilla\.
+(?<![a-zA-Z])chinchilla 
+\(chinchilla
+chinchilla\)
+ chiloensis 
+chiloensis,
+chiloensis\.
+(?<![a-zA-Z])chiloensis 
+\(chiloensis
+chiloensis\)
+ tularensis 
+tularensis,
+tularensis\.
+(?<![a-zA-Z])tularensis 
+\(tularensis
+tularensis\)
+ perauritus 
+perauritus,
+perauritus\.
+(?<![a-zA-Z])perauritus 
+\(perauritus
+perauritus\)
+ didactylus 
+didactylus,
+didactylus\.
+(?<![a-zA-Z])didactylus 
+\(didactylus
+didactylus\)
+ aethiopica 
+aethiopica,
+aethiopica\.
+(?<![a-zA-Z])aethiopica 
+\(aethiopica
+aethiopica\)
+ hollisteri 
+hollisteri,
+hollisteri\.
+(?<![a-zA-Z])hollisteri 
+\(hollisteri
+hollisteri\)
+ homochrous 
+homochrous,
+homochrous\.
+(?<![a-zA-Z])homochrous 
+\(homochrous
+homochrous\)
+ argentinus 
+argentinus,
+argentinus\.
+(?<![a-zA-Z])argentinus 
+\(argentinus
+argentinus\)
+ aequatoris 
+aequatoris,
+aequatoris\.
+(?<![a-zA-Z])aequatoris 
+\(aequatoris
+aequatoris\)
+ japonensis 
+japonensis,
+japonensis\.
+(?<![a-zA-Z])japonensis 
+\(japonensis
+japonensis\)
+ paramensis 
+paramensis,
+paramensis\.
+(?<![a-zA-Z])paramensis 
+\(paramensis
+paramensis\)
+ izecksohni 
+izecksohni,
+izecksohni\.
+(?<![a-zA-Z])izecksohni 
+\(izecksohni
+izecksohni\)
+ Cynopterus 
+Cynopterus,
+Cynopterus\.
+(?<![a-zA-Z])Cynopterus 
+\(Cynopterus
+Cynopterus\)
+ paludicola 
+paludicola,
+paludicola\.
+(?<![a-zA-Z])paludicola 
+\(paludicola
+paludicola\)
+ lagochilus 
+lagochilus,
+lagochilus\.
+(?<![a-zA-Z])lagochilus 
+\(lagochilus
+lagochilus\)
+ whiteheadi 
+whiteheadi,
+whiteheadi\.
+(?<![a-zA-Z])whiteheadi 
+\(whiteheadi
+whiteheadi\)
+ hudsonicus 
+hudsonicus,
+hudsonicus\.
+(?<![a-zA-Z])hudsonicus 
+\(hudsonicus
+hudsonicus\)
+ alascensis 
+alascensis,
+alascensis\.
+(?<![a-zA-Z])alascensis 
+\(alascensis
+alascensis\)
+ oaxacensis 
+oaxacensis,
+oaxacensis\.
+(?<![a-zA-Z])oaxacensis 
+\(oaxacensis
+oaxacensis\)
+ Tasmacetus 
+Tasmacetus,
+Tasmacetus\.
+(?<![a-zA-Z])Tasmacetus 
+\(Tasmacetus
+Tasmacetus\)
+ Antidorcas 
+Antidorcas,
+Antidorcas\.
+(?<![a-zA-Z])Antidorcas 
+\(Antidorcas
+Antidorcas\)
+ wolffsohni 
+wolffsohni,
+wolffsohni\.
+(?<![a-zA-Z])wolffsohni 
+\(wolffsohni
+wolffsohni\)
+ wollastoni 
+wollastoni,
+wollastoni\.
+(?<![a-zA-Z])wollastoni 
+\(wollastoni
+wollastoni\)
+ schistacea 
+schistacea,
+schistacea\.
+(?<![a-zA-Z])schistacea 
+\(schistacea
+schistacea\)
+ hispanicus 
+hispanicus,
+hispanicus\.
+(?<![a-zA-Z])hispanicus 
+\(hispanicus
+hispanicus\)
+ schlegelii 
+schlegelii,
+schlegelii\.
+(?<![a-zA-Z])schlegelii 
+\(schlegelii
+schlegelii\)
+ javanensis 
+javanensis,
+javanensis\.
+(?<![a-zA-Z])javanensis 
+\(javanensis
+javanensis\)
+ vellerosus 
+vellerosus,
+vellerosus\.
+(?<![a-zA-Z])vellerosus 
+\(vellerosus
+vellerosus\)
+ aegyptiaca 
+aegyptiaca,
+aegyptiaca\.
+(?<![a-zA-Z])aegyptiaca 
+\(aegyptiaca
+aegyptiaca\)
+ aegatensis 
+aegatensis,
+aegatensis\.
+(?<![a-zA-Z])aegatensis 
+\(aegatensis
+aegatensis\)
+ Sphiggurus 
+Sphiggurus,
+Sphiggurus\.
+(?<![a-zA-Z])Sphiggurus 
+\(Sphiggurus
+Sphiggurus\)
+ Spalacopus 
+Spalacopus,
+Spalacopus\.
+(?<![a-zA-Z])Spalacopus 
+\(Spalacopus
+Spalacopus\)
+ atrovarius 
+atrovarius,
+atrovarius\.
+(?<![a-zA-Z])atrovarius 
+\(atrovarius
+atrovarius\)
+ variegatus 
+variegatus,
+variegatus\.
+(?<![a-zA-Z])variegatus 
+\(variegatus
+variegatus\)
+ salinicola 
+salinicola,
+salinicola\.
+(?<![a-zA-Z])salinicola 
+\(salinicola
+salinicola\)
+ hesperidus 
+hesperidus,
+hesperidus\.
+(?<![a-zA-Z])hesperidus 
+\(hesperidus
+hesperidus\)
+ humboldtii 
+humboldtii,
+humboldtii\.
+(?<![a-zA-Z])humboldtii 
+\(humboldtii
+humboldtii\)
+ albicollis 
+albicollis,
+albicollis\.
+(?<![a-zA-Z])albicollis 
+\(albicollis
+albicollis\)
+ orientalis 
+orientalis,
+orientalis\.
+(?<![a-zA-Z])orientalis 
+\(orientalis
+orientalis\)
+ rueppellii 
+rueppellii,
+rueppellii\.
+(?<![a-zA-Z])rueppellii 
+\(rueppellii
+rueppellii\)
+ savannarum 
+savannarum,
+savannarum\.
+(?<![a-zA-Z])savannarum 
+\(savannarum
+savannarum\)
+ saurophila 
+saurophila,
+saurophila\.
+(?<![a-zA-Z])saurophila 
+\(saurophila
+saurophila\)
+ angolensis 
+angolensis,
+angolensis\.
+(?<![a-zA-Z])angolensis 
+\(angolensis
+angolensis\)
+ Dasyprocta 
+Dasyprocta,
+Dasyprocta\.
+(?<![a-zA-Z])Dasyprocta 
+\(Dasyprocta
+Dasyprocta\)
+ panamensis 
+panamensis,
+panamensis\.
+(?<![a-zA-Z])panamensis 
+\(panamensis
+panamensis\)
+ anatolicus 
+anatolicus,
+anatolicus\.
+(?<![a-zA-Z])anatolicus 
+\(anatolicus
+anatolicus\)
+ instabilis 
+instabilis,
+instabilis\.
+(?<![a-zA-Z])instabilis 
+\(instabilis
+instabilis\)
+ virginiana 
+virginiana,
+virginiana\.
+(?<![a-zA-Z])virginiana 
+\(virginiana
+virginiana\)
+ Mesoplodon 
+Mesoplodon,
+Mesoplodon\.
+(?<![a-zA-Z])Mesoplodon 
+\(Mesoplodon
+Mesoplodon\)
+ ammophilus 
+ammophilus,
+ammophilus\.
+(?<![a-zA-Z])ammophilus 
+\(ammophilus
+ammophilus\)
+ americanus 
+americanus,
+americanus\.
+(?<![a-zA-Z])americanus 
+\(americanus
+americanus\)
+ infuscatus 
+infuscatus,
+infuscatus\.
+(?<![a-zA-Z])infuscatus 
+\(infuscatus
+infuscatus\)
+ olivaceous 
+olivaceous,
+olivaceous\.
+(?<![a-zA-Z])olivaceous 
+\(olivaceous
+olivaceous\)
+ amazonicus 
+amazonicus,
+amazonicus\.
+(?<![a-zA-Z])amazonicus 
+\(amazonicus
+amazonicus\)
+ algirensis 
+algirensis,
+algirensis\.
+(?<![a-zA-Z])algirensis 
+\(algirensis
+algirensis\)
+ Sylvilagus 
+Sylvilagus,
+Sylvilagus\.
+(?<![a-zA-Z])Sylvilagus 
+\(Sylvilagus
+Sylvilagus\)
+ intermedia 
+intermedia,
+intermedia\.
+(?<![a-zA-Z])intermedia 
+\(intermedia
+intermedia\)
+ Mesophylla 
+Mesophylla,
+Mesophylla\.
+(?<![a-zA-Z])Mesophylla 
+\(Mesophylla
+Mesophylla\)
+ albonotata 
+albonotata,
+albonotata\.
+(?<![a-zA-Z])albonotata 
+\(albonotata
+albonotata\)
+ Metachirus 
+Metachirus,
+Metachirus\.
+(?<![a-zA-Z])Metachirus 
+\(Metachirus
+Metachirus\)
+ albofuscus 
+albofuscus,
+albofuscus\.
+(?<![a-zA-Z])albofuscus 
+\(albofuscus
+albofuscus\)
+ ochotensis 
+ochotensis,
+ochotensis\.
+(?<![a-zA-Z])ochotensis 
+\(ochotensis
+ochotensis\)
+ antillarum 
+antillarum,
+antillarum\.
+(?<![a-zA-Z])antillarum 
+\(antillarum
+antillarum\)
+ Sylvicapra 
+Sylvicapra,
+Sylvicapra\.
+(?<![a-zA-Z])Sylvicapra 
+\(Sylvicapra
+Sylvicapra\)
+ Microcavia 
+Microcavia,
+Microcavia\.
+(?<![a-zA-Z])Microcavia 
+\(Microcavia
+Microcavia\)
+ albiventer 
+albiventer,
+albiventer\.
+(?<![a-zA-Z])albiventer 
+\(albiventer
+albiventer\)
+ antisensis 
+antisensis,
+antisensis\.
+(?<![a-zA-Z])antisensis 
+\(antisensis
+antisensis\)
+ albispinus 
+albispinus,
+albispinus\.
+(?<![a-zA-Z])albispinus 
+\(albispinus
+albispinus\)
+ wetarensis 
+wetarensis,
+wetarensis\.
+(?<![a-zA-Z])wetarensis 
+\(wetarensis
+wetarensis\)
+ Ammotragus 
+Ammotragus,
+Ammotragus\.
+(?<![a-zA-Z])Ammotragus 
+\(Ammotragus
+Ammotragus\)
+ Funambulus 
+Funambulus,
+Funambulus\.
+(?<![a-zA-Z])Funambulus 
+\(Funambulus
+Funambulus\)
+ vandeuseni 
+vandeuseni,
+vandeuseni\.
+(?<![a-zA-Z])vandeuseni 
+\(vandeuseni
+vandeuseni\)
+ Dasypterus 
+Dasypterus,
+Dasypterus\.
+(?<![a-zA-Z])Dasypterus 
+\(Dasypterus
+Dasypterus\)
+ jolonensis 
+jolonensis,
+jolonensis\.
+(?<![a-zA-Z])jolonensis 
+\(jolonensis
+jolonensis\)
+ guineensis 
+guineensis,
+guineensis\.
+(?<![a-zA-Z])guineensis 
+\(guineensis
+guineensis\)
+ bactrianus 
+bactrianus,
+bactrianus\.
+(?<![a-zA-Z])bactrianus 
+\(bactrianus
+bactrianus\)
+ nigrescens 
+nigrescens,
+nigrescens\.
+(?<![a-zA-Z])nigrescens 
+\(nigrescens
+nigrescens\)
+ bahamensis 
+bahamensis,
+bahamensis\.
+(?<![a-zA-Z])bahamensis 
+\(bahamensis
+bahamensis\)
+ yumanensis 
+yumanensis,
+yumanensis\.
+(?<![a-zA-Z])yumanensis 
+\(yumanensis
+yumanensis\)
+ leucogenys 
+leucogenys,
+leucogenys\.
+(?<![a-zA-Z])leucogenys 
+\(leucogenys
+leucogenys\)
+ pallescens 
+pallescens,
+pallescens\.
+(?<![a-zA-Z])pallescens 
+\(pallescens
+pallescens\)
+ rufopictus 
+rufopictus,
+rufopictus\.
+(?<![a-zA-Z])rufopictus 
+\(rufopictus
+rufopictus\)
+ barbiensis 
+barbiensis,
+barbiensis\.
+(?<![a-zA-Z])barbiensis 
+\(barbiensis
+barbiensis\)
+ unistriata 
+unistriata,
+unistriata\.
+(?<![a-zA-Z])unistriata 
+\(unistriata
+unistriata\)
+ ruwenzorii 
+ruwenzorii,
+ruwenzorii\.
+(?<![a-zA-Z])ruwenzorii 
+\(ruwenzorii
+ruwenzorii\)
+ leucomelas 
+leucomelas,
+leucomelas\.
+(?<![a-zA-Z])leucomelas 
+\(leucomelas
+leucomelas\)
+ kenaiensis 
+kenaiensis,
+kenaiensis\.
+(?<![a-zA-Z])kenaiensis 
+\(kenaiensis
+kenaiensis\)
+ unicinctus 
+unicinctus,
+unicinctus\.
+(?<![a-zA-Z])unicinctus 
+\(unicinctus
+unicinctus\)
+ Tolypeutes 
+Tolypeutes,
+Tolypeutes\.
+(?<![a-zA-Z])Tolypeutes 
+\(Tolypeutes
+Tolypeutes\)
+ bellissima 
+bellissima,
+bellissima\.
+(?<![a-zA-Z])bellissima 
+\(bellissima
+bellissima\)
+ sagittalis 
+sagittalis,
+sagittalis\.
+(?<![a-zA-Z])sagittalis 
+\(sagittalis
+sagittalis\)
+ Sooretamys 
+Sooretamys,
+Sooretamys\.
+(?<![a-zA-Z])Sooretamys 
+\(Sooretamys
+Sooretamys\)
+ kobosensis 
+kobosensis,
+kobosensis\.
+(?<![a-zA-Z])kobosensis 
+\(kobosensis
+kobosensis\)
+ nicaraguae 
+nicaraguae,
+nicaraguae\.
+(?<![a-zA-Z])nicaraguae 
+\(nicaraguae
+nicaraguae\)
+ underwoodi 
+underwoodi,
+underwoodi\.
+(?<![a-zA-Z])underwoodi 
+\(underwoodi
+underwoodi\)
+ grisescens 
+grisescens,
+grisescens\.
+(?<![a-zA-Z])grisescens 
+\(grisescens
+grisescens\)
+ Aselliscus 
+Aselliscus,
+Aselliscus\.
+(?<![a-zA-Z])Aselliscus 
+\(Aselliscus
+Aselliscus\)
+ yucatanica 
+yucatanica,
+yucatanica\.
+(?<![a-zA-Z])yucatanica 
+\(yucatanica
+yucatanica\)
+ Tremarctos 
+Tremarctos,
+Tremarctos\.
+(?<![a-zA-Z])Tremarctos 
+\(Tremarctos
+Tremarctos\)
+ vancouveri 
+vancouveri,
+vancouveri\.
+(?<![a-zA-Z])vancouveri 
+\(vancouveri
+vancouveri\)
+ Scotomanes 
+Scotomanes,
+Scotomanes\.
+(?<![a-zA-Z])Scotomanes 
+\(Scotomanes
+Scotomanes\)
+ tumidiceps 
+tumidiceps,
+tumidiceps\.
+(?<![a-zA-Z])tumidiceps 
+\(tumidiceps
+tumidiceps\)
+ karasensis 
+karasensis,
+karasensis\.
+(?<![a-zA-Z])karasensis 
+\(karasensis
+karasensis\)
+ ladogensis 
+ladogensis,
+ladogensis\.
+(?<![a-zA-Z])ladogensis 
+\(ladogensis
+ladogensis\)
+ ubericolor 
+ubericolor,
+ubericolor\.
+(?<![a-zA-Z])ubericolor 
+\(ubericolor
+ubericolor\)
+ Urotrichus 
+Urotrichus,
+Urotrichus\.
+(?<![a-zA-Z])Urotrichus 
+\(Urotrichus
+Urotrichus\)
+ auspicatus 
+auspicatus,
+auspicatus\.
+(?<![a-zA-Z])auspicatus 
+\(auspicatus
+auspicatus\)
+ Atelocynus 
+Atelocynus,
+Atelocynus\.
+(?<![a-zA-Z])Atelocynus 
+\(Atelocynus
+Atelocynus\)
+ turcomanus 
+turcomanus,
+turcomanus\.
+(?<![a-zA-Z])turcomanus 
+\(turcomanus
+turcomanus\)
+ segregatus 
+segregatus,
+segregatus\.
+(?<![a-zA-Z])segregatus 
+\(segregatus
+segregatus\)
+ batinensis 
+batinensis,
+batinensis\.
+(?<![a-zA-Z])batinensis 
+\(batinensis
+batinensis\)
+ Euphractus 
+Euphractus,
+Euphractus\.
+(?<![a-zA-Z])Euphractus 
+\(Euphractus
+Euphractus\)
+ leuconotus 
+leuconotus,
+leuconotus\.
+(?<![a-zA-Z])leuconotus 
+\(leuconotus
+leuconotus\)
+ Vampyressa 
+Vampyressa,
+Vampyressa\.
+(?<![a-zA-Z])Vampyressa 
+\(Vampyressa
+Vampyressa\)
+ littoralis 
+littoralis,
+littoralis\.
+(?<![a-zA-Z])littoralis 
+\(littoralis
+littoralis\)
+ abieticola 
+abieticola,
+abieticola\.
+(?<![a-zA-Z])abieticola 
+\(abieticola
+abieticola\)
+ Thyroptera 
+Thyroptera,
+Thyroptera\.
+(?<![a-zA-Z])Thyroptera 
+\(Thyroptera
+Thyroptera\)
+ nipalensis 
+nipalensis,
+nipalensis\.
+(?<![a-zA-Z])nipalensis 
+\(nipalensis
+nipalensis\)
+ yucataniae 
+yucataniae,
+yucataniae\.
+(?<![a-zA-Z])yucataniae 
+\(yucataniae
+yucataniae\)
+ banksianus 
+banksianus,
+banksianus\.
+(?<![a-zA-Z])banksianus 
+\(banksianus
+banksianus\)
+ Megaerops 
+Megaerops,
+Megaerops\.
+(?<![a-zA-Z])Megaerops 
+\(Megaerops
+Megaerops\)
+ Kerivoula 
+Kerivoula,
+Kerivoula\.
+(?<![a-zA-Z])Kerivoula 
+\(Kerivoula
+Kerivoula\)
+ insularis 
+insularis,
+insularis\.
+(?<![a-zA-Z])insularis 
+\(insularis
+insularis\)
+ diminutus 
+diminutus,
+diminutus\.
+(?<![a-zA-Z])diminutus 
+\(diminutus
+diminutus\)
+ falconeri 
+falconeri,
+falconeri\.
+(?<![a-zA-Z])falconeri 
+\(falconeri
+falconeri\)
+ salvinius 
+salvinius,
+salvinius\.
+(?<![a-zA-Z])salvinius 
+\(salvinius
+salvinius\)
+ spilosoma 
+spilosoma,
+spilosoma\.
+(?<![a-zA-Z])spilosoma 
+\(spilosoma
+spilosoma\)
+ inornatus 
+inornatus,
+inornatus\.
+(?<![a-zA-Z])inornatus 
+\(inornatus
+inornatus\)
+ rufigenis 
+rufigenis,
+rufigenis\.
+(?<![a-zA-Z])rufigenis 
+\(rufigenis
+rufigenis\)
+ insolitus 
+insolitus,
+insolitus\.
+(?<![a-zA-Z])insolitus 
+\(insolitus
+insolitus\)
+ dioptrica 
+dioptrica,
+dioptrica\.
+(?<![a-zA-Z])dioptrica 
+\(dioptrica
+dioptrica\)
+ europaeus 
+europaeus,
+europaeus\.
+(?<![a-zA-Z])europaeus 
+\(europaeus
+europaeus\)
+ evermanni 
+evermanni,
+evermanni\.
+(?<![a-zA-Z])evermanni 
+\(evermanni
+evermanni\)
+ malayanus 
+malayanus,
+malayanus\.
+(?<![a-zA-Z])malayanus 
+\(malayanus
+malayanus\)
+ euxanthus 
+euxanthus,
+euxanthus\.
+(?<![a-zA-Z])euxanthus 
+\(euxanthus
+euxanthus\)
+ Dipodomys 
+Dipodomys,
+Dipodomys\.
+(?<![a-zA-Z])Dipodomys 
+\(Dipodomys
+Dipodomys\)
+ subcincta 
+subcincta,
+subcincta\.
+(?<![a-zA-Z])subcincta 
+\(subcincta
+subcincta\)
+ spiradens 
+spiradens,
+spiradens\.
+(?<![a-zA-Z])spiradens 
+\(spiradens
+spiradens\)
+ escalante 
+escalante,
+escalante\.
+(?<![a-zA-Z])escalante 
+\(escalante
+escalante\)
+ straminea 
+straminea,
+straminea\.
+(?<![a-zA-Z])straminea 
+\(straminea
+straminea\)
+ domestica 
+domestica,
+domestica\.
+(?<![a-zA-Z])domestica 
+\(domestica
+domestica\)
+ stephensi 
+stephensi,
+stephensi\.
+(?<![a-zA-Z])stephensi 
+\(stephensi
+stephensi\)
+ edwardsii 
+edwardsii,
+edwardsii\.
+(?<![a-zA-Z])edwardsii 
+\(edwardsii
+edwardsii\)
+ squamipes 
+squamipes,
+squamipes\.
+(?<![a-zA-Z])squamipes 
+\(squamipes
+squamipes\)
+ Megaptera 
+Megaptera,
+Megaptera\.
+(?<![a-zA-Z])Megaptera 
+\(Megaptera
+Megaptera\)
+ maricelae 
+maricelae,
+maricelae\.
+(?<![a-zA-Z])maricelae 
+\(maricelae
+maricelae\)
+ Didelphis 
+Didelphis,
+Didelphis\.
+(?<![a-zA-Z])Didelphis 
+\(Didelphis
+Didelphis\)
+ salinarum 
+salinarum,
+salinarum\.
+(?<![a-zA-Z])salinarum 
+\(salinarum
+salinarum\)
+ saltarius 
+saltarius,
+saltarius\.
+(?<![a-zA-Z])saltarius 
+\(saltarius
+saltarius\)
+ maritimus 
+maritimus,
+maritimus\.
+(?<![a-zA-Z])maritimus 
+\(maritimus
+maritimus\)
+ famatinae 
+famatinae,
+famatinae\.
+(?<![a-zA-Z])famatinae 
+\(famatinae
+famatinae\)
+ laephotis 
+laephotis,
+laephotis\.
+(?<![a-zA-Z])laephotis 
+\(laephotis
+laephotis\)
+ marshalli 
+marshalli,
+marshalli\.
+(?<![a-zA-Z])marshalli 
+\(marshalli
+marshalli\)
+ lademanni 
+lademanni,
+lademanni\.
+(?<![a-zA-Z])lademanni 
+\(lademanni
+lademanni\)
+ marginata 
+marginata,
+marginata\.
+(?<![a-zA-Z])marginata 
+\(marginata
+marginata\)
+ juncensis 
+juncensis,
+juncensis\.
+(?<![a-zA-Z])juncensis 
+\(juncensis
+juncensis\)
+ emilianus 
+emilianus,
+emilianus\.
+(?<![a-zA-Z])emilianus 
+\(emilianus
+emilianus\)
+ massaicus 
+massaicus,
+massaicus\.
+(?<![a-zA-Z])massaicus 
+\(massaicus
+massaicus\)
+ saimensis 
+saimensis,
+saimensis\.
+(?<![a-zA-Z])saimensis 
+\(saimensis
+saimensis\)
+ Mellivora 
+Mellivora,
+Mellivora\.
+(?<![a-zA-Z])Mellivora 
+\(Mellivora
+Mellivora\)
+ Cerdocyon 
+Cerdocyon,
+Cerdocyon\.
+(?<![a-zA-Z])Cerdocyon 
+\(Cerdocyon
+Cerdocyon\)
+ lagigliai 
+lagigliai,
+lagigliai\.
+(?<![a-zA-Z])lagigliai 
+\(lagigliai
+lagigliai\)
+ episcopus 
+episcopus,
+episcopus\.
+(?<![a-zA-Z])episcopus 
+\(episcopus
+episcopus\)
+ isthmicus 
+isthmicus,
+isthmicus\.
+(?<![a-zA-Z])isthmicus 
+\(isthmicus
+isthmicus\)
+ doriferus 
+doriferus,
+doriferus\.
+(?<![a-zA-Z])doriferus 
+\(doriferus
+doriferus\)
+ rufoniger 
+rufoniger,
+rufoniger\.
+(?<![a-zA-Z])rufoniger 
+\(rufoniger
+rufoniger\)
+ epularius 
+epularius,
+epularius\.
+(?<![a-zA-Z])epularius 
+\(epularius
+epularius\)
+ jonesorum 
+jonesorum,
+jonesorum\.
+(?<![a-zA-Z])jonesorum 
+\(jonesorum
+jonesorum\)
+ rupestris 
+rupestris,
+rupestris\.
+(?<![a-zA-Z])rupestris 
+\(rupestris
+rupestris\)
+ sabulonis 
+sabulonis,
+sabulonis\.
+(?<![a-zA-Z])sabulonis 
+\(sabulonis
+sabulonis\)
+ dorbignyi 
+dorbignyi,
+dorbignyi\.
+(?<![a-zA-Z])dorbignyi 
+\(dorbignyi
+dorbignyi\)
+ irroratus 
+irroratus,
+irroratus\.
+(?<![a-zA-Z])irroratus 
+\(irroratus
+irroratus\)
+ spillmani 
+spillmani,
+spillmani\.
+(?<![a-zA-Z])spillmani 
+\(spillmani
+spillmani\)
+ serotinus 
+serotinus,
+serotinus\.
+(?<![a-zA-Z])serotinus 
+\(serotinus
+serotinus\)
+ rufifrons 
+rufifrons,
+rufifrons\.
+(?<![a-zA-Z])rufifrons 
+\(rufifrons
+rufifrons\)
+ helveolus 
+helveolus,
+helveolus\.
+(?<![a-zA-Z])helveolus 
+\(helveolus
+helveolus\)
+ halonifer 
+halonifer,
+halonifer\.
+(?<![a-zA-Z])halonifer 
+\(halonifer
+halonifer\)
+ hamiltoni 
+hamiltoni,
+hamiltoni\.
+(?<![a-zA-Z])hamiltoni 
+\(hamiltoni
+hamiltoni\)
+ robinsoni 
+robinsoni,
+robinsoni\.
+(?<![a-zA-Z])robinsoni 
+\(robinsoni
+robinsoni\)
+ lesviacus 
+lesviacus,
+lesviacus\.
+(?<![a-zA-Z])lesviacus 
+\(lesviacus
+lesviacus\)
+ harrisoni 
+harrisoni,
+harrisoni\.
+(?<![a-zA-Z])harrisoni 
+\(harrisoni
+harrisoni\)
+ hasseltii 
+hasseltii,
+hasseltii\.
+(?<![a-zA-Z])hasseltii 
+\(hasseltii
+hasseltii\)
+ heermanni 
+heermanni,
+heermanni\.
+(?<![a-zA-Z])heermanni 
+\(heermanni
+heermanni\)
+ gephyreus 
+gephyreus,
+gephyreus\.
+(?<![a-zA-Z])gephyreus 
+\(gephyreus
+gephyreus\)
+ geoffroyi 
+geoffroyi,
+geoffroyi\.
+(?<![a-zA-Z])geoffroyi 
+\(geoffroyi
+geoffroyi\)
+ scrutator 
+scrutator,
+scrutator\.
+(?<![a-zA-Z])scrutator 
+\(scrutator
+scrutator\)
+ leporinus 
+leporinus,
+leporinus\.
+(?<![a-zA-Z])leporinus 
+\(leporinus
+leporinus\)
+ gundlachi 
+gundlachi,
+gundlachi\.
+(?<![a-zA-Z])gundlachi 
+\(gundlachi
+gundlachi\)
+ simalurus 
+simalurus,
+simalurus\.
+(?<![a-zA-Z])simalurus 
+\(simalurus
+simalurus\)
+ lucifugus 
+lucifugus,
+lucifugus\.
+(?<![a-zA-Z])lucifugus 
+\(lucifugus
+lucifugus\)
+ refulgens 
+refulgens,
+refulgens\.
+(?<![a-zA-Z])refulgens 
+\(refulgens
+refulgens\)
+ simulator 
+simulator,
+simulator\.
+(?<![a-zA-Z])simulator 
+\(simulator
+simulator\)
+ gambianus 
+gambianus,
+gambianus\.
+(?<![a-zA-Z])gambianus 
+\(gambianus
+gambianus\)
+ lenguarum 
+lenguarum,
+lenguarum\.
+(?<![a-zA-Z])lenguarum 
+\(lenguarum
+lenguarum\)
+ schwartzi 
+schwartzi,
+schwartzi\.
+(?<![a-zA-Z])schwartzi 
+\(schwartzi
+schwartzi\)
+ hingstoni 
+hingstoni,
+hingstoni\.
+(?<![a-zA-Z])hingstoni 
+\(hingstoni
+hingstoni\)
+ lemurinus 
+lemurinus,
+lemurinus\.
+(?<![a-zA-Z])lemurinus 
+\(lemurinus
+lemurinus\)
+ sinuensis 
+sinuensis,
+sinuensis\.
+(?<![a-zA-Z])sinuensis 
+\(sinuensis
+sinuensis\)
+ Muntiacus 
+Muntiacus,
+Muntiacus\.
+(?<![a-zA-Z])Muntiacus 
+\(Muntiacus
+Muntiacus\)
+ lonnbergi 
+lonnbergi,
+lonnbergi\.
+(?<![a-zA-Z])lonnbergi 
+\(lonnbergi
+lonnbergi\)
+ iniscatus 
+iniscatus,
+iniscatus\.
+(?<![a-zA-Z])iniscatus 
+\(iniscatus
+iniscatus\)
+ Lycalopex 
+Lycalopex,
+Lycalopex\.
+(?<![a-zA-Z])Lycalopex 
+\(Lycalopex
+Lycalopex\)
+ lockwoodi 
+lockwoodi,
+lockwoodi\.
+(?<![a-zA-Z])lockwoodi 
+\(lockwoodi
+lockwoodi\)
+ grinnelli 
+grinnelli,
+grinnelli\.
+(?<![a-zA-Z])grinnelli 
+\(grinnelli
+grinnelli\)
+ Myocastor 
+Myocastor,
+Myocastor\.
+(?<![a-zA-Z])Myocastor 
+\(Myocastor
+Myocastor\)
+ sezekorni 
+sezekorni,
+sezekorni\.
+(?<![a-zA-Z])sezekorni 
+\(sezekorni
+sezekorni\)
+ shepherdi 
+shepherdi,
+shepherdi\.
+(?<![a-zA-Z])shepherdi 
+\(shepherdi
+shepherdi\)
+ grammurus 
+grammurus,
+grammurus\.
+(?<![a-zA-Z])grammurus 
+\(grammurus
+grammurus\)
+ graffmani 
+graffmani,
+graffmani\.
+(?<![a-zA-Z])graffmani 
+\(graffmani
+graffmani\)
+ richardsi 
+richardsi,
+richardsi\.
+(?<![a-zA-Z])richardsi 
+\(richardsi
+richardsi\)
+ Mysateles 
+Mysateles,
+Mysateles\.
+(?<![a-zA-Z])Mysateles 
+\(Mysateles
+Mysateles\)
+ longicrus 
+longicrus,
+longicrus\.
+(?<![a-zA-Z])longicrus 
+\(longicrus
+longicrus\)
+ richmondi 
+richmondi,
+richmondi\.
+(?<![a-zA-Z])richmondi 
+\(richmondi
+richmondi\)
+ sibiricus 
+sibiricus,
+sibiricus\.
+(?<![a-zA-Z])sibiricus 
+\(sibiricus
+sibiricus\)
+ Delphinus 
+Delphinus,
+Delphinus\.
+(?<![a-zA-Z])Delphinus 
+\(Delphinus
+Delphinus\)
+ gobiensis 
+gobiensis,
+gobiensis\.
+(?<![a-zA-Z])gobiensis 
+\(gobiensis
+gobiensis\)
+ Lutrogale 
+Lutrogale,
+Lutrogale\.
+(?<![a-zA-Z])Lutrogale 
+\(Lutrogale
+Lutrogale\)
+ gliroides 
+gliroides,
+gliroides\.
+(?<![a-zA-Z])gliroides 
+\(gliroides
+gliroides\)
+ glauculus 
+glauculus,
+glauculus\.
+(?<![a-zA-Z])glauculus 
+\(glauculus
+glauculus\)
+ seniculus 
+seniculus,
+seniculus\.
+(?<![a-zA-Z])seniculus 
+\(seniculus
+seniculus\)
+ glaucinus 
+glaucinus,
+glaucinus\.
+(?<![a-zA-Z])glaucinus 
+\(glaucinus
+glaucinus\)
+ Conepatus 
+Conepatus,
+Conepatus\.
+(?<![a-zA-Z])Conepatus 
+\(Conepatus
+Conepatus\)
+ dimidiata 
+dimidiata,
+dimidiata\.
+(?<![a-zA-Z])dimidiata 
+\(dimidiata
+dimidiata\)
+ Crocidura 
+Crocidura,
+Crocidura\.
+(?<![a-zA-Z])Crocidura 
+\(Crocidura
+Crocidura\)
+ quitensis 
+quitensis,
+quitensis\.
+(?<![a-zA-Z])quitensis 
+\(quitensis
+quitensis\)
+ furinalis 
+furinalis,
+furinalis\.
+(?<![a-zA-Z])furinalis 
+\(furinalis
+furinalis\)
+ smithersi 
+smithersi,
+smithersi\.
+(?<![a-zA-Z])smithersi 
+\(smithersi
+smithersi\)
+ lasiopyga 
+lasiopyga,
+lasiopyga\.
+(?<![a-zA-Z])lasiopyga 
+\(lasiopyga
+lasiopyga\)
+ hypoleuca 
+hypoleuca,
+hypoleuca\.
+(?<![a-zA-Z])hypoleuca 
+\(hypoleuca
+hypoleuca\)
+ spatiosus 
+spatiosus,
+spatiosus\.
+(?<![a-zA-Z])spatiosus 
+\(spatiosus
+spatiosus\)
+ lituratus 
+lituratus,
+lituratus\.
+(?<![a-zA-Z])lituratus 
+\(lituratus
+lituratus\)
+ ichneumon 
+ichneumon,
+ichneumon\.
+(?<![a-zA-Z])ichneumon 
+\(ichneumon
+ichneumon\)
+ Lagothrix 
+Lagothrix,
+Lagothrix\.
+(?<![a-zA-Z])Lagothrix 
+\(Lagothrix
+Lagothrix\)
+ speciosus 
+speciosus,
+speciosus\.
+(?<![a-zA-Z])speciosus 
+\(speciosus
+speciosus\)
+ saxatilis 
+saxatilis,
+saxatilis\.
+(?<![a-zA-Z])saxatilis 
+\(saxatilis
+saxatilis\)
+ saturatus 
+saturatus,
+saturatus\.
+(?<![a-zA-Z])saturatus 
+\(saturatus
+saturatus\)
+ imbrensis 
+imbrensis,
+imbrensis\.
+(?<![a-zA-Z])imbrensis 
+\(imbrensis
+imbrensis\)
+ inambarus 
+inambarus,
+inambarus\.
+(?<![a-zA-Z])inambarus 
+\(inambarus
+inambarus\)
+ Cryptotis 
+Cryptotis,
+Cryptotis\.
+(?<![a-zA-Z])Cryptotis 
+\(Cryptotis
+Cryptotis\)
+ fulminans 
+fulminans,
+fulminans\.
+(?<![a-zA-Z])fulminans 
+\(fulminans
+fulminans\)
+ sanguinea 
+sanguinea,
+sanguinea\.
+(?<![a-zA-Z])sanguinea 
+\(sanguinea
+sanguinea\)
+ sanctorum 
+sanctorum,
+sanctorum\.
+(?<![a-zA-Z])sanctorum 
+\(sanctorum
+sanctorum\)
+ rufescens 
+rufescens,
+rufescens\.
+(?<![a-zA-Z])rufescens 
+\(rufescens
+rufescens\)
+ federatus 
+federatus,
+federatus\.
+(?<![a-zA-Z])federatus 
+\(federatus
+federatus\)
+ maculatus 
+maculatus,
+maculatus\.
+(?<![a-zA-Z])maculatus 
+\(maculatus
+maculatus\)
+ infulatus 
+infulatus,
+infulatus\.
+(?<![a-zA-Z])infulatus 
+\(infulatus
+infulatus\)
+ Nyctimene 
+Nyctimene,
+Nyctimene\.
+(?<![a-zA-Z])Nyctimene 
+\(Nyctimene
+Nyctimene\)
+ fasciatus 
+fasciatus,
+fasciatus\.
+(?<![a-zA-Z])fasciatus 
+\(fasciatus
+fasciatus\)
+ Cuniculus 
+Cuniculus,
+Cuniculus\.
+(?<![a-zA-Z])Cuniculus 
+\(Cuniculus
+Cuniculus\)
+ punctatus 
+punctatus,
+punctatus\.
+(?<![a-zA-Z])punctatus 
+\(punctatus
+punctatus\)
+ flavidens 
+flavidens,
+flavidens\.
+(?<![a-zA-Z])flavidens 
+\(flavidens
+flavidens\)
+ flavigula 
+flavigula,
+flavigula\.
+(?<![a-zA-Z])flavigula 
+\(flavigula
+flavigula\)
+ lateralis 
+lateralis,
+lateralis\.
+(?<![a-zA-Z])lateralis 
+\(lateralis
+lateralis\)
+ spadiceus 
+spadiceus,
+spadiceus\.
+(?<![a-zA-Z])spadiceus 
+\(spadiceus
+spadiceus\)
+ hoffmanni 
+hoffmanni,
+hoffmanni\.
+(?<![a-zA-Z])hoffmanni 
+\(hoffmanni
+hoffmanni\)
+ pacificus 
+pacificus,
+pacificus\.
+(?<![a-zA-Z])pacificus 
+\(pacificus
+pacificus\)
+ ruatanica 
+ruatanica,
+ruatanica\.
+(?<![a-zA-Z])ruatanica 
+\(ruatanica
+ruatanica\)
+ fraternus 
+fraternus,
+fraternus\.
+(?<![a-zA-Z])fraternus 
+\(fraternus
+fraternus\)
+ solitaria 
+solitaria,
+solitaria\.
+(?<![a-zA-Z])solitaria 
+\(solitaria
+solitaria\)
+ Molossops 
+Molossops,
+Molossops\.
+(?<![a-zA-Z])Molossops 
+\(Molossops
+Molossops\)
+ hopiensis 
+hopiensis,
+hopiensis\.
+(?<![a-zA-Z])hopiensis 
+\(hopiensis
+hopiensis\)
+ horikawai 
+horikawai,
+horikawai\.
+(?<![a-zA-Z])horikawai 
+\(horikawai
+horikawai\)
+ scherzeri 
+scherzeri,
+scherzeri\.
+(?<![a-zA-Z])scherzeri 
+\(scherzeri
+scherzeri\)
+ latimanus 
+latimanus,
+latimanus\.
+(?<![a-zA-Z])latimanus 
+\(latimanus
+latimanus\)
+ solomonis 
+solomonis,
+solomonis\.
+(?<![a-zA-Z])solomonis 
+\(solomonis
+solomonis\)
+ machrinus 
+machrinus,
+machrinus\.
+(?<![a-zA-Z])machrinus 
+\(machrinus
+machrinus\)
+ Choloepus 
+Choloepus,
+Choloepus\.
+(?<![a-zA-Z])Choloepus 
+\(Choloepus
+Choloepus\)
+ fortidens 
+fortidens,
+fortidens\.
+(?<![a-zA-Z])fortidens 
+\(fortidens
+fortidens\)
+ macleayii 
+macleayii,
+macleayii\.
+(?<![a-zA-Z])macleayii 
+\(macleayii
+macleayii\)
+ Marmosops 
+Marmosops,
+Marmosops\.
+(?<![a-zA-Z])Marmosops 
+\(Marmosops
+Marmosops\)
+ rueppelli 
+rueppelli,
+rueppelli\.
+(?<![a-zA-Z])rueppelli 
+\(rueppelli
+rueppelli\)
+ Leopardus 
+Leopardus,
+Leopardus\.
+(?<![a-zA-Z])Leopardus 
+\(Leopardus
+Leopardus\)
+ hudsonius 
+hudsonius,
+hudsonius\.
+(?<![a-zA-Z])hudsonius 
+\(hudsonius
+hudsonius\)
+ humeralis 
+humeralis,
+humeralis\.
+(?<![a-zA-Z])humeralis 
+\(humeralis
+humeralis\)
+ saxicolus 
+saxicolus,
+saxicolus\.
+(?<![a-zA-Z])saxicolus 
+\(saxicolus
+saxicolus\)
+ hypomelas 
+hypomelas,
+hypomelas\.
+(?<![a-zA-Z])hypomelas 
+\(hypomelas
+hypomelas\)
+ hesperius 
+hesperius,
+hesperius\.
+(?<![a-zA-Z])hesperius 
+\(hesperius
+hesperius\)
+ subflavus 
+subflavus,
+subflavus\.
+(?<![a-zA-Z])subflavus 
+\(subflavus
+subflavus\)
+ nilssonii 
+nilssonii,
+nilssonii\.
+(?<![a-zA-Z])nilssonii 
+\(nilssonii
+nilssonii\)
+ nesopolus 
+nesopolus,
+nesopolus\.
+(?<![a-zA-Z])nesopolus 
+\(nesopolus
+nesopolus\)
+ tucumanus 
+tucumanus,
+tucumanus\.
+(?<![a-zA-Z])tucumanus 
+\(tucumanus
+tucumanus\)
+ biologiae 
+biologiae,
+biologiae\.
+(?<![a-zA-Z])biologiae 
+\(biologiae
+biologiae\)
+ tularosae 
+tularosae,
+tularosae\.
+(?<![a-zA-Z])tularosae 
+\(tularosae
+tularosae\)
+ pearsonii 
+pearsonii,
+pearsonii\.
+(?<![a-zA-Z])pearsonii 
+\(pearsonii
+pearsonii\)
+ Scotoecus 
+Scotoecus,
+Scotoecus\.
+(?<![a-zA-Z])Scotoecus 
+\(Scotoecus
+Scotoecus\)
+ bennettii 
+bennettii,
+bennettii\.
+(?<![a-zA-Z])bennettii 
+\(bennettii
+bennettii\)
+ niasensis 
+niasensis,
+niasensis\.
+(?<![a-zA-Z])niasensis 
+\(niasensis
+niasensis\)
+ nidoensis 
+nidoensis,
+nidoensis\.
+(?<![a-zA-Z])nidoensis 
+\(nidoensis
+nidoensis\)
+ nigricans 
+nigricans,
+nigricans\.
+(?<![a-zA-Z])nigricans 
+\(nigricans
+nigricans\)
+ nigriceps 
+nigriceps,
+nigriceps\.
+(?<![a-zA-Z])nigriceps 
+\(nigriceps
+nigriceps\)
+ patriciae 
+patriciae,
+patriciae\.
+(?<![a-zA-Z])patriciae 
+\(patriciae
+patriciae\)
+ patagonum 
+patagonum,
+patagonum\.
+(?<![a-zA-Z])patagonum 
+\(patagonum
+patagonum\)
+ baibacina 
+baibacina,
+baibacina\.
+(?<![a-zA-Z])baibacina 
+\(baibacina
+baibacina\)
+ moreotica 
+moreotica,
+moreotica\.
+(?<![a-zA-Z])moreotica 
+\(moreotica
+moreotica\)
+ uspallata 
+uspallata,
+uspallata\.
+(?<![a-zA-Z])uspallata 
+\(uspallata
+uspallata\)
+ utahensis 
+utahensis,
+utahensis\.
+(?<![a-zA-Z])utahensis 
+\(utahensis
+utahensis\)
+ pashtonus 
+pashtonus,
+pashtonus\.
+(?<![a-zA-Z])pashtonus 
+\(pashtonus
+pashtonus\)
+ parvidens 
+parvidens,
+parvidens\.
+(?<![a-zA-Z])parvidens 
+\(parvidens
+parvidens\)
+ austrinus 
+austrinus,
+austrinus\.
+(?<![a-zA-Z])austrinus 
+\(austrinus
+austrinus\)
+ australis 
+australis,
+australis\.
+(?<![a-zA-Z])australis 
+\(australis
+australis\)
+ parviceps 
+parviceps,
+parviceps\.
+(?<![a-zA-Z])parviceps 
+\(parviceps
+parviceps\)
+ parnellii 
+parnellii,
+parnellii\.
+(?<![a-zA-Z])parnellii 
+\(parnellii
+parnellii\)
+ vallicola 
+vallicola,
+vallicola\.
+(?<![a-zA-Z])vallicola 
+\(vallicola
+vallicola\)
+ auriculus 
+auriculus,
+auriculus\.
+(?<![a-zA-Z])auriculus 
+\(auriculus
+auriculus\)
+ variegata 
+variegata,
+variegata\.
+(?<![a-zA-Z])variegata 
+\(variegata
+variegata\)
+ Antrozous 
+Antrozous,
+Antrozous\.
+(?<![a-zA-Z])Antrozous 
+\(Antrozous
+Antrozous\)
+ audubonii 
+audubonii,
+audubonii\.
+(?<![a-zA-Z])audubonii 
+\(audubonii
+audubonii\)
+ blanfordi 
+blanfordi,
+blanfordi\.
+(?<![a-zA-Z])blanfordi 
+\(blanfordi
+blanfordi\)
+ nesophila 
+nesophila,
+nesophila\.
+(?<![a-zA-Z])nesophila 
+\(nesophila
+nesophila\)
+ pellucens 
+pellucens,
+pellucens\.
+(?<![a-zA-Z])pellucens 
+\(pellucens
+pellucens\)
+ pelzelnii 
+pelzelnii,
+pelzelnii\.
+(?<![a-zA-Z])pelzelnii 
+\(pelzelnii
+pelzelnii\)
+ canescens 
+canescens,
+canescens\.
+(?<![a-zA-Z])canescens 
+\(canescens
+canescens\)
+ pervarius 
+pervarius,
+pervarius\.
+(?<![a-zA-Z])pervarius 
+\(pervarius
+pervarius\)
+ Pteronura 
+Pteronura,
+Pteronura\.
+(?<![a-zA-Z])Pteronura 
+\(Pteronura
+Pteronura\)
+ peruviana 
+peruviana,
+peruviana\.
+(?<![a-zA-Z])peruviana 
+\(peruviana
+peruviana\)
+ Pygoderma 
+Pygoderma,
+Pygoderma\.
+(?<![a-zA-Z])Pygoderma 
+\(Pygoderma
+Pygoderma\)
+ caldwelli 
+caldwelli,
+caldwelli\.
+(?<![a-zA-Z])caldwelli 
+\(caldwelli
+caldwelli\)
+ Glaucomys 
+Glaucomys,
+Glaucomys\.
+(?<![a-zA-Z])Glaucomys 
+\(Glaucomys
+Glaucomys\)
+ cacomitli 
+cacomitli,
+cacomitli\.
+(?<![a-zA-Z])cacomitli 
+\(cacomitli
+cacomitli\)
+ cacodemus 
+cacodemus,
+cacodemus\.
+(?<![a-zA-Z])cacodemus 
+\(cacodemus
+cacodemus\)
+ trichurus 
+trichurus,
+trichurus\.
+(?<![a-zA-Z])trichurus 
+\(trichurus
+trichurus\)
+ perfuscus 
+perfuscus,
+perfuscus\.
+(?<![a-zA-Z])perfuscus 
+\(perfuscus
+perfuscus\)
+ brumbacki 
+brumbacki,
+brumbacki\.
+(?<![a-zA-Z])brumbacki 
+\(brumbacki
+brumbacki\)
+ tricuspis 
+tricuspis,
+tricuspis\.
+(?<![a-zA-Z])tricuspis 
+\(tricuspis
+tricuspis\)
+ peregusna 
+peregusna,
+peregusna\.
+(?<![a-zA-Z])peregusna 
+\(peregusna
+peregusna\)
+ Berardius 
+Berardius,
+Berardius\.
+(?<![a-zA-Z])Berardius 
+\(Berardius
+Berardius\)
+ breviceps 
+breviceps,
+breviceps\.
+(?<![a-zA-Z])breviceps 
+\(breviceps
+breviceps\)
+ trifolium 
+trifolium,
+trifolium\.
+(?<![a-zA-Z])trifolium 
+\(trifolium
+trifolium\)
+ percivali 
+percivali,
+percivali\.
+(?<![a-zA-Z])percivali 
+\(percivali
+percivali\)
+ braccatus 
+braccatus,
+braccatus\.
+(?<![a-zA-Z])braccatus 
+\(braccatus
+braccatus\)
+ triomylus 
+triomylus,
+triomylus\.
+(?<![a-zA-Z])triomylus 
+\(triomylus
+triomylus\)
+ borneanus 
+borneanus,
+borneanus\.
+(?<![a-zA-Z])borneanus 
+\(borneanus
+borneanus\)
+ nattereri 
+nattereri,
+nattereri\.
+(?<![a-zA-Z])nattereri 
+\(nattereri
+nattereri\)
+ Eptesicus 
+Eptesicus,
+Eptesicus\.
+(?<![a-zA-Z])Eptesicus 
+\(Eptesicus
+Eptesicus\)
+ Salinomys 
+Salinomys,
+Salinomys\.
+(?<![a-zA-Z])Salinomys 
+\(Salinomys
+Salinomys\)
+ boliviana 
+boliviana,
+boliviana\.
+(?<![a-zA-Z])boliviana 
+\(boliviana
+boliviana\)
+ neglectus 
+neglectus,
+neglectus\.
+(?<![a-zA-Z])neglectus 
+\(neglectus
+neglectus\)
+ truncatus 
+truncatus,
+truncatus\.
+(?<![a-zA-Z])truncatus 
+\(truncatus
+truncatus\)
+ attenuata 
+attenuata,
+attenuata\.
+(?<![a-zA-Z])attenuata 
+\(attenuata
+attenuata\)
+ nocturnus 
+nocturnus,
+nocturnus\.
+(?<![a-zA-Z])nocturnus 
+\(nocturnus
+nocturnus\)
+ nogalaris 
+nogalaris,
+nogalaris\.
+(?<![a-zA-Z])nogalaris 
+\(nogalaris
+nogalaris\)
+ americana 
+americana,
+americana\.
+(?<![a-zA-Z])americana 
+\(americana
+americana\)
+ amblyonyx 
+amblyonyx,
+amblyonyx\.
+(?<![a-zA-Z])amblyonyx 
+\(amblyonyx
+amblyonyx\)
+ amblyceps 
+amblyceps,
+amblyceps\.
+(?<![a-zA-Z])amblyceps 
+\(amblyceps
+amblyceps\)
+ omanensis 
+omanensis,
+omanensis\.
+(?<![a-zA-Z])omanensis 
+\(omanensis
+omanensis\)
+ alticolus 
+alticolus,
+alticolus\.
+(?<![a-zA-Z])alticolus 
+\(alticolus
+alticolus\)
+ operarius 
+operarius,
+operarius\.
+(?<![a-zA-Z])operarius 
+\(operarius
+operarius\)
+ Tapecomys 
+Tapecomys,
+Tapecomys\.
+(?<![a-zA-Z])Tapecomys 
+\(Tapecomys
+Tapecomys\)
+ weddellii 
+weddellii,
+weddellii\.
+(?<![a-zA-Z])weddellii 
+\(weddellii
+weddellii\)
+ alborufus 
+alborufus,
+alborufus\.
+(?<![a-zA-Z])alborufus 
+\(alborufus
+alborufus\)
+ Taphozous 
+Taphozous,
+Taphozous\.
+(?<![a-zA-Z])Taphozous 
+\(Taphozous
+Taphozous\)
+ albescens 
+albescens,
+albescens\.
+(?<![a-zA-Z])albescens 
+\(albescens
+albescens\)
+ palustris 
+palustris,
+palustris\.
+(?<![a-zA-Z])palustris 
+\(palustris
+palustris\)
+ africanus 
+africanus,
+africanus\.
+(?<![a-zA-Z])africanus 
+\(africanus
+africanus\)
+ oreocetes 
+oreocetes,
+oreocetes\.
+(?<![a-zA-Z])oreocetes 
+\(oreocetes
+oreocetes\)
+ aegyptius 
+aegyptius,
+aegyptius\.
+(?<![a-zA-Z])aegyptius 
+\(aegyptius
+aegyptius\)
+ Aeorestes 
+Aeorestes,
+Aeorestes\.
+(?<![a-zA-Z])Aeorestes 
+\(Aeorestes
+Aeorestes\)
+ Thaptomys 
+Thaptomys,
+Thaptomys\.
+(?<![a-zA-Z])Thaptomys 
+\(Thaptomys
+Thaptomys\)
+ Aconaemys 
+Aconaemys,
+Aconaemys\.
+(?<![a-zA-Z])Aconaemys 
+\(Aconaemys
+Aconaemys\)
+ origensis 
+origensis,
+origensis\.
+(?<![a-zA-Z])origensis 
+\(origensis
+origensis\)
+ Abrothrix 
+Abrothrix,
+Abrothrix\.
+(?<![a-zA-Z])Abrothrix 
+\(Abrothrix
+Abrothrix\)
+ pallidior 
+pallidior,
+pallidior\.
+(?<![a-zA-Z])pallidior 
+\(pallidior
+pallidior\)
+ zacatecae 
+zacatecae,
+zacatecae\.
+(?<![a-zA-Z])zacatecae 
+\(zacatecae
+zacatecae\)
+ palliatus 
+palliatus,
+palliatus\.
+(?<![a-zA-Z])palliatus 
+\(palliatus
+palliatus\)
+ osculatii 
+osculatii,
+osculatii\.
+(?<![a-zA-Z])osculatii 
+\(osculatii
+osculatii\)
+ palawanus 
+palawanus,
+palawanus\.
+(?<![a-zA-Z])palawanus 
+\(palawanus
+palawanus\)
+ palatinus 
+palatinus,
+palatinus\.
+(?<![a-zA-Z])palatinus 
+\(palatinus
+palatinus\)
+ zuluensis 
+zuluensis,
+zuluensis\.
+(?<![a-zA-Z])zuluensis 
+\(zuluensis
+zuluensis\)
+ pachyomus 
+pachyomus,
+pachyomus\.
+(?<![a-zA-Z])pachyomus 
+\(pachyomus
+pachyomus\)
+ ameghinoi 
+ameghinoi,
+ameghinoi\.
+(?<![a-zA-Z])ameghinoi 
+\(ameghinoi
+ameghinoi\)
+ amoyensis 
+amoyensis,
+amoyensis\.
+(?<![a-zA-Z])amoyensis 
+\(amoyensis
+amoyensis\)
+ atrirufus 
+atrirufus,
+atrirufus\.
+(?<![a-zA-Z])atrirufus 
+\(atrirufus
+atrirufus\)
+ amurensis 
+amurensis,
+amurensis\.
+(?<![a-zA-Z])amurensis 
+\(amurensis
+amurensis\)
+ Erinaceus 
+Erinaceus,
+Erinaceus\.
+(?<![a-zA-Z])Erinaceus 
+\(Erinaceus
+Erinaceus\)
+ venaticus 
+venaticus,
+venaticus\.
+(?<![a-zA-Z])venaticus 
+\(venaticus
+venaticus\)
+ ventralis 
+ventralis,
+ventralis\.
+(?<![a-zA-Z])ventralis 
+\(ventralis
+ventralis\)
+ Erophylla 
+Erophylla,
+Erophylla\.
+(?<![a-zA-Z])Erophylla 
+\(Erophylla
+Erophylla\)
+ Spilogale 
+Spilogale,
+Spilogale\.
+(?<![a-zA-Z])Spilogale 
+\(Spilogale
+Spilogale\)
+ Galerella 
+Galerella,
+Galerella\.
+(?<![a-zA-Z])Galerella 
+\(Galerella
+Galerella\)
+ nuttallii 
+nuttallii,
+nuttallii\.
+(?<![a-zA-Z])nuttallii 
+\(nuttallii
+nuttallii\)
+ Eubalaena 
+Eubalaena,
+Eubalaena\.
+(?<![a-zA-Z])Eubalaena 
+\(Eubalaena
+Eubalaena\)
+ arequipae 
+arequipae,
+arequipae\.
+(?<![a-zA-Z])arequipae 
+\(arequipae
+arequipae\)
+ arenicola 
+arenicola,
+arenicola\.
+(?<![a-zA-Z])arenicola 
+\(arenicola
+arenicola\)
+ arenarius 
+arenarius,
+arenarius\.
+(?<![a-zA-Z])arenarius 
+\(arenarius
+arenarius\)
+ Andinomys 
+Andinomys,
+Andinomys\.
+(?<![a-zA-Z])Andinomys 
+\(Andinomys
+Andinomys\)
+ arctoidea 
+arctoidea,
+arctoidea\.
+(?<![a-zA-Z])arctoidea 
+\(arctoidea
+arctoidea\)
+ aquaticus 
+aquaticus,
+aquaticus\.
+(?<![a-zA-Z])aquaticus 
+\(aquaticus
+aquaticus\)
+ viperinus 
+viperinus,
+viperinus\.
+(?<![a-zA-Z])viperinus 
+\(viperinus
+viperinus\)
+ obsoletus 
+obsoletus,
+obsoletus\.
+(?<![a-zA-Z])obsoletus 
+\(obsoletus
+obsoletus\)
+ vitalinus 
+vitalinus,
+vitalinus\.
+(?<![a-zA-Z])vitalinus 
+\(vitalinus
+vitalinus\)
+ ochraceus 
+ochraceus,
+ochraceus\.
+(?<![a-zA-Z])ochraceus 
+\(ochraceus
+ochraceus\)
+ annectens 
+annectens,
+annectens\.
+(?<![a-zA-Z])annectens 
+\(annectens
+annectens\)
+ ochraspis 
+ochraspis,
+ochraspis\.
+(?<![a-zA-Z])ochraspis 
+\(ochraspis
+ochraspis\)
+ angulatus 
+angulatus,
+angulatus\.
+(?<![a-zA-Z])angulatus 
+\(angulatus
+angulatus\)
+ paradoxus 
+paradoxus,
+paradoxus\.
+(?<![a-zA-Z])paradoxus 
+\(paradoxus
+paradoxus\)
+ volgensis 
+volgensis,
+volgensis\.
+(?<![a-zA-Z])volgensis 
+\(volgensis
+volgensis\)
+ volkmanni 
+volkmanni,
+volkmanni\.
+(?<![a-zA-Z])volkmanni 
+\(volkmanni
+volkmanni\)
+ andersoni 
+andersoni,
+andersoni\.
+(?<![a-zA-Z])andersoni 
+\(andersoni
+andersoni\)
+ paradisus 
+paradisus,
+paradisus\.
+(?<![a-zA-Z])paradisus 
+\(paradisus
+paradisus\)
+ anastasae 
+anastasae,
+anastasae\.
+(?<![a-zA-Z])anastasae 
+\(anastasae
+anastasae\)
+ Pseudorca 
+Pseudorca,
+Pseudorca\.
+(?<![a-zA-Z])Pseudorca 
+\(Pseudorca
+Pseudorca\)
+ Megaderma 
+Megaderma,
+Megaderma\.
+(?<![a-zA-Z])Megaderma 
+\(Megaderma
+Megaderma\)
+ philander 
+philander,
+philander\.
+(?<![a-zA-Z])philander 
+\(philander
+philander\)
+ thomsonii 
+thomsonii,
+thomsonii\.
+(?<![a-zA-Z])thomsonii 
+\(thomsonii
+thomsonii\)
+ Phalanger 
+Phalanger,
+Phalanger\.
+(?<![a-zA-Z])Phalanger 
+\(Phalanger
+Phalanger\)
+ Philander 
+Philander,
+Philander\.
+(?<![a-zA-Z])Philander 
+\(Philander
+Philander\)
+ megalotus 
+megalotus,
+megalotus\.
+(?<![a-zA-Z])megalotus 
+\(megalotus
+megalotus\)
+ crucigera 
+crucigera,
+crucigera\.
+(?<![a-zA-Z])crucigera 
+\(crucigera
+crucigera\)
+ Phyllotis 
+Phyllotis,
+Phyllotis\.
+(?<![a-zA-Z])Phyllotis 
+\(Phyllotis
+Phyllotis\)
+ chinensis 
+chinensis,
+chinensis\.
+(?<![a-zA-Z])chinensis 
+\(chinensis
+chinensis\)
+ megalotis 
+megalotis,
+megalotis\.
+(?<![a-zA-Z])megalotis 
+\(megalotis
+megalotis\)
+ cumanicus 
+cumanicus,
+cumanicus\.
+(?<![a-zA-Z])cumanicus 
+\(cumanicus
+cumanicus\)
+ megaceros 
+megaceros,
+megaceros\.
+(?<![a-zA-Z])megaceros 
+\(megaceros
+megaceros\)
+ cupreolus 
+cupreolus,
+cupreolus\.
+(?<![a-zA-Z])cupreolus 
+\(cupreolus
+cupreolus\)
+ Planigale 
+Planigale,
+Planigale\.
+(?<![a-zA-Z])Planigale 
+\(Planigale
+Planigale\)
+ chacarius 
+chacarius,
+chacarius\.
+(?<![a-zA-Z])chacarius 
+\(chacarius
+chacarius\)
+ sumatrius 
+sumatrius,
+sumatrius\.
+(?<![a-zA-Z])sumatrius 
+\(sumatrius
+sumatrius\)
+ sumatrana 
+sumatrana,
+sumatrana\.
+(?<![a-zA-Z])sumatrana 
+\(sumatrana
+sumatrana\)
+ Helarctos 
+Helarctos,
+Helarctos\.
+(?<![a-zA-Z])Helarctos 
+\(Helarctos
+Helarctos\)
+ Presbytis 
+Presbytis,
+Presbytis\.
+(?<![a-zA-Z])Presbytis 
+\(Presbytis
+Presbytis\)
+ centralis 
+centralis,
+centralis\.
+(?<![a-zA-Z])centralis 
+\(centralis
+centralis\)
+ plethodon 
+plethodon,
+plethodon\.
+(?<![a-zA-Z])plethodon 
+\(plethodon
+plethodon\)
+ Hapalemur 
+Hapalemur,
+Hapalemur\.
+(?<![a-zA-Z])Hapalemur 
+\(Hapalemur
+Hapalemur\)
+ croconota 
+croconota,
+croconota\.
+(?<![a-zA-Z])croconota 
+\(croconota
+croconota\)
+ surdaster 
+surdaster,
+surdaster\.
+(?<![a-zA-Z])surdaster 
+\(surdaster
+surdaster\)
+ Hylopetes 
+Hylopetes,
+Hylopetes\.
+(?<![a-zA-Z])Hylopetes 
+\(Hylopetes
+Hylopetes\)
+ Herpestes 
+Herpestes,
+Herpestes\.
+(?<![a-zA-Z])Herpestes 
+\(Herpestes
+Herpestes\)
+ mesomelas 
+mesomelas,
+mesomelas\.
+(?<![a-zA-Z])mesomelas 
+\(mesomelas
+mesomelas\)
+ Paraxerus 
+Paraxerus,
+Paraxerus\.
+(?<![a-zA-Z])Paraxerus 
+\(Paraxerus
+Paraxerus\)
+ colombiae 
+colombiae,
+colombiae\.
+(?<![a-zA-Z])colombiae 
+\(colombiae
+colombiae\)
+ melanurus 
+melanurus,
+melanurus\.
+(?<![a-zA-Z])melanurus 
+\(melanurus
+melanurus\)
+ mexicanae 
+mexicanae,
+mexicanae\.
+(?<![a-zA-Z])mexicanae 
+\(mexicanae
+mexicanae\)
+ coibensis 
+coibensis,
+coibensis\.
+(?<![a-zA-Z])coibensis 
+\(coibensis
+coibensis\)
+ talpoides 
+talpoides,
+talpoides\.
+(?<![a-zA-Z])talpoides 
+\(talpoides
+talpoides\)
+ mexicanus 
+mexicanus,
+mexicanus\.
+(?<![a-zA-Z])mexicanus 
+\(mexicanus
+mexicanus\)
+ melanotis 
+melanotis,
+melanotis\.
+(?<![a-zA-Z])melanotis 
+\(melanotis
+melanotis\)
+ pirrensis 
+pirrensis,
+pirrensis\.
+(?<![a-zA-Z])pirrensis 
+\(pirrensis
+pirrensis\)
+ taxicolor 
+taxicolor,
+taxicolor\.
+(?<![a-zA-Z])taxicolor 
+\(taxicolor
+taxicolor\)
+ Cabassous 
+Cabassous,
+Cabassous\.
+(?<![a-zA-Z])Cabassous 
+\(Cabassous
+Cabassous\)
+ clamitans 
+clamitans,
+clamitans\.
+(?<![a-zA-Z])clamitans 
+\(clamitans
+clamitans\)
+ teapensis 
+teapensis,
+teapensis\.
+(?<![a-zA-Z])teapensis 
+\(teapensis
+teapensis\)
+ Histiotus 
+Histiotus,
+Histiotus\.
+(?<![a-zA-Z])Histiotus 
+\(Histiotus
+Histiotus\)
+ Capreolus 
+Capreolus,
+Capreolus\.
+(?<![a-zA-Z])Capreolus 
+\(Capreolus
+Capreolus\)
+ Caluromys 
+Caluromys,
+Caluromys\.
+(?<![a-zA-Z])Caluromys 
+\(Caluromys
+Caluromys\)
+ Petrogale 
+Petrogale,
+Petrogale\.
+(?<![a-zA-Z])Petrogale 
+\(Petrogale
+Petrogale\)
+ cayoensis 
+cayoensis,
+cayoensis\.
+(?<![a-zA-Z])cayoensis 
+\(cayoensis
+cayoensis\)
+ Heteromys 
+Heteromys,
+Heteromys\.
+(?<![a-zA-Z])Heteromys 
+\(Heteromys
+Heteromys\)
+ derbianus 
+derbianus,
+derbianus\.
+(?<![a-zA-Z])derbianus 
+\(derbianus
+derbianus\)
+ monticola 
+monticola,
+monticola\.
+(?<![a-zA-Z])monticola 
+\(monticola
+monticola\)
+ carlottae 
+carlottae,
+carlottae\.
+(?<![a-zA-Z])carlottae 
+\(carlottae
+carlottae\)
+ montensis 
+montensis,
+montensis\.
+(?<![a-zA-Z])montensis 
+\(montensis
+montensis\)
+ delicatus 
+delicatus,
+delicatus\.
+(?<![a-zA-Z])delicatus 
+\(delicatus
+delicatus\)
+ delacouri 
+delacouri,
+delacouri\.
+(?<![a-zA-Z])delacouri 
+\(delacouri
+delacouri\)
+ carissima 
+carissima,
+carissima\.
+(?<![a-zA-Z])carissima 
+\(carissima
+carissima\)
+ dariensis 
+dariensis,
+dariensis\.
+(?<![a-zA-Z])dariensis 
+\(dariensis
+dariensis\)
+ capitalis 
+capitalis,
+capitalis\.
+(?<![a-zA-Z])capitalis 
+\(capitalis
+capitalis\)
+ carimatae 
+carimatae,
+carimatae\.
+(?<![a-zA-Z])carimatae 
+\(carimatae
+carimatae\)
+ carrikeri 
+carrikeri,
+carrikeri\.
+(?<![a-zA-Z])carrikeri 
+\(carrikeri
+carrikeri\)
+ monoensis 
+monoensis,
+monoensis\.
+(?<![a-zA-Z])monoensis 
+\(monoensis
+monoensis\)
+ capreolus 
+capreolus,
+capreolus\.
+(?<![a-zA-Z])capreolus 
+\(capreolus
+capreolus\)
+ tibetanus 
+tibetanus,
+tibetanus\.
+(?<![a-zA-Z])tibetanus 
+\(tibetanus
+tibetanus\)
+ petersoni 
+petersoni,
+petersoni\.
+(?<![a-zA-Z])petersoni 
+\(petersoni
+petersoni\)
+ matschiei 
+matschiei,
+matschiei\.
+(?<![a-zA-Z])matschiei 
+\(matschiei
+matschiei\)
+ pratensis 
+pratensis,
+pratensis\.
+(?<![a-zA-Z])pratensis 
+\(pratensis
+pratensis\)
+ defilippi 
+defilippi,
+defilippi\.
+(?<![a-zA-Z])defilippi 
+\(defilippi
+defilippi\)
+ suffocans 
+suffocans,
+suffocans\.
+(?<![a-zA-Z])suffocans 
+\(suffocans
+suffocans\)
+ mongolica 
+mongolica,
+mongolica\.
+(?<![a-zA-Z])mongolica 
+\(mongolica
+mongolica\)
+ porteousi 
+porteousi,
+porteousi\.
+(?<![a-zA-Z])porteousi 
+\(porteousi
+porteousi\)
+ caucensis 
+caucensis,
+caucensis\.
+(?<![a-zA-Z])caucensis 
+\(caucensis
+caucensis\)
+ castanops 
+castanops,
+castanops\.
+(?<![a-zA-Z])castanops 
+\(castanops
+castanops\)
+ castaneus 
+castaneus,
+castaneus\.
+(?<![a-zA-Z])castaneus 
+\(castaneus
+castaneus\)
+ Cynomops 
+Cynomops,
+Cynomops\.
+(?<![a-zA-Z])Cynomops 
+\(Cynomops
+Cynomops\)
+ melanops 
+melanops,
+melanops\.
+(?<![a-zA-Z])melanops 
+\(melanops
+melanops\)
+ Hydrurga 
+Hydrurga,
+Hydrurga\.
+(?<![a-zA-Z])Hydrurga 
+\(Hydrurga
+Hydrurga\)
+ manningi 
+manningi,
+manningi\.
+(?<![a-zA-Z])manningi 
+\(manningi
+manningi\)
+ ochropus 
+ochropus,
+ochropus\.
+(?<![a-zA-Z])ochropus 
+\(ochropus
+ochropus\)
+ Dobsonia 
+Dobsonia,
+Dobsonia\.
+(?<![a-zA-Z])Dobsonia 
+\(Dobsonia
+Dobsonia\)
+ occultus 
+occultus,
+occultus\.
+(?<![a-zA-Z])occultus 
+\(occultus
+occultus\)
+ maraxica 
+maraxica,
+maraxica\.
+(?<![a-zA-Z])maraxica 
+\(maraxica
+maraxica\)
+ laevipes 
+laevipes,
+laevipes\.
+(?<![a-zA-Z])laevipes 
+\(laevipes
+laevipes\)
+ paraguae 
+paraguae,
+paraguae\.
+(?<![a-zA-Z])paraguae 
+\(paraguae
+paraguae\)
+ palliata 
+palliata,
+palliata\.
+(?<![a-zA-Z])palliata 
+\(palliata
+palliata\)
+ krefftii 
+krefftii,
+krefftii\.
+(?<![a-zA-Z])krefftii 
+\(krefftii
+krefftii\)
+ melantho 
+melantho,
+melantho\.
+(?<![a-zA-Z])melantho 
+\(melantho
+melantho\)
+ maulinus 
+maulinus,
+maulinus\.
+(?<![a-zA-Z])maulinus 
+\(maulinus
+maulinus\)
+ mayensis 
+mayensis,
+mayensis\.
+(?<![a-zA-Z])mayensis 
+\(mayensis
+mayensis\)
+ russatus 
+russatus,
+russatus\.
+(?<![a-zA-Z])russatus 
+\(russatus
+russatus\)
+ koopmani 
+koopmani,
+koopmani\.
+(?<![a-zA-Z])koopmani 
+\(koopmani
+koopmani\)
+ obscurus 
+obscurus,
+obscurus\.
+(?<![a-zA-Z])obscurus 
+\(obscurus
+obscurus\)
+ Eudorcas 
+Eudorcas,
+Eudorcas\.
+(?<![a-zA-Z])Eudorcas 
+\(Eudorcas
+Eudorcas\)
+ pagensis 
+pagensis,
+pagensis\.
+(?<![a-zA-Z])pagensis 
+\(pagensis
+pagensis\)
+ kinabalu 
+kinabalu,
+kinabalu\.
+(?<![a-zA-Z])kinabalu 
+\(kinabalu
+kinabalu\)
+ Desmodus 
+Desmodus,
+Desmodus\.
+(?<![a-zA-Z])Desmodus 
+\(Desmodus
+Desmodus\)
+ rubidior 
+rubidior,
+rubidior\.
+(?<![a-zA-Z])rubidior 
+\(rubidior
+rubidior\)
+ mendosus 
+mendosus,
+mendosus\.
+(?<![a-zA-Z])mendosus 
+\(mendosus
+mendosus\)
+ lataxina 
+lataxina,
+lataxina\.
+(?<![a-zA-Z])lataxina 
+\(lataxina
+lataxina\)
+ larvatus 
+larvatus,
+larvatus\.
+(?<![a-zA-Z])larvatus 
+\(larvatus
+larvatus\)
+ ocythous 
+ocythous,
+ocythous\.
+(?<![a-zA-Z])ocythous 
+\(ocythous
+ocythous\)
+ martinoi 
+martinoi,
+martinoi\.
+(?<![a-zA-Z])martinoi 
+\(martinoi
+martinoi\)
+ pannosus 
+pannosus,
+pannosus\.
+(?<![a-zA-Z])pannosus 
+\(pannosus
+pannosus\)
+ Juliomys 
+Juliomys,
+Juliomys\.
+(?<![a-zA-Z])Juliomys 
+\(Juliomys
+Juliomys\)
+ oribates 
+oribates,
+oribates\.
+(?<![a-zA-Z])oribates 
+\(oribates
+oribates\)
+ pamparum 
+pamparum,
+pamparum\.
+(?<![a-zA-Z])pamparum 
+\(pamparum
+pamparum\)
+ mephitis 
+mephitis,
+mephitis\.
+(?<![a-zA-Z])mephitis 
+\(mephitis
+mephitis\)
+ Irenomys 
+Irenomys,
+Irenomys\.
+(?<![a-zA-Z])Irenomys 
+\(Irenomys
+Irenomys\)
+ pallidus 
+pallidus,
+pallidus\.
+(?<![a-zA-Z])pallidus 
+\(pallidus
+pallidus\)
+ orizabae 
+orizabae,
+orizabae\.
+(?<![a-zA-Z])orizabae 
+\(orizabae
+orizabae\)
+ lamottei 
+lamottei,
+lamottei\.
+(?<![a-zA-Z])lamottei 
+\(lamottei
+lamottei\)
+ pogonias 
+pogonias,
+pogonias\.
+(?<![a-zA-Z])pogonias 
+\(pogonias
+pogonias\)
+ massaica 
+massaica,
+massaica\.
+(?<![a-zA-Z])massaica 
+\(massaica
+massaica\)
+ Euneomys 
+Euneomys,
+Euneomys\.
+(?<![a-zA-Z])Euneomys 
+\(Euneomys
+Euneomys\)
+ oregonus 
+oregonus,
+oregonus\.
+(?<![a-zA-Z])oregonus 
+\(oregonus
+oregonus\)
+ palmarum 
+palmarum,
+palmarum\.
+(?<![a-zA-Z])palmarum 
+\(palmarum
+palmarum\)
+ Dremomys 
+Dremomys,
+Dremomys\.
+(?<![a-zA-Z])Dremomys 
+\(Dremomys
+Dremomys\)
+ papuanus 
+papuanus,
+papuanus\.
+(?<![a-zA-Z])papuanus 
+\(papuanus
+papuanus\)
+ olivieri 
+olivieri,
+olivieri\.
+(?<![a-zA-Z])olivieri 
+\(olivieri
+olivieri\)
+ larensis 
+larensis,
+larensis\.
+(?<![a-zA-Z])larensis 
+\(larensis
+larensis\)
+ provocax 
+provocax,
+provocax\.
+(?<![a-zA-Z])provocax 
+\(provocax
+provocax\)
+ oricolus 
+oricolus,
+oricolus\.
+(?<![a-zA-Z])oricolus 
+\(oricolus
+oricolus\)
+ ponticus 
+ponticus,
+ponticus\.
+(?<![a-zA-Z])ponticus 
+\(ponticus
+ponticus\)
+ laenatus 
+laenatus,
+laenatus\.
+(?<![a-zA-Z])laenatus 
+\(laenatus
+laenatus\)
+ larkenii 
+larkenii,
+larkenii\.
+(?<![a-zA-Z])larkenii 
+\(larkenii
+larkenii\)
+ olivacea 
+olivacea,
+olivacea\.
+(?<![a-zA-Z])olivacea 
+\(olivacea
+olivacea\)
+ okiensis 
+okiensis,
+okiensis\.
+(?<![a-zA-Z])okiensis 
+\(okiensis
+okiensis\)
+ pontifex 
+pontifex,
+pontifex\.
+(?<![a-zA-Z])pontifex 
+\(pontifex
+pontifex\)
+ maynardi 
+maynardi,
+maynardi\.
+(?<![a-zA-Z])maynardi 
+\(maynardi
+maynardi\)
+ pallipes 
+pallipes,
+pallipes\.
+(?<![a-zA-Z])pallipes 
+\(pallipes
+pallipes\)
+ orientis 
+orientis,
+orientis\.
+(?<![a-zA-Z])orientis 
+\(orientis
+orientis\)
+ marianna 
+marianna,
+marianna\.
+(?<![a-zA-Z])marianna 
+\(marianna
+marianna\)
+ lasiurus 
+lasiurus,
+lasiurus\.
+(?<![a-zA-Z])lasiurus 
+\(lasiurus
+lasiurus\)
+ pusillus 
+pusillus,
+pusillus\.
+(?<![a-zA-Z])pusillus 
+\(pusillus
+pusillus\)
+ rostrata 
+rostrata,
+rostrata\.
+(?<![a-zA-Z])rostrata 
+\(rostrata
+rostrata\)
+ latrator 
+latrator,
+latrator\.
+(?<![a-zA-Z])latrator 
+\(latrator
+latrator\)
+ mexianae 
+mexianae,
+mexianae\.
+(?<![a-zA-Z])mexianae 
+\(mexianae
+mexianae\)
+ perlutea 
+perlutea,
+perlutea\.
+(?<![a-zA-Z])perlutea 
+\(perlutea
+perlutea\)
+ montanus 
+montanus,
+montanus\.
+(?<![a-zA-Z])montanus 
+\(montanus
+montanus\)
+ Tragulus 
+Tragulus,
+Tragulus\.
+(?<![a-zA-Z])Tragulus 
+\(Tragulus
+Tragulus\)
+ Lasiurus 
+Lasiurus,
+Lasiurus\.
+(?<![a-zA-Z])Lasiurus 
+\(Lasiurus
+Lasiurus\)
+ macronyx 
+macronyx,
+macronyx\.
+(?<![a-zA-Z])macronyx 
+\(macronyx
+macronyx\)
+ monachus 
+monachus,
+monachus\.
+(?<![a-zA-Z])monachus 
+\(monachus
+monachus\)
+ pennipes 
+pennipes,
+pennipes\.
+(?<![a-zA-Z])pennipes 
+\(pennipes
+pennipes\)
+ mastivus 
+mastivus,
+mastivus\.
+(?<![a-zA-Z])mastivus 
+\(mastivus
+mastivus\)
+ molossus 
+molossus,
+molossus\.
+(?<![a-zA-Z])molossus 
+\(molossus
+molossus\)
+ modestus 
+modestus,
+modestus\.
+(?<![a-zA-Z])modestus 
+\(modestus
+modestus\)
+ Lariscus 
+Lariscus,
+Lariscus\.
+(?<![a-zA-Z])Lariscus 
+\(Lariscus
+Lariscus\)
+ Lyncodon 
+Lyncodon,
+Lyncodon\.
+(?<![a-zA-Z])Lyncodon 
+\(Lyncodon
+Lyncodon\)
+ punensis 
+punensis,
+punensis\.
+(?<![a-zA-Z])punensis 
+\(punensis
+punensis\)
+ macrotis 
+macrotis,
+macrotis\.
+(?<![a-zA-Z])macrotis 
+\(macrotis
+macrotis\)
+ neumanni 
+neumanni,
+neumanni\.
+(?<![a-zA-Z])neumanni 
+\(neumanni
+neumanni\)
+ macrotus 
+macrotus,
+macrotus\.
+(?<![a-zA-Z])macrotus 
+\(macrotus
+macrotus\)
+ phaeotis 
+phaeotis,
+phaeotis\.
+(?<![a-zA-Z])phaeotis 
+\(phaeotis
+phaeotis\)
+ phalaena 
+phalaena,
+phalaena\.
+(?<![a-zA-Z])phalaena 
+\(phalaena
+phalaena\)
+ litoreus 
+litoreus,
+litoreus\.
+(?<![a-zA-Z])litoreus 
+\(litoreus
+litoreus\)
+ naisense 
+naisense,
+naisense\.
+(?<![a-zA-Z])naisense 
+\(naisense
+naisense\)
+ perniger 
+perniger,
+perniger\.
+(?<![a-zA-Z])perniger 
+\(perniger
+perniger\)
+ relictus 
+relictus,
+relictus\.
+(?<![a-zA-Z])relictus 
+\(relictus
+relictus\)
+ peruanum 
+peruanum,
+peruanum\.
+(?<![a-zA-Z])peruanum 
+\(peruanum
+peruanum\)
+ pygmaeus 
+pygmaeus,
+pygmaeus\.
+(?<![a-zA-Z])pygmaeus 
+\(pygmaeus
+pygmaeus\)
+ macellus 
+macellus,
+macellus\.
+(?<![a-zA-Z])macellus 
+\(macellus
+macellus\)
+ machetes 
+machetes,
+machetes\.
+(?<![a-zA-Z])machetes 
+\(machetes
+machetes\)
+ quaestor 
+quaestor,
+quaestor\.
+(?<![a-zA-Z])quaestor 
+\(quaestor
+quaestor\)
+ purgatus 
+purgatus,
+purgatus\.
+(?<![a-zA-Z])purgatus 
+\(purgatus
+purgatus\)
+ lycoides 
+lycoides,
+lycoides\.
+(?<![a-zA-Z])lycoides 
+\(lycoides
+lycoides\)
+ lutreola 
+lutreola,
+lutreola\.
+(?<![a-zA-Z])lutreola 
+\(lutreola
+lutreola\)
+ peruanus 
+peruanus,
+peruanus\.
+(?<![a-zA-Z])peruanus 
+\(peruanus
+peruanus\)
+ muricola 
+muricola,
+muricola\.
+(?<![a-zA-Z])muricola 
+\(muricola
+muricola\)
+ myosuros 
+myosuros,
+myosuros\.
+(?<![a-zA-Z])myosuros 
+\(myosuros
+myosuros\)
+ perrensi 
+perrensi,
+perrensi\.
+(?<![a-zA-Z])perrensi 
+\(perrensi
+perrensi\)
+ luteolus 
+luteolus,
+luteolus\.
+(?<![a-zA-Z])luteolus 
+\(luteolus
+luteolus\)
+ muscilla 
+muscilla,
+muscilla\.
+(?<![a-zA-Z])muscilla 
+\(muscilla
+muscilla\)
+ musculus 
+musculus,
+musculus\.
+(?<![a-zA-Z])musculus 
+\(musculus
+musculus\)
+ recessus 
+recessus,
+recessus\.
+(?<![a-zA-Z])recessus 
+\(recessus
+recessus\)
+ lupaster 
+lupaster,
+lupaster\.
+(?<![a-zA-Z])lupaster 
+\(lupaster
+lupaster\)
+ mordosus 
+mordosus,
+mordosus\.
+(?<![a-zA-Z])mordosus 
+\(mordosus
+mordosus\)
+ ludovici 
+ludovici,
+ludovici\.
+(?<![a-zA-Z])ludovici 
+\(ludovici
+ludovici\)
+ pearsoni 
+pearsoni,
+pearsoni\.
+(?<![a-zA-Z])pearsoni 
+\(pearsoni
+pearsoni\)
+ Dusicyon 
+Dusicyon,
+Dusicyon\.
+(?<![a-zA-Z])Dusicyon 
+\(Dusicyon
+Dusicyon\)
+ lineatus 
+lineatus,
+lineatus\.
+(?<![a-zA-Z])lineatus 
+\(lineatus
+lineatus\)
+ mallurus 
+mallurus,
+mallurus\.
+(?<![a-zA-Z])mallurus 
+\(mallurus
+mallurus\)
+ punctata 
+punctata,
+punctata\.
+(?<![a-zA-Z])punctata 
+\(punctata
+punctata\)
+ micropus 
+micropus,
+micropus\.
+(?<![a-zA-Z])micropus 
+\(micropus
+micropus\)
+ leptonyx 
+leptonyx,
+leptonyx\.
+(?<![a-zA-Z])leptonyx 
+\(leptonyx
+leptonyx\)
+ majoriae 
+majoriae,
+majoriae\.
+(?<![a-zA-Z])majoriae 
+\(majoriae
+majoriae\)
+ puerulus 
+puerulus,
+puerulus\.
+(?<![a-zA-Z])puerulus 
+\(puerulus
+puerulus\)
+ leporina 
+leporina,
+leporina\.
+(?<![a-zA-Z])leporina 
+\(leporina
+leporina\)
+ lentulus 
+lentulus,
+lentulus\.
+(?<![a-zA-Z])lentulus 
+\(lentulus
+lentulus\)
+ pictipes 
+pictipes,
+pictipes\.
+(?<![a-zA-Z])pictipes 
+\(pictipes
+pictipes\)
+ micronyx 
+micronyx,
+micronyx\.
+(?<![a-zA-Z])micronyx 
+\(micronyx
+micronyx\)
+ robustus 
+robustus,
+robustus\.
+(?<![a-zA-Z])robustus 
+\(robustus
+robustus\)
+ lehmanni 
+lehmanni,
+lehmanni\.
+(?<![a-zA-Z])lehmanni 
+\(lehmanni
+lehmanni\)
+ mexicana 
+mexicana,
+mexicana\.
+(?<![a-zA-Z])mexicana 
+\(mexicana
+mexicana\)
+ layardii 
+layardii,
+layardii\.
+(?<![a-zA-Z])layardii 
+\(layardii
+layardii\)
+ pardalis 
+pardalis,
+pardalis\.
+(?<![a-zA-Z])pardalis 
+\(pardalis
+pardalis\)
+ rotundus 
+rotundus,
+rotundus\.
+(?<![a-zA-Z])rotundus 
+\(rotundus
+rotundus\)
+ Galictis 
+Galictis,
+Galictis\.
+(?<![a-zA-Z])Galictis 
+\(Galictis
+Galictis\)
+ nuchalis 
+nuchalis,
+nuchalis\.
+(?<![a-zA-Z])nuchalis 
+\(nuchalis
+nuchalis\)
+ rubellus 
+rubellus,
+rubellus\.
+(?<![a-zA-Z])rubellus 
+\(rubellus
+rubellus\)
+ nivicola 
+nivicola,
+nivicola\.
+(?<![a-zA-Z])nivicola 
+\(nivicola
+nivicola\)
+ parvipes 
+parvipes,
+parvipes\.
+(?<![a-zA-Z])parvipes 
+\(parvipes
+parvipes\)
+ nigellus 
+nigellus,
+nigellus\.
+(?<![a-zA-Z])nigellus 
+\(nigellus
+nigellus\)
+ patzelti 
+patzelti,
+patzelti\.
+(?<![a-zA-Z])patzelti 
+\(patzelti
+patzelti\)
+ Deltamys 
+Deltamys,
+Deltamys\.
+(?<![a-zA-Z])Deltamys 
+\(Deltamys
+Deltamys\)
+ paululus 
+paululus,
+paululus\.
+(?<![a-zA-Z])paululus 
+\(paululus
+paululus\)
+ nigeriae 
+nigeriae,
+nigeriae\.
+(?<![a-zA-Z])nigeriae 
+\(nigeriae
+nigeriae\)
+ leucurus 
+leucurus,
+leucurus\.
+(?<![a-zA-Z])leucurus 
+\(leucurus
+leucurus\)
+ leucotis 
+leucotis,
+leucotis\.
+(?<![a-zA-Z])leucotis 
+\(leucotis
+leucotis\)
+ paulsoni 
+paulsoni,
+paulsoni\.
+(?<![a-zA-Z])paulsoni 
+\(paulsoni
+paulsoni\)
+ leucomus 
+leucomus,
+leucomus\.
+(?<![a-zA-Z])leucomus 
+\(leucomus
+leucomus\)
+ nigripes 
+nigripes,
+nigripes\.
+(?<![a-zA-Z])nigripes 
+\(nigripes
+nigripes\)
+ nigritus 
+nigritus,
+nigritus\.
+(?<![a-zA-Z])nigritus 
+\(nigritus
+nigritus\)
+ microtis 
+microtis,
+microtis\.
+(?<![a-zA-Z])microtis 
+\(microtis
+microtis\)
+ minensis 
+minensis,
+minensis\.
+(?<![a-zA-Z])minensis 
+\(minensis
+minensis\)
+ phocoena 
+phocoena,
+phocoena\.
+(?<![a-zA-Z])phocoena 
+\(phocoena
+phocoena\)
+ riparius 
+riparius,
+riparius\.
+(?<![a-zA-Z])riparius 
+\(riparius
+riparius\)
+ Macropus 
+Macropus,
+Macropus\.
+(?<![a-zA-Z])Macropus 
+\(Macropus
+Macropus\)
+ Macrotus 
+Macrotus,
+Macrotus\.
+(?<![a-zA-Z])Macrotus 
+\(Macrotus
+Macrotus\)
+ physalus 
+physalus,
+physalus\.
+(?<![a-zA-Z])physalus 
+\(physalus
+physalus\)
+ pastasae 
+pastasae,
+pastasae\.
+(?<![a-zA-Z])pastasae 
+\(pastasae
+pastasae\)
+ Lagidium 
+Lagidium,
+Lagidium\.
+(?<![a-zA-Z])Lagidium 
+\(Lagidium
+Lagidium\)
+ nauticus 
+nauticus,
+nauticus\.
+(?<![a-zA-Z])nauticus 
+\(nauticus
+nauticus\)
+ Nomascus 
+Nomascus,
+Nomascus\.
+(?<![a-zA-Z])Nomascus 
+\(Nomascus
+Nomascus\)
+ keyensis 
+keyensis,
+keyensis\.
+(?<![a-zA-Z])keyensis 
+\(keyensis
+keyensis\)
+ texensis 
+texensis,
+texensis\.
+(?<![a-zA-Z])texensis 
+\(texensis
+texensis\)
+ carminis 
+carminis,
+carminis\.
+(?<![a-zA-Z])carminis 
+\(carminis
+carminis\)
+ tibialis 
+tibialis,
+tibialis\.
+(?<![a-zA-Z])tibialis 
+\(tibialis
+tibialis\)
+ tibetana 
+tibetana,
+tibetana\.
+(?<![a-zA-Z])tibetana 
+\(tibetana
+tibetana\)
+ caspicus 
+caspicus,
+caspicus\.
+(?<![a-zA-Z])caspicus 
+\(caspicus
+caspicus\)
+ caudatus 
+caudatus,
+caudatus\.
+(?<![a-zA-Z])caudatus 
+\(caudatus
+caudatus\)
+ caudifer 
+caudifer,
+caudifer\.
+(?<![a-zA-Z])caudifer 
+\(caudifer
+caudifer\)
+ caurinus 
+caurinus,
+caurinus\.
+(?<![a-zA-Z])caurinus 
+\(caurinus
+caurinus\)
+ thaianus 
+thaianus,
+thaianus\.
+(?<![a-zA-Z])thaianus 
+\(thaianus
+thaianus\)
+ cerasina 
+cerasina,
+cerasina\.
+(?<![a-zA-Z])cerasina 
+\(cerasina
+cerasina\)
+ Budorcas 
+Budorcas,
+Budorcas\.
+(?<![a-zA-Z])Budorcas 
+\(Budorcas
+Budorcas\)
+ cerastes 
+cerastes,
+cerastes\.
+(?<![a-zA-Z])cerastes 
+\(cerastes
+cerastes\)
+ chapmani 
+chapmani,
+chapmani\.
+(?<![a-zA-Z])chapmani 
+\(chapmani
+chapmani\)
+ Plecotus 
+Plecotus,
+Plecotus\.
+(?<![a-zA-Z])Plecotus 
+\(Plecotus
+Plecotus\)
+ Physeter 
+Physeter,
+Physeter\.
+(?<![a-zA-Z])Physeter 
+\(Physeter
+Physeter\)
+ chotanus 
+chotanus,
+chotanus\.
+(?<![a-zA-Z])chotanus 
+\(chotanus
+chotanus\)
+ Phocoena 
+Phocoena,
+Phocoena\.
+(?<![a-zA-Z])Phocoena 
+\(Phocoena
+Phocoena\)
+ teniotis 
+teniotis,
+teniotis\.
+(?<![a-zA-Z])teniotis 
+\(teniotis
+teniotis\)
+ Petromus 
+Petromus,
+Petromus\.
+(?<![a-zA-Z])Petromus 
+\(Petromus
+Petromus\)
+ tigrillo 
+tigrillo,
+tigrillo\.
+(?<![a-zA-Z])tigrillo 
+\(tigrillo
+tigrillo\)
+ tigrinus 
+tigrinus,
+tigrinus\.
+(?<![a-zA-Z])tigrinus 
+\(tigrinus
+tigrinus\)
+ tilonura 
+tilonura,
+tilonura\.
+(?<![a-zA-Z])tilonura 
+\(tilonura
+tilonura\)
+ capsalis 
+capsalis,
+capsalis\.
+(?<![a-zA-Z])capsalis 
+\(capsalis
+capsalis\)
+ cabrerae 
+cabrerae,
+cabrerae\.
+(?<![a-zA-Z])cabrerae 
+\(cabrerae
+cabrerae\)
+ cabrerai 
+cabrerai,
+cabrerai\.
+(?<![a-zA-Z])cabrerai 
+\(cabrerai
+cabrerai\)
+ caenosus 
+caenosus,
+caenosus\.
+(?<![a-zA-Z])caenosus 
+\(caenosus
+caenosus\)
+ calidior 
+calidior,
+calidior\.
+(?<![a-zA-Z])calidior 
+\(calidior
+calidior\)
+ Rangifer 
+Rangifer,
+Rangifer\.
+(?<![a-zA-Z])Rangifer 
+\(Rangifer
+Rangifer\)
+ trabeata 
+trabeata,
+trabeata\.
+(?<![a-zA-Z])trabeata 
+\(trabeata
+trabeata\)
+ torridus 
+torridus,
+torridus\.
+(?<![a-zA-Z])torridus 
+\(torridus
+torridus\)
+ callidus 
+callidus,
+callidus\.
+(?<![a-zA-Z])callidus 
+\(callidus
+callidus\)
+ callosus 
+callosus,
+callosus\.
+(?<![a-zA-Z])callosus 
+\(callosus
+callosus\)
+ tontalis 
+tontalis,
+tontalis\.
+(?<![a-zA-Z])tontalis 
+\(tontalis
+tontalis\)
+ Pteropus 
+Pteropus,
+Pteropus\.
+(?<![a-zA-Z])Pteropus 
+\(Pteropus
+Pteropus\)
+ toltecus 
+toltecus,
+toltecus\.
+(?<![a-zA-Z])toltecus 
+\(toltecus
+toltecus\)
+ canaster 
+canaster,
+canaster\.
+(?<![a-zA-Z])canaster 
+\(canaster
+canaster\)
+ caniceps 
+caniceps,
+caniceps\.
+(?<![a-zA-Z])caniceps 
+\(caniceps
+caniceps\)
+ canicrus 
+canicrus,
+canicrus\.
+(?<![a-zA-Z])canicrus 
+\(canicrus
+canicrus\)
+ capensis 
+capensis,
+capensis\.
+(?<![a-zA-Z])capensis 
+\(capensis
+capensis\)
+ caprinus 
+caprinus,
+caprinus\.
+(?<![a-zA-Z])caprinus 
+\(caprinus
+caprinus\)
+ cinereus 
+cinereus,
+cinereus\.
+(?<![a-zA-Z])cinereus 
+\(cinereus
+cinereus\)
+ teliotis 
+teliotis,
+teliotis\.
+(?<![a-zA-Z])teliotis 
+\(teliotis
+teliotis\)
+ citellus 
+citellus,
+citellus\.
+(?<![a-zA-Z])citellus 
+\(citellus
+citellus\)
+ cratodon 
+cratodon,
+cratodon\.
+(?<![a-zA-Z])cratodon 
+\(cratodon
+cratodon\)
+ Carollia 
+Carollia,
+Carollia\.
+(?<![a-zA-Z])Carollia 
+\(Carollia
+Carollia\)
+ culpaeus 
+culpaeus,
+culpaeus\.
+(?<![a-zA-Z])culpaeus 
+\(culpaeus
+culpaeus\)
+ cunealis 
+cunealis,
+cunealis\.
+(?<![a-zA-Z])cunealis 
+\(cunealis
+cunealis\)
+ cuneatus 
+cuneatus,
+cuneatus\.
+(?<![a-zA-Z])cuneatus 
+\(cuneatus
+cuneatus\)
+ Castoria 
+Castoria,
+Castoria\.
+(?<![a-zA-Z])Castoria 
+\(Castoria
+Castoria\)
+ sumatrae 
+sumatrae,
+sumatrae\.
+(?<![a-zA-Z])sumatrae 
+\(sumatrae
+sumatrae\)
+ dabbenei 
+dabbenei,
+dabbenei\.
+(?<![a-zA-Z])dabbenei 
+\(dabbenei
+dabbenei\)
+ Catopuma 
+Catopuma,
+Catopuma\.
+(?<![a-zA-Z])Catopuma 
+\(Catopuma
+Catopuma\)
+ davisoni 
+davisoni,
+davisoni\.
+(?<![a-zA-Z])davisoni 
+\(davisoni
+davisoni\)
+ subtilis 
+subtilis,
+subtilis\.
+(?<![a-zA-Z])subtilis 
+\(subtilis
+subtilis\)
+ subsimus 
+subsimus,
+subsimus\.
+(?<![a-zA-Z])subsimus 
+\(subsimus
+subsimus\)
+ deignani 
+deignani,
+deignani\.
+(?<![a-zA-Z])deignani 
+\(deignani
+deignani\)
+ subrufus 
+subrufus,
+subrufus\.
+(?<![a-zA-Z])subrufus 
+\(subrufus
+subrufus\)
+ delticus 
+delticus,
+delticus\.
+(?<![a-zA-Z])delticus 
+\(delticus
+delticus\)
+ subrosea 
+subrosea,
+subrosea\.
+(?<![a-zA-Z])subrosea 
+\(subrosea
+subrosea\)
+ sublimis 
+sublimis,
+sublimis\.
+(?<![a-zA-Z])sublimis 
+\(sublimis
+sublimis\)
+ dichurus 
+dichurus,
+dichurus\.
+(?<![a-zA-Z])dichurus 
+\(dichurus
+dichurus\)
+ cruciger 
+cruciger,
+cruciger\.
+(?<![a-zA-Z])cruciger 
+\(cruciger
+cruciger\)
+ swinhoei 
+swinhoei,
+swinhoei\.
+(?<![a-zA-Z])swinhoei 
+\(swinhoei
+swinhoei\)
+ cockrumi 
+cockrumi,
+cockrumi\.
+(?<![a-zA-Z])cockrumi 
+\(cockrumi
+cockrumi\)
+ kermodei 
+kermodei,
+kermodei\.
+(?<![a-zA-Z])kermodei 
+\(kermodei
+kermodei\)
+ Petaurus 
+Petaurus,
+Petaurus\.
+(?<![a-zA-Z])Petaurus 
+\(Petaurus
+Petaurus\)
+ coetzeei 
+coetzeei,
+coetzeei\.
+(?<![a-zA-Z])coetzeei 
+\(coetzeei
+coetzeei\)
+ colburni 
+colburni,
+colburni\.
+(?<![a-zA-Z])colburni 
+\(colburni
+colburni\)
+ colocolo 
+colocolo,
+colocolo\.
+(?<![a-zA-Z])colocolo 
+\(colocolo
+colocolo\)
+ tarsalis 
+tarsalis,
+tarsalis\.
+(?<![a-zA-Z])tarsalis 
+\(tarsalis
+tarsalis\)
+ tarandus 
+tarandus,
+tarandus\.
+(?<![a-zA-Z])tarandus 
+\(tarandus
+tarandus\)
+ concavus 
+concavus,
+concavus\.
+(?<![a-zA-Z])concavus 
+\(concavus
+concavus\)
+ concolor 
+concolor,
+concolor\.
+(?<![a-zA-Z])concolor 
+\(concolor
+concolor\)
+ Paynomys 
+Paynomys,
+Paynomys\.
+(?<![a-zA-Z])Paynomys 
+\(Paynomys
+Paynomys\)
+ confinis 
+confinis,
+confinis\.
+(?<![a-zA-Z])confinis 
+\(confinis
+confinis\)
+ conoveri 
+conoveri,
+conoveri\.
+(?<![a-zA-Z])conoveri 
+\(conoveri
+conoveri\)
+ conscius 
+conscius,
+conscius\.
+(?<![a-zA-Z])conscius 
+\(conscius
+conscius\)
+ corbetti 
+corbetti,
+corbetti\.
+(?<![a-zA-Z])corbetti 
+\(corbetti
+corbetti\)
+ corinnae 
+corinnae,
+corinnae\.
+(?<![a-zA-Z])corinnae 
+\(corinnae
+corinnae\)
+ Panthera 
+Panthera,
+Panthera\.
+(?<![a-zA-Z])Panthera 
+\(Panthera
+Panthera\)
+ syriacus 
+syriacus,
+syriacus\.
+(?<![a-zA-Z])syriacus 
+\(syriacus
+syriacus\)
+ sylvanus 
+sylvanus,
+sylvanus\.
+(?<![a-zA-Z])sylvanus 
+\(sylvanus
+sylvanus\)
+ tragatus 
+tragatus,
+tragatus\.
+(?<![a-zA-Z])tragatus 
+\(tragatus
+tragatus\)
+ Bradypus 
+Bradypus,
+Bradypus\.
+(?<![a-zA-Z])Bradypus 
+\(Bradypus
+Bradypus\)
+ subcanus 
+subcanus,
+subcanus\.
+(?<![a-zA-Z])subcanus 
+\(subcanus
+subcanus\)
+ antiquus 
+antiquus,
+antiquus\.
+(?<![a-zA-Z])antiquus 
+\(antiquus
+antiquus\)
+ ambiguus 
+ambiguus,
+ambiguus\.
+(?<![a-zA-Z])ambiguus 
+\(ambiguus
+ambiguus\)
+ vulcanus 
+vulcanus,
+vulcanus\.
+(?<![a-zA-Z])vulcanus 
+\(vulcanus
+vulcanus\)
+ vomerina 
+vomerina,
+vomerina\.
+(?<![a-zA-Z])vomerina 
+\(vomerina
+vomerina\)
+ vitulina 
+vitulina,
+vitulina\.
+(?<![a-zA-Z])vitulina 
+\(vitulina
+vitulina\)
+ Alouatta 
+Alouatta,
+Alouatta\.
+(?<![a-zA-Z])Alouatta 
+\(Alouatta
+Alouatta\)
+ Tadarida 
+Tadarida,
+Tadarida\.
+(?<![a-zA-Z])Tadarida 
+\(Tadarida
+Tadarida\)
+ anomalus 
+anomalus,
+anomalus\.
+(?<![a-zA-Z])anomalus 
+\(anomalus
+anomalus\)
+ anthonyi 
+anthonyi,
+anthonyi\.
+(?<![a-zA-Z])anthonyi 
+\(anthonyi
+anthonyi\)
+ viscacia 
+viscacia,
+viscacia\.
+(?<![a-zA-Z])viscacia 
+\(viscacia
+viscacia\)
+ buckleyi 
+buckleyi,
+buckleyi\.
+(?<![a-zA-Z])buckleyi 
+\(buckleyi
+buckleyi\)
+ aquilius 
+aquilius,
+aquilius\.
+(?<![a-zA-Z])aquilius 
+\(aquilius
+aquilius\)
+ villosus 
+villosus,
+villosus\.
+(?<![a-zA-Z])villosus 
+\(villosus
+villosus\)
+ araxenus 
+araxenus,
+araxenus\.
+(?<![a-zA-Z])araxenus 
+\(araxenus
+araxenus\)
+ arequipe 
+arequipe,
+arequipe\.
+(?<![a-zA-Z])arequipe 
+\(arequipe
+arequipe\)
+ Sturnira 
+Sturnira,
+Sturnira\.
+(?<![a-zA-Z])Sturnira 
+\(Sturnira
+Sturnira\)
+ Stenella 
+Stenella,
+Stenella\.
+(?<![a-zA-Z])Stenella 
+\(Stenella
+Stenella\)
+ viatorum 
+viatorum,
+viatorum\.
+(?<![a-zA-Z])viatorum 
+\(viatorum
+viatorum\)
+ verrilli 
+verrilli,
+verrilli\.
+(?<![a-zA-Z])verrilli 
+\(verrilli
+verrilli\)
+ vulgaris 
+vulgaris,
+vulgaris\.
+(?<![a-zA-Z])vulgaris 
+\(vulgaris
+vulgaris\)
+ Tamandua 
+Tamandua,
+Tamandua\.
+(?<![a-zA-Z])Tamandua 
+\(Tamandua
+Tamandua\)
+ vulpinus 
+vulpinus,
+vulpinus\.
+(?<![a-zA-Z])vulpinus 
+\(vulpinus
+vulpinus\)
+ wetmorei 
+wetmorei,
+wetmorei\.
+(?<![a-zA-Z])wetmorei 
+\(wetmorei
+wetmorei\)
+ Trinomys 
+Trinomys,
+Trinomys\.
+(?<![a-zA-Z])Trinomys 
+\(Trinomys
+Trinomys\)
+ Tursiops 
+Tursiops,
+Tursiops\.
+(?<![a-zA-Z])Tursiops 
+\(Tursiops
+Tursiops\)
+ Thylamys 
+Thylamys,
+Thylamys\.
+(?<![a-zA-Z])Thylamys 
+\(Thylamys
+Thylamys\)
+ yungarum 
+yungarum,
+yungarum\.
+(?<![a-zA-Z])yungarum 
+\(yungarum
+yungarum\)
+ Acerodon 
+Acerodon,
+Acerodon\.
+(?<![a-zA-Z])Acerodon 
+\(Acerodon
+Acerodon\)
+ Thomomys 
+Thomomys,
+Thomomys\.
+(?<![a-zA-Z])Thomomys 
+\(Thomomys
+Thomomys\)
+ Acinonyx 
+Acinonyx,
+Acinonyx\.
+(?<![a-zA-Z])Acinonyx 
+\(Acinonyx
+Acinonyx\)
+ yolandae 
+yolandae,
+yolandae\.
+(?<![a-zA-Z])yolandae 
+\(yolandae
+yolandae\)
+ adolphei 
+adolphei,
+adolphei\.
+(?<![a-zA-Z])adolphei 
+\(adolphei
+adolphei\)
+ adversus 
+adversus,
+adversus\.
+(?<![a-zA-Z])adversus 
+\(adversus
+adversus\)
+ aegagrus 
+aegagrus,
+aegagrus\.
+(?<![a-zA-Z])aegagrus 
+\(aegagrus
+aegagrus\)
+ aestuans 
+aestuans,
+aestuans\.
+(?<![a-zA-Z])aestuans 
+\(aestuans
+aestuans\)
+ Ailurops 
+Ailurops,
+Ailurops\.
+(?<![a-zA-Z])Ailurops 
+\(Ailurops
+Ailurops\)
+ willetti 
+willetti,
+willetti\.
+(?<![a-zA-Z])willetti 
+\(willetti
+willetti\)
+ whitelyi 
+whitelyi,
+whitelyi\.
+(?<![a-zA-Z])whitelyi 
+\(whitelyi
+whitelyi\)
+ africana 
+africana,
+africana\.
+(?<![a-zA-Z])africana 
+\(africana
+africana\)
+ whartoni 
+whartoni,
+whartoni\.
+(?<![a-zA-Z])whartoni 
+\(whartoni
+whartoni\)
+ arizonae 
+arizonae,
+arizonae\.
+(?<![a-zA-Z])arizonae 
+\(arizonae
+arizonae\)
+ venustus 
+venustus,
+venustus\.
+(?<![a-zA-Z])venustus 
+\(venustus
+venustus\)
+ Speothos 
+Speothos,
+Speothos\.
+(?<![a-zA-Z])Speothos 
+\(Speothos
+Speothos\)
+ bisulcus 
+bisulcus,
+bisulcus\.
+(?<![a-zA-Z])bisulcus 
+\(bisulcus
+bisulcus\)
+ tucumana 
+tucumana,
+tucumana\.
+(?<![a-zA-Z])tucumana 
+\(tucumana
+tucumana\)
+ Scalopus 
+Scalopus,
+Scalopus\.
+(?<![a-zA-Z])Scalopus 
+\(Scalopus
+Scalopus\)
+ tsuensis 
+tsuensis,
+tsuensis\.
+(?<![a-zA-Z])tsuensis 
+\(tsuensis
+tsuensis\)
+ tschudii 
+tschudii,
+tschudii\.
+(?<![a-zA-Z])tschudii 
+\(tschudii
+tschudii\)
+ boliviae 
+boliviae,
+boliviae\.
+(?<![a-zA-Z])boliviae 
+\(boliviae
+boliviae\)
+ bombinus 
+bombinus,
+bombinus\.
+(?<![a-zA-Z])bombinus 
+\(bombinus
+bombinus\)
+ Saguinus 
+Saguinus,
+Saguinus\.
+(?<![a-zA-Z])Saguinus 
+\(Saguinus
+Saguinus\)
+ bonettoi 
+bonettoi,
+bonettoi\.
+(?<![a-zA-Z])bonettoi 
+\(bonettoi
+bonettoi\)
+ booensis 
+booensis,
+booensis\.
+(?<![a-zA-Z])booensis 
+\(booensis
+booensis\)
+ boosmani 
+boosmani,
+boosmani\.
+(?<![a-zA-Z])boosmani 
+\(boosmani
+boosmani\)
+ boothiae 
+boothiae,
+boothiae\.
+(?<![a-zA-Z])boothiae 
+\(boothiae
+boothiae\)
+ borealis 
+borealis,
+borealis\.
+(?<![a-zA-Z])borealis 
+\(borealis
+borealis\)
+ bowdoini 
+bowdoini,
+bowdoini\.
+(?<![a-zA-Z])bowdoini 
+\(bowdoini
+bowdoini\)
+ brandtii 
+brandtii,
+brandtii\.
+(?<![a-zA-Z])brandtii 
+\(brandtii
+brandtii\)
+ bridgesi 
+bridgesi,
+bridgesi\.
+(?<![a-zA-Z])bridgesi 
+\(bridgesi
+bridgesi\)
+ tricolor 
+tricolor,
+tricolor\.
+(?<![a-zA-Z])tricolor 
+\(tricolor
+tricolor\)
+ brunneus 
+brunneus,
+brunneus\.
+(?<![a-zA-Z])brunneus 
+\(brunneus
+brunneus\)
+ Scapanus 
+Scapanus,
+Scapanus\.
+(?<![a-zA-Z])Scapanus 
+\(Scapanus
+Scapanus\)
+ bendirii 
+bendirii,
+bendirii\.
+(?<![a-zA-Z])bendirii 
+\(bendirii
+bendirii\)
+ auroreus 
+auroreus,
+auroreus\.
+(?<![a-zA-Z])auroreus 
+\(auroreus
+auroreus\)
+ begognae 
+begognae,
+begognae\.
+(?<![a-zA-Z])begognae 
+\(begognae
+begognae\)
+ ausensis 
+ausensis,
+ausensis\.
+(?<![a-zA-Z])ausensis 
+\(ausensis
+ausensis\)
+ Artibeus 
+Artibeus,
+Artibeus\.
+(?<![a-zA-Z])Artibeus 
+\(Artibeus
+Artibeus\)
+ azandica 
+azandica,
+azandica\.
+(?<![a-zA-Z])azandica 
+\(azandica
+azandica\)
+ vaccarum 
+vaccarum,
+vaccarum\.
+(?<![a-zA-Z])vaccarum 
+\(vaccarum
+vaccarum\)
+ utibilis 
+utibilis,
+utibilis\.
+(?<![a-zA-Z])utibilis 
+\(utibilis
+utibilis\)
+ bachmani 
+bachmani,
+bachmani\.
+(?<![a-zA-Z])bachmani 
+\(bachmani
+bachmani\)
+ unicolor 
+unicolor,
+unicolor\.
+(?<![a-zA-Z])unicolor 
+\(unicolor
+unicolor\)
+ bancanus 
+bancanus,
+bancanus\.
+(?<![a-zA-Z])bancanus 
+\(bancanus
+bancanus\)
+ umbrosus 
+umbrosus,
+umbrosus\.
+(?<![a-zA-Z])umbrosus 
+\(umbrosus
+umbrosus\)
+ umbrinus 
+umbrinus,
+umbrinus\.
+(?<![a-zA-Z])umbrinus 
+\(umbrinus
+umbrinus\)
+ barbarus 
+barbarus,
+barbarus\.
+(?<![a-zA-Z])barbarus 
+\(barbarus
+barbarus\)
+ barrerae 
+barrerae,
+barrerae\.
+(?<![a-zA-Z])barrerae 
+\(barrerae
+barrerae\)
+ bartelsi 
+bartelsi,
+bartelsi\.
+(?<![a-zA-Z])bartelsi 
+\(bartelsi
+bartelsi\)
+ umbratus 
+umbratus,
+umbratus\.
+(?<![a-zA-Z])umbratus 
+\(umbratus
+umbratus\)
+ ucayalii 
+ucayalii,
+ucayalii\.
+(?<![a-zA-Z])ucayalii 
+\(ucayalii
+ucayalii\)
+ beccarii 
+beccarii,
+beccarii\.
+(?<![a-zA-Z])beccarii 
+\(beccarii
+beccarii\)
+ bedfordi 
+bedfordi,
+bedfordi\.
+(?<![a-zA-Z])bedfordi 
+\(bedfordi
+bedfordi\)
+ dinellii 
+dinellii,
+dinellii\.
+(?<![a-zA-Z])dinellii 
+\(dinellii
+dinellii\)
+ pacifica 
+pacifica,
+pacifica\.
+(?<![a-zA-Z])pacifica 
+\(pacifica
+pacifica\)
+ striatus 
+striatus,
+striatus\.
+(?<![a-zA-Z])striatus 
+\(striatus
+striatus\)
+ gracilis 
+gracilis,
+gracilis\.
+(?<![a-zA-Z])gracilis 
+\(gracilis
+gracilis\)
+ goldmani 
+goldmani,
+goldmani\.
+(?<![a-zA-Z])goldmani 
+\(goldmani
+goldmani\)
+ Cloeotis 
+Cloeotis,
+Cloeotis\.
+(?<![a-zA-Z])Cloeotis 
+\(Cloeotis
+Cloeotis\)
+ siccatus 
+siccatus,
+siccatus\.
+(?<![a-zA-Z])siccatus 
+\(siccatus
+siccatus\)
+ inaurita 
+inaurita,
+inaurita\.
+(?<![a-zA-Z])inaurita 
+\(inaurita
+inaurita\)
+ saturata 
+saturata,
+saturata\.
+(?<![a-zA-Z])saturata 
+\(saturata
+saturata\)
+ gigantea 
+gigantea,
+gigantea\.
+(?<![a-zA-Z])gigantea 
+\(gigantea
+gigantea\)
+ germanus 
+germanus,
+germanus\.
+(?<![a-zA-Z])germanus 
+\(germanus
+germanus\)
+ Nasuella 
+Nasuella,
+Nasuella\.
+(?<![a-zA-Z])Nasuella 
+\(Nasuella
+Nasuella\)
+ gazellae 
+gazellae,
+gazellae\.
+(?<![a-zA-Z])gazellae 
+\(gazellae
+gazellae\)
+ incautus 
+incautus,
+incautus\.
+(?<![a-zA-Z])incautus 
+\(incautus
+incautus\)
+ sanluisi 
+sanluisi,
+sanluisi\.
+(?<![a-zA-Z])sanluisi 
+\(sanluisi
+sanluisi\)
+ Ctenomys 
+Ctenomys,
+Ctenomys\.
+(?<![a-zA-Z])Ctenomys 
+\(Ctenomys
+Ctenomys\)
+ inflatus 
+inflatus,
+inflatus\.
+(?<![a-zA-Z])inflatus 
+\(inflatus
+inflatus\)
+ infuscus 
+infuscus,
+infuscus\.
+(?<![a-zA-Z])infuscus 
+\(infuscus
+infuscus\)
+ inmollis 
+inmollis,
+inmollis\.
+(?<![a-zA-Z])inmollis 
+\(inmollis
+inmollis\)
+ interior 
+interior,
+interior\.
+(?<![a-zA-Z])interior 
+\(interior
+interior\)
+ garleppi 
+garleppi,
+garleppi\.
+(?<![a-zA-Z])garleppi 
+\(garleppi
+garleppi\)
+ gardneri 
+gardneri,
+gardneri\.
+(?<![a-zA-Z])gardneri 
+\(gardneri
+gardneri\)
+ isabella 
+isabella,
+isabella\.
+(?<![a-zA-Z])isabella 
+\(isabella
+isabella\)
+ sinaloae 
+sinaloae,
+sinaloae\.
+(?<![a-zA-Z])sinaloae 
+\(sinaloae
+sinaloae\)
+ sinensis 
+sinensis,
+sinensis\.
+(?<![a-zA-Z])sinensis 
+\(sinensis
+sinensis\)
+ Necromys 
+Necromys,
+Necromys\.
+(?<![a-zA-Z])Necromys 
+\(Necromys
+Necromys\)
+ fuscipes 
+fuscipes,
+fuscipes\.
+(?<![a-zA-Z])fuscipes 
+\(fuscipes
+fuscipes\)
+ Nectomys 
+Nectomys,
+Nectomys\.
+(?<![a-zA-Z])Nectomys 
+\(Nectomys
+Nectomys\)
+ fuscatus 
+fuscatus,
+fuscatus\.
+(?<![a-zA-Z])fuscatus 
+\(fuscatus
+fuscatus\)
+ sinuosus 
+sinuosus,
+sinuosus\.
+(?<![a-zA-Z])sinuosus 
+\(sinuosus
+sinuosus\)
+ siumatis 
+siumatis,
+siumatis\.
+(?<![a-zA-Z])siumatis 
+\(siumatis
+siumatis\)
+ Noctilio 
+Noctilio,
+Noctilio\.
+(?<![a-zA-Z])Noctilio 
+\(Noctilio
+Noctilio\)
+ fueginus 
+fueginus,
+fueginus\.
+(?<![a-zA-Z])fueginus 
+\(fueginus
+fueginus\)
+ shiptoni 
+shiptoni,
+shiptoni\.
+(?<![a-zA-Z])shiptoni 
+\(shiptoni
+shiptoni\)
+ iheringi 
+iheringi,
+iheringi\.
+(?<![a-zA-Z])iheringi 
+\(iheringi
+iheringi\)
+ Melursus 
+Melursus,
+Melursus\.
+(?<![a-zA-Z])Melursus 
+\(Melursus
+Melursus\)
+ Centurio 
+Centurio,
+Centurio\.
+(?<![a-zA-Z])Centurio 
+\(Centurio
+Centurio\)
+ Abrocoma 
+Abrocoma,
+Abrocoma\.
+(?<![a-zA-Z])Abrocoma 
+\(Abrocoma
+Abrocoma\)
+ scriptus 
+scriptus,
+scriptus\.
+(?<![a-zA-Z])scriptus 
+\(scriptus
+scriptus\)
+ Mormoops 
+Mormoops,
+Mormoops\.
+(?<![a-zA-Z])Mormoops 
+\(Mormoops
+Mormoops\)
+ hercules 
+hercules,
+hercules\.
+(?<![a-zA-Z])hercules 
+\(hercules
+hercules\)
+ hesperus 
+hesperus,
+hesperus\.
+(?<![a-zA-Z])hesperus 
+\(hesperus
+hesperus\)
+ seimundi 
+seimundi,
+seimundi\.
+(?<![a-zA-Z])seimundi 
+\(seimundi
+seimundi\)
+ harrisii 
+harrisii,
+harrisii\.
+(?<![a-zA-Z])harrisii 
+\(harrisii
+harrisii\)
+ handleyi 
+handleyi,
+handleyi\.
+(?<![a-zA-Z])handleyi 
+\(handleyi
+handleyi\)
+ hippurus 
+hippurus,
+hippurus\.
+(?<![a-zA-Z])hippurus 
+\(hippurus
+hippurus\)
+ selkirki 
+selkirki,
+selkirki\.
+(?<![a-zA-Z])selkirki 
+\(selkirki
+selkirki\)
+ guttulus 
+guttulus,
+guttulus\.
+(?<![a-zA-Z])guttulus 
+\(guttulus
+guttulus\)
+ hirsutus 
+hirsutus,
+hirsutus\.
+(?<![a-zA-Z])hirsutus 
+\(hirsutus
+hirsutus\)
+ schmidti 
+schmidti,
+schmidti\.
+(?<![a-zA-Z])schmidti 
+\(schmidti
+schmidti\)
+ guardiae 
+guardiae,
+guardiae\.
+(?<![a-zA-Z])guardiae 
+\(guardiae
+guardiae\)
+ Molossus 
+Molossus,
+Molossus\.
+(?<![a-zA-Z])Molossus 
+\(Molossus
+Molossus\)
+ hispidus 
+hispidus,
+hispidus\.
+(?<![a-zA-Z])hispidus 
+\(hispidus
+hispidus\)
+ guanicoe 
+guanicoe,
+guanicoe\.
+(?<![a-zA-Z])guanicoe 
+\(guanicoe
+guanicoe\)
+ hofmeyri 
+hofmeyri,
+hofmeyri\.
+(?<![a-zA-Z])hofmeyri 
+\(hofmeyri
+hofmeyri\)
+ holzneri 
+holzneri,
+holzneri\.
+(?<![a-zA-Z])holzneri 
+\(holzneri
+holzneri\)
+ hoplites 
+hoplites,
+hoplites\.
+(?<![a-zA-Z])hoplites 
+\(hoplites
+hoplites\)
+ guahybae 
+guahybae,
+guahybae\.
+(?<![a-zA-Z])guahybae 
+\(guahybae
+guahybae\)
+ Mirounga 
+Mirounga,
+Mirounga\.
+(?<![a-zA-Z])Mirounga 
+\(Mirounga
+Mirounga\)
+ serasani 
+serasani,
+serasani\.
+(?<![a-zA-Z])serasani 
+\(serasani
+serasani\)
+ scagliai 
+scagliai,
+scagliai\.
+(?<![a-zA-Z])scagliai 
+\(scagliai
+scagliai\)
+ sericeus 
+sericeus,
+sericeus\.
+(?<![a-zA-Z])sericeus 
+\(sericeus
+sericeus\)
+ Myosorex 
+Myosorex,
+Myosorex\.
+(?<![a-zA-Z])Myosorex 
+\(Myosorex
+Myosorex\)
+ grenadae 
+grenadae,
+grenadae\.
+(?<![a-zA-Z])grenadae 
+\(grenadae
+grenadae\)
+ hybridus 
+hybridus,
+hybridus\.
+(?<![a-zA-Z])hybridus 
+\(hybridus
+hybridus\)
+ grangeri 
+grangeri,
+grangeri\.
+(?<![a-zA-Z])grangeri 
+\(grangeri
+grangeri\)
+ Mephitis 
+Mephitis,
+Mephitis\.
+(?<![a-zA-Z])Mephitis 
+\(Mephitis
+Mephitis\)
+ Neotomys 
+Neotomys,
+Neotomys\.
+(?<![a-zA-Z])Neotomys 
+\(Neotomys
+Neotomys\)
+ fruticus 
+fruticus,
+fruticus\.
+(?<![a-zA-Z])fruticus 
+\(fruticus
+fruticus\)
+ fecundus 
+fecundus,
+fecundus\.
+(?<![a-zA-Z])fecundus 
+\(fecundus
+fecundus\)
+ salarius 
+salarius,
+salarius\.
+(?<![a-zA-Z])salarius 
+\(salarius
+salarius\)
+ farasani 
+farasani,
+farasani\.
+(?<![a-zA-Z])farasani 
+\(farasani
+farasani\)
+ juruanus 
+juruanus,
+juruanus\.
+(?<![a-zA-Z])juruanus 
+\(juruanus
+juruanus\)
+ famatina 
+famatina,
+famatina\.
+(?<![a-zA-Z])famatina 
+\(famatina
+famatina\)
+ extremus 
+extremus,
+extremus\.
+(?<![a-zA-Z])extremus 
+\(extremus
+extremus\)
+ Cynictis 
+Cynictis,
+Cynictis\.
+(?<![a-zA-Z])Cynictis 
+\(Cynictis
+Cynictis\)
+ isthmica 
+isthmica,
+isthmica\.
+(?<![a-zA-Z])isthmica 
+\(isthmica
+isthmica\)
+ spinatus 
+spinatus,
+spinatus\.
+(?<![a-zA-Z])spinatus 
+\(spinatus
+spinatus\)
+ kappleri 
+kappleri,
+kappleri\.
+(?<![a-zA-Z])kappleri 
+\(kappleri
+kappleri\)
+ excelsus 
+excelsus,
+excelsus\.
+(?<![a-zA-Z])excelsus 
+\(excelsus
+excelsus\)
+ everetti 
+everetti,
+everetti\.
+(?<![a-zA-Z])everetti 
+\(everetti
+everetti\)
+ spinosus 
+spinosus,
+spinosus\.
+(?<![a-zA-Z])spinosus 
+\(spinosus
+spinosus\)
+ eutropia 
+eutropia,
+eutropia\.
+(?<![a-zA-Z])eutropia 
+\(eutropia
+eutropia\)
+ europaea 
+europaea,
+europaea\.
+(?<![a-zA-Z])europaea 
+\(europaea
+europaea\)
+ eremicus 
+eremicus,
+eremicus\.
+(?<![a-zA-Z])eremicus 
+\(eremicus
+eremicus\)
+ sabrinus 
+sabrinus,
+sabrinus\.
+(?<![a-zA-Z])sabrinus 
+\(sabrinus
+sabrinus\)
+ emmonsii 
+emmonsii,
+emmonsii\.
+(?<![a-zA-Z])emmonsii 
+\(emmonsii
+emmonsii\)
+ Ochotona 
+Ochotona,
+Ochotona\.
+(?<![a-zA-Z])Ochotona 
+\(Ochotona
+Ochotona\)
+ eloquens 
+eloquens,
+eloquens\.
+(?<![a-zA-Z])eloquens 
+\(eloquens
+eloquens\)
+ elongata 
+elongata,
+elongata\.
+(?<![a-zA-Z])elongata 
+\(elongata
+elongata\)
+ kelloggi 
+kelloggi,
+kelloggi\.
+(?<![a-zA-Z])kelloggi 
+\(kelloggi
+kelloggi\)
+ spurelli 
+spurelli,
+spurelli\.
+(?<![a-zA-Z])spurelli 
+\(spurelli
+spurelli\)
+ edwardsi 
+edwardsi,
+edwardsi\.
+(?<![a-zA-Z])edwardsi 
+\(edwardsi
+edwardsi\)
+ edwardii 
+edwardii,
+edwardii\.
+(?<![a-zA-Z])edwardii 
+\(edwardii
+edwardii\)
+ editorum 
+editorum,
+editorum\.
+(?<![a-zA-Z])editorum 
+\(editorum
+editorum\)
+ stangeri 
+stangeri,
+stangeri\.
+(?<![a-zA-Z])stangeri 
+\(stangeri
+stangeri\)
+ ebriosus 
+ebriosus,
+ebriosus\.
+(?<![a-zA-Z])ebriosus 
+\(ebriosus
+ebriosus\)
+ draculae 
+draculae,
+draculae\.
+(?<![a-zA-Z])draculae 
+\(draculae
+draculae\)
+ dorsalis 
+dorsalis,
+dorsalis\.
+(?<![a-zA-Z])dorsalis 
+\(dorsalis
+dorsalis\)
+ Cyclopes 
+Cyclopes,
+Cyclopes\.
+(?<![a-zA-Z])Cyclopes 
+\(Cyclopes
+Cyclopes\)
+ spilotus 
+spilotus,
+spilotus\.
+(?<![a-zA-Z])spilotus 
+\(spilotus
+spilotus\)
+ soricina 
+soricina,
+soricina\.
+(?<![a-zA-Z])soricina 
+\(soricina
+soricina\)
+ sowerbyi 
+sowerbyi,
+sowerbyi\.
+(?<![a-zA-Z])sowerbyi 
+\(sowerbyi
+sowerbyi\)
+ sobrinus 
+sobrinus,
+sobrinus\.
+(?<![a-zA-Z])sobrinus 
+\(sobrinus
+sobrinus\)
+ istricus 
+istricus,
+istricus\.
+(?<![a-zA-Z])istricus 
+\(istricus
+istricus\)
+ jacobita 
+jacobita,
+jacobita\.
+(?<![a-zA-Z])jacobita 
+\(jacobita
+jacobita\)
+ saltator 
+saltator,
+saltator\.
+(?<![a-zA-Z])saltator 
+\(saltator
+saltator\)
+ johannis 
+johannis,
+johannis\.
+(?<![a-zA-Z])johannis 
+\(johannis
+johannis\)
+ Notiomys 
+Notiomys,
+Notiomys\.
+(?<![a-zA-Z])Notiomys 
+\(Notiomys
+Notiomys\)
+ frantzii 
+frantzii,
+frantzii\.
+(?<![a-zA-Z])frantzii 
+\(frantzii
+frantzii\)
+ sondaica 
+sondaica,
+sondaica\.
+(?<![a-zA-Z])sondaica 
+\(sondaica
+sondaica\)
+ fervidus 
+fervidus,
+fervidus\.
+(?<![a-zA-Z])fervidus 
+\(fervidus
+fervidus\)
+ formosus 
+formosus,
+formosus\.
+(?<![a-zA-Z])formosus 
+\(formosus
+formosus\)
+ sclateri 
+sclateri,
+sclateri\.
+(?<![a-zA-Z])sclateri 
+\(sclateri
+sclateri\)
+ speciosa 
+speciosa,
+speciosa\.
+(?<![a-zA-Z])speciosa 
+\(speciosa
+speciosa\)
+ figginsi 
+figginsi,
+figginsi\.
+(?<![a-zA-Z])figginsi 
+\(figginsi
+figginsi\)
+ spadicea 
+spadicea,
+spadicea\.
+(?<![a-zA-Z])spadicea 
+\(spadicea
+spadicea\)
+ fitzroyi 
+fitzroyi,
+fitzroyi\.
+(?<![a-zA-Z])fitzroyi 
+\(fitzroyi
+fitzroyi\)
+ Nycteris 
+Nycteris,
+Nycteris\.
+(?<![a-zA-Z])Nycteris 
+\(Nycteris
+Nycteris\)
+ findleyi 
+findleyi,
+findleyi\.
+(?<![a-zA-Z])findleyi 
+\(findleyi
+findleyi\)
+ papuana 
+papuana,
+papuana\.
+(?<![a-zA-Z])papuana 
+\(papuana
+papuana\)
+ zonalis 
+zonalis,
+zonalis\.
+(?<![a-zA-Z])zonalis 
+\(zonalis
+zonalis\)
+ salinia 
+salinia,
+salinia\.
+(?<![a-zA-Z])salinia 
+\(salinia
+salinia\)
+ pallens 
+pallens,
+pallens\.
+(?<![a-zA-Z])pallens 
+\(pallens
+pallens\)
+ velatus 
+velatus,
+velatus\.
+(?<![a-zA-Z])velatus 
+\(velatus
+velatus\)
+ zorrino 
+zorrino,
+zorrino\.
+(?<![a-zA-Z])zorrino 
+\(zorrino
+zorrino\)
+ warreni 
+warreni,
+warreni\.
+(?<![a-zA-Z])warreni 
+\(warreni
+warreni\)
+ Dasypus 
+Dasypus,
+Dasypus\.
+(?<![a-zA-Z])Dasypus 
+\(Dasypus
+Dasypus\)
+ pajeros 
+pajeros,
+pajeros\.
+(?<![a-zA-Z])pajeros 
+\(pajeros
+pajeros\)
+ watasei 
+watasei,
+watasei\.
+(?<![a-zA-Z])watasei 
+\(watasei
+watasei\)
+ rutilus 
+rutilus,
+rutilus\.
+(?<![a-zA-Z])rutilus 
+\(rutilus
+rutilus\)
+ sabaeus 
+sabaeus,
+sabaeus\.
+(?<![a-zA-Z])sabaeus 
+\(sabaeus
+sabaeus\)
+ validus 
+validus,
+validus\.
+(?<![a-zA-Z])validus 
+\(validus
+validus\)
+ velifer 
+velifer,
+velifer\.
+(?<![a-zA-Z])velifer 
+\(velifer
+velifer\)
+ paranus 
+paranus,
+paranus\.
+(?<![a-zA-Z])paranus 
+\(paranus
+paranus\)
+ vulcani 
+vulcani,
+vulcani\.
+(?<![a-zA-Z])vulcani 
+\(vulcani
+vulcani\)
+ virgata 
+virgata,
+virgata\.
+(?<![a-zA-Z])virgata 
+\(virgata
+virgata\)
+ zibetha 
+zibetha,
+zibetha\.
+(?<![a-zA-Z])zibetha 
+\(zibetha
+zibetha\)
+ salvini 
+salvini,
+salvini\.
+(?<![a-zA-Z])salvini 
+\(salvini
+salvini\)
+ zenkeri 
+zenkeri,
+zenkeri\.
+(?<![a-zA-Z])zenkeri 
+\(zenkeri
+zenkeri\)
+ ruschii 
+ruschii,
+ruschii\.
+(?<![a-zA-Z])ruschii 
+\(ruschii
+ruschii\)
+ vicugna 
+vicugna,
+vicugna\.
+(?<![a-zA-Z])vicugna 
+\(vicugna
+vicugna\)
+ zamorae 
+zamorae,
+zamorae\.
+(?<![a-zA-Z])zamorae 
+\(zamorae
+zamorae\)
+ schaubi 
+schaubi,
+schaubi\.
+(?<![a-zA-Z])schaubi 
+\(schaubi
+schaubi\)
+ wagneri 
+wagneri,
+wagneri\.
+(?<![a-zA-Z])wagneri 
+\(wagneri
+wagneri\)
+ scalops 
+scalops,
+scalops\.
+(?<![a-zA-Z])scalops 
+\(scalops
+scalops\)
+ pandora 
+pandora,
+pandora\.
+(?<![a-zA-Z])pandora 
+\(pandora
+pandora\)
+ winnyae 
+winnyae,
+winnyae\.
+(?<![a-zA-Z])winnyae 
+\(winnyae
+winnyae\)
+ Aeromys 
+Aeromys,
+Aeromys\.
+(?<![a-zA-Z])Aeromys 
+\(Aeromys
+Aeromys\)
+ vulpina 
+vulpina,
+vulpina\.
+(?<![a-zA-Z])vulpina 
+\(vulpina
+vulpina\)
+ vittata 
+vittata,
+vittata\.
+(?<![a-zA-Z])vittata 
+\(vittata
+vittata\)
+ Bibimys 
+Bibimys,
+Bibimys\.
+(?<![a-zA-Z])Bibimys 
+\(Bibimys
+Bibimys\)
+ Delomys 
+Delomys,
+Delomys\.
+(?<![a-zA-Z])Delomys 
+\(Delomys
+Delomys\)
+ thomasi 
+thomasi,
+thomasi\.
+(?<![a-zA-Z])thomasi 
+\(thomasi
+thomasi\)
+ sotikae 
+sotikae,
+sotikae\.
+(?<![a-zA-Z])sotikae 
+\(sotikae
+sotikae\)
+ Calomys 
+Calomys,
+Calomys\.
+(?<![a-zA-Z])Calomys 
+\(Calomys
+Calomys\)
+ texanus 
+texanus,
+texanus\.
+(?<![a-zA-Z])texanus 
+\(texanus
+texanus\)
+ pusaeus 
+pusaeus,
+pusaeus\.
+(?<![a-zA-Z])pusaeus 
+\(pusaeus
+pusaeus\)
+ sodalis 
+sodalis,
+sodalis\.
+(?<![a-zA-Z])sodalis 
+\(sodalis
+sodalis\)
+ pusilla 
+pusilla,
+pusilla\.
+(?<![a-zA-Z])pusilla 
+\(pusilla
+pusilla\)
+ Cacajao 
+Cacajao,
+Cacajao\.
+(?<![a-zA-Z])Cacajao 
+\(Cacajao
+Cacajao\)
+ tatouay 
+tatouay,
+tatouay\.
+(?<![a-zA-Z])tatouay 
+\(tatouay
+tatouay\)
+ pygmaea 
+pygmaea,
+pygmaea\.
+(?<![a-zA-Z])pygmaea 
+\(pygmaea
+pygmaea\)
+ quichua 
+quichua,
+quichua\.
+(?<![a-zA-Z])quichua 
+\(quichua
+quichua\)
+ peytoni 
+peytoni,
+peytoni\.
+(?<![a-zA-Z])peytoni 
+\(peytoni
+peytoni\)
+ sindica 
+sindica,
+sindica\.
+(?<![a-zA-Z])sindica 
+\(sindica
+sindica\)
+ tolteca 
+tolteca,
+tolteca\.
+(?<![a-zA-Z])tolteca 
+\(tolteca
+tolteca\)
+ reclusa 
+reclusa,
+reclusa\.
+(?<![a-zA-Z])reclusa 
+\(reclusa
+reclusa\)
+ taxinus 
+taxinus,
+taxinus\.
+(?<![a-zA-Z])taxinus 
+\(taxinus
+taxinus\)
+ spelaea 
+spelaea,
+spelaea\.
+(?<![a-zA-Z])spelaea 
+\(spelaea
+spelaea\)
+ peruana 
+peruana,
+peruana\.
+(?<![a-zA-Z])peruana 
+\(peruana
+peruana\)
+ spurcus 
+spurcus,
+spurcus\.
+(?<![a-zA-Z])spurcus 
+\(spurcus
+spurcus\)
+ porteri 
+porteri,
+porteri\.
+(?<![a-zA-Z])porteri 
+\(porteri
+porteri\)
+ stolida 
+stolida,
+stolida\.
+(?<![a-zA-Z])stolida 
+\(stolida
+stolida\)
+ prietae 
+prietae,
+prietae\.
+(?<![a-zA-Z])prietae 
+\(prietae
+prietae\)
+ stenops 
+stenops,
+stenops\.
+(?<![a-zA-Z])stenops 
+\(stenops
+stenops\)
+ proteus 
+proteus,
+proteus\.
+(?<![a-zA-Z])proteus 
+\(proteus
+proteus\)
+ suillus 
+suillus,
+suillus\.
+(?<![a-zA-Z])suillus 
+\(suillus
+suillus\)
+ sponsus 
+sponsus,
+sponsus\.
+(?<![a-zA-Z])sponsus 
+\(sponsus
+sponsus\)
+ spencei 
+spencei,
+spencei\.
+(?<![a-zA-Z])spencei 
+\(spencei
+spencei\)
+ Diaemus 
+Diaemus,
+Diaemus\.
+(?<![a-zA-Z])Diaemus 
+\(Diaemus
+Diaemus\)
+ swarthi 
+swarthi,
+swarthi\.
+(?<![a-zA-Z])swarthi 
+\(swarthi
+swarthi\)
+ sybilla 
+sybilla,
+sybilla\.
+(?<![a-zA-Z])sybilla 
+\(sybilla
+sybilla\)
+ talarum 
+talarum,
+talarum\.
+(?<![a-zA-Z])talarum 
+\(talarum
+talarum\)
+ Caperea 
+Caperea,
+Caperea\.
+(?<![a-zA-Z])Caperea 
+\(Caperea
+Caperea\)
+ pumilus 
+pumilus,
+pumilus\.
+(?<![a-zA-Z])pumilus 
+\(pumilus
+pumilus\)
+ simplex 
+simplex,
+simplex\.
+(?<![a-zA-Z])simplex 
+\(simplex
+simplex\)
+ Elephas 
+Elephas,
+Elephas\.
+(?<![a-zA-Z])Elephas 
+\(Elephas
+Elephas\)
+ rondoni 
+rondoni,
+rondoni\.
+(?<![a-zA-Z])rondoni 
+\(rondoni
+rondoni\)
+ turneri 
+turneri,
+turneri\.
+(?<![a-zA-Z])turneri 
+\(turneri
+turneri\)
+ ringens 
+ringens,
+ringens\.
+(?<![a-zA-Z])ringens 
+\(ringens
+ringens\)
+ tuconax 
+tuconax,
+tuconax\.
+(?<![a-zA-Z])tuconax 
+\(tuconax
+tuconax\)
+ Colobus 
+Colobus,
+Colobus\.
+(?<![a-zA-Z])Colobus 
+\(Colobus
+Colobus\)
+ seorsus 
+seorsus,
+seorsus\.
+(?<![a-zA-Z])seorsus 
+\(seorsus
+seorsus\)
+ senilis 
+senilis,
+senilis\.
+(?<![a-zA-Z])senilis 
+\(senilis
+senilis\)
+ tulduco 
+tulduco,
+tulduco\.
+(?<![a-zA-Z])tulduco 
+\(tulduco
+tulduco\)
+ typicus 
+typicus,
+typicus\.
+(?<![a-zA-Z])typicus 
+\(typicus
+typicus\)
+ Coendou 
+Coendou,
+Coendou\.
+(?<![a-zA-Z])Coendou 
+\(Coendou
+Coendou\)
+ semotus 
+semotus,
+semotus\.
+(?<![a-zA-Z])semotus 
+\(semotus
+semotus\)
+ selousi 
+selousi,
+selousi\.
+(?<![a-zA-Z])selousi 
+\(selousi
+selousi\)
+ selatan 
+selatan,
+selatan\.
+(?<![a-zA-Z])selatan 
+\(selatan
+selatan\)
+ rogersi 
+rogersi,
+rogersi\.
+(?<![a-zA-Z])rogersi 
+\(rogersi
+rogersi\)
+ ursinus 
+ursinus,
+ursinus\.
+(?<![a-zA-Z])ursinus 
+\(ursinus
+ursinus\)
+ urucuma 
+urucuma,
+urucuma\.
+(?<![a-zA-Z])urucuma 
+\(urucuma
+urucuma\)
+ rigidus 
+rigidus,
+rigidus\.
+(?<![a-zA-Z])rigidus 
+\(rigidus
+rigidus\)
+ Coelops 
+Coelops,
+Coelops\.
+(?<![a-zA-Z])Coelops 
+\(Coelops
+Coelops\)
+ simonsi 
+simonsi,
+simonsi\.
+(?<![a-zA-Z])simonsi 
+\(simonsi
+simonsi\)
+ relicta 
+relicta,
+relicta\.
+(?<![a-zA-Z])relicta 
+\(relicta
+relicta\)
+ torresi 
+torresi,
+torresi\.
+(?<![a-zA-Z])torresi 
+\(torresi
+torresi\)
+ persica 
+persica,
+persica\.
+(?<![a-zA-Z])persica 
+\(persica
+persica\)
+ regalis 
+regalis,
+regalis\.
+(?<![a-zA-Z])regalis 
+\(regalis
+regalis\)
+ reginae 
+reginae,
+reginae\.
+(?<![a-zA-Z])reginae 
+\(reginae
+reginae\)
+ reissii 
+reissii,
+reissii\.
+(?<![a-zA-Z])reissii 
+\(reissii
+reissii\)
+ perotis 
+perotis,
+perotis\.
+(?<![a-zA-Z])perotis 
+\(perotis
+perotis\)
+ peronii 
+peronii,
+peronii\.
+(?<![a-zA-Z])peronii 
+\(peronii
+peronii\)
+ Belomys 
+Belomys,
+Belomys\.
+(?<![a-zA-Z])Belomys 
+\(Belomys
+Belomys\)
+ sierrae 
+sierrae,
+sierrae\.
+(?<![a-zA-Z])sierrae 
+\(sierrae
+sierrae\)
+ permira 
+permira,
+permira\.
+(?<![a-zA-Z])permira 
+\(permira
+permira\)
+ retusus 
+retusus,
+retusus\.
+(?<![a-zA-Z])retusus 
+\(retusus
+retusus\)
+ setosus 
+setosus,
+setosus\.
+(?<![a-zA-Z])setosus 
+\(setosus
+setosus\)
+ tristis 
+tristis,
+tristis\.
+(?<![a-zA-Z])tristis 
+\(tristis
+tristis\)
+ rhodius 
+rhodius,
+rhodius\.
+(?<![a-zA-Z])rhodius 
+\(rhodius
+rhodius\)
+ pinetis 
+pinetis,
+pinetis\.
+(?<![a-zA-Z])pinetis 
+\(pinetis
+pinetis\)
+ Tonatia 
+Tonatia,
+Tonatia\.
+(?<![a-zA-Z])Tonatia 
+\(Tonatia
+Tonatia\)
+ krugeri 
+krugeri,
+krugeri\.
+(?<![a-zA-Z])krugeri 
+\(krugeri
+krugeri\)
+ leschae 
+leschae,
+leschae\.
+(?<![a-zA-Z])leschae 
+\(leschae
+leschae\)
+ extimus 
+extimus,
+extimus\.
+(?<![a-zA-Z])extimus 
+\(extimus
+extimus\)
+ angouya 
+angouya,
+angouya\.
+(?<![a-zA-Z])angouya 
+\(angouya
+angouya\)
+ loweryi 
+loweryi,
+loweryi\.
+(?<![a-zA-Z])loweryi 
+\(loweryi
+loweryi\)
+ lorenzi 
+lorenzi,
+lorenzi\.
+(?<![a-zA-Z])lorenzi 
+\(lorenzi
+lorenzi\)
+ antonii 
+antonii,
+antonii\.
+(?<![a-zA-Z])antonii 
+\(antonii
+antonii\)
+ famosus 
+famosus,
+famosus\.
+(?<![a-zA-Z])famosus 
+\(famosus
+famosus\)
+ bellula 
+bellula,
+bellula\.
+(?<![a-zA-Z])bellula 
+\(bellula
+bellula\)
+ libycus 
+libycus,
+libycus\.
+(?<![a-zA-Z])libycus 
+\(libycus
+libycus\)
+ beckeri 
+beckeri,
+beckeri\.
+(?<![a-zA-Z])beckeri 
+\(beckeri
+beckeri\)
+ festina 
+festina,
+festina\.
+(?<![a-zA-Z])festina 
+\(festina
+festina\)
+ fidelis 
+fidelis,
+fidelis\.
+(?<![a-zA-Z])fidelis 
+\(fidelis
+fidelis\)
+ finschi 
+finschi,
+finschi\.
+(?<![a-zA-Z])finschi 
+\(finschi
+finschi\)
+ aquilus 
+aquilus,
+aquilus\.
+(?<![a-zA-Z])aquilus 
+\(aquilus
+aquilus\)
+ lunaris 
+lunaris,
+lunaris\.
+(?<![a-zA-Z])lunaris 
+\(lunaris
+lunaris\)
+ lepidus 
+lepidus,
+lepidus\.
+(?<![a-zA-Z])lepidus 
+\(lepidus
+lepidus\)
+ leonina 
+leonina,
+leonina\.
+(?<![a-zA-Z])leonina 
+\(leonina
+leonina\)
+ florium 
+florium,
+florium\.
+(?<![a-zA-Z])florium 
+\(florium
+florium\)
+ aricana 
+aricana,
+aricana\.
+(?<![a-zA-Z])aricana 
+\(aricana
+aricana\)
+ legatus 
+legatus,
+legatus\.
+(?<![a-zA-Z])legatus 
+\(legatus
+legatus\)
+ Procyon 
+Procyon,
+Procyon\.
+(?<![a-zA-Z])Procyon 
+\(Procyon
+Procyon\)
+ caurina 
+caurina,
+caurina\.
+(?<![a-zA-Z])caurina 
+\(caurina
+caurina\)
+ formosa 
+formosa,
+formosa\.
+(?<![a-zA-Z])formosa 
+\(formosa
+formosa\)
+ Promops 
+Promops,
+Promops\.
+(?<![a-zA-Z])Promops 
+\(Promops
+Promops\)
+ Marmosa 
+Marmosa,
+Marmosa\.
+(?<![a-zA-Z])Marmosa 
+\(Marmosa
+Marmosa\)
+ Marmota 
+Marmota,
+Marmota\.
+(?<![a-zA-Z])Marmota 
+\(Marmota
+Marmota\)
+ fornesi 
+fornesi,
+fornesi\.
+(?<![a-zA-Z])fornesi 
+\(fornesi
+fornesi\)
+ exiguus 
+exiguus,
+exiguus\.
+(?<![a-zA-Z])exiguus 
+\(exiguus
+exiguus\)
+ andinus 
+andinus,
+andinus\.
+(?<![a-zA-Z])andinus 
+\(andinus
+andinus\)
+ maximus 
+maximus,
+maximus\.
+(?<![a-zA-Z])maximus 
+\(maximus
+maximus\)
+ Octomys 
+Octomys,
+Octomys\.
+(?<![a-zA-Z])Octomys 
+\(Octomys
+Octomys\)
+ Tapirus 
+Tapirus,
+Tapirus\.
+(?<![a-zA-Z])Tapirus 
+\(Tapirus
+Tapirus\)
+ matacus 
+matacus,
+matacus\.
+(?<![a-zA-Z])matacus 
+\(matacus
+matacus\)
+ massoia 
+massoia,
+massoia\.
+(?<![a-zA-Z])massoia 
+\(massoia
+massoia\)
+ Oecomys 
+Oecomys,
+Oecomys\.
+(?<![a-zA-Z])Oecomys 
+\(Oecomys
+Oecomys\)
+ domorum 
+domorum,
+domorum\.
+(?<![a-zA-Z])domorum 
+\(domorum
+domorum\)
+ marmota 
+marmota,
+marmota\.
+(?<![a-zA-Z])marmota 
+\(marmota
+marmota\)
+ marinus 
+marinus,
+marinus\.
+(?<![a-zA-Z])marinus 
+\(marinus
+marinus\)
+ albulus 
+albulus,
+albulus\.
+(?<![a-zA-Z])albulus 
+\(albulus
+albulus\)
+ bicolor 
+bicolor,
+bicolor\.
+(?<![a-zA-Z])bicolor 
+\(bicolor
+bicolor\)
+ Sciurus 
+Sciurus,
+Sciurus\.
+(?<![a-zA-Z])Sciurus 
+\(Sciurus
+Sciurus\)
+ edithae 
+edithae,
+edithae\.
+(?<![a-zA-Z])edithae 
+\(edithae
+edithae\)
+ elaphus 
+elaphus,
+elaphus\.
+(?<![a-zA-Z])elaphus 
+\(elaphus
+elaphus\)
+ alpinus 
+alpinus,
+alpinus\.
+(?<![a-zA-Z])alpinus 
+\(alpinus
+alpinus\)
+ luteola 
+luteola,
+luteola\.
+(?<![a-zA-Z])luteola 
+\(luteola
+luteola\)
+ elegans 
+elegans,
+elegans\.
+(?<![a-zA-Z])elegans 
+\(elegans
+elegans\)
+ Octodon 
+Octodon,
+Octodon\.
+(?<![a-zA-Z])Octodon 
+\(Octodon
+Octodon\)
+ Tamiops 
+Tamiops,
+Tamiops\.
+(?<![a-zA-Z])Tamiops 
+\(Tamiops
+Tamiops\)
+ bensoni 
+bensoni,
+bensoni\.
+(?<![a-zA-Z])bensoni 
+\(bensoni
+bensoni\)
+ enudris 
+enudris,
+enudris\.
+(?<![a-zA-Z])enudris 
+\(enudris
+enudris\)
+ Lobodon 
+Lobodon,
+Lobodon\.
+(?<![a-zA-Z])Lobodon 
+\(Lobodon
+Lobodon\)
+ mabirae 
+mabirae,
+mabirae\.
+(?<![a-zA-Z])mabirae 
+\(mabirae
+mabirae\)
+ amoenus 
+amoenus,
+amoenus\.
+(?<![a-zA-Z])amoenus 
+\(amoenus
+amoenus\)
+ bulleri 
+bulleri,
+bulleri\.
+(?<![a-zA-Z])bulleri 
+\(bulleri
+bulleri\)
+ ancilla 
+ancilla,
+ancilla\.
+(?<![a-zA-Z])ancilla 
+\(ancilla
+ancilla\)
+ erigens 
+erigens,
+erigens\.
+(?<![a-zA-Z])erigens 
+\(erigens
+erigens\)
+ lutosus 
+lutosus,
+lutosus\.
+(?<![a-zA-Z])lutosus 
+\(lutosus
+lutosus\)
+ larvata 
+larvata,
+larvata\.
+(?<![a-zA-Z])larvata 
+\(larvata
+larvata\)
+ fossata 
+fossata,
+fossata\.
+(?<![a-zA-Z])fossata 
+\(fossata
+fossata\)
+ lanatus 
+lanatus,
+lanatus\.
+(?<![a-zA-Z])lanatus 
+\(lanatus
+lanatus\)
+ hectori 
+hectori,
+hectori\.
+(?<![a-zA-Z])hectori 
+\(hectori
+hectori\)
+ ignitus 
+ignitus,
+ignitus\.
+(?<![a-zA-Z])ignitus 
+\(ignitus
+ignitus\)
+ ignifer 
+ignifer,
+ignifer\.
+(?<![a-zA-Z])ignifer 
+\(ignifer
+ignifer\)
+ huronax 
+huronax,
+huronax\.
+(?<![a-zA-Z])huronax 
+\(huronax
+huronax\)
+ howelli 
+howelli,
+howelli\.
+(?<![a-zA-Z])howelli 
+\(howelli
+howelli\)
+ auritus 
+auritus,
+auritus\.
+(?<![a-zA-Z])auritus 
+\(auritus
+auritus\)
+ hispida 
+hispida,
+hispida\.
+(?<![a-zA-Z])hispida 
+\(hispida
+hispida\)
+ genetta 
+genetta,
+genetta\.
+(?<![a-zA-Z])genetta 
+\(genetta
+genetta\)
+ bryanti 
+bryanti,
+bryanti\.
+(?<![a-zA-Z])bryanti 
+\(bryanti
+bryanti\)
+ gibsoni 
+gibsoni,
+gibsoni\.
+(?<![a-zA-Z])gibsoni 
+\(gibsoni
+gibsoni\)
+ hespera 
+hespera,
+hespera\.
+(?<![a-zA-Z])hespera 
+\(hespera
+hespera\)
+ helleri 
+helleri,
+helleri\.
+(?<![a-zA-Z])helleri 
+\(helleri
+helleri\)
+ hefneri 
+hefneri,
+hefneri\.
+(?<![a-zA-Z])hefneri 
+\(hefneri
+hefneri\)
+ giraffa 
+giraffa,
+giraffa\.
+(?<![a-zA-Z])giraffa 
+\(giraffa
+giraffa\)
+ arnuxii 
+arnuxii,
+arnuxii\.
+(?<![a-zA-Z])arnuxii 
+\(arnuxii
+arnuxii\)
+ hainana 
+hainana,
+hainana\.
+(?<![a-zA-Z])hainana 
+\(hainana
+hainana\)
+ aztecus 
+aztecus,
+aztecus\.
+(?<![a-zA-Z])aztecus 
+\(aztecus
+aztecus\)
+ bairdii 
+bairdii,
+bairdii\.
+(?<![a-zA-Z])bairdii 
+\(bairdii
+bairdii\)
+ guianae 
+guianae,
+guianae\.
+(?<![a-zA-Z])guianae 
+\(guianae
+guianae\)
+ guereza 
+guereza,
+guereza\.
+(?<![a-zA-Z])guereza 
+\(guereza
+guereza\)
+ baileyi 
+baileyi,
+baileyi\.
+(?<![a-zA-Z])baileyi 
+\(baileyi
+baileyi\)
+ guariba 
+guariba,
+guariba\.
+(?<![a-zA-Z])guariba 
+\(guariba
+guariba\)
+ guarani 
+guarani,
+guarani\.
+(?<![a-zA-Z])guarani 
+\(guarani
+guarani\)
+ griseus 
+griseus,
+griseus\.
+(?<![a-zA-Z])griseus 
+\(griseus
+griseus\)
+ Mustela 
+Mustela,
+Mustela\.
+(?<![a-zA-Z])Mustela 
+\(Mustela
+Mustela\)
+ grimmia 
+grimmia,
+grimmia\.
+(?<![a-zA-Z])grimmia 
+\(grimmia
+grimmia\)
+ grandis 
+grandis,
+grandis\.
+(?<![a-zA-Z])grandis 
+\(grandis
+grandis\)
+ ignotus 
+ignotus,
+ignotus\.
+(?<![a-zA-Z])ignotus 
+\(ignotus
+ignotus\)
+ illutea 
+illutea,
+illutea\.
+(?<![a-zA-Z])illutea 
+\(illutea
+illutea\)
+ gazella 
+gazella,
+gazella\.
+(?<![a-zA-Z])gazella 
+\(gazella
+gazella\)
+ gaumeri 
+gaumeri,
+gaumeri\.
+(?<![a-zA-Z])gaumeri 
+\(gaumeri
+gaumeri\)
+ lagunae 
+lagunae,
+lagunae\.
+(?<![a-zA-Z])lagunae 
+\(lagunae
+lagunae\)
+ lactens 
+lactens,
+lactens\.
+(?<![a-zA-Z])lactens 
+\(lactens
+lactens\)
+ fosteri 
+fosteri,
+fosteri\.
+(?<![a-zA-Z])fosteri 
+\(fosteri
+fosteri\)
+ broccus 
+broccus,
+broccus\.
+(?<![a-zA-Z])broccus 
+\(broccus
+broccus\)
+ frenata 
+frenata,
+frenata\.
+(?<![a-zA-Z])frenata 
+\(frenata
+frenata\)
+ frithii 
+frithii,
+frithii\.
+(?<![a-zA-Z])frithii 
+\(frithii
+frithii\)
+ knighti 
+knighti,
+knighti\.
+(?<![a-zA-Z])knighti 
+\(knighti
+knighti\)
+ astutus 
+astutus,
+astutus\.
+(?<![a-zA-Z])astutus 
+\(astutus
+astutus\)
+ barbara 
+barbara,
+barbara\.
+(?<![a-zA-Z])barbara 
+\(barbara
+barbara\)
+ kanchil 
+kanchil,
+kanchil\.
+(?<![a-zA-Z])kanchil 
+\(kanchil
+kanchil\)
+ kamptzi 
+kamptzi,
+kamptzi\.
+(?<![a-zA-Z])kamptzi 
+\(kamptzi
+kamptzi\)
+ kaguyae 
+kaguyae,
+kaguyae\.
+(?<![a-zA-Z])kaguyae 
+\(kaguyae
+kaguyae\)
+ Natalus 
+Natalus,
+Natalus\.
+(?<![a-zA-Z])Natalus 
+\(Natalus
+Natalus\)
+ jucunda 
+jucunda,
+jucunda\.
+(?<![a-zA-Z])jucunda 
+\(jucunda
+jucunda\)
+ jubatus 
+jubatus,
+jubatus\.
+(?<![a-zA-Z])jubatus 
+\(jubatus
+jubatus\)
+ jelskii 
+jelskii,
+jelskii\.
+(?<![a-zA-Z])jelskii 
+\(jelskii
+jelskii\)
+ jeannei 
+jeannei,
+jeannei\.
+(?<![a-zA-Z])jeannei 
+\(jeannei
+jeannei\)
+ auratus 
+auratus,
+auratus\.
+(?<![a-zA-Z])auratus 
+\(auratus
+auratus\)
+ inserta 
+inserta,
+inserta\.
+(?<![a-zA-Z])inserta 
+\(inserta
+inserta\)
+ balsaci 
+balsaci,
+balsaci\.
+(?<![a-zA-Z])balsaci 
+\(balsaci
+balsaci\)
+ ingrami 
+ingrami,
+ingrami\.
+(?<![a-zA-Z])ingrami 
+\(ingrami
+ingrami\)
+ inermis 
+inermis,
+inermis\.
+(?<![a-zA-Z])inermis 
+\(inermis
+inermis\)
+ carteri 
+carteri,
+carteri\.
+(?<![a-zA-Z])carteri 
+\(carteri
+carteri\)
+ indicus 
+indicus,
+indicus\.
+(?<![a-zA-Z])indicus 
+\(indicus
+indicus\)
+ incarum 
+incarum,
+incarum\.
+(?<![a-zA-Z])incarum 
+\(incarum
+incarum\)
+ dolores 
+dolores,
+dolores\.
+(?<![a-zA-Z])dolores 
+\(dolores
+dolores\)
+ altaica 
+altaica,
+altaica\.
+(?<![a-zA-Z])altaica 
+\(altaica
+altaica\)
+ nasutus 
+nasutus,
+nasutus\.
+(?<![a-zA-Z])nasutus 
+\(nasutus
+nasutus\)
+ civetta 
+civetta,
+civetta\.
+(?<![a-zA-Z])civetta 
+\(civetta
+civetta\)
+ crassus 
+crassus,
+crassus\.
+(?<![a-zA-Z])crassus 
+\(crassus
+crassus\)
+ acaciae 
+acaciae,
+acaciae\.
+(?<![a-zA-Z])acaciae 
+\(acaciae
+acaciae\)
+ actuosa 
+actuosa,
+actuosa\.
+(?<![a-zA-Z])actuosa 
+\(actuosa
+actuosa\)
+ adustus 
+adustus,
+adustus\.
+(?<![a-zA-Z])adustus 
+\(adustus
+adustus\)
+ aeliani 
+aeliani,
+aeliani\.
+(?<![a-zA-Z])aeliani 
+\(aeliani
+aeliani\)
+ namiyei 
+namiyei,
+namiyei\.
+(?<![a-zA-Z])namiyei 
+\(namiyei
+namiyei\)
+ Varecia 
+Varecia,
+Varecia\.
+(?<![a-zA-Z])Varecia 
+\(Varecia
+Varecia\)
+ Giraffa 
+Giraffa,
+Giraffa\.
+(?<![a-zA-Z])Giraffa 
+\(Giraffa
+Giraffa\)
+ callida 
+callida,
+callida\.
+(?<![a-zA-Z])callida 
+\(callida
+callida\)
+ crispus 
+crispus,
+crispus\.
+(?<![a-zA-Z])crispus 
+\(crispus
+crispus\)
+ bocagii 
+bocagii,
+bocagii\.
+(?<![a-zA-Z])bocagii 
+\(bocagii
+bocagii\)
+ dobsoni 
+dobsoni,
+dobsoni\.
+(?<![a-zA-Z])dobsoni 
+\(dobsoni
+dobsoni\)
+ bocagei 
+bocagei,
+bocagei\.
+(?<![a-zA-Z])bocagei 
+\(bocagei
+bocagei\)
+ oncilla 
+oncilla,
+oncilla\.
+(?<![a-zA-Z])oncilla 
+\(oncilla
+oncilla\)
+ Ourebia 
+Ourebia,
+Ourebia\.
+(?<![a-zA-Z])Ourebia 
+\(Ourebia
+Ourebia\)
+ muscula 
+muscula,
+muscula\.
+(?<![a-zA-Z])muscula 
+\(muscula
+muscula\)
+ murrayi 
+murrayi,
+murrayi\.
+(?<![a-zA-Z])murrayi 
+\(murrayi
+murrayi\)
+ murinus 
+murinus,
+murinus\.
+(?<![a-zA-Z])murinus 
+\(murinus
+murinus\)
+ botnica 
+botnica,
+botnica\.
+(?<![a-zA-Z])botnica 
+\(botnica
+botnica\)
+ murelia 
+murelia,
+murelia\.
+(?<![a-zA-Z])murelia 
+\(murelia
+murelia\)
+ cooperi 
+cooperi,
+cooperi\.
+(?<![a-zA-Z])cooperi 
+\(cooperi
+cooperi\)
+ muntjak 
+muntjak,
+muntjak\.
+(?<![a-zA-Z])muntjak 
+\(muntjak
+muntjak\)
+ nasalis 
+nasalis,
+nasalis\.
+(?<![a-zA-Z])nasalis 
+\(nasalis
+nasalis\)
+ natunae 
+natunae,
+natunae\.
+(?<![a-zA-Z])natunae 
+\(natunae
+natunae\)
+ Grampus 
+Grampus,
+Grampus\.
+(?<![a-zA-Z])Grampus 
+\(Grampus
+Grampus\)
+ Zaedyus 
+Zaedyus,
+Zaedyus\.
+(?<![a-zA-Z])Zaedyus 
+\(Zaedyus
+Zaedyus\)
+ Vormela 
+Vormela,
+Vormela\.
+(?<![a-zA-Z])Vormela 
+\(Vormela
+Vormela\)
+ Saimiri 
+Saimiri,
+Saimiri\.
+(?<![a-zA-Z])Saimiri 
+\(Saimiri
+Saimiri\)
+ noctula 
+noctula,
+noctula\.
+(?<![a-zA-Z])noctula 
+\(noctula
+noctula\)
+ Geogale 
+Geogale,
+Geogale\.
+(?<![a-zA-Z])Geogale 
+\(Geogale
+Geogale\)
+ Viverra 
+Viverra,
+Viverra\.
+(?<![a-zA-Z])Viverra 
+\(Viverra
+Viverra\)
+ couchii 
+couchii,
+couchii\.
+(?<![a-zA-Z])couchii 
+\(couchii
+couchii\)
+ nigrita 
+nigrita,
+nigrita\.
+(?<![a-zA-Z])nigrita 
+\(nigrita
+nigrita\)
+ Genetta 
+Genetta,
+Genetta\.
+(?<![a-zA-Z])Genetta 
+\(Genetta
+Genetta\)
+ Gazella 
+Gazella,
+Gazella\.
+(?<![a-zA-Z])Gazella 
+\(Gazella
+Gazella\)
+ Galidia 
+Galidia,
+Galidia\.
+(?<![a-zA-Z])Galidia 
+\(Galidia
+Galidia\)
+ Ziphius 
+Ziphius,
+Ziphius\.
+(?<![a-zA-Z])Ziphius 
+\(Ziphius
+Ziphius\)
+ clymene 
+clymene,
+clymene\.
+(?<![a-zA-Z])clymene 
+\(clymene
+clymene\)
+ couguar 
+couguar,
+couguar\.
+(?<![a-zA-Z])couguar 
+\(couguar
+couguar\)
+ Vicugna 
+Vicugna,
+Vicugna\.
+(?<![a-zA-Z])Vicugna 
+\(Vicugna
+Vicugna\)
+ abditum 
+abditum,
+abditum\.
+(?<![a-zA-Z])abditum 
+\(abditum
+abditum\)
+ nyanzae 
+nyanzae,
+nyanzae\.
+(?<![a-zA-Z])nyanzae 
+\(nyanzae
+nyanzae\)
+ candace 
+candace,
+candace\.
+(?<![a-zA-Z])candace 
+\(candace
+candace\)
+ celeris 
+celeris,
+celeris\.
+(?<![a-zA-Z])celeris 
+\(celeris
+celeris\)
+ nelsoni 
+nelsoni,
+nelsoni\.
+(?<![a-zA-Z])nelsoni 
+\(nelsoni
+nelsoni\)
+ negatus 
+negatus,
+negatus\.
+(?<![a-zA-Z])negatus 
+\(negatus
+negatus\)
+ octavus 
+octavus,
+octavus\.
+(?<![a-zA-Z])octavus 
+\(octavus
+octavus\)
+ abrasus 
+abrasus,
+abrasus\.
+(?<![a-zA-Z])abrasus 
+\(abrasus
+abrasus\)
+ cuvieri 
+cuvieri,
+cuvieri\.
+(?<![a-zA-Z])cuvieri 
+\(cuvieri
+cuvieri\)
+ concava 
+concava,
+concava\.
+(?<![a-zA-Z])concava 
+\(concava
+concava\)
+ orinoci 
+orinoci,
+orinoci\.
+(?<![a-zA-Z])orinoci 
+\(orinoci
+orinoci\)
+ demissa 
+demissa,
+demissa\.
+(?<![a-zA-Z])demissa 
+\(demissa
+demissa\)
+ minutus 
+minutus,
+minutus\.
+(?<![a-zA-Z])minutus 
+\(minutus
+minutus\)
+ blitchi 
+blitchi,
+blitchi\.
+(?<![a-zA-Z])blitchi 
+\(blitchi
+blitchi\)
+ ornatus 
+ornatus,
+ornatus\.
+(?<![a-zA-Z])ornatus 
+\(ornatus
+ornatus\)
+ affinis 
+affinis,
+affinis\.
+(?<![a-zA-Z])affinis 
+\(affinis
+affinis\)
+ minimus 
+minimus,
+minimus\.
+(?<![a-zA-Z])minimus 
+\(minimus
+minimus\)
+ Sapajus 
+Sapajus,
+Sapajus\.
+(?<![a-zA-Z])Sapajus 
+\(Sapajus
+Sapajus\)
+ Hystrix 
+Hystrix,
+Hystrix\.
+(?<![a-zA-Z])Hystrix 
+\(Hystrix
+Hystrix\)
+ osceola 
+osceola,
+osceola\.
+(?<![a-zA-Z])osceola 
+\(osceola
+osceola\)
+ Graomys 
+Graomys,
+Graomys\.
+(?<![a-zA-Z])Graomys 
+\(Graomys
+Graomys\)
+ debilis 
+debilis,
+debilis\.
+(?<![a-zA-Z])debilis 
+\(debilis
+debilis\)
+ milleri 
+milleri,
+milleri\.
+(?<![a-zA-Z])milleri 
+\(milleri
+milleri\)
+ Orcinus 
+Orcinus,
+Orcinus\.
+(?<![a-zA-Z])Orcinus 
+\(Orcinus
+Orcinus\)
+ osgoodi 
+osgoodi,
+osgoodi\.
+(?<![a-zA-Z])osgoodi 
+\(osgoodi
+osgoodi\)
+ Tarsius 
+Tarsius,
+Tarsius\.
+(?<![a-zA-Z])Tarsius 
+\(Tarsius
+Tarsius\)
+ microps 
+microps,
+microps\.
+(?<![a-zA-Z])microps 
+\(microps
+microps\)
+ delphis 
+delphis,
+delphis\.
+(?<![a-zA-Z])delphis 
+\(delphis
+delphis\)
+ blandus 
+blandus,
+blandus\.
+(?<![a-zA-Z])blandus 
+\(blandus
+blandus\)
+ Hylomys 
+Hylomys,
+Hylomys\.
+(?<![a-zA-Z])Hylomys 
+\(Hylomys
+Hylomys\)
+ brendae 
+brendae,
+brendae\.
+(?<![a-zA-Z])brendae 
+\(brendae
+brendae\)
+ Tayassu 
+Tayassu,
+Tayassu\.
+(?<![a-zA-Z])Tayassu 
+\(Tayassu
+Tayassu\)
+ morenoi 
+morenoi,
+morenoi\.
+(?<![a-zA-Z])morenoi 
+\(morenoi
+morenoi\)
+ melania 
+melania,
+melania\.
+(?<![a-zA-Z])melania 
+\(melania
+melania\)
+ diadema 
+diadema,
+diadema\.
+(?<![a-zA-Z])diadema 
+\(diadema
+diadema\)
+ aelleni 
+aelleni,
+aelleni\.
+(?<![a-zA-Z])aelleni 
+\(aelleni
+aelleni\)
+ oxyotus 
+oxyotus,
+oxyotus\.
+(?<![a-zA-Z])oxyotus 
+\(oxyotus
+oxyotus\)
+ morgani 
+morgani,
+morgani\.
+(?<![a-zA-Z])morgani 
+\(morgani
+morgani\)
+ opossum 
+opossum,
+opossum\.
+(?<![a-zA-Z])opossum 
+\(opossum
+opossum\)
+ alacris 
+alacris,
+alacris\.
+(?<![a-zA-Z])alacris 
+\(alacris
+alacris\)
+ Urocyon 
+Urocyon,
+Urocyon\.
+(?<![a-zA-Z])Urocyon 
+\(Urocyon
+Urocyon\)
+ chillae 
+chillae,
+chillae\.
+(?<![a-zA-Z])chillae 
+\(chillae
+chillae\)
+ bunkeri 
+bunkeri,
+bunkeri\.
+(?<![a-zA-Z])bunkeri 
+\(bunkeri
+bunkeri\)
+ cinerea 
+cinerea,
+cinerea\.
+(?<![a-zA-Z])cinerea 
+\(cinerea
+cinerea\)
+ Otocyon 
+Otocyon,
+Otocyon\.
+(?<![a-zA-Z])Otocyon 
+\(Otocyon
+Otocyon\)
+ oregona 
+oregona,
+oregona\.
+(?<![a-zA-Z])oregona 
+\(oregona
+oregona\)
+ blythii 
+blythii,
+blythii\.
+(?<![a-zA-Z])blythii 
+\(blythii
+blythii\)
+ montana 
+montana,
+montana\.
+(?<![a-zA-Z])montana 
+\(montana
+montana\)
+ molaris 
+molaris,
+molaris\.
+(?<![a-zA-Z])molaris 
+\(molaris
+molaris\)
+ Ictonyx 
+Ictonyx,
+Ictonyx\.
+(?<![a-zA-Z])Ictonyx 
+\(Ictonyx
+Ictonyx\)
+ sicula 
+sicula,
+sicula\.
+(?<![a-zA-Z])sicula 
+\(sicula
+sicula\)
+ boscai 
+boscai,
+boscai\.
+(?<![a-zA-Z])boscai 
+\(boscai
+boscai\)
+ sheila 
+sheila,
+sheila\.
+(?<![a-zA-Z])sheila 
+\(sheila
+sheila\)
+ chinga 
+chinga,
+chinga\.
+(?<![a-zA-Z])chinga 
+\(chinga
+chinga\)
+ Pecari 
+Pecari,
+Pecari\.
+(?<![a-zA-Z])Pecari 
+\(Pecari
+Pecari\)
+ bangsi 
+bangsi,
+bangsi\.
+(?<![a-zA-Z])bangsi 
+\(bangsi
+bangsi\)
+ ganana 
+ganana,
+ganana\.
+(?<![a-zA-Z])ganana 
+\(ganana
+ganana\)
+ gelada 
+gelada,
+gelada\.
+(?<![a-zA-Z])gelada 
+\(gelada
+gelada\)
+ brevis 
+brevis,
+brevis\.
+(?<![a-zA-Z])brevis 
+\(brevis
+brevis\)
+ Myotis 
+Myotis,
+Myotis\.
+(?<![a-zA-Z])Myotis 
+\(Myotis
+Myotis\)
+ gorgon 
+gorgon,
+gorgon\.
+(?<![a-zA-Z])gorgon 
+\(gorgon
+gorgon\)
+ coludo 
+coludo,
+coludo\.
+(?<![a-zA-Z])coludo 
+\(coludo
+coludo\)
+ Ratufa 
+Ratufa,
+Ratufa\.
+(?<![a-zA-Z])Ratufa 
+\(Ratufa
+Ratufa\)
+ clarus 
+clarus,
+clarus\.
+(?<![a-zA-Z])clarus 
+\(clarus
+clarus\)
+ siberu 
+siberu,
+siberu\.
+(?<![a-zA-Z])siberu 
+\(siberu
+siberu\)
+ balica 
+balica,
+balica\.
+(?<![a-zA-Z])balica 
+\(balica
+balica\)
+ temama 
+temama,
+temama\.
+(?<![a-zA-Z])temama 
+\(temama
+temama\)
+ bakeri 
+bakeri,
+bakeri\.
+(?<![a-zA-Z])bakeri 
+\(bakeri
+bakeri\)
+ gillii 
+gillii,
+gillii\.
+(?<![a-zA-Z])gillii 
+\(gillii
+gillii\)
+ cirnei 
+cirnei,
+cirnei\.
+(?<![a-zA-Z])cirnei 
+\(cirnei
+cirnei\)
+ bottae 
+bottae,
+bottae\.
+(?<![a-zA-Z])bottae 
+\(bottae
+bottae\)
+ dohrni 
+dohrni,
+dohrni\.
+(?<![a-zA-Z])dohrni 
+\(dohrni
+dohrni\)
+ bondae 
+bondae,
+bondae\.
+(?<![a-zA-Z])bondae 
+\(bondae
+bondae\)
+ felina 
+felina,
+felina\.
+(?<![a-zA-Z])felina 
+\(felina
+felina\)
+ sphinx 
+sphinx,
+sphinx\.
+(?<![a-zA-Z])sphinx 
+\(sphinx
+sphinx\)
+ fallax 
+fallax,
+fallax\.
+(?<![a-zA-Z])fallax 
+\(fallax
+fallax\)
+ cayana 
+cayana,
+cayana\.
+(?<![a-zA-Z])cayana 
+\(cayana
+cayana\)
+ cyanus 
+cyanus,
+cyanus\.
+(?<![a-zA-Z])cyanus 
+\(cyanus
+cyanus\)
+ evotis 
+evotis,
+evotis\.
+(?<![a-zA-Z])evotis 
+\(evotis
+evotis\)
+ evansi 
+evansi,
+evansi\.
+(?<![a-zA-Z])evansi 
+\(evansi
+evansi\)
+ europs 
+europs,
+europs\.
+(?<![a-zA-Z])europs 
+\(europs
+europs\)
+ Otaria 
+Otaria,
+Otaria\.
+(?<![a-zA-Z])Otaria 
+\(Otaria
+Otaria\)
+ spixii 
+spixii,
+spixii\.
+(?<![a-zA-Z])spixii 
+\(spixii
+spixii\)
+ Cervus 
+Cervus,
+Cervus\.
+(?<![a-zA-Z])Cervus 
+\(Cervus
+Cervus\)
+ davisi 
+davisi,
+davisi\.
+(?<![a-zA-Z])davisi 
+\(davisi
+davisi\)
+ elucus 
+elucus,
+elucus\.
+(?<![a-zA-Z])elucus 
+\(elucus
+elucus\)
+ Ateles 
+Ateles,
+Ateles\.
+(?<![a-zA-Z])Ateles 
+\(Ateles
+Ateles\)
+ Atilax 
+Atilax,
+Atilax\.
+(?<![a-zA-Z])Atilax 
+\(Atilax
+Atilax\)
+ brucei 
+brucei,
+brucei\.
+(?<![a-zA-Z])brucei 
+\(brucei
+brucei\)
+ bidens 
+bidens,
+bidens\.
+(?<![a-zA-Z])bidens 
+\(bidens
+bidens\)
+ downsi 
+downsi,
+downsi\.
+(?<![a-zA-Z])downsi 
+\(downsi
+downsi\)
+ dorcas 
+dorcas,
+dorcas\.
+(?<![a-zA-Z])dorcas 
+\(dorcas
+dorcas\)
+ dispar 
+dispar,
+dispar\.
+(?<![a-zA-Z])dispar 
+\(dispar
+dispar\)
+ dixoni 
+dixoni,
+dixoni\.
+(?<![a-zA-Z])dixoni 
+\(dixoni
+dixoni\)
+ blanca 
+blanca,
+blanca\.
+(?<![a-zA-Z])blanca 
+\(blanca
+blanca\)
+ spekii 
+spekii,
+spekii\.
+(?<![a-zA-Z])spekii 
+\(spekii
+spekii\)
+ bruchi 
+bruchi,
+bruchi\.
+(?<![a-zA-Z])bruchi 
+\(bruchi
+bruchi\)
+ browni 
+browni,
+browni\.
+(?<![a-zA-Z])browni 
+\(browni
+browni\)
+ cuscus 
+cuscus,
+cuscus\.
+(?<![a-zA-Z])cuscus 
+\(cuscus
+cuscus\)
+ fuscus 
+fuscus,
+fuscus\.
+(?<![a-zA-Z])fuscus 
+\(fuscus
+fuscus\)
+ tajacu 
+tajacu,
+tajacu\.
+(?<![a-zA-Z])tajacu 
+\(tajacu
+tajacu\)
+ boehmi 
+boehmi,
+boehmi\.
+(?<![a-zA-Z])boehmi 
+\(boehmi
+boehmi\)
+ banksi 
+banksi,
+banksi\.
+(?<![a-zA-Z])banksi 
+\(banksi
+banksi\)
+ fumeus 
+fumeus,
+fumeus\.
+(?<![a-zA-Z])fumeus 
+\(fumeus
+fumeus\)
+ fulvus 
+fulvus,
+fulvus\.
+(?<![a-zA-Z])fulvus 
+\(fulvus
+fulvus\)
+ smithi 
+smithi,
+smithi\.
+(?<![a-zA-Z])smithi 
+\(smithi
+smithi\)
+ fronto 
+fronto,
+fronto\.
+(?<![a-zA-Z])fronto 
+\(fronto
+fronto\)
+ sylvia 
+sylvia,
+sylvia\.
+(?<![a-zA-Z])sylvia 
+\(sylvia
+sylvia\)
+ frater 
+frater,
+frater\.
+(?<![a-zA-Z])frater 
+\(frater
+frater\)
+ coypus 
+coypus,
+coypus\.
+(?<![a-zA-Z])coypus 
+\(coypus
+coypus\)
+ fossor 
+fossor,
+fossor\.
+(?<![a-zA-Z])fossor 
+\(fossor
+fossor\)
+ crassa 
+crassa,
+crassa\.
+(?<![a-zA-Z])crassa 
+\(crassa
+crassa\)
+ sonora 
+sonora,
+sonora\.
+(?<![a-zA-Z])sonora 
+\(sonora
+sonora\)
+ fortis 
+fortis,
+fortis\.
+(?<![a-zA-Z])fortis 
+\(fortis
+fortis\)
+ Paguma 
+Paguma,
+Paguma\.
+(?<![a-zA-Z])Paguma 
+\(Paguma
+Paguma\)
+ beatus 
+beatus,
+beatus\.
+(?<![a-zA-Z])beatus 
+\(beatus
+beatus\)
+ flavus 
+flavus,
+flavus\.
+(?<![a-zA-Z])flavus 
+\(flavus
+flavus\)
+ spadix 
+spadix,
+spadix\.
+(?<![a-zA-Z])spadix 
+\(spadix
+spadix\)
+ spalax 
+spalax,
+spalax\.
+(?<![a-zA-Z])spalax 
+\(spalax
+spalax\)
+ spasma 
+spasma,
+spasma\.
+(?<![a-zA-Z])spasma 
+\(spasma
+spasma\)
+ gratus 
+gratus,
+gratus\.
+(?<![a-zA-Z])gratus 
+\(gratus
+gratus\)
+ calvus 
+calvus,
+calvus\.
+(?<![a-zA-Z])calvus 
+\(calvus
+calvus\)
+ serval 
+serval,
+serval\.
+(?<![a-zA-Z])serval 
+\(serval
+serval\)
+ wiedii 
+wiedii,
+wiedii\.
+(?<![a-zA-Z])wiedii 
+\(wiedii
+wiedii\)
+ piperi 
+piperi,
+piperi\.
+(?<![a-zA-Z])piperi 
+\(piperi
+piperi\)
+ alacer 
+alacer,
+alacer\.
+(?<![a-zA-Z])alacer 
+\(alacer
+alacer\)
+ whitei 
+whitei,
+whitei\.
+(?<![a-zA-Z])whitei 
+\(whitei
+whitei\)
+ pictus 
+pictus,
+pictus\.
+(?<![a-zA-Z])pictus 
+\(pictus
+pictus\)
+ pichiy 
+pichiy,
+pichiy\.
+(?<![a-zA-Z])pichiy 
+\(pichiy
+pichiy\)
+ whytei 
+whytei,
+whytei\.
+(?<![a-zA-Z])whytei 
+\(whytei
+whytei\)
+ wingei 
+wingei,
+wingei\.
+(?<![a-zA-Z])wingei 
+\(wingei
+wingei\)
+ medium 
+medium,
+medium\.
+(?<![a-zA-Z])medium 
+\(medium
+medium\)
+ aereus 
+aereus,
+aereus\.
+(?<![a-zA-Z])aereus 
+\(aereus
+aereus\)
+ mordax 
+mordax,
+mordax\.
+(?<![a-zA-Z])mordax 
+\(mordax
+mordax\)
+ moreni 
+moreni,
+moreni\.
+(?<![a-zA-Z])moreni 
+\(moreni
+moreni\)
+ peshwa 
+peshwa,
+peshwa\.
+(?<![a-zA-Z])peshwa 
+\(peshwa
+peshwa\)
+ munoai 
+munoai,
+munoai\.
+(?<![a-zA-Z])munoai 
+\(munoai
+munoai\)
+ murina 
+murina,
+murina\.
+(?<![a-zA-Z])murina 
+\(murina
+murina\)
+ medius 
+medius,
+medius\.
+(?<![a-zA-Z])medius 
+\(medius
+medius\)
+ medemi 
+medemi,
+medemi\.
+(?<![a-zA-Z])medemi 
+\(medemi
+medemi\)
+ maenas 
+maenas,
+maenas\.
+(?<![a-zA-Z])maenas 
+\(maenas
+maenas\)
+ wellsi 
+wellsi,
+wellsi\.
+(?<![a-zA-Z])wellsi 
+\(wellsi
+wellsi\)
+ pullus 
+pullus,
+pullus\.
+(?<![a-zA-Z])pullus 
+\(pullus
+pullus\)
+ Akodon 
+Akodon,
+Akodon\.
+(?<![a-zA-Z])Akodon 
+\(Akodon
+Akodon\)
+ pugnax 
+pugnax,
+pugnax\.
+(?<![a-zA-Z])pugnax 
+\(pugnax
+pugnax\)
+ caraya 
+caraya,
+caraya\.
+(?<![a-zA-Z])caraya 
+\(caraya
+caraya\)
+ weberi 
+weberi,
+weberi\.
+(?<![a-zA-Z])weberi 
+\(weberi
+weberi\)
+ manium 
+manium,
+manium\.
+(?<![a-zA-Z])manium 
+\(manium
+manium\)
+ maresi 
+maresi,
+maresi\.
+(?<![a-zA-Z])maresi 
+\(maresi
+maresi\)
+ polopi 
+polopi,
+polopi\.
+(?<![a-zA-Z])polopi 
+\(polopi
+polopi\)
+ marica 
+marica,
+marica\.
+(?<![a-zA-Z])marica 
+\(marica
+marica\)
+ primus 
+primus,
+primus\.
+(?<![a-zA-Z])primus 
+\(primus
+primus\)
+ martes 
+martes,
+martes\.
+(?<![a-zA-Z])martes 
+\(martes
+martes\)
+ albida 
+albida,
+albida\.
+(?<![a-zA-Z])albida 
+\(albida
+albida\)
+ mazama 
+mazama,
+mazama\.
+(?<![a-zA-Z])mazama 
+\(mazama
+mazama\)
+ mazzai 
+mazzai,
+mazzai\.
+(?<![a-zA-Z])mazzai 
+\(mazzai
+mazzai\)
+ mutica 
+mutica,
+mutica\.
+(?<![a-zA-Z])mutica 
+\(mutica
+mutica\)
+ pernox 
+pernox,
+pernox\.
+(?<![a-zA-Z])pernox 
+\(pernox
+pernox\)
+ myotis 
+myotis,
+myotis\.
+(?<![a-zA-Z])myotis 
+\(myotis
+myotis\)
+ pamana 
+pamana,
+pamana\.
+(?<![a-zA-Z])pamana 
+\(pamana
+pamana\)
+ nyctor 
+nyctor,
+nyctor\.
+(?<![a-zA-Z])nyctor 
+\(nyctor
+nyctor\)
+ ognevi 
+ognevi,
+ognevi\.
+(?<![a-zA-Z])ognevi 
+\(ognevi
+ognevi\)
+ olrogi 
+olrogi,
+olrogi\.
+(?<![a-zA-Z])olrogi 
+\(olrogi
+olrogi\)
+ Eumops 
+Eumops,
+Eumops\.
+(?<![a-zA-Z])Eumops 
+\(Eumops
+Eumops\)
+ opimus 
+opimus,
+opimus\.
+(?<![a-zA-Z])opimus 
+\(opimus
+opimus\)
+ Galago 
+Galago,
+Galago\.
+(?<![a-zA-Z])Galago 
+\(Galago
+Galago\)
+ oratus 
+oratus,
+oratus\.
+(?<![a-zA-Z])oratus 
+\(oratus
+oratus\)
+ burrus 
+burrus,
+burrus\.
+(?<![a-zA-Z])burrus 
+\(burrus
+burrus\)
+ Tupaia 
+Tupaia,
+Tupaia\.
+(?<![a-zA-Z])Tupaia 
+\(Tupaia
+Tupaia\)
+ oriana 
+oriana,
+oriana\.
+(?<![a-zA-Z])oriana 
+\(oriana
+oriana\)
+ osiris 
+osiris,
+osiris\.
+(?<![a-zA-Z])osiris 
+\(osiris
+osiris\)
+ Feresa 
+Feresa,
+Feresa\.
+(?<![a-zA-Z])Feresa 
+\(Feresa
+Feresa\)
+ ourebi 
+ourebi,
+ourebi\.
+(?<![a-zA-Z])ourebi 
+\(ourebi
+ourebi\)
+ oxalis 
+oxalis,
+oxalis\.
+(?<![a-zA-Z])oxalis 
+\(oxalis
+oxalis\)
+ pardus 
+pardus,
+pardus\.
+(?<![a-zA-Z])pardus 
+\(pardus
+pardus\)
+ zamora 
+zamora,
+zamora\.
+(?<![a-zA-Z])zamora 
+\(zamora
+zamora\)
+ noblei 
+noblei,
+noblei\.
+(?<![a-zA-Z])noblei 
+\(noblei
+noblei\)
+ nirnai 
+nirnai,
+nirnai\.
+(?<![a-zA-Z])nirnai 
+\(nirnai
+nirnai\)
+ nippon 
+nippon,
+nippon\.
+(?<![a-zA-Z])nippon 
+\(nippon
+nippon\)
+ parvus 
+parvus,
+parvus\.
+(?<![a-zA-Z])parvus 
+\(parvus
+parvus\)
+ Vulpes 
+Vulpes,
+Vulpes\.
+(?<![a-zA-Z])Vulpes 
+\(Vulpes
+Vulpes\)
+ torvus 
+torvus,
+torvus\.
+(?<![a-zA-Z])torvus 
+\(torvus
+torvus\)
+ patira 
+patira,
+patira\.
+(?<![a-zA-Z])patira 
+\(patira
+patira\)
+ Geomys 
+Geomys,
+Geomys\.
+(?<![a-zA-Z])Geomys 
+\(Geomys
+Geomys\)
+ paulus 
+paulus,
+paulus\.
+(?<![a-zA-Z])paulus 
+\(paulus
+paulus\)
+ abboti 
+abboti,
+abboti\.
+(?<![a-zA-Z])abboti 
+\(abboti
+abboti\)
+ pecari 
+pecari,
+pecari\.
+(?<![a-zA-Z])pecari 
+\(pecari
+pecari\)
+ Geoxus 
+Geoxus,
+Geoxus\.
+(?<![a-zA-Z])Geoxus 
+\(Geoxus
+Geoxus\)
+ negans 
+negans,
+negans\.
+(?<![a-zA-Z])negans 
+\(negans
+negans\)
+ youngi 
+youngi,
+youngi\.
+(?<![a-zA-Z])youngi 
+\(youngi
+youngi\)
+ narica 
+narica,
+narica\.
+(?<![a-zA-Z])narica 
+\(narica
+narica\)
+ alleni 
+alleni,
+alleni\.
+(?<![a-zA-Z])alleni 
+\(alleni
+alleni\)
+ pundti 
+pundti,
+pundti\.
+(?<![a-zA-Z])pundti 
+\(pundti
+pundti\)
+ greeni 
+greeni,
+greeni\.
+(?<![a-zA-Z])greeni 
+\(greeni
+greeni\)
+ keaysi 
+keaysi,
+keaysi\.
+(?<![a-zA-Z])keaysi 
+\(keaysi
+keaysi\)
+ innesi 
+innesi,
+innesi\.
+(?<![a-zA-Z])innesi 
+\(innesi
+innesi\)
+ auceps 
+auceps,
+auceps\.
+(?<![a-zA-Z])auceps 
+\(auceps
+auceps\)
+ varius 
+varius,
+varius\.
+(?<![a-zA-Z])varius 
+\(varius
+varius\)
+ topali 
+topali,
+topali\.
+(?<![a-zA-Z])topali 
+\(topali
+topali\)
+ sacana 
+sacana,
+sacana\.
+(?<![a-zA-Z])sacana 
+\(sacana
+sacana\)
+ kanuri 
+kanuri,
+kanuri\.
+(?<![a-zA-Z])kanuri 
+\(kanuri
+kanuri\)
+ sabana 
+sabana,
+sabana\.
+(?<![a-zA-Z])sabana 
+\(sabana
+sabana\)
+ indica 
+indica,
+indica\.
+(?<![a-zA-Z])indica 
+\(indica
+indica\)
+ atrata 
+atrata,
+atrata\.
+(?<![a-zA-Z])atrata 
+\(atrata
+atrata\)
+ Mazama 
+Mazama,
+Mazama\.
+(?<![a-zA-Z])Mazama 
+\(Mazama
+Mazama\)
+ kotiya 
+kotiya,
+kotiya\.
+(?<![a-zA-Z])kotiya 
+\(kotiya
+kotiya\)
+ kuhlii 
+kuhlii,
+kuhlii\.
+(?<![a-zA-Z])kuhlii 
+\(kuhlii
+kuhlii\)
+ asinus 
+asinus,
+asinus\.
+(?<![a-zA-Z])asinus 
+\(asinus
+asinus\)
+ artata 
+artata,
+artata\.
+(?<![a-zA-Z])artata 
+\(artata
+artata\)
+ aureus 
+aureus,
+aureus\.
+(?<![a-zA-Z])aureus 
+\(aureus
+aureus\)
+ aurita 
+aurita,
+aurita\.
+(?<![a-zA-Z])aurita 
+\(aurita
+aurita\)
+ Tamias 
+Tamias,
+Tamias\.
+(?<![a-zA-Z])Tamias 
+\(Tamias
+Tamias\)
+ azarae 
+azarae,
+azarae\.
+(?<![a-zA-Z])azarae 
+\(azarae
+azarae\)
+ badius 
+badius,
+badius\.
+(?<![a-zA-Z])badius 
+\(badius
+badius\)
+ gualea 
+gualea,
+gualea\.
+(?<![a-zA-Z])gualea 
+\(gualea
+gualea\)
+ guanta 
+guanta,
+guanta\.
+(?<![a-zA-Z])guanta 
+\(guanta
+guanta\)
+ baberi 
+baberi,
+baberi\.
+(?<![a-zA-Z])baberi 
+\(baberi
+baberi\)
+ guigna 
+guigna,
+guigna\.
+(?<![a-zA-Z])guigna 
+\(guigna
+guigna\)
+ Murina 
+Murina,
+Murina\.
+(?<![a-zA-Z])Murina 
+\(Murina
+Murina\)
+ scrofa 
+scrofa,
+scrofa\.
+(?<![a-zA-Z])scrofa 
+\(scrofa
+scrofa\)
+ budini 
+budini,
+budini\.
+(?<![a-zA-Z])budini 
+\(budini
+budini\)
+ herrei 
+herrei,
+herrei\.
+(?<![a-zA-Z])herrei 
+\(herrei
+herrei\)
+ valens 
+valens,
+valens\.
+(?<![a-zA-Z])valens 
+\(valens
+valens\)
+ hircus 
+hircus,
+hircus\.
+(?<![a-zA-Z])hircus 
+\(hircus
+hircus\)
+ hirtus 
+hirtus,
+hirtus\.
+(?<![a-zA-Z])hirtus 
+\(hirtus
+hirtus\)
+ Mogera 
+Mogera,
+Mogera\.
+(?<![a-zA-Z])Mogera 
+\(Mogera
+Mogera\)
+ caucae 
+caucae,
+caucae\.
+(?<![a-zA-Z])caucae 
+\(caucae
+caucae\)
+ Martes 
+Martes,
+Martes\.
+(?<![a-zA-Z])Martes 
+\(Martes
+Martes\)
+ lanosa 
+lanosa,
+lanosa\.
+(?<![a-zA-Z])lanosa 
+\(lanosa
+lanosa\)
+ caroli 
+caroli,
+caroli\.
+(?<![a-zA-Z])caroli 
+\(caroli
+caroli\)
+ luctus 
+luctus,
+luctus\.
+(?<![a-zA-Z])luctus 
+\(luctus
+luctus\)
+ lipara 
+lipara,
+lipara\.
+(?<![a-zA-Z])lipara 
+\(lipara
+lipara\)
+ anthus 
+anthus,
+anthus\.
+(?<![a-zA-Z])anthus 
+\(anthus
+anthus\)
+ anitae 
+anitae,
+anitae\.
+(?<![a-zA-Z])anitae 
+\(anitae
+anitae\)
+ angeli 
+angeli,
+angeli\.
+(?<![a-zA-Z])angeli 
+\(angeli
+angeli\)
+ luciae 
+luciae,
+luciae\.
+(?<![a-zA-Z])luciae 
+\(luciae
+luciae\)
+ lucida 
+lucida,
+lucida\.
+(?<![a-zA-Z])lucida 
+\(lucida
+lucida\)
+ volans 
+volans,
+volans\.
+(?<![a-zA-Z])volans 
+\(volans
+volans\)
+ lasiae 
+lasiae,
+lasiae\.
+(?<![a-zA-Z])lasiae 
+\(lasiae
+lasiae\)
+ Lontra 
+Lontra,
+Lontra\.
+(?<![a-zA-Z])Lontra 
+\(Lontra
+Lontra\)
+ andina 
+andina,
+andina\.
+(?<![a-zA-Z])andina 
+\(andina
+andina\)
+ amotus 
+amotus,
+amotus\.
+(?<![a-zA-Z])amotus 
+\(amotus
+amotus\)
+ tigris 
+tigris,
+tigris\.
+(?<![a-zA-Z])tigris 
+\(tigris
+tigris\)
+ Liomys 
+Liomys,
+Liomys\.
+(?<![a-zA-Z])Liomys 
+\(Liomys
+Liomys\)
+ vulpes 
+vulpes,
+vulpes\.
+(?<![a-zA-Z])vulpes 
+\(vulpes
+vulpes\)
+ riabus 
+riabus,
+riabus\.
+(?<![a-zA-Z])riabus 
+\(riabus
+riabus\)
+ apache 
+apache,
+apache\.
+(?<![a-zA-Z])apache 
+\(apache
+apache\)
+ lilloi 
+lilloi,
+lilloi\.
+(?<![a-zA-Z])lilloi 
+\(lilloi
+lilloi\)
+ lilium 
+lilium,
+lilium\.
+(?<![a-zA-Z])lilium 
+\(lilium
+lilium\)
+ libyca 
+libyca,
+libyca\.
+(?<![a-zA-Z])libyca 
+\(libyca
+libyca\)
+ apella 
+apella,
+apella\.
+(?<![a-zA-Z])apella 
+\(apella
+apella\)
+ Macaca 
+Macaca,
+Macaca\.
+(?<![a-zA-Z])Macaca 
+\(Macaca
+Macaca\)
+ aperea 
+aperea,
+aperea\.
+(?<![a-zA-Z])aperea 
+\(aperea
+aperea\)
+ lervia 
+lervia,
+lervia\.
+(?<![a-zA-Z])lervia 
+\(lervia
+lervia\)
+ arenae 
+arenae,
+arenae\.
+(?<![a-zA-Z])arenae 
+\(arenae
+arenae\)
+ vigens 
+vigens,
+vigens\.
+(?<![a-zA-Z])vigens 
+\(vigens
+vigens\)
+ rosida 
+rosida,
+rosida\.
+(?<![a-zA-Z])rosida 
+\(rosida
+rosida\)
+ Suncus 
+Suncus,
+Suncus\.
+(?<![a-zA-Z])Suncus 
+\(Suncus
+Suncus\)
+ rossii 
+rossii,
+rossii\.
+(?<![a-zA-Z])rossii 
+\(rossii
+rossii\)
+ lavali 
+lavali,
+lavali\.
+(?<![a-zA-Z])lavali 
+\(lavali
+lavali\)
+ laucha 
+laucha,
+laucha\.
+(?<![a-zA-Z])laucha 
+\(laucha
+laucha\)
+ Anoura 
+Anoura,
+Anoura\.
+(?<![a-zA-Z])Anoura 
+\(Anoura
+Anoura\)
+ tersus 
+tersus,
+tersus\.
+(?<![a-zA-Z])tersus 
+\(tersus
+tersus\)
+ simus 
+simus,
+simus\.
+(?<![a-zA-Z])simus 
+\(simus
+simus\)
+ Saiga 
+Saiga,
+Saiga\.
+(?<![a-zA-Z])Saiga 
+\(Saiga
+Saiga\)
+ truei 
+truei,
+truei\.
+(?<![a-zA-Z])truei 
+\(truei
+truei\)
+ Ursus 
+Ursus,
+Ursus\.
+(?<![a-zA-Z])Ursus 
+\(Ursus
+Ursus\)
+ zetta 
+zetta,
+zetta\.
+(?<![a-zA-Z])zetta 
+\(zetta
+zetta\)
+ Xerus 
+Xerus,
+Xerus\.
+(?<![a-zA-Z])Xerus 
+\(Xerus
+Xerus\)
+ woodi 
+woodi,
+woodi\.
+(?<![a-zA-Z])woodi 
+\(woodi
+woodi\)
+ wolfi 
+wolfi,
+wolfi\.
+(?<![a-zA-Z])wolfi 
+\(wolfi
+wolfi\)
+ wayku 
+wayku,
+wayku\.
+(?<![a-zA-Z])wayku 
+\(wayku
+wayku\)
+ Talpa 
+Talpa,
+Talpa\.
+(?<![a-zA-Z])Talpa 
+\(Talpa
+Talpa\)
+ Alces 
+Alces,
+Alces\.
+(?<![a-zA-Z])Alces 
+\(Alces
+Alces\)
+ ariel 
+ariel,
+ariel\.
+(?<![a-zA-Z])ariel 
+\(ariel
+ariel\)
+ aries 
+aries,
+aries\.
+(?<![a-zA-Z])aries 
+\(aries
+aries\)
+ Sorex 
+Sorex,
+Sorex\.
+(?<![a-zA-Z])Sorex 
+\(Sorex
+Sorex\)
+ Aonyx 
+Aonyx,
+Aonyx\.
+(?<![a-zA-Z])Aonyx 
+\(Aonyx
+Aonyx\)
+ Aotus 
+Aotus,
+Aotus\.
+(?<![a-zA-Z])Aotus 
+\(Aotus
+Aotus\)
+ avius 
+avius,
+avius\.
+(?<![a-zA-Z])avius 
+\(avius
+avius\)
+ bassi 
+bassi,
+bassi\.
+(?<![a-zA-Z])bassi 
+\(bassi
+bassi\)
+ uenoi 
+uenoi,
+uenoi\.
+(?<![a-zA-Z])uenoi 
+\(uenoi
+uenoi\)
+ typus 
+typus,
+typus\.
+(?<![a-zA-Z])typus 
+\(typus
+typus\)
+ belti 
+belti,
+belti\.
+(?<![a-zA-Z])belti 
+\(belti
+belti\)
+ bergi 
+bergi,
+bergi\.
+(?<![a-zA-Z])bergi 
+\(bergi
+bergi\)
+ atrox 
+atrox,
+atrox\.
+(?<![a-zA-Z])atrox 
+\(atrox
+atrox\)
+ lotor 
+lotor,
+lotor\.
+(?<![a-zA-Z])lotor 
+\(lotor
+lotor\)
+ grayi 
+grayi,
+grayi\.
+(?<![a-zA-Z])grayi 
+\(grayi
+grayi\)
+ picta 
+picta,
+picta\.
+(?<![a-zA-Z])picta 
+\(picta
+picta\)
+ kunsi 
+kunsi,
+kunsi\.
+(?<![a-zA-Z])kunsi 
+\(kunsi
+kunsi\)
+ rufus 
+rufus,
+rufus\.
+(?<![a-zA-Z])rufus 
+\(rufus
+rufus\)
+ mimax 
+mimax,
+mimax\.
+(?<![a-zA-Z])mimax 
+\(mimax
+mimax\)
+ mimus 
+mimus,
+mimus\.
+(?<![a-zA-Z])mimus 
+\(mimus
+mimus\)
+ kempi 
+kempi,
+kempi\.
+(?<![a-zA-Z])kempi 
+\(kempi
+kempi\)
+ sagei 
+sagei,
+sagei\.
+(?<![a-zA-Z])sagei 
+\(sagei
+sagei\)
+ juris 
+juris,
+juris\.
+(?<![a-zA-Z])juris 
+\(juris
+juris\)
+ juara 
+juara,
+juara\.
+(?<![a-zA-Z])juara 
+\(juara
+juara\)
+ jayat 
+jayat,
+jayat\.
+(?<![a-zA-Z])jayat 
+\(jayat
+jayat\)
+ minor 
+minor,
+minor\.
+(?<![a-zA-Z])minor 
+\(minor
+minor\)
+ indri 
+indri,
+indri\.
+(?<![a-zA-Z])indri 
+\(indri
+indri\)
+ sarae 
+sarae,
+sarae\.
+(?<![a-zA-Z])sarae 
+\(sarae
+sarae\)
+ minus 
+minus,
+minus\.
+(?<![a-zA-Z])minus 
+\(minus
+minus\)
+ hosei 
+hosei,
+hosei\.
+(?<![a-zA-Z])hosei 
+\(hosei
+hosei\)
+ hirta 
+hirta,
+hirta\.
+(?<![a-zA-Z])hirta 
+\(hirta
+hirta\)
+ hilli 
+hilli,
+hilli\.
+(?<![a-zA-Z])hilli 
+\(hilli
+hilli\)
+ halli 
+halli,
+halli\.
+(?<![a-zA-Z])halli 
+\(halli
+halli\)
+ haigi 
+haigi,
+haigi\.
+(?<![a-zA-Z])haigi 
+\(haigi
+haigi\)
+ senex 
+senex,
+senex\.
+(?<![a-zA-Z])senex 
+\(senex
+senex\)
+ mitis 
+mitis,
+mitis\.
+(?<![a-zA-Z])mitis 
+\(mitis
+mitis\)
+ petax 
+petax,
+petax\.
+(?<![a-zA-Z])petax 
+\(petax
+petax\)
+ naias 
+naias,
+naias\.
+(?<![a-zA-Z])naias 
+\(naias
+naias\)
+ major 
+major,
+major\.
+(?<![a-zA-Z])major 
+\(major
+major\)
+ lambi 
+lambi,
+lambi\.
+(?<![a-zA-Z])lambi 
+\(lambi
+lambi\)
+ ruber 
+ruber,
+ruber\.
+(?<![a-zA-Z])ruber 
+\(ruber
+ruber\)
+ glama 
+glama,
+glama\.
+(?<![a-zA-Z])glama 
+\(glama
+glama\)
+ latro 
+latro,
+latro\.
+(?<![a-zA-Z])latro 
+\(latro
+latro\)
+ magna 
+magna,
+magna\.
+(?<![a-zA-Z])magna 
+\(magna
+magna\)
+ majus 
+majus,
+majus\.
+(?<![a-zA-Z])majus 
+\(majus
+majus\)
+ Lepus 
+Lepus,
+Lepus\.
+(?<![a-zA-Z])Lepus 
+\(Lepus
+Lepus\)
+ macer 
+macer,
+macer\.
+(?<![a-zA-Z])macer 
+\(macer
+macer\)
+ lyoni 
+lyoni,
+lyoni\.
+(?<![a-zA-Z])lyoni 
+\(lyoni
+lyoni\)
+ quica 
+quica,
+quica\.
+(?<![a-zA-Z])quica 
+\(quica
+quica\)
+ lynni 
+lynni,
+lynni\.
+(?<![a-zA-Z])lynni 
+\(lynni
+lynni\)
+ lutra 
+lutra,
+lutra\.
+(?<![a-zA-Z])lutra 
+\(lutra
+lutra\)
+ quoyi 
+quoyi,
+quoyi\.
+(?<![a-zA-Z])quoyi 
+\(quoyi
+quoyi\)
+ ravus 
+ravus,
+ravus\.
+(?<![a-zA-Z])ravus 
+\(ravus
+ravus\)
+ lupus 
+lupus,
+lupus\.
+(?<![a-zA-Z])lupus 
+\(lupus
+lupus\)
+ lucia 
+lucia,
+lucia\.
+(?<![a-zA-Z])lucia 
+\(lucia
+lucia\)
+ psora 
+psora,
+psora\.
+(?<![a-zA-Z])psora 
+\(psora
+psora\)
+ Lutra 
+Lutra,
+Lutra\.
+(?<![a-zA-Z])Lutra 
+\(Lutra
+Lutra\)
+ manni 
+manni,
+manni\.
+(?<![a-zA-Z])manni 
+\(manni
+manni\)
+ liops 
+liops,
+liops\.
+(?<![a-zA-Z])liops 
+\(liops
+liops\)
+ levis 
+levis,
+levis\.
+(?<![a-zA-Z])levis 
+\(levis
+levis\)
+ Manis 
+Manis,
+Manis\.
+(?<![a-zA-Z])Manis 
+\(Manis
+Manis\)
+ roigi 
+roigi,
+roigi\.
+(?<![a-zA-Z])roigi 
+\(roigi
+roigi\)
+ Indri 
+Indri,
+Indri\.
+(?<![a-zA-Z])Indri 
+\(Indri
+Indri\)
+ melas 
+melas,
+melas\.
+(?<![a-zA-Z])melas 
+\(melas
+melas\)
+ rosii 
+rosii,
+rosii\.
+(?<![a-zA-Z])rosii 
+\(rosii
+rosii\)
+ pigra 
+pigra,
+pigra\.
+(?<![a-zA-Z])pigra 
+\(pigra
+pigra\)
+ Nasua 
+Nasua,
+Nasua\.
+(?<![a-zA-Z])Nasua 
+\(Nasua
+Nasua\)
+ Kogia 
+Kogia,
+Kogia\.
+(?<![a-zA-Z])Kogia 
+\(Kogia
+Kogia\)
+ gigas 
+gigas,
+gigas\.
+(?<![a-zA-Z])gigas 
+\(gigas
+gigas\)
+ Cavia 
+Cavia,
+Cavia\.
+(?<![a-zA-Z])Cavia 
+\(Cavia
+Cavia\)
+ niger 
+niger,
+niger\.
+(?<![a-zA-Z])niger 
+\(niger
+niger\)
+ Equus 
+Equus,
+Equus\.
+(?<![a-zA-Z])Equus 
+\(Equus
+Equus\)
+ Capra 
+Capra,
+Capra\.
+(?<![a-zA-Z])Capra 
+\(Capra
+Capra\)
+ copei 
+copei,
+copei\.
+(?<![a-zA-Z])copei 
+\(copei
+copei\)
+ niobe 
+niobe,
+niobe\.
+(?<![a-zA-Z])niobe 
+\(niobe
+niobe\)
+ parva 
+parva,
+parva\.
+(?<![a-zA-Z])parva 
+\(parva
+parva\)
+ comes 
+comes,
+comes\.
+(?<![a-zA-Z])comes 
+\(comes
+comes\)
+ Canis 
+Canis,
+Canis\.
+(?<![a-zA-Z])Canis 
+\(Canis
+Canis\)
+ notom 
+notom,
+notom\.
+(?<![a-zA-Z])notom 
+\(notom
+notom\)
+ nugax 
+nugax,
+nugax\.
+(?<![a-zA-Z])nugax 
+\(nugax
+nugax\)
+ tener 
+tener,
+tener\.
+(?<![a-zA-Z])tener 
+\(tener
+tener\)
+ cicur 
+cicur,
+cicur\.
+(?<![a-zA-Z])cicur 
+\(cicur
+cicur\)
+ Phoca 
+Phoca,
+Phoca\.
+(?<![a-zA-Z])Phoca 
+\(Phoca
+Phoca\)
+ Galea 
+Galea,
+Galea\.
+(?<![a-zA-Z])Galea 
+\(Galea
+Galea\)
+ Potos 
+Potos,
+Potos\.
+(?<![a-zA-Z])Potos 
+\(Potos
+Potos\)
+ celer 
+celer,
+celer\.
+(?<![a-zA-Z])celer 
+\(celer
+celer\)
+ omari 
+omari,
+omari\.
+(?<![a-zA-Z])omari 
+\(omari
+omari\)
+ thous 
+thous,
+thous\.
+(?<![a-zA-Z])thous 
+\(thous
+thous\)
+ caryi 
+caryi,
+caryi\.
+(?<![a-zA-Z])caryi 
+\(caryi
+caryi\)
+ carbo 
+carbo,
+carbo\.
+(?<![a-zA-Z])carbo 
+\(carbo
+carbo\)
+ canus 
+canus,
+canus\.
+(?<![a-zA-Z])canus 
+\(canus
+canus\)
+ ordii 
+ordii,
+ordii\.
+(?<![a-zA-Z])ordii 
+\(ordii
+ordii\)
+ tolai 
+tolai,
+tolai\.
+(?<![a-zA-Z])tolai 
+\(tolai
+tolai\)
+ dalli 
+dalli,
+dalli\.
+(?<![a-zA-Z])dalli 
+\(dalli
+dalli\)
+ nigra 
+nigra,
+nigra\.
+(?<![a-zA-Z])nigra 
+\(nigra
+nigra\)
+ Cebus 
+Cebus,
+Cebus\.
+(?<![a-zA-Z])Cebus 
+\(Cebus
+Cebus\)
+ nasua 
+nasua,
+nasua\.
+(?<![a-zA-Z])nasua 
+\(nasua
+nasua\)
+ Felis 
+Felis,
+Felis\.
+(?<![a-zA-Z])Felis 
+\(Felis
+Felis\)
+ gabbi 
+gabbi,
+gabbi\.
+(?<![a-zA-Z])gabbi 
+\(gabbi
+gabbi\)
+ fusca 
+fusca,
+fusca\.
+(?<![a-zA-Z])fusca 
+\(fusca
+fusca\)
+ furax 
+furax,
+furax\.
+(?<![a-zA-Z])furax 
+\(furax
+furax\)
+ fodax 
+fodax,
+fodax\.
+(?<![a-zA-Z])fodax 
+\(fodax
+fodax\)
+ nanus 
+nanus,
+nanus\.
+(?<![a-zA-Z])nanus 
+\(nanus
+nanus\)
+ fochi 
+fochi,
+fochi\.
+(?<![a-zA-Z])fochi 
+\(fochi
+fochi\)
+ felli 
+felli,
+felli\.
+(?<![a-zA-Z])felli 
+\(felli
+felli\)
+ dicki 
+dicki,
+dicki\.
+(?<![a-zA-Z])dicki 
+\(dicki
+dicki\)
+ naria 
+naria,
+naria\.
+(?<![a-zA-Z])naria 
+\(naria
+naria\)
+ felix 
+felix,
+felix\.
+(?<![a-zA-Z])felix 
+\(felix
+felix\)
+ dunni 
+dunni,
+dunni\.
+(?<![a-zA-Z])dunni 
+\(dunni
+dunni\)
+ emini 
+emini,
+emini\.
+(?<![a-zA-Z])emini 
+\(emini
+emini\)
+ navus 
+navus,
+navus\.
+(?<![a-zA-Z])navus 
+\(navus
+navus\)
+ niata 
+niata,
+niata\.
+(?<![a-zA-Z])niata 
+\(niata
+niata\)
+ edeni 
+edeni,
+edeni\.
+(?<![a-zA-Z])edeni 
+\(edeni
+edeni\)
+ nexus 
+nexus,
+nexus\.
+(?<![a-zA-Z])nexus 
+\(nexus
+nexus\)
+ dryas 
+dryas,
+dryas\.
+(?<![a-zA-Z])dryas 
+\(dryas
+dryas\)
+ Eira 
+Eira,
+Eira\.
+(?<![a-zA-Z])Eira 
+\(Eira
+Eira\)
+ nana 
+nana,
+nana\.
+(?<![a-zA-Z])nana 
+\(nana
+nana\)
+ orca 
+orca,
+orca\.
+(?<![a-zA-Z])orca 
+\(orca
+orca\)
+ onca 
+onca,
+onca\.
+(?<![a-zA-Z])onca 
+\(onca
+onca\)
+ puda 
+puda,
+puda\.
+(?<![a-zA-Z])puda 
+\(puda
+puda\)
+ afer 
+afer,
+afer\.
+(?<![a-zA-Z])afer 
+\(afer
+afer\)
+ nimr 
+nimr,
+nimr\.
+(?<![a-zA-Z])nimr 
+\(nimr
+nimr\)
+ maui 
+maui,
+maui\.
+(?<![a-zA-Z])maui 
+\(maui
+maui\)
+ mira 
+mira,
+mira\.
+(?<![a-zA-Z])mira 
+\(mira
+mira\)
+ napu 
+napu,
+napu\.
+(?<![a-zA-Z])napu 
+\(napu
+napu\)
+ Inia 
+Inia,
+Inia\.
+(?<![a-zA-Z])Inia 
+\(Inia
+Inia\)
+ Pudu 
+Pudu,
+Pudu\.
+(?<![a-zA-Z])Pudu 
+\(Pudu
+Pudu\)
+ ater 
+ater,
+ater\.
+(?<![a-zA-Z])ater 
+\(ater
+ater\)
+ puma 
+puma,
+puma\.
+(?<![a-zA-Z])puma 
+\(puma
+puma\)
+ babi 
+babi,
+babi\.
+(?<![a-zA-Z])babi 
+\(babi
+babi\)
+ Lama 
+Lama,
+Lama\.
+(?<![a-zA-Z])Lama 
+\(Lama
+Lama\)
+ feae 
+feae,
+feae\.
+(?<![a-zA-Z])feae 
+\(feae
+feae\)
+ eyra 
+eyra,
+eyra\.
+(?<![a-zA-Z])eyra 
+\(eyra
+eyra\)
+ edax 
+edax,
+edax\.
+(?<![a-zA-Z])edax 
+\(edax
+edax\)
+ styx 
+styx,
+styx\.
+(?<![a-zA-Z])styx 
+\(styx
+styx\)
+ cuja 
+cuja,
+cuja\.
+(?<![a-zA-Z])cuja 
+\(cuja
+cuja\)
+ Ovis 
+Ovis,
+Ovis\.
+(?<![a-zA-Z])Ovis 
+\(Ovis
+Ovis\)
+ cora 
+cora,
+cora\.
+(?<![a-zA-Z])cora 
+\(cora
+cora\)
+ tana 
+tana,
+tana\.
+(?<![a-zA-Z])tana 
+\(tana
+tana\)
+ Rusa 
+Rusa,
+Rusa\.
+(?<![a-zA-Z])Rusa 
+\(Rusa
+Rusa\)
+ cita 
+cita,
+cita\.
+(?<![a-zA-Z])cita 
+\(cita
+cita\)
+ boxi 
+boxi,
+boxi\.
+(?<![a-zA-Z])boxi 
+\(boxi
+boxi\)
+ toba 
+toba,
+toba\.
+(?<![a-zA-Z])toba 
+\(toba
+toba\)
+ Pusa 
+Pusa,
+Pusa\.
+(?<![a-zA-Z])Pusa 
+\(Pusa
+Pusa\)
+ Puma 
+Puma,
+Puma\.
+(?<![a-zA-Z])Puma 
+\(Puma
+Puma\)
+ urva 
+urva,
+urva\.
+(?<![a-zA-Z])urva 
+\(urva
+urva\)
+ sima 
+sima,
+sima\.
+(?<![a-zA-Z])sima 
+\(sima
+sima\)
+ paca 
+paca,
+paca\.
+(?<![a-zA-Z])paca 
+\(paca
+paca\)
+ avus 
+avus,
+avus\.
+(?<![a-zA-Z])avus 
+\(avus
+avus\)
+ lyra 
+lyra,
+lyra\.
+(?<![a-zA-Z])lyra 
+\(lyra
+lyra\)
+ Lynx 
+Lynx,
+Lynx\.
+(?<![a-zA-Z])Lynx 
+\(Lynx
+Lynx\)
+ hoyi 
+hoyi,
+hoyi\.
+(?<![a-zA-Z])hoyi 
+\(hoyi
+hoyi\)
+ inca 
+inca,
+inca\.
+(?<![a-zA-Z])inca 
+\(inca
+inca\)
+ Cuon 
+Cuon,
+Cuon\.
+(?<![a-zA-Z])Cuon 
+\(Cuon
+Cuon\)
+ cana 
+cana,
+cana\.
+(?<![a-zA-Z])cana 
+\(cana
+cana\)
+ saba 
+saba,
+saba\.
+(?<![a-zA-Z])saba 
+\(saba
+saba\)
+ rufa 
+rufa,
+rufa\.
+(?<![a-zA-Z])rufa 
+\(rufa
+rufa\)
+ utah 
+utah,
+utah\.
+(?<![a-zA-Z])utah 
+\(utah
+utah\)
+ lena 
+lena,
+lena\.
+(?<![a-zA-Z])lena 
+\(lena
+lena\)
+ rosa 
+rosa,
+rosa\.
+(?<![a-zA-Z])rosa 
+\(rosa
+rosa\)
+ Sus 
+Sus,
+Sus\.
+(?<![a-zA-Z])Sus 
+\(Sus
+Sus\)
+ cay 
+cay,
+cay\.
+(?<![a-zA-Z])cay 
+\(cay
+cay\)
+ rex 
+rex,
+rex\.
+(?<![a-zA-Z])rex 
+\(rex
+rex\)
+ Mus 
+Mus,
+Mus\.
+(?<![a-zA-Z])Mus 
+\(Mus
+Mus\)
+ leo 
+leo,
+leo\.
+(?<![a-zA-Z])leo 
+\(leo
+leo\)
+ ega 
+ega,
+ega\.
+(?<![a-zA-Z])ega 
+\(ega
+ega\)
+ bea 
+bea,
+bea\.
+(?<![a-zA-Z])bea 
+\(bea
+bea\)
+ Pan 
+Pan,
+Pan\.
+(?<![a-zA-Z])Pan 
+\(Pan
+Pan\)
+ cf 
+cf,
+cf\.
+(?<![a-zA-Z])cf 
+\(cf
+cf\)
+ sp 
+sp,
+sp\.
+(?<![a-zA-Z])sp 
+\(sp
+sp\)
+ lu 
+lu,
+lu\.
+(?<![a-zA-Z])lu 
+\(lu
+lu\)
+(?<![a-zA-Z])A\. 
+(?<![a-zA-Z])O\. 
+(?<![a-zA-Z])B\. 
+(?<![a-zA-Z])Z\. 
+(?<![a-zA-Z])Y\. 
+(?<![a-zA-Z])X\. 
+(?<![a-zA-Z])W\. 
+(?<![a-zA-Z])V\. 
+(?<![a-zA-Z])U\. 
+(?<![a-zA-Z])S\. 
+(?<![a-zA-Z])R\. 
+(?<![a-zA-Z])Q\. 
+(?<![a-zA-Z])P\. 
+(?<![a-zA-Z])T\. 
+(?<![a-zA-Z])N\. 
+(?<![a-zA-Z])H\. 
+(?<![a-zA-Z])M\. 
+(?<![a-zA-Z])D\. 
+(?<![a-zA-Z])E\. 
+(?<![a-zA-Z])F\. 
+(?<![a-zA-Z])G\. 
+(?<![a-zA-Z])C\. 
+(?<![a-zA-Z])I\. 
+(?<![a-zA-Z])J\. 
+(?<![a-zA-Z])K\. 
+(?<![a-zA-Z])L\. 
+\(N\. 
+\(Y\. 
+\(X\. 
+\(W\. 
+\(V\. 
+\(U\. 
+\(T\. 
+\(S\. 
+\(R\. 
+\(Q\. 
+\(P\. 
+\(O\. 
+\(A\. 
+\(M\. 
+\(L\. 
+\(K\. 
+\(J\. 
+\(I\. 
+\(H\. 
+\(G\. 
+\(F\. 
+\(E\. 
+\(D\. 
+\(C\. 
+\(B\. 
+\(Z\. 

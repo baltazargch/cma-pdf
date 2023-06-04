@@ -50,7 +50,6 @@ library(huxtable)
 options(huxtable.latex_use_fontspec = TRUE)
 source('R/funcs.R', local = knitr::knit_global())
 # source('R/scientific_name_binarization.R', local = knitr::knit_global())
-source_python("Python/make_italics.py")
 
 db <- read_csv('data/especies_nativas.csv')
 dois <- read_csv('data/species_doi.csv')
@@ -65,36 +64,18 @@ db.sp <- db %>% filter(title == params$species) %>%
                                            sp_distribuida_en_numero_de_loc,
                                            sp_numero_de_localidades))
 
+source_python("Python/make_italics.py")
+makedbNames <- FALSE
+if(makedbNames){
 Names <- read_csv('data/Names_italics.csv')$Names #%>% as.data.frame %>% View()
 Names <- Names  %>% str_replace_all(regex("\\W+"), ' ')
 Names <- Names[ Names != 'sp' ]
+Names <- c(Names %>% atomic_names %>% make_pad,
+           LETTERS %>% make_pad_uniletter %>% atomic_names %>% paste0(., ' ') ) 
+writeLines(Names, 'Namesdb.txt')  
+}
 
-Names <- Names %>% atomic_names %>% make_pad
-# 
-# db.init <- db.sp %>% select(c(sp_id:sp_nombres_comunes_portugues,
-#                        group_sp_eval_subpob, sp_cat_nac_conserv_2019, 
-#                        sp_bibliografia_citada:sp_kml_archivo))
-# 
-# db.sp.it <- db.sp %>% select(-c(sp_id:sp_nombres_comunes_portugues,
-#                        group_sp_eval_subpob, sp_cat_nac_conserv_2019, 
-#                        sp_bibliografia_citada:sp_kml_archivo)) %>% 
-#   select(where(is.character))
-# 
-# db.sp.it <- map_df(db.sp.it, \(x) make_italics(x, c(Names ,paste0(LETTERS, '\\.'))))
-#   # apply_italics_to_cols(db.sp.it, colnames(db.sp.it), Names)
-# 
-# db.sp <- bind_cols(
-#   db.sp.it,  db.init,
-#   db.sp %>%  select(-c(sp_id:sp_nombres_comunes_portugues,
-#                        group_sp_eval_subpob, sp_cat_nac_conserv_2019, 
-#                        sp_bibliografia_citada:sp_kml_archivo)) %>%
-#     select(!where(is.character))
-# )
-# 
-# db.sp <- db.sp[, colnames(db)] %>% as_tibble()
-# 
-# write_csv(db.sp, 'tempdb.csv')
-# db.sp <- read_csv('tempdb.csv')
+Names <- readLines('Namesdb.txt')
 
 spDoi <- dois$DOI[ match(db.sp$title, dois$Especie) ] %>% str_trim()
 cat.logo <- db.sp$sp_cat_nac_conserv_2019 %>% 
@@ -216,7 +197,7 @@ out %>%
 cat('\n\n')
 
 CMA_print_in_line(db.sp$sp_cat_nac_conserv_2019_justific %>% 
-                    str_replace_all('\n', '\n\n'), 
+                    str_replace_all('\n', '\n\n') %>% make_italics(Names), 
                   'Justificación de la categorización', '\n\n')
 ```
 
@@ -224,7 +205,7 @@ CMA_print_in_line(db.sp$sp_cat_nac_conserv_2019_justific %>%
 if(!is.na(db.sp$group_sp_eval_subpob)) {
   cat("**Evaluación de subpoblaciones locales**\n\n")
 
-tbsPob <- CMA_subpop_cons(db.sp, c(Names, paste0(LETTERS, '\\.')))
+tbsPob <- CMA_subpop_cons(db.sp, Names)
 
 for(x in seq_along(tbsPob)){
   cat(paste0(tbsPob[[x]][[1]], collapse = '\\vspace{0.3cm}'))
@@ -309,7 +290,7 @@ for(i in conTaxo){
 if(!is.na(db.sp$sp_taxonomia_comentarios)){
   cat('**Comentarios taxonómicos**\n\n')
   db.sp$sp_taxonomia_comentarios %>% 
-    str_replace_all('\n', '\n\n') %>% cat
+    str_replace_all('\n', '\n\n') %>% make_italics(Names) %>% cat
 }
 ```
 
@@ -328,7 +309,7 @@ if(!all(is.na(fl))){
 ```
 
 ```{r cont.eval,  results='asis', eval=TRUE}
-CMA_parse_eval(db.sp)
+ CMA_parse_eval(db.sp, names = Names)
 ```
 
 ```{r title.rango, results='asis'}
@@ -336,7 +317,7 @@ fl <- db.sp %>%
   select(sp_residente_migrante_o_errante:sp_programas_de_monitoreo_coment) %>% 
   .[1,]
 
-if(all(!is.na(fl))) {
+if(!all(is.na(fl))) {
   CMA_print_titles("RANGO GEOGRÁFICO, OCURRENCIA Y ABUNDANCIA") %>% cat()
   cat('\\vspace{-0.4cm}')
 }
@@ -347,7 +328,7 @@ if(all(!is.na(fl))) {
 CMA_print_in_line(db.sp$sp_residente_migrante_o_errante, 
                   'Presencia en el territorio nacional:')
 
-CMA_print_in_line(db.sp$sp_distribucion_historica_coment, 
+CMA_print_in_line(db.sp$sp_distribucion_historica_coment %>% make_italics(., Names), 
                   'Comentarios sobre la distribución actual e histórica', 
                   '\n\n')
 
@@ -413,9 +394,12 @@ if(!is.na(db.sp$sp_abundancia)){
   cat('\n\n')
 }
 
-
+####TODO falta hacer que make italics no se coma los \n
+# asd + 2
 CMA_print_in_line(db.sp$sp_abundancia_comentarios %>% 
-                    str_replace_all('\n', '\n\n'), 
+                    make_italics(., Names) %>% 
+                    str_replace_all('\n', '\n\n'),
+                    # str_replace_all('\\*', '\n\n*') %>%  
                   'Comentarios sobre la abundancia, densidad o probabilidad de ocupación de la especie', '\n\n')
 
 
@@ -426,7 +410,8 @@ CMA_print_in_line(db.sp$sp_programas_de_monitoreo,
 
 if(!is.na(db.sp$sp_programas_de_monitoreo_coment)){
   cat('\n\n')
- db.sp$sp_programas_de_monitoreo_coment%>% str_replace_all('\n', '\n\n') %>% cat
+ db.sp$sp_programas_de_monitoreo_coment%>% str_replace_all('\n', '\n\n') %>% 
+   make_italics(., Names[-c((length(Names)-52):length(Names))]) %>% cat
 }
 ```
 
@@ -494,7 +479,7 @@ CMA_print_in_line(db.sp$sp_dieta, 'Dieta:')
 
 CMA_print_in_line(db.sp$sp_dieta_especializada, 'Dieta especializada:')
 
-CMA_print_in_line(db.sp$sp_aspectos_reproductivos, 
+CMA_print_in_line(db.sp$sp_aspectos_reproductivos %>% make_italics(., Names), 
                   'Aspectos reproductivos', 
                   '\n\n')
 
@@ -504,7 +489,7 @@ CMA_print_in_line(db.sp$sp_gregariedad, 'Gregariedad:')
 
 CMA_print_in_line(db.sp$sp_tamanio_de_grupo, 'Tamaño de grupo:')
 
-CMA_print_in_line(db.sp$sp_tamanio_de_grupo_coment, 
+CMA_print_in_line(db.sp$sp_tamanio_de_grupo_coment %>% make_italics(., Names), 
                   '')
 
 CMA_print_in_line(db.sp$sp_area_de_accion,'Área de acción', '\n\n')
@@ -540,6 +525,7 @@ cat('**Amenazas por grado: de 1 (menor) a 5 (mayor)**\n\n')
 CMA_parse_threats(db.sp) %>% cat
 
 db.sp$sp_amenazas_comentarios %>% 
+  make_italics(., Names) %>% 
   str_replace_all('\n', '\n\n') %>% cat
 
 cat('\n\n')
@@ -561,14 +547,15 @@ if(!is.na(db.sp$sp_en_area_nat_protegida_coment)){
 ```{r, results='asis'}
 if(!is.na(db.sp$sp_marco_legal)){
   cat('**Marco legal de la especie**\n\n')
-  db.sp$sp_marco_legal %>%    
+  db.sp$sp_marco_legal %>% make_italics(., Names) %>%    
     str_replace_all('\n', '\n\n') %>%  cat}
 ```
 
 ```{r, results='asis'}
 if(!is.na(db.sp$sp_planes_de_conservacion)){
   cat('**Planes de acción y/o proyectos de conservación o manejo actuales**\n\n')
-  db.sp$sp_planes_de_conservacion %>%    
+  db.sp$sp_planes_de_conservacion %>% 
+    make_italics(., Names) %>%   
     str_replace_all('\n', '\n\n') %>% cat
 
 cat('\n\n')
@@ -581,7 +568,7 @@ CMA_print_in_line(db.sp$sp_reintroducciones,
 ```{r, results='asis'}
 if(db.sp$sp_reintroducciones != 'no' &&
    !is.na(db.sp$sp_reintroducciones)){
-  db.sp$sp_reintroducciones_comentarios %>%   
+  db.sp$sp_reintroducciones_comentarios %>% make_italics(., Names) %>%   
     str_replace_all('\n', '\n\n') %>% cat
 }
 
@@ -595,12 +582,12 @@ cat('\n\n')
 
 if(all(is.na(n)) && !is.na( db.sp$sp_usos_y_valores)){
   
-  CMA_print_in_line( db.sp$sp_usos_y_valores %>% 
+  CMA_print_in_line( db.sp$sp_usos_y_valores %>% make_italics(., Names) %>% 
                        str_replace_all('\n', '\n\n') %>% 
                        str_trim(side = 'right'), 
                      'Valorización socioeconómica de la especie', '\n\n')
 } else if(!is.na( db.sp$sp_usos_y_valores)){
-  db.sp$sp_usos_y_valores %>% 
+  db.sp$sp_usos_y_valores %>% make_italics(., Names) %>% 
     str_replace_all('\n', '\n\n') %>% 
     str_trim(side = 'right') %>% cat
 }
@@ -610,7 +597,7 @@ if(all(is.na(n)) && !is.na( db.sp$sp_usos_y_valores)){
 ```{r, results='asis'}
 if(!is.na(db.sp$sp_rol_ecologico_y_ecoservicios)){
   cat('**Rol ecológico / servicios ecosistémicos**\n\n')
-  db.sp$sp_rol_ecologico_y_ecoservicios %>%   
+  db.sp$sp_rol_ecologico_y_ecoservicios %>% make_italics(., Names) %>%   
     str_replace_all('\n', '\n\n') %>% cat
 }
 ```
@@ -619,7 +606,7 @@ if(!is.na(db.sp$sp_rol_ecologico_y_ecoservicios)){
 if(!is.na(db.sp$sp_necesidades_de_investigacion)){
 cat('**Necesidades de investigación y conocimiento**\n\n')
 
-db.sp$sp_necesidades_de_investigacion %>% 
+db.sp$sp_necesidades_de_investigacion %>% make_italics(., Names) %>% 
   str_replace_all('\n', '\n\n') %>% cat
 }
 ```
@@ -640,7 +627,7 @@ cat('\\setlength{\\parindent}{20pt}')
 cat('\\noindent\\textbf{LITERATURA CITADA}\n\n')
 
 cit.bib <- db.sp$sp_bibliografia_citada %>% str_split('\n') %>% unlist() %>% 
-  map_chr(., ~ make_italics(.x, Names))
+  map_chr(., ~ make_italics(.x, Names[-c((length(Names)-52):length(Names))]))
 
 cat(paste(cit.bib, collapse = '\n\n'))
 cat('\n\n')
@@ -649,7 +636,7 @@ if(!is.na(db.sp$sp_bibliografia_de_referencia)){
   cat('\\noindent\\textbf{LITERATURA DE REFERENCIA}\n\n')
   
   ref.bib <- db.sp$sp_bibliografia_de_referencia %>% str_split('\n') %>% unlist()%>% 
-    map_chr(., ~make_italics(.x, Names))
+    map_chr(., ~make_italics(.x, Names[-c((length(Names)-52):length(Names))]))
   cat(paste(ref.bib, collapse = '\n\n'))
   cat('\n\n')
 }

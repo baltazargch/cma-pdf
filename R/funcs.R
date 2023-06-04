@@ -95,8 +95,9 @@ CMA_print_authors <- function(authors){
 CMA_subpop_cons <- function(data, names){
   require(tidyverse)
   require(kableExtra)
+  # names=Names
   # db <- read_csv('data/especies_nativas.csv')
-  # data <- db.sp # %>% filter(title == 'Alouatta caraya')
+  # data <- db %>% filter(title == 'Alouatta caraya')
   
   stopifnot(nrow(data) == 1, ncol(data) > 1)
   
@@ -296,7 +297,7 @@ CMA_parse_threats <- function(data){
 }
 
 #### Parse eval info ----
-CMA_parse_eval <- function(data){
+CMA_parse_eval <- function(data, names){
   # data <- db.sp
   require(tidyverse)
   db.eval <- data %>% 
@@ -323,10 +324,13 @@ CMA_parse_eval <- function(data){
                'Extensión de presencia (EOO)', 
                'Área de ocupación (AOO)', 
                'Número de localidades o subpoblaciones', 
-               'Número de individuos maduros')) 
+               'Número de individuos maduros'))
   
+  db.eval <- apply_italics_to_cols(db.eval, Names)
+ 
   db.eval1 <- db.eval %>% select(1:23) %>% 
     select(where(~!all(is.na(.x[1]))))
+  
   c <- 1  
   while(c <= ncol(db.eval1)){
     if(db.eval1[[c]][2] != '') cat(paste0('**', db.eval1[[c]][2], ': **'))
@@ -345,6 +349,7 @@ CMA_parse_eval <- function(data){
   
   db.eval1 <- db.eval %>% select(!1:23) %>% 
     select(where(~!all(is.na(.x[1]))))
+  
   if(ncol(db.eval1) > 0){
     db.dismi <- db.eval1 %>% 
       select(contains('dismin'))
@@ -357,7 +362,7 @@ CMA_parse_eval <- function(data){
     }
     
     db.dismi <- db.eval1 %>% 
-      select(!contains('dismin'))
+      select(!contains('dismin')) 
     if(ncol(db.dismi) > 0){
       db.dismi <- db.dismi %>% as.list()
       cat('**Fluctuaciones extremas en:**\n\n')
