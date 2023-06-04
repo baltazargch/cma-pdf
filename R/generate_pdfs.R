@@ -42,8 +42,9 @@ my_render <- function(x){
     toc()
   }
 }
+library(parallel)
 
-map(species, ~ try({my_render(.x)}))
+mclapply(species, \(.x) try({my_render(.x)}), mc.cores = 8)
 
 list.files('pdfs', '.tex$', full.names = T) %>% unlink()
 

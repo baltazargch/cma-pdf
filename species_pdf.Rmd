@@ -30,7 +30,7 @@ header-includes:
   \PassOptionsToPackage{dvipsnames,svgnames*,x11names*}{xcolor}
   \definecolor{ceil}{rgb}{0.57, 0.63, 0.81}
 params:
-  species:  "Alouatta caraya"
+  species:  "Balaenoptera acutorostrata"
 editor_options: 
   chunk_output_type: console
 ---
@@ -65,11 +65,11 @@ db.sp <- db %>% filter(title == params$species) %>%
                                            sp_numero_de_localidades))
 
 source_python("Python/make_italics.py")
-makedbNames <- FALSE
+makedbNames <- F
 if(makedbNames){
 Names <- read_csv('data/Names_italics.csv')$Names #%>% as.data.frame %>% View()
 Names <- Names  %>% str_replace_all(regex("\\W+"), ' ')
-Names <- Names[ Names != 'sp' ]
+Names <- Names[ !Names  %in% c('sp', 'spp', 'cf', 'cf.', 'aff', 'aff.') ]
 Names <- c(Names %>% atomic_names %>% make_pad,
            LETTERS %>% make_pad_uniletter %>% atomic_names %>% paste0(., ' ') ) 
 writeLines(Names, 'Namesdb.txt')  

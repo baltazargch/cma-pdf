@@ -13,10 +13,11 @@ def make_italics(data, name):
     else:
         data = str_squish(data)
         for x in name:
-            data = re.sub(x, r'  \\textit{' + str_squish(x.replace('\\', '')) + r'} ', data)
+            data = re.sub(x, r' \\textit{' + str_squish(x.replace('\\', '')) + r'} ', data)
             # data = re.sub(x, r'  \\textit{' + x.replace('\\', '') + r'} ', data)
-    
-        return str_squish(data).replace(' ( ',' (').replace(')} .',')}.').replace(r'(?<![a-zA-Z])', '');
+        data = str_squish(data).replace(' ( ',' (').replace(')} .',')}.').replace(r'(?<![a-zA-Z])', '')
+        data = data.replace('(?![a-zA-Z])', '').replace(' )',')')
+        return data;
   
 def atomic_names(names):
     # Split each name into individual words
@@ -44,10 +45,7 @@ def make_pad(string):
     # Iterate over each string in the input list
     for s in string:
         # Add the cases
-        out.append(' ' + s + ' ')
-        out.append(s + ',')
-        out.append(s + '\.')
-        out.append(r'(?<![a-zA-Z])' + s + ' ')
+        out.append(r'(?<![a-zA-Z])' + s + '(?![a-zA-Z])')
         out.append('\(' + s)
         out.append(s + '\)')
     
@@ -61,7 +59,6 @@ def make_pad_uniletter(string):
     # Iterate over each string in the input list
     for s in string:
         # Add the cases
-        # out.append(' ' + s + '\. ')
         out.append(r'(?<![a-zA-Z])' + s + '\. ')
         out.append('\(' + s + '\. ')
     
