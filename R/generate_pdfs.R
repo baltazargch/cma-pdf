@@ -7,6 +7,7 @@ library(tictoc)
 
 db <- read_csv('data/especies_nativas.csv')
 
+# db %>% select(sp_taxonomia_orden, sp_taxonomia_familia, title)
 photo <- list.files('photos/', 'g$', full.names = T, recursive = T)
 
 spIn <- map(db$title, 
@@ -20,13 +21,17 @@ species <- db %>%
   # filter(!sp_cat_nac_conserv_2019  %in% c('NE (No Evaluada')) %>% 
   select(title) %>% unlist() %>% unname() %>% sort()
 
+ords <- db$sp_taxonomia_orden[ match(species, db$title) ]
+stopifnot(length(ords) == length(species))
+
+paste0('pdfs/', ords) %>% walk(~dir.create(.x,F))
+
 dir.create('pdfs', recursive = T, showWarnings = F)
 
-my_render <- function(x){
-  if(file.exists(paste0('pdfs/', x, '.pdf'))){
+my_render <- function(x, ord){
+  if(file.exists(paste0('pdfs/', ord, '/', x, '.pdf'))){
     NULL
   } else {
-    tic()
     print(x)
     xfun::Rscript_call(
       render, 
@@ -34,40 +39,27 @@ my_render <- function(x){
         input = "species_pdf.Rmd", 
         output_format = 'pdf_document', 
         params = list(species = x), 
-        output_file = paste0('pdfs/', x, '.pdf'),
+        output_file = paste0('pdfs/', ord, '/', x, '.pdf'),
         envir = new.env(), 
         clean = TRUE
       )
     )
-    toc()
   }
 }
 library(parallel)
 
-mclapply(species, \(.x) try({my_render(.x)}), mc.cores = 8)
+mclapply(seq_along(species), \(.x) try({my_render(species[.x], ords[.x])}), mc.cores = 10)
 
-list.files('pdfs', '.tex$', full.names = T) %>% unlink()
+list.files('pdfs', '.tex$', full.names = T, recursive = T) %>% unlink()
 
 ords <- db$sp_taxonomia_orden[ match(list.files('pdfs/', '*.pdf$') %>% str_remove('.pdf$'), 
                                      db$title) ]
-paste0('G:/My Drive/CMA pdfs/', ords) %>% walk(~dir.create(.x,F))
-
-dt_to_copy <- tibble(
-  basename = list.files('pdfs/', '*.pdf$'), 
-  local = paste0(getwd(), '/',  list.files('pdfs/', '*.pdf$', full.names = T)), 
-  local_exists = file.exists(local), 
-  drive = paste0('G:/My Drive/CMA pdfs/', ords,'/', basename), 
-  drive_exists = file.exists(drive)
-)
-
-file.copy( 
-  dt_to_copy$local[dt_to_copy$local_exists], 
-  dt_to_copy$drive[dt_to_copy$local_exists])
+# paste0('pdfs/', ords) %>% walk(~dir.create(.x,F))
 
 db %>%  
   filter(
     # !sp_cat_nac_conserv_2019  %in% c('NE (No Evaluada'), 
-    sp_taxonomia_orden   %in% ords) %>% 
+    sp_taxonomia_orden  %in% ords) %>% 
   select(sp_taxonomia_orden) %>% table()
 
 table(ords)

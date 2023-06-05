@@ -9,6 +9,7 @@ classoption: x11names
 header-includes:
   \usepackage{fontspec}
   \usepackage{titling}
+  \usepackage{hyperref}
   \pretitle{\begin{center}
   \LARGE
   \vspace{-3.3cm}
@@ -30,7 +31,7 @@ header-includes:
   \PassOptionsToPackage{dvipsnames,svgnames*,x11names*}{xcolor}
   \definecolor{ceil}{rgb}{0.57, 0.63, 0.81}
 params:
-  species:  "Balaenoptera acutorostrata"
+  species:  "Kogia breviceps"
 editor_options: 
   chunk_output_type: console
 ---
@@ -97,7 +98,7 @@ credistPhoto <- CMA_get_photo_credits(photo[filePhoto]) %>% str_replace('&', 'y'
   \addcontentsline{toc}{section}{\protect\numberline{\thesection}#1}%
   \sectionmark{#1}}
   
-\fancyhead[R]{\textbf{`r spDoi`}}
+\fancyhead[R]{\href{`r spDoi`}{\textbf{`r spDoi`}}}
 
 \invisiblesection{GENERALIDADES}
 
@@ -150,7 +151,7 @@ if(length(filePhoto)>1) {
   
   cat('\\vspace{-0.7cm}\n\n')
   
-  CMA_print_photo(photo[ filePhoto[-1] ], credits = credistPhoto[-1]) %>% cat
+  CMA_print_photo(photo[ filePhoto[-1] ], credits = credistPhoto[-1], db.sp$title) %>% cat
 }
 ```
 
@@ -397,8 +398,8 @@ if(!is.na(db.sp$sp_abundancia)){
 ####TODO falta hacer que make italics no se coma los \n
 # asd + 2
 CMA_print_in_line(db.sp$sp_abundancia_comentarios %>% 
-                    make_italics(., Names) %>% 
-                    str_replace_all('\n', '\n\n'),
+                    str_replace_all('\n', '\n\n') %>% 
+                    make_italics(., Names), 
                     # str_replace_all('\\*', '\n\n*') %>%  
                   'Comentarios sobre la abundancia, densidad o probabilidad de ocupación de la especie', '\n\n')
 
@@ -612,24 +613,28 @@ db.sp$sp_necesidades_de_investigacion %>% make_italics(., Names) %>%
 ```
 
 \arrayrulecolor{white}
-
 ```{r title.biblio, results='asis'}
-cat('\\vspace{-0.4cm}')
 CMA_print_titles("BIBLIOGRAFÍA") %>% cat()
+# cat('\\vspace{-0.4cm}')
 ```
 
 \vspace{-0.4cm}
 
 ```{r biblio.cont,  results='asis'}
 
-cat('\\setlength{\\parindent}{20pt}')
+# cat('\\setlength{\\parindent}{20pt}')
 
 cat('\\noindent\\textbf{LITERATURA CITADA}\n\n')
 
 cit.bib <- db.sp$sp_bibliografia_citada %>% str_split('\n') %>% unlist() %>% 
   map_chr(., ~ make_italics(.x, Names[-c((length(Names)-52):length(Names))]))
 
-cat(paste(cit.bib, collapse = '\n\n'))
+cat('\\justifying\n\n')
+cat('\\setlength{\\parindent}{20pt}\n\n')
+cat(paste(cit.bib, collapse = '\n\n') %>% 
+      str_replace_all('2008:e.T10708A3208830.', '2008: e.T10708A3208830.') %>% 
+      str_replace_all('2012:e.T11048A17695273.', '2012: e.T11048A17695273.') %>% 
+      str_replace_all('UNEP/CMS/ASCOBANS.', 'UNEP/ CMS/ ASCOBANS.')) 
 cat('\n\n')
 
 if(!is.na(db.sp$sp_bibliografia_de_referencia)){
@@ -637,7 +642,8 @@ if(!is.na(db.sp$sp_bibliografia_de_referencia)){
   
   ref.bib <- db.sp$sp_bibliografia_de_referencia %>% str_split('\n') %>% unlist()%>% 
     map_chr(., ~make_italics(.x, Names[-c((length(Names)-52):length(Names))]))
-  cat(paste(ref.bib, collapse = '\n\n'))
+  cat(paste(ref.bib, collapse = '\n\n') %>% 
+      str_replace_all('UNEP/CMS/ASCOBANS.', 'UNEP/ CMS/ ASCOBANS.'))
   cat('\n\n')
 }
 ```

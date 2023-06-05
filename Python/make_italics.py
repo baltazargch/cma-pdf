@@ -16,7 +16,7 @@ def make_italics(data, name):
             data = re.sub(x, r' \\textit{' + str_squish(x.replace('\\', '')) + r'} ', data)
             # data = re.sub(x, r'  \\textit{' + x.replace('\\', '') + r'} ', data)
         data = str_squish(data).replace(' ( ',' (').replace(')} .',')}.').replace(r'(?<![a-zA-Z])', '')
-        data = data.replace('(?![a-zA-Z])', '').replace(' )',')')
+        data = data.replace('(?![a-zA-Z])', '').replace(' )',')').replace(' ,', ',')
         return data;
   
 def atomic_names(names):
@@ -46,7 +46,7 @@ def make_pad(string):
     for s in string:
         # Add the cases
         out.append(r'(?<![a-zA-Z])' + s + '(?![a-zA-Z])')
-        out.append('\(' + s)
+        out.append('\(' + s + '(?![a-zA-Z])')
         out.append(s + '\)')
     
     # Return the list of padded strings

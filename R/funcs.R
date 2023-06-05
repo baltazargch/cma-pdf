@@ -487,7 +487,7 @@ CMA_get_photo_credits <- function(x){
   x %>% 
     str_remove('photos//.*./') %>% 
     str_remove(str_replace(db.sp$title, " ", "-")) %>% 
-    str_remove('.jpg$') %>% 
+    str_remove('.jpg$') %>% str_remove('.jpeg$') %>%
     str_remove_all('[0-9]') %>% 
     str_replace_all('_', '') %>% 
     str_replace_all('-', ' ')
@@ -502,22 +502,26 @@ CMA_get_photo_index <- function(x, photos){
     which()
 }
 
-CMA_print_photo <- function(x, credits){
+CMA_print_photo <- function(x, credits, sp){
   # x <- photo[filePhoto[-1]]; credits=credistPhoto[-1]
   stopifnot(length(x) == length(credits))
+  
+  sppdiff = c('Dusicyon australis', 'Arctocephalus australis')
+  
   if(length(x) == 1){
-    
     paste0("\\begin{figure}[H]", 
            "\\centering", 
            paste0("\\includegraphics[width=162mm]{", x, "}"), 
            paste0( "\\caption{Foto: ", credits, "}"), 
            "\\end{figure}\n\n", sep='\n')
   } else {
+    w = 0.88
+    if(sp %in% sppdiff){w=0.8}
     paste0("\\begin{figure}[H]", 
            "\\centering", 
-           paste0("\\includegraphics[width=0.88\\linewidth]{", x[2], "}\n"), 
-           paste0("\\includegraphics[width=0.88\\linewidth]{", x[1], "}"),
-           paste0( "\\caption{Foto: ", credits[1],' (arriba); ', credits[2], ' (abajo)', "}"),
+           paste0("\\includegraphics[width=",w,"\\linewidth]{", x[2], "}\n"), 
+           paste0("\\includegraphics[width=",w,"\\linewidth]{", x[1], "}"),
+           paste0( "\\caption{Foto: ", credits[2],' (arriba); ', credits[1], ' (abajo)', "}"),
            "\\end{figure}", sep='\n')
   }
 }
